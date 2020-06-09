@@ -1,0 +1,738 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SpectrumBL
+</name>
+</assembly>
+<members>
+<member name="T:SpectrumBL.clsIteamSearch">
+	<summary>
+ This Class is Used for Iteam Search
+ </summary>
+	<CreatedBy>Rama Ranjan Jena</CreatedBy>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsAdvanceSearch.GetObjects">
+	<summary>
+ Get diffrent Objects
+ </summary>
+	<returns>Datatable</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsAdvanceSearch.GetAttributeList(System.String)">
+	<summary>
+ Get List of Attributes Based on Objects
+ </summary>
+	<param name="ObjectId">ObjectId</param>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsAdvanceSearch.GetLogicalOperators">
+	<summary>
+ Get Logical Operators
+ </summary>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsAdvanceSearch.GetOperators">
+	<summary>
+ Get Operator's
+ </summary>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsAdvanceSearch.GetWhereStru">
+	<summary>
+ Get Structure of Where,for Advance search
+ </summary>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsAdvanceSearch.GetResultedData(System.String)">
+	<summary>
+ Get the Data from resulted Query
+ </summary>
+	<param name="StrQuery">Query</param>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="T:SpectrumBL.clsAdvanceSearch">
+	<summary>
+ Used in Advance Search  
+ </summary>
+	<CreatedBy>Rama Ranjan Jena</CreatedBy>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsAuthorization.GetuserRoles(System.String,System.String)">
+	<summary>
+ Get the transaction based on User Roles
+ </summary>
+	<UpdatedBy></UpdatedBy>
+	<usedin>Login</usedin>
+	<UpdatedOn></UpdatedOn>
+	<param name="Sitecode">SiteCode</param>
+	<param name="UserId">UserId</param>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsAuthorization.GetSiteAllowedTransaction(System.String,System.String)">
+	<summary>
+ Get the transaction applicable for Site And User Roles
+ </summary>
+	<UpdatedBy></UpdatedBy>
+	<usedin>Login</usedin>
+	<UpdatedOn></UpdatedOn>
+	<param name="SiteCode">siteCode</param>
+	<param name="StrRoles">Roles</param>
+	<returns>dataTable</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsAuthorization.GetSpecialAuthorization(System.String,System.String)">
+	<summary>
+ Get transaction for which User have special Authorisation
+ </summary>
+	<UpdatedBy></UpdatedBy>
+	<usedin>Login</usedin>
+	<UpdatedOn></UpdatedOn>
+	<param name="SiteCode">siteCode </param>
+	<param name="Userid">Userid </param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:SpectrumBL.clsAuthorization">
+	<summary>
+ This Class is Used For authorisation of User's
+ </summary>
+	<Createdby>Rama Ranjan Jena</Createdby>
+	<UpdatedBy></UpdatedBy>
+	<usedin>Login</usedin>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="P:SpectrumBL.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:SpectrumBL.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:SpectrumBL.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:SpectrumBL.clsCashMemo.updateCashMemoReceipt(System.Data.DataSet@,System.String,System.String,System.String,System.Data.SqlClient.SqlConnection@,System.Data.SqlClient.SqlTransaction@)">
+	<summary>
+ Update audit Table for CashMemo Receipt Changes
+ </summary>
+	<param name="ds">Dataset</param>
+	<param name="BillNo">CashMemoNo</param>
+	<param name="TerminalId">TerminalId</param>
+	<param name="sitecode">SiteCode</param>
+	<param name="con">Connection</param>
+	<param name="tran">Transaction</param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.PrepareData(System.Data.DataSet@,System.String,System.Int32)">
+	<summary>
+ Prepare Data For Save
+ </summary>
+	<param name="ds">Dataset</param>
+	<param name="sitecode">SiteCode</param>
+	<param name="terminalid">TerminalID</param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.PrepareUpdateData(System.Data.DataSet@)">
+	<summary>
+ Preparing Updated CashMemo Data
+ </summary>
+	<param name="ds">DataSet</param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.PromotionColUpdate(System.Data.DataTable@)">
+	<summary>
+ Update Promotion applied on lineItem
+ </summary>
+	<param name="dt"></param>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.GetReturnData(System.Data.DataTable@)">
+	<summary>
+ Select the Return Data From CashMemo to a table 
+ </summary>
+	<param name="dt">DataTable</param>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.UpdateOldCashMemo(System.String,System.String,System.String,System.Int32,System.String,System.String,System.DateTime,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction)">
+	<summary>
+ Update CashMemo Return details
+ </summary>
+	<param name="OldBillNo">CashMemo Number</param>
+	<param name="SiteCode">Sitecode</param>
+	<param name="Ean">Ean Code</param>
+	<param name="Qty">Return Qty</param>
+	<param name="RtReason">Return Reason</param>
+	<param name="NewBillNo">CashMemo No</param>
+	<param name="RtCMDate">Return Date</param>
+	<param name="Con">Connection</param>
+	<param name="Tran">Transaction</param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.RemoveHolddata(System.String,System.String)">
+	<summary>
+ Remove the Hold Data from DataBase Tables
+ </summary>
+	<param name="SiteCode"></param>
+	<param name="StrTrn"></param>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.SetDetailData(System.Data.DataSet@,System.String,System.String,System.String)">
+	<summary>
+ Set Details Table Configuration 
+ </summary>
+	<param name="ds">Dataset</param>
+	<param name="SiteCode">StieCode</param>
+	<param name="TableName">TableName</param>
+	<param name="BillNo">BillNo</param>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.UpdateStatus(System.String,System.String,System.String,System.String,System.Data.SqlClient.SqlConnection@,System.Data.SqlClient.SqlTransaction@)">
+	<summary>
+ Update CashMemo status's 
+ </summary>
+	<param name="Status">Status</param>
+	<param name="sitecode">SiteCode</param>
+	<param name="Trminal">TerminalId</param>
+	<param name="Billno">CashMemoNo</param>
+	<param name="con">Connection</param>
+	<param name="tran">Transaction</param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.GetarticlePrice(System.String,System.String,System.String)">
+	<summary>
+ Get the Price Of article
+ </summary>
+	<param name="Ean">Ean Code</param>
+	<param name="ArticleCode">ArticleCode</param>
+	<param name="sitecode">SiteCode</param>
+	<returns>Selling Price</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.GetStruc(System.Int64,System.String)">
+	<summary>
+ Get the DB Structure for Binding
+ </summary>
+	<param name="CashMemo">CashMemo Number</param>
+	<param name="SiteCode">SiteCode</param>
+	<UpdatedBy></UpdatedBy>
+	<usedin>CashMemo</usedin>
+	<UpdatedOn></UpdatedOn>
+	<returns>DataSet</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.GetItemDetails(System.String,System.String,System.Boolean@)">
+	<summary>
+ Get Item Details 
+ </summary>
+	<param name="SiteCode">SiteCode</param>
+	<param name="strItem">Ean Code</param>
+	<param name="openMrp"></param>
+	<returns>Data Table</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.SaveCashMemo(System.Data.DataSet,System.String,System.String,System.String,System.Boolean,System.String@)">
+	<summary>
+ Save Cash Memo Data To DB.
+ </summary>
+	<param name="ds">DataSet</param>
+	<param name="sitecode">SiteCode</param>
+	<param name="Terminalid">TerminalID</param>
+	<param name="userid">UserId</param>
+	<param name="UpdateFlag">True/False</param>
+	<param name="BillNo">BillNo</param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.HoldData(System.Data.DataSet,System.String,System.String,System.String,System.String,System.String@)">
+	<summary>
+ Hold Cash Memo Data
+ </summary>
+	<param name="ds">DataSet</param>
+	<param name="sitecode">SiteCode</param>
+	<param name="TerminalId">TerminalId</param>
+	<param name="Userid">UserId</param>
+	<param name="HoldKey">Resume/Hold</param>
+	<param name="BillNO">Cash Memo No</param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.GetHoldData(System.Data.DataSet@,System.String,System.String)">
+	<summary>
+ Get Hold Data Information
+ </summary>
+	<param name="ds">DataSet</param>
+	<param name="BillNO">BillNo</param>
+	<param name="strSitecode">SiteCode</param>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.UpdateHoldStatus(System.String,System.String,System.String)">
+	<summary>
+ update Hold Data Status
+ </summary>
+	<param name="billno">CashMemo Number</param>
+	<param name="strSitecode">SiteCode</param>
+	<param name="Status">Status</param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.GetListofHoldData(System.String)">
+	<summary>
+ Get the hold data List
+ </summary>
+	<param name="StrSiteCode">SiteCode</param>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.getTax(System.String,System.String,System.String,System.Double,System.String)">
+	<summary>
+ Get Tax for Item Or bill
+ </summary>
+	<param name="sitecode">siteCode</param>
+	<param name="stritem">ArticleCode</param>
+	<param name="DocumentType"></param>
+	<param name="Ean">Ean Code</param>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.GetOldCashMemo(System.String)">
+	<summary>
+ Get CashMemo Number
+ </summary>
+	<param name="SiteCode">SiteCode</param>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.getCalculatedDataSet(System.Data.DataTable@,System.Double)">
+	<summary>
+ CalCulate the Tax
+ </summary>
+	<param name="dsPosTax">TaxTable</param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+Public Function getCalculatedDataSet(ByRef dsPosTax As DataTable) As Boolean
+
+</member><member name="M:SpectrumBL.clsCashMemo.GetBillLabelTax(System.String,System.String)">
+	<summary>
+ Get Bill Lavel Tax
+ </summary>
+	<param name="strSiteCode">SiteCode</param>
+	<param name="Doctype">Document Type</param>
+	<returns>TaxValue</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.GetDefaultSetting(System.String,System.String)">
+	<summary>
+ Get DefaultSeting Details
+ </summary>
+	<param name="strSiteCode">SiteCode</param>
+	<param name="Doctype">DocType</param>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.GetManualPromotion">
+	<summary>
+ Get List of Manual Promotions
+ </summary>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.GetCashMemo(System.String)">
+	<summary>
+ Get CashMemo for Print
+ </summary>
+	<param name="CashMemoNO">CashMemo Number</param>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.CheckBillDataInHold(System.String,System.String)">
+	<summary>
+ Check CashMemo in Hold
+ </summary>
+	<param name="billno">CashMemo Number</param>
+	<param name="strSitecode">Sitecode</param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.GetHoldDataForPrint(System.String)">
+	<summary>
+ Get Hold Data For printing
+ </summary>
+	<param name="BillNO">CashMemo Number</param>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.UpdateBillStatus(System.String,System.String,System.String,System.String,System.Data.SqlClient.SqlConnection@,System.Data.SqlClient.SqlTransaction@)">
+	<summary>
+ Update Deleted CashMemo 
+ </summary>
+	<param name="SiteCode">SiteCode</param>
+	<param name="BillNo">Bill Number</param>
+	<param name="Reason">reason of Delete</param>
+	<param name="Status">Status</param>
+	<param name="con">Connection</param>
+	<param name="Tran">Transaction</param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemo.DeleteBill(System.Data.DataTable,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Delete the Cash Memo
+ </summary>
+	<param name="DtDetail">DataTable</param>
+	<param name="SiteCode">Sitecode</param>
+	<param name="BillNo">Cash Memo Number</param>
+	<param name="UserId">UserId</param>
+	<param name="Reason">Reason of Delete</param>
+	<param name="Status">deleted</param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="T:SpectrumBL.clsCashMemo">
+	<summary>
+ This Class is Used For Cash Memo
+ </summary>
+	<Createdby>Rama Ranjan Jena</Createdby>
+	<UpdatedBy></UpdatedBy>
+	<usedin>CashMemo</usedin>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemoReturn.GetReason(System.String)">
+	<summary>
+ Get the Return Reason 
+ </summary>
+	<param name="DocType">DocType</param>
+	<returns>Data Table</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemoReturn.ValidateCashMemo(System.String,System.DateTime,System.String@)">
+	<summary>
+ Check CashMemo No valid or Not
+ </summary>
+	<param name="MemoNo">CashMemo</param>
+	<param name="MemoDate">Memo Date</param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCashMemoReturn.GetDetails(System.String,System.String)">
+	<summary>
+ Get CashMemo details 
+ </summary>
+	<param name="MemoNo">CashMemoNo</param>
+	<param name="SiteCode">SiteCode</param>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="T:SpectrumBL.clsCashMemoReturn">
+	<summary>
+ This Class is Used For Cash Memo Return
+ </summary>
+	<Createdby>Rama Ranjan Jena</Createdby>
+	<UpdatedBy></UpdatedBy>
+	<usedin>CashMemo</usedin>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCommon.SaveData(System.Data.DataSet,System.Data.SqlClient.SqlConnection@,System.Data.SqlClient.SqlTransaction@)">
+	<summary>
+ Function is used to save the Data 
+ </summary>
+	<param name="dSet">Send the final dataset to this function</param>
+	<returns>true if success else false</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsCommon.GetArticleImage(System.String)">
+	<summary>
+ TODO: Get article image
+ </summary>
+	<param name="strArticleCode">ArticleCode</param>
+	<returns>Image URL</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsApplyPromotion1.CalculatedDs(System.Data.DataSet@,System.String)">
+	<summary>
+ intiallizies the class 
+ </summary>
+	<param name="ds">Dataset</param>
+	<param name="SiteCode">Sitecode</param>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsApplyPromotion1.GetListofActivePromotions(System.String)">
+	<summary>
+ Get the List of activate Promotion's
+ </summary>
+	<UpdatedBy></UpdatedBy>
+	<usedin>CashMemo</usedin>
+	<UpdatedOn></UpdatedOn>
+	<param name="Sitecode">SiteCode</param>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsApplyPromotion1.ApplySelectedPromotion(System.String,System.Data.DataSet@,System.String)">
+	<summary>
+ Apply only the Selected Promotion's
+ </summary>
+	<UpdatedBy></UpdatedBy>
+	<usedin>CashMemo</usedin>
+	<UpdatedOn></UpdatedOn>
+	<param name="promotionNo">Promotion id</param>
+	<param name="dsMain">DataSet</param>
+	<param name="SiteCode">SiteCode</param>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsApplyPromotion1.CheckForPromotionList(System.String,System.Double,System.String@,System.String@)">
+	<summary>
+ Check Promotion List and Apply
+ </summary>
+	<UpdatedBy></UpdatedBy>
+	<usedin>CashMemo</usedin>
+	<UpdatedOn></UpdatedOn>
+	<param name="strSiteCode">SiteCode</param>
+	<param name="NetBillAmt">BillAmount</param>
+	<param name="PromotionSlipText">Return- PromotionSlipText</param>
+	<param name="PromoId">PromotionId</param>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsApplyPromotion1.getActivePromo(System.String,System.String)">
+	<summary>
+ Get the List of activate Promotion's
+ </summary>
+	<UpdatedBy></UpdatedBy>
+	<usedin>CashMemo</usedin>
+	<UpdatedOn></UpdatedOn>
+	<param name="Sitecode">SiteCode</param>
+	<param name="OfferNo">OfferId</param>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsApplyPromotion1.ChangePromotionDs">
+	<summary>
+ Changed Row's of Specific Promotion's
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsApplyPromotion1.StartApplyPromotion">
+	<summary>
+ Applying The Promotion on the Main Item Table
+ </summary>
+	<UpdatedBy></UpdatedBy>
+	<usedin>CashMemo</usedin>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsApplyPromotion1.GetPromotionSlip(System.Double,System.String@)">
+	<summary>
+ Get Promotion Slips if any
+ </summary>
+	<UpdatedBy></UpdatedBy>
+	<usedin>CashMemo</usedin>
+	<UpdatedOn></UpdatedOn>
+	<param name="NetBillAmt"></param>
+	<param name="PromotionID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:SpectrumBL.clsApplyPromotion1">
+	<summary>
+ This Class is Used to Apply Promotion's
+ </summary>
+	<CreatedBy>Rama Ranjan Jena</CreatedBy>
+	<UpdatedBy></UpdatedBy>
+	<usedin>CashMemo</usedin>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsApplyPromotion.CalculatedDs(System.Data.DataSet@,System.String)">
+	<summary>
+ intiallizies the class 
+ </summary>
+	<param name="ds">Dataset</param>
+	<param name="SiteCode">Sitecode</param>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsApplyPromotion.GetListofActivePromotions(System.String)">
+	<summary>
+ Get the List of activate Promotion's
+ </summary>
+	<UpdatedBy></UpdatedBy>
+	<usedin>CashMemo</usedin>
+	<UpdatedOn></UpdatedOn>
+	<param name="Sitecode">SiteCode</param>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsApplyPromotion.ApplySelectedPromotion(System.String,System.Data.DataSet@,System.String)">
+	<summary>
+ Apply only the Selected Promotion's
+ </summary>
+	<UpdatedBy></UpdatedBy>
+	<usedin>CashMemo</usedin>
+	<UpdatedOn></UpdatedOn>
+	<param name="promotionNo">Promotion id</param>
+	<param name="dsMain">DataSet</param>
+	<param name="SiteCode">SiteCode</param>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsApplyPromotion.CheckForPromotionList(System.String,System.Double,System.String@,System.String@)">
+	<summary>
+ Check Promotion List and Apply
+ </summary>
+	<UpdatedBy></UpdatedBy>
+	<usedin>CashMemo</usedin>
+	<UpdatedOn></UpdatedOn>
+	<param name="strSiteCode">SiteCode</param>
+	<param name="NetBillAmt">BillAmount</param>
+	<param name="PromotionSlipText">Return- PromotionSlipText</param>
+	<param name="PromoId">PromotionId</param>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsApplyPromotion.getActivePromo(System.String,System.String)">
+	<summary>
+ Get the List of activate Promotion's
+ </summary>
+	<UpdatedBy></UpdatedBy>
+	<usedin>CashMemo</usedin>
+	<UpdatedOn></UpdatedOn>
+	<param name="Sitecode">SiteCode</param>
+	<param name="OfferNo">OfferId</param>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsApplyPromotion.ChangePromotionDs">
+	<summary>
+ Changed Row's of Specific Promotion's
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsApplyPromotion.StartApplyPromotion">
+	<summary>
+ Applying The Promotion on the Main Item Table
+ </summary>
+	<UpdatedBy></UpdatedBy>
+	<usedin>CashMemo</usedin>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsApplyPromotion.GetPromotionSlip(System.Double,System.String@)">
+	<summary>
+ Get Promotion Slips if any
+ </summary>
+	<UpdatedBy></UpdatedBy>
+	<usedin>CashMemo</usedin>
+	<UpdatedOn></UpdatedOn>
+	<param name="NetBillAmt"></param>
+	<param name="PromotionID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:SpectrumBL.clsApplyPromotion">
+	<summary>
+ This Class is Used to Apply Promotion's
+ </summary>
+	<CreatedBy>Rama Ranjan Jena</CreatedBy>
+	<UpdatedBy></UpdatedBy>
+	<usedin>CashMemo</usedin>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsLogin.CheckAuthorizeUser(System.String,System.String,System.String@,System.String@)">
+	<summary>
+  Matching  username ant it's password 
+ </summary>
+	<param name="userName"></param>
+	<param name="password"></param>
+	<param name="errorMsg"></param>
+	<returns>If match return true otherwise false</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsLogin.InsertLoginHistory(System.String,System.String,System.String,System.Boolean)">
+	<summary>
+ TODO: User login to System and When logout from system.
+ </summary>
+	<param name="loginID">UserName</param>
+	<param name="loginStatus">If userLogin then pass 'True' otherwise 'False' </param>
+	<returns>Insertion successfull or not</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumBL.clsLogin.IsUserPasswordExpire(System.String,System.String)">
+	<summary>
+ TODO:Check user password ExpireDate
+ </summary>
+	<param name="userName">UserID</param>
+	<param name="password">user password</param>
+	<returns>if password expire return true otherwise false</returns>
+	<remarks></remarks>
+</member><member name="T:SpectrumBL.POSDBDataSet.BirthListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SpectrumBL.POSDBDataSet.CLPCustomersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SpectrumBL.POSDBDataSet.CustomerSaleOrderDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SpectrumBL.POSDBDataSet.CustomerAddressDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SpectrumBL.POSDBDataSet.BirthListRequestedItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SpectrumBL.POSDBDataSet.BirthListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SpectrumBL.POSDBDataSet.CLPCustomersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SpectrumBL.POSDBDataSet.CustomerSaleOrderRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SpectrumBL.POSDBDataSet.CustomerAddressRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SpectrumBL.POSDBDataSet.BirthListRequestedItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SpectrumBL.POSDBDataSet.BirthListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SpectrumBL.POSDBDataSet.CLPCustomersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SpectrumBL.POSDBDataSet.CustomerSaleOrderRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SpectrumBL.POSDBDataSet.CustomerAddressRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SpectrumBL.POSDBDataSet.BirthListRequestedItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SpectrumBL.POSDBDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:SpectrumBL.POSDBDataSetTableAdapters.BirthListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:SpectrumBL.POSDBDataSetTableAdapters.CLPCustomersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:SpectrumBL.POSDBDataSetTableAdapters.CustomerSaleOrderTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:SpectrumBL.POSDBDataSetTableAdapters.CustomerAddressTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:SpectrumBL.POSDBDataSetTableAdapters.BirthListRequestedItemsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:SpectrumBL.POSDBDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(SpectrumBL.POSDBDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:SpectrumBL.POSDBDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(SpectrumBL.POSDBDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:SpectrumBL.POSDBDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(SpectrumBL.POSDBDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:SpectrumBL.POSDBDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:SpectrumBL.POSDBDataSetTableAdapters.TableAdapterManager.UpdateAll(SpectrumBL.POSDBDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:SpectrumBL.POSDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:SpectrumBL.POSDBDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:SpectrumBL.POSDBDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+</members>
+</doc>

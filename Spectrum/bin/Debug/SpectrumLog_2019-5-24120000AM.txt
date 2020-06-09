@@ -1,0 +1,1546 @@
+----------------------------------------------------------
+
+------------------ Spectrum Log  -------------------------
+
+Date : 2019-5-24 Time:01.29 PM 
+
+SiteCode: MHMUM201808148 
+
+Terminal ID: T002 
+
+User Name : admin 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.29 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 887
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.31 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 887
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.31 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.31 PM 
+
+System.ApplicationException: Getting Updates from UomSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.31 PM 
+
+System.ApplicationException: sending request parameters to UomSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.31 PM 
+
+System.ApplicationException: Response from UomSynchronizer:SUCCESS
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.31 PM 
+
+System.ApplicationException: Data Not Found for ArticleUOM
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.31 PM 
+
+System.ApplicationException: Data Not Updated for ArticleUOM
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.31 PM 
+
+System.ApplicationException: Getting Updates from ArticleHierarchySynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.31 PM 
+
+System.ApplicationException: sending request parameters to ArticleHierarchySynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Response from ArticleHierarchySynchronizer:SUCCESS
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Data Not Found for articlenodemap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Data Not Found for articlenodemap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Data Not Found for articlenodemap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Data Not Found for ArticleTreeNodeMap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Data Not Updated for ArticleHierarchySynchronizer
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Getting Updates from ArticleSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: sending request parameters to ArticleSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ServiceModel.CommunicationException: There was an error in serializing body of message retrieveArticleDetailsRequest: 'Unable to generate a temporary class (result=1).
+error CS0030: Cannot convert type 'Spectrum.ServiceReference4.dynamicColumn[]' to 'Spectrum.ServiceReference4.dynamicColumn'
+error CS0030: Cannot convert type 'Spectrum.ServiceReference4.dynamicColumn[]' to 'Spectrum.ServiceReference4.dynamicColumn'
+error CS0029: Cannot implicitly convert type 'Spectrum.ServiceReference4.dynamicColumn' to 'Spectrum.ServiceReference4.dynamicColumn[]'
+error CS0029: Cannot implicitly convert type 'Spectrum.ServiceReference4.dynamicColumn' to 'Spectrum.ServiceReference4.dynamicColumn[]'
+'.  Please see InnerException for more details. ---> System.InvalidOperationException: Unable to generate a temporary class (result=1).
+error CS0030: Cannot convert type 'Spectrum.ServiceReference4.dynamicColumn[]' to 'Spectrum.ServiceReference4.dynamicColumn'
+error CS0030: Cannot convert type 'Spectrum.ServiceReference4.dynamicColumn[]' to 'Spectrum.ServiceReference4.dynamicColumn'
+error CS0029: Cannot implicitly convert type 'Spectrum.ServiceReference4.dynamicColumn' to 'Spectrum.ServiceReference4.dynamicColumn[]'
+error CS0029: Cannot implicitly convert type 'Spectrum.ServiceReference4.dynamicColumn' to 'Spectrum.ServiceReference4.dynamicColumn[]'
+
+   at System.Xml.Serialization.Compiler.Compile(Assembly parent, String ns, XmlSerializerCompilerParameters xmlParameters, Evidence evidence)
+   at System.Xml.Serialization.TempAssembly.GenerateAssembly(XmlMapping[] xmlMappings, Type[] types, String defaultNamespace, Evidence evidence, XmlSerializerCompilerParameters parameters, Assembly assembly, Hashtable assemblies)
+   at System.Xml.Serialization.TempAssembly..ctor(XmlMapping[] xmlMappings, Type[] types, String defaultNamespace, String location, Evidence evidence)
+   at System.Xml.Serialization.XmlSerializer.GetSerializersFromCache(XmlMapping[] mappings, Type type)
+   at System.Xml.Serialization.XmlSerializer.FromMappings(XmlMapping[] mappings, Type type)
+   at System.ServiceModel.Description.XmlSerializerOperationBehavior.Reflector.SerializerGenerationContext.GenerateSerializers()
+   at System.ServiceModel.Description.XmlSerializerOperationBehavior.Reflector.SerializerGenerationContext.GetSerializer(Int32 handle)
+   at System.ServiceModel.Description.XmlSerializerOperationBehavior.Reflector.MessageInfo.get_BodySerializer()
+   at System.ServiceModel.Dispatcher.XmlSerializerOperationFormatter.SerializeBody(XmlDictionaryWriter writer, MessageVersion version, String action, MessageDescription messageDescription, Object returnValue, Object[] parameters, Boolean isRequest)
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Dispatcher.XmlSerializerOperationFormatter.SerializeBody(XmlDictionaryWriter writer, MessageVersion version, String action, MessageDescription messageDescription, Object returnValue, Object[] parameters, Boolean isRequest)
+   at System.ServiceModel.Dispatcher.OperationFormatter.SerializeBodyContents(XmlDictionaryWriter writer, MessageVersion version, Object[] parameters, Object returnValue, Boolean isRequest)
+   at System.ServiceModel.Dispatcher.OperationFormatter.OperationFormatterMessage.OperationFormatterBodyWriter.OnWriteBodyContents(XmlDictionaryWriter writer)
+   at System.ServiceModel.Channels.BodyWriterMessage.OnWriteBodyContents(XmlDictionaryWriter writer)
+   at System.ServiceModel.Channels.Message.OnWriteMessage(XmlDictionaryWriter writer)
+   at System.ServiceModel.Channels.BufferedMessageWriter.WriteMessage(Message message, BufferManager bufferManager, Int32 initialOffset, Int32 maxSizeQuota)
+   at System.ServiceModel.Channels.TextMessageEncoderFactory.TextMessageEncoder.WriteMessage(Message message, Int32 maxMessageSize, BufferManager bufferManager, Int32 messageOffset)
+   at System.ServiceModel.Channels.HttpOutput.SerializeBufferedMessage(Message message, Boolean shouldRecycleBuffer)
+   at System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Spectrum.ServiceReference4.ArticleSynchronizer.retrieveArticleDetails(retrieveArticleDetailsRequest request)
+   at Spectrum.ServiceReference4.ArticleSynchronizerClient.ServiceReference4_ArticleSynchronizer_retrieveArticleDetails(retrieveArticleDetailsRequest request) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\Service References\ServiceReference4\Reference.vb:line 5718
+   at Spectrum.ServiceReference4.ArticleSynchronizerClient.retrieveArticleDetails(retrieveArticleDetails retrieveArticleDetails1) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\Service References\ServiceReference4\Reference.vb:line 5724
+   at Spectrum.frmCallWS.ArticleSynchronizer(String Sitecode) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmCallWS.vb:line 455
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Data Not Updated for ArticleSynchronizer
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Getting Updates from BillingSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: sending request parameters to BillingSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Response from BillingSynchronizer:SUCCESS
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Data Not Found for Buttonarticle
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Data Not Found for Buttongroup
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Data Not Found for Printingdetail
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Data Not Updated for BillingSynchronizer
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Getting Updates from AuthenticationSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: sending request parameters to AuthenticationSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Response from AuthenticationSynchronizer:SUCCESS
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Creating table Authusers
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Filling Authusers with values obtained from response
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Datatable Authusers filled successfully
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Data Updated Successfully for  Authusers
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Creating table authusersiterolemap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Filling authusersiterolemap with values obtained from response
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Datatable authusersiterolemap filled successfully
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Data Updated Successfully for  authusersiterolemap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Creating table authroletransactionmap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Filling authroletransactionmap with values obtained from response
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Datatable authroletransactionmap filled successfully
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Data Updated Successfully for  authroletransactionmap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Data Updated successfully for AuthenticationSynchronizer
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:01.32 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for MstEan
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.56 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 887
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.56 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.56 PM 
+
+System.ApplicationException: Getting Updates from UomSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.56 PM 
+
+System.ApplicationException: sending request parameters to UomSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.56 PM 
+
+System.ApplicationException: Response from UomSynchronizer:SUCCESS
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.56 PM 
+
+System.ApplicationException: Data Not Found for ArticleUOM
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.56 PM 
+
+System.ApplicationException: Data Not Updated for ArticleUOM
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.56 PM 
+
+System.ApplicationException: Getting Updates from ArticleHierarchySynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.56 PM 
+
+System.ApplicationException: sending request parameters to ArticleHierarchySynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.56 PM 
+
+System.ApplicationException: Response from ArticleHierarchySynchronizer:SUCCESS
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.56 PM 
+
+System.ApplicationException: Data Not Found for articlenodemap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.56 PM 
+
+System.ApplicationException: Data Not Found for articlenodemap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.56 PM 
+
+System.ApplicationException: Data Not Found for articlenodemap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.56 PM 
+
+System.ApplicationException: Data Not Found for ArticleTreeNodeMap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.56 PM 
+
+System.ApplicationException: Data Not Updated for ArticleHierarchySynchronizer
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.56 PM 
+
+System.ApplicationException: Getting Updates from ArticleSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.56 PM 
+
+System.ApplicationException: sending request parameters to ArticleSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.56 PM 
+
+System.ServiceModel.CommunicationException: There was an error in serializing body of message retrieveArticleDetailsRequest: 'Unable to generate a temporary class (result=1).
+error CS0030: Cannot convert type 'Spectrum.ServiceReference4.dynamicColumn[]' to 'Spectrum.ServiceReference4.dynamicColumn'
+error CS0030: Cannot convert type 'Spectrum.ServiceReference4.dynamicColumn[]' to 'Spectrum.ServiceReference4.dynamicColumn'
+error CS0029: Cannot implicitly convert type 'Spectrum.ServiceReference4.dynamicColumn' to 'Spectrum.ServiceReference4.dynamicColumn[]'
+error CS0029: Cannot implicitly convert type 'Spectrum.ServiceReference4.dynamicColumn' to 'Spectrum.ServiceReference4.dynamicColumn[]'
+'.  Please see InnerException for more details. ---> System.InvalidOperationException: Unable to generate a temporary class (result=1).
+error CS0030: Cannot convert type 'Spectrum.ServiceReference4.dynamicColumn[]' to 'Spectrum.ServiceReference4.dynamicColumn'
+error CS0030: Cannot convert type 'Spectrum.ServiceReference4.dynamicColumn[]' to 'Spectrum.ServiceReference4.dynamicColumn'
+error CS0029: Cannot implicitly convert type 'Spectrum.ServiceReference4.dynamicColumn' to 'Spectrum.ServiceReference4.dynamicColumn[]'
+error CS0029: Cannot implicitly convert type 'Spectrum.ServiceReference4.dynamicColumn' to 'Spectrum.ServiceReference4.dynamicColumn[]'
+
+   at System.Xml.Serialization.Compiler.Compile(Assembly parent, String ns, XmlSerializerCompilerParameters xmlParameters, Evidence evidence)
+   at System.Xml.Serialization.TempAssembly.GenerateAssembly(XmlMapping[] xmlMappings, Type[] types, String defaultNamespace, Evidence evidence, XmlSerializerCompilerParameters parameters, Assembly assembly, Hashtable assemblies)
+   at System.Xml.Serialization.TempAssembly..ctor(XmlMapping[] xmlMappings, Type[] types, String defaultNamespace, String location, Evidence evidence)
+   at System.Xml.Serialization.XmlSerializer.GetSerializersFromCache(XmlMapping[] mappings, Type type)
+   at System.Xml.Serialization.XmlSerializer.FromMappings(XmlMapping[] mappings, Type type)
+   at System.ServiceModel.Description.XmlSerializerOperationBehavior.Reflector.SerializerGenerationContext.GenerateSerializers()
+   at System.ServiceModel.Description.XmlSerializerOperationBehavior.Reflector.SerializerGenerationContext.GetSerializer(Int32 handle)
+   at System.ServiceModel.Description.XmlSerializerOperationBehavior.Reflector.MessageInfo.get_BodySerializer()
+   at System.ServiceModel.Dispatcher.XmlSerializerOperationFormatter.SerializeBody(XmlDictionaryWriter writer, MessageVersion version, String action, MessageDescription messageDescription, Object returnValue, Object[] parameters, Boolean isRequest)
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Dispatcher.XmlSerializerOperationFormatter.SerializeBody(XmlDictionaryWriter writer, MessageVersion version, String action, MessageDescription messageDescription, Object returnValue, Object[] parameters, Boolean isRequest)
+   at System.ServiceModel.Dispatcher.OperationFormatter.SerializeBodyContents(XmlDictionaryWriter writer, MessageVersion version, Object[] parameters, Object returnValue, Boolean isRequest)
+   at System.ServiceModel.Dispatcher.OperationFormatter.OperationFormatterMessage.OperationFormatterBodyWriter.OnWriteBodyContents(XmlDictionaryWriter writer)
+   at System.ServiceModel.Channels.BodyWriterMessage.OnWriteBodyContents(XmlDictionaryWriter writer)
+   at System.ServiceModel.Channels.Message.OnWriteMessage(XmlDictionaryWriter writer)
+   at System.ServiceModel.Channels.BufferedMessageWriter.WriteMessage(Message message, BufferManager bufferManager, Int32 initialOffset, Int32 maxSizeQuota)
+   at System.ServiceModel.Channels.TextMessageEncoderFactory.TextMessageEncoder.WriteMessage(Message message, Int32 maxMessageSize, BufferManager bufferManager, Int32 messageOffset)
+   at System.ServiceModel.Channels.HttpOutput.SerializeBufferedMessage(Message message, Boolean shouldRecycleBuffer)
+   at System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Spectrum.ServiceReference4.ArticleSynchronizer.retrieveArticleDetails(retrieveArticleDetailsRequest request)
+   at Spectrum.ServiceReference4.ArticleSynchronizerClient.ServiceReference4_ArticleSynchronizer_retrieveArticleDetails(retrieveArticleDetailsRequest request) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\Service References\ServiceReference4\Reference.vb:line 5718
+   at Spectrum.ServiceReference4.ArticleSynchronizerClient.retrieveArticleDetails(retrieveArticleDetails retrieveArticleDetails1) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\Service References\ServiceReference4\Reference.vb:line 5724
+   at Spectrum.frmCallWS.ArticleSynchronizer(String Sitecode) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmCallWS.vb:line 455
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.57 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 887
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.57 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.57 PM 
+
+System.ApplicationException: Getting Updates from UomSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.57 PM 
+
+System.ApplicationException: sending request parameters to UomSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.57 PM 
+
+System.ApplicationException: Response from UomSynchronizer:SUCCESS
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.57 PM 
+
+System.ApplicationException: Data Not Found for ArticleUOM
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.57 PM 
+
+System.ApplicationException: Data Not Updated for ArticleUOM
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.57 PM 
+
+System.ApplicationException: Getting Updates from ArticleHierarchySynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.57 PM 
+
+System.ApplicationException: sending request parameters to ArticleHierarchySynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.57 PM 
+
+System.ApplicationException: Response from ArticleHierarchySynchronizer:SUCCESS
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.57 PM 
+
+System.ApplicationException: Data Not Found for articlenodemap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.57 PM 
+
+System.ApplicationException: Data Not Found for articlenodemap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.57 PM 
+
+System.ApplicationException: Data Not Found for articlenodemap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.57 PM 
+
+System.ApplicationException: Data Not Found for ArticleTreeNodeMap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.57 PM 
+
+System.ApplicationException: Data Not Updated for ArticleHierarchySynchronizer
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.57 PM 
+
+System.ApplicationException: Getting Updates from ArticleSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.57 PM 
+
+System.ApplicationException: sending request parameters to ArticleSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.58 PM 
+
+System.ServiceModel.CommunicationException: There was an error in serializing body of message retrieveArticleDetailsRequest: 'Unable to generate a temporary class (result=1).
+error CS0030: Cannot convert type 'Spectrum.ServiceReference4.dynamicColumn[]' to 'Spectrum.ServiceReference4.dynamicColumn'
+error CS0030: Cannot convert type 'Spectrum.ServiceReference4.dynamicColumn[]' to 'Spectrum.ServiceReference4.dynamicColumn'
+error CS0029: Cannot implicitly convert type 'Spectrum.ServiceReference4.dynamicColumn' to 'Spectrum.ServiceReference4.dynamicColumn[]'
+error CS0029: Cannot implicitly convert type 'Spectrum.ServiceReference4.dynamicColumn' to 'Spectrum.ServiceReference4.dynamicColumn[]'
+'.  Please see InnerException for more details. ---> System.InvalidOperationException: Unable to generate a temporary class (result=1).
+error CS0030: Cannot convert type 'Spectrum.ServiceReference4.dynamicColumn[]' to 'Spectrum.ServiceReference4.dynamicColumn'
+error CS0030: Cannot convert type 'Spectrum.ServiceReference4.dynamicColumn[]' to 'Spectrum.ServiceReference4.dynamicColumn'
+error CS0029: Cannot implicitly convert type 'Spectrum.ServiceReference4.dynamicColumn' to 'Spectrum.ServiceReference4.dynamicColumn[]'
+error CS0029: Cannot implicitly convert type 'Spectrum.ServiceReference4.dynamicColumn' to 'Spectrum.ServiceReference4.dynamicColumn[]'
+
+   at System.Xml.Serialization.Compiler.Compile(Assembly parent, String ns, XmlSerializerCompilerParameters xmlParameters, Evidence evidence)
+   at System.Xml.Serialization.TempAssembly.GenerateAssembly(XmlMapping[] xmlMappings, Type[] types, String defaultNamespace, Evidence evidence, XmlSerializerCompilerParameters parameters, Assembly assembly, Hashtable assemblies)
+   at System.Xml.Serialization.TempAssembly..ctor(XmlMapping[] xmlMappings, Type[] types, String defaultNamespace, String location, Evidence evidence)
+   at System.Xml.Serialization.XmlSerializer.GetSerializersFromCache(XmlMapping[] mappings, Type type)
+   at System.Xml.Serialization.XmlSerializer.FromMappings(XmlMapping[] mappings, Type type)
+   at System.ServiceModel.Description.XmlSerializerOperationBehavior.Reflector.SerializerGenerationContext.GenerateSerializers()
+   at System.ServiceModel.Description.XmlSerializerOperationBehavior.Reflector.SerializerGenerationContext.GetSerializer(Int32 handle)
+   at System.ServiceModel.Description.XmlSerializerOperationBehavior.Reflector.MessageInfo.get_BodySerializer()
+   at System.ServiceModel.Dispatcher.XmlSerializerOperationFormatter.SerializeBody(XmlDictionaryWriter writer, MessageVersion version, String action, MessageDescription messageDescription, Object returnValue, Object[] parameters, Boolean isRequest)
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Dispatcher.XmlSerializerOperationFormatter.SerializeBody(XmlDictionaryWriter writer, MessageVersion version, String action, MessageDescription messageDescription, Object returnValue, Object[] parameters, Boolean isRequest)
+   at System.ServiceModel.Dispatcher.OperationFormatter.SerializeBodyContents(XmlDictionaryWriter writer, MessageVersion version, Object[] parameters, Object returnValue, Boolean isRequest)
+   at System.ServiceModel.Dispatcher.OperationFormatter.OperationFormatterMessage.OperationFormatterBodyWriter.OnWriteBodyContents(XmlDictionaryWriter writer)
+   at System.ServiceModel.Channels.BodyWriterMessage.OnWriteBodyContents(XmlDictionaryWriter writer)
+   at System.ServiceModel.Channels.Message.OnWriteMessage(XmlDictionaryWriter writer)
+   at System.ServiceModel.Channels.BufferedMessageWriter.WriteMessage(Message message, BufferManager bufferManager, Int32 initialOffset, Int32 maxSizeQuota)
+   at System.ServiceModel.Channels.TextMessageEncoderFactory.TextMessageEncoder.WriteMessage(Message message, Int32 maxMessageSize, BufferManager bufferManager, Int32 messageOffset)
+   at System.ServiceModel.Channels.HttpOutput.SerializeBufferedMessage(Message message, Boolean shouldRecycleBuffer)
+   at System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Spectrum.ServiceReference4.ArticleSynchronizer.retrieveArticleDetails(retrieveArticleDetailsRequest request)
+   at Spectrum.ServiceReference4.ArticleSynchronizerClient.ServiceReference4_ArticleSynchronizer_retrieveArticleDetails(retrieveArticleDetailsRequest request) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\Service References\ServiceReference4\Reference.vb:line 5718
+   at Spectrum.ServiceReference4.ArticleSynchronizerClient.retrieveArticleDetails(retrieveArticleDetails retrieveArticleDetails1) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\Service References\ServiceReference4\Reference.vb:line 5724
+   at Spectrum.frmCallWS.ArticleSynchronizer(String Sitecode) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmCallWS.vb:line 455
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.58 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 887
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.58 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.58 PM 
+
+System.ApplicationException: Getting Updates from UomSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.58 PM 
+
+System.ApplicationException: sending request parameters to UomSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.58 PM 
+
+System.ApplicationException: Response from UomSynchronizer:SUCCESS
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.58 PM 
+
+System.ApplicationException: Data Not Found for ArticleUOM
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.58 PM 
+
+System.ApplicationException: Data Not Updated for ArticleUOM
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.58 PM 
+
+System.ApplicationException: Getting Updates from ArticleHierarchySynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.58 PM 
+
+System.ApplicationException: sending request parameters to ArticleHierarchySynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.58 PM 
+
+System.ApplicationException: Response from ArticleHierarchySynchronizer:SUCCESS
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.58 PM 
+
+System.ApplicationException: Data Not Found for articlenodemap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.58 PM 
+
+System.ApplicationException: Data Not Found for articlenodemap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.58 PM 
+
+System.ApplicationException: Data Not Found for articlenodemap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.58 PM 
+
+System.ApplicationException: Data Not Found for ArticleTreeNodeMap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.58 PM 
+
+System.ApplicationException: Data Not Updated for ArticleHierarchySynchronizer
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.58 PM 
+
+System.ApplicationException: Getting Updates from ArticleSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.58 PM 
+
+System.ApplicationException: sending request parameters to ArticleSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.58 PM 
+
+System.ServiceModel.CommunicationException: There was an error in serializing body of message retrieveArticleDetailsRequest: 'Unable to generate a temporary class (result=1).
+error CS0030: Cannot convert type 'Spectrum.ServiceReference4.dynamicColumn[]' to 'Spectrum.ServiceReference4.dynamicColumn'
+error CS0030: Cannot convert type 'Spectrum.ServiceReference4.dynamicColumn[]' to 'Spectrum.ServiceReference4.dynamicColumn'
+error CS0029: Cannot implicitly convert type 'Spectrum.ServiceReference4.dynamicColumn' to 'Spectrum.ServiceReference4.dynamicColumn[]'
+error CS0029: Cannot implicitly convert type 'Spectrum.ServiceReference4.dynamicColumn' to 'Spectrum.ServiceReference4.dynamicColumn[]'
+'.  Please see InnerException for more details. ---> System.InvalidOperationException: Unable to generate a temporary class (result=1).
+error CS0030: Cannot convert type 'Spectrum.ServiceReference4.dynamicColumn[]' to 'Spectrum.ServiceReference4.dynamicColumn'
+error CS0030: Cannot convert type 'Spectrum.ServiceReference4.dynamicColumn[]' to 'Spectrum.ServiceReference4.dynamicColumn'
+error CS0029: Cannot implicitly convert type 'Spectrum.ServiceReference4.dynamicColumn' to 'Spectrum.ServiceReference4.dynamicColumn[]'
+error CS0029: Cannot implicitly convert type 'Spectrum.ServiceReference4.dynamicColumn' to 'Spectrum.ServiceReference4.dynamicColumn[]'
+
+   at System.Xml.Serialization.Compiler.Compile(Assembly parent, String ns, XmlSerializerCompilerParameters xmlParameters, Evidence evidence)
+   at System.Xml.Serialization.TempAssembly.GenerateAssembly(XmlMapping[] xmlMappings, Type[] types, String defaultNamespace, Evidence evidence, XmlSerializerCompilerParameters parameters, Assembly assembly, Hashtable assemblies)
+   at System.Xml.Serialization.TempAssembly..ctor(XmlMapping[] xmlMappings, Type[] types, String defaultNamespace, String location, Evidence evidence)
+   at System.Xml.Serialization.XmlSerializer.GetSerializersFromCache(XmlMapping[] mappings, Type type)
+   at System.Xml.Serialization.XmlSerializer.FromMappings(XmlMapping[] mappings, Type type)
+   at System.ServiceModel.Description.XmlSerializerOperationBehavior.Reflector.SerializerGenerationContext.GenerateSerializers()
+   at System.ServiceModel.Description.XmlSerializerOperationBehavior.Reflector.SerializerGenerationContext.GetSerializer(Int32 handle)
+   at System.ServiceModel.Description.XmlSerializerOperationBehavior.Reflector.MessageInfo.get_BodySerializer()
+   at System.ServiceModel.Dispatcher.XmlSerializerOperationFormatter.SerializeBody(XmlDictionaryWriter writer, MessageVersion version, String action, MessageDescription messageDescription, Object returnValue, Object[] parameters, Boolean isRequest)
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Dispatcher.XmlSerializerOperationFormatter.SerializeBody(XmlDictionaryWriter writer, MessageVersion version, String action, MessageDescription messageDescription, Object returnValue, Object[] parameters, Boolean isRequest)
+   at System.ServiceModel.Dispatcher.OperationFormatter.SerializeBodyContents(XmlDictionaryWriter writer, MessageVersion version, Object[] parameters, Object returnValue, Boolean isRequest)
+   at System.ServiceModel.Dispatcher.OperationFormatter.OperationFormatterMessage.OperationFormatterBodyWriter.OnWriteBodyContents(XmlDictionaryWriter writer)
+   at System.ServiceModel.Channels.BodyWriterMessage.OnWriteBodyContents(XmlDictionaryWriter writer)
+   at System.ServiceModel.Channels.Message.OnWriteMessage(XmlDictionaryWriter writer)
+   at System.ServiceModel.Channels.BufferedMessageWriter.WriteMessage(Message message, BufferManager bufferManager, Int32 initialOffset, Int32 maxSizeQuota)
+   at System.ServiceModel.Channels.TextMessageEncoderFactory.TextMessageEncoder.WriteMessage(Message message, Int32 maxMessageSize, BufferManager bufferManager, Int32 messageOffset)
+   at System.ServiceModel.Channels.HttpOutput.SerializeBufferedMessage(Message message, Boolean shouldRecycleBuffer)
+   at System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Spectrum.ServiceReference4.ArticleSynchronizer.retrieveArticleDetails(retrieveArticleDetailsRequest request)
+   at Spectrum.ServiceReference4.ArticleSynchronizerClient.ServiceReference4_ArticleSynchronizer_retrieveArticleDetails(retrieveArticleDetailsRequest request) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\Service References\ServiceReference4\Reference.vb:line 5718
+   at Spectrum.ServiceReference4.ArticleSynchronizerClient.retrieveArticleDetails(retrieveArticleDetails retrieveArticleDetails1) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\Service References\ServiceReference4\Reference.vb:line 5724
+   at Spectrum.frmCallWS.ArticleSynchronizer(String Sitecode) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmCallWS.vb:line 455
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.58 PM 
+
+System.ApplicationException: Data Not Updated for ArticleSynchronizer
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.58 PM 
+
+System.ApplicationException: Getting Updates from BillingSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.59 PM 
+
+System.ApplicationException: sending request parameters to BillingSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.59 PM 
+
+System.ApplicationException: Response from BillingSynchronizer:SUCCESS
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.59 PM 
+
+System.ApplicationException: Data Not Found for Buttonarticle
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.59 PM 
+
+System.ApplicationException: Data Not Found for Buttongroup
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.59 PM 
+
+System.ApplicationException: Data Not Found for Printingdetail
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.59 PM 
+
+System.ApplicationException: Data Not Updated for BillingSynchronizer
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.59 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for MstEan
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.59 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for ArticleStockBalances
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.59 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for MstArticle
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.59 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for PurchaseInfoRecord
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.59 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for SalesInfoRecord
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.59 PM 
+
+System.ApplicationException: Getting Updates from IndependentMastersSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.59 PM 
+
+System.ApplicationException: sending request parameters to IndependentMastersSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.59 PM 
+
+System.ApplicationException: Response from IndependentMastersSynchronizer:SUCCESS
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.59 PM 
+
+System.ApplicationException: Creating table Defaultconfig
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.59 PM 
+
+System.ApplicationException: Filling Defaultconfig with values obtained from response
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.59 PM 
+
+System.ApplicationException: Datatable Defaultconfig filled successfully
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.59 PM 
+
+System.ApplicationException: Data Updated Successfully for Defaultconfig
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.59 PM 
+
+System.ApplicationException: Data Updated successfully for IndependentMaster
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.59 PM 
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Spectrum.frmCallWS.SaveCSV(String PATH, String TName) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmCallWS.vb:line 256
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:02.59 PM 
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Spectrum.frmCallWS.SaveCSV(String PATH, String TName)
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.06 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 887
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.07 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.07 PM 
+
+System.ApplicationException: Getting Updates from UomSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.07 PM 
+
+System.ApplicationException: sending request parameters to UomSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.07 PM 
+
+System.ApplicationException: Response from UomSynchronizer:SUCCESS
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.07 PM 
+
+System.ApplicationException: Data Not Found for ArticleUOM
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.07 PM 
+
+System.ApplicationException: Data Not Updated for ArticleUOM
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.07 PM 
+
+System.ApplicationException: Getting Updates from ArticleHierarchySynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.07 PM 
+
+System.ApplicationException: sending request parameters to ArticleHierarchySynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.07 PM 
+
+System.ApplicationException: Response from ArticleHierarchySynchronizer:SUCCESS
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.07 PM 
+
+System.ApplicationException: Data Not Found for articlenodemap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.07 PM 
+
+System.ApplicationException: Data Not Found for articlenodemap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.07 PM 
+
+System.ApplicationException: Data Not Found for articlenodemap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.07 PM 
+
+System.ApplicationException: Data Not Found for ArticleTreeNodeMap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.07 PM 
+
+System.ApplicationException: Data Not Updated for ArticleHierarchySynchronizer
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.07 PM 
+
+System.ApplicationException: Getting Updates from ArticleSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.07 PM 
+
+System.ApplicationException: sending request parameters to ArticleSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.07 PM 
+
+System.ServiceModel.CommunicationException: There was an error in serializing body of message retrieveArticleDetailsRequest: 'Unable to generate a temporary class (result=1).
+error CS0030: Cannot convert type 'Spectrum.ServiceReference4.dynamicColumn[]' to 'Spectrum.ServiceReference4.dynamicColumn'
+error CS0030: Cannot convert type 'Spectrum.ServiceReference4.dynamicColumn[]' to 'Spectrum.ServiceReference4.dynamicColumn'
+error CS0029: Cannot implicitly convert type 'Spectrum.ServiceReference4.dynamicColumn' to 'Spectrum.ServiceReference4.dynamicColumn[]'
+error CS0029: Cannot implicitly convert type 'Spectrum.ServiceReference4.dynamicColumn' to 'Spectrum.ServiceReference4.dynamicColumn[]'
+'.  Please see InnerException for more details. ---> System.InvalidOperationException: Unable to generate a temporary class (result=1).
+error CS0030: Cannot convert type 'Spectrum.ServiceReference4.dynamicColumn[]' to 'Spectrum.ServiceReference4.dynamicColumn'
+error CS0030: Cannot convert type 'Spectrum.ServiceReference4.dynamicColumn[]' to 'Spectrum.ServiceReference4.dynamicColumn'
+error CS0029: Cannot implicitly convert type 'Spectrum.ServiceReference4.dynamicColumn' to 'Spectrum.ServiceReference4.dynamicColumn[]'
+error CS0029: Cannot implicitly convert type 'Spectrum.ServiceReference4.dynamicColumn' to 'Spectrum.ServiceReference4.dynamicColumn[]'
+
+   at System.Xml.Serialization.Compiler.Compile(Assembly parent, String ns, XmlSerializerCompilerParameters xmlParameters, Evidence evidence)
+   at System.Xml.Serialization.TempAssembly.GenerateAssembly(XmlMapping[] xmlMappings, Type[] types, String defaultNamespace, Evidence evidence, XmlSerializerCompilerParameters parameters, Assembly assembly, Hashtable assemblies)
+   at System.Xml.Serialization.TempAssembly..ctor(XmlMapping[] xmlMappings, Type[] types, String defaultNamespace, String location, Evidence evidence)
+   at System.Xml.Serialization.XmlSerializer.GetSerializersFromCache(XmlMapping[] mappings, Type type)
+   at System.Xml.Serialization.XmlSerializer.FromMappings(XmlMapping[] mappings, Type type)
+   at System.ServiceModel.Description.XmlSerializerOperationBehavior.Reflector.SerializerGenerationContext.GenerateSerializers()
+   at System.ServiceModel.Description.XmlSerializerOperationBehavior.Reflector.SerializerGenerationContext.GetSerializer(Int32 handle)
+   at System.ServiceModel.Description.XmlSerializerOperationBehavior.Reflector.MessageInfo.get_BodySerializer()
+   at System.ServiceModel.Dispatcher.XmlSerializerOperationFormatter.SerializeBody(XmlDictionaryWriter writer, MessageVersion version, String action, MessageDescription messageDescription, Object returnValue, Object[] parameters, Boolean isRequest)
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Dispatcher.XmlSerializerOperationFormatter.SerializeBody(XmlDictionaryWriter writer, MessageVersion version, String action, MessageDescription messageDescription, Object returnValue, Object[] parameters, Boolean isRequest)
+   at System.ServiceModel.Dispatcher.OperationFormatter.SerializeBodyContents(XmlDictionaryWriter writer, MessageVersion version, Object[] parameters, Object returnValue, Boolean isRequest)
+   at System.ServiceModel.Dispatcher.OperationFormatter.OperationFormatterMessage.OperationFormatterBodyWriter.OnWriteBodyContents(XmlDictionaryWriter writer)
+   at System.ServiceModel.Channels.BodyWriterMessage.OnWriteBodyContents(XmlDictionaryWriter writer)
+   at System.ServiceModel.Channels.Message.OnWriteMessage(XmlDictionaryWriter writer)
+   at System.ServiceModel.Channels.BufferedMessageWriter.WriteMessage(Message message, BufferManager bufferManager, Int32 initialOffset, Int32 maxSizeQuota)
+   at System.ServiceModel.Channels.TextMessageEncoderFactory.TextMessageEncoder.WriteMessage(Message message, Int32 maxMessageSize, BufferManager bufferManager, Int32 messageOffset)
+   at System.ServiceModel.Channels.HttpOutput.SerializeBufferedMessage(Message message, Boolean shouldRecycleBuffer)
+   at System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Spectrum.ServiceReference4.ArticleSynchronizer.retrieveArticleDetails(retrieveArticleDetailsRequest request)
+   at Spectrum.ServiceReference4.ArticleSynchronizerClient.ServiceReference4_ArticleSynchronizer_retrieveArticleDetails(retrieveArticleDetailsRequest request) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\Service References\ServiceReference4\Reference.vb:line 5718
+   at Spectrum.ServiceReference4.ArticleSynchronizerClient.retrieveArticleDetails(retrieveArticleDetails retrieveArticleDetails1) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\Service References\ServiceReference4\Reference.vb:line 5724
+   at Spectrum.frmCallWS.ArticleSynchronizer(String Sitecode) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmCallWS.vb:line 459
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.07 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for MstEan
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 887
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ApplicationException: Getting Updates from UomSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ApplicationException: sending request parameters to UomSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ApplicationException: Response from UomSynchronizer:SUCCESS
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ApplicationException: Data Not Found for ArticleUOM
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ApplicationException: Data Not Updated for ArticleUOM
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ApplicationException: Getting Updates from ArticleHierarchySynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ApplicationException: sending request parameters to ArticleHierarchySynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ApplicationException: Response from ArticleHierarchySynchronizer:SUCCESS
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ApplicationException: Data Not Found for articlenodemap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ApplicationException: Data Not Found for articlenodemap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ApplicationException: Data Not Found for articlenodemap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ApplicationException: Data Not Found for ArticleTreeNodeMap
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ApplicationException: Data Not Updated for ArticleHierarchySynchronizer
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ApplicationException: Getting Updates from ArticleSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ApplicationException: sending request parameters to ArticleSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ServiceModel.CommunicationException: There was an error in serializing body of message retrieveArticleDetailsRequest: 'Unable to generate a temporary class (result=1).
+error CS0030: Cannot convert type 'Spectrum.ServiceReference4.dynamicColumn[]' to 'Spectrum.ServiceReference4.dynamicColumn'
+error CS0030: Cannot convert type 'Spectrum.ServiceReference4.dynamicColumn[]' to 'Spectrum.ServiceReference4.dynamicColumn'
+error CS0029: Cannot implicitly convert type 'Spectrum.ServiceReference4.dynamicColumn' to 'Spectrum.ServiceReference4.dynamicColumn[]'
+error CS0029: Cannot implicitly convert type 'Spectrum.ServiceReference4.dynamicColumn' to 'Spectrum.ServiceReference4.dynamicColumn[]'
+'.  Please see InnerException for more details. ---> System.InvalidOperationException: Unable to generate a temporary class (result=1).
+error CS0030: Cannot convert type 'Spectrum.ServiceReference4.dynamicColumn[]' to 'Spectrum.ServiceReference4.dynamicColumn'
+error CS0030: Cannot convert type 'Spectrum.ServiceReference4.dynamicColumn[]' to 'Spectrum.ServiceReference4.dynamicColumn'
+error CS0029: Cannot implicitly convert type 'Spectrum.ServiceReference4.dynamicColumn' to 'Spectrum.ServiceReference4.dynamicColumn[]'
+error CS0029: Cannot implicitly convert type 'Spectrum.ServiceReference4.dynamicColumn' to 'Spectrum.ServiceReference4.dynamicColumn[]'
+
+   at System.Xml.Serialization.Compiler.Compile(Assembly parent, String ns, XmlSerializerCompilerParameters xmlParameters, Evidence evidence)
+   at System.Xml.Serialization.TempAssembly.GenerateAssembly(XmlMapping[] xmlMappings, Type[] types, String defaultNamespace, Evidence evidence, XmlSerializerCompilerParameters parameters, Assembly assembly, Hashtable assemblies)
+   at System.Xml.Serialization.TempAssembly..ctor(XmlMapping[] xmlMappings, Type[] types, String defaultNamespace, String location, Evidence evidence)
+   at System.Xml.Serialization.XmlSerializer.GetSerializersFromCache(XmlMapping[] mappings, Type type)
+   at System.Xml.Serialization.XmlSerializer.FromMappings(XmlMapping[] mappings, Type type)
+   at System.ServiceModel.Description.XmlSerializerOperationBehavior.Reflector.SerializerGenerationContext.GenerateSerializers()
+   at System.ServiceModel.Description.XmlSerializerOperationBehavior.Reflector.SerializerGenerationContext.GetSerializer(Int32 handle)
+   at System.ServiceModel.Description.XmlSerializerOperationBehavior.Reflector.MessageInfo.get_BodySerializer()
+   at System.ServiceModel.Dispatcher.XmlSerializerOperationFormatter.SerializeBody(XmlDictionaryWriter writer, MessageVersion version, String action, MessageDescription messageDescription, Object returnValue, Object[] parameters, Boolean isRequest)
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Dispatcher.XmlSerializerOperationFormatter.SerializeBody(XmlDictionaryWriter writer, MessageVersion version, String action, MessageDescription messageDescription, Object returnValue, Object[] parameters, Boolean isRequest)
+   at System.ServiceModel.Dispatcher.OperationFormatter.SerializeBodyContents(XmlDictionaryWriter writer, MessageVersion version, Object[] parameters, Object returnValue, Boolean isRequest)
+   at System.ServiceModel.Dispatcher.OperationFormatter.OperationFormatterMessage.OperationFormatterBodyWriter.OnWriteBodyContents(XmlDictionaryWriter writer)
+   at System.ServiceModel.Channels.BodyWriterMessage.OnWriteBodyContents(XmlDictionaryWriter writer)
+   at System.ServiceModel.Channels.Message.OnWriteMessage(XmlDictionaryWriter writer)
+   at System.ServiceModel.Channels.BufferedMessageWriter.WriteMessage(Message message, BufferManager bufferManager, Int32 initialOffset, Int32 maxSizeQuota)
+   at System.ServiceModel.Channels.TextMessageEncoderFactory.TextMessageEncoder.WriteMessage(Message message, Int32 maxMessageSize, BufferManager bufferManager, Int32 messageOffset)
+   at System.ServiceModel.Channels.HttpOutput.SerializeBufferedMessage(Message message, Boolean shouldRecycleBuffer)
+   at System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Spectrum.ServiceReference4.ArticleSynchronizer.retrieveArticleDetails(retrieveArticleDetailsRequest request)
+   at Spectrum.ServiceReference4.ArticleSynchronizerClient.ServiceReference4_ArticleSynchronizer_retrieveArticleDetails(retrieveArticleDetailsRequest request) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\Service References\ServiceReference4\Reference.vb:line 5718
+   at Spectrum.ServiceReference4.ArticleSynchronizerClient.retrieveArticleDetails(retrieveArticleDetails retrieveArticleDetails1) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\Service References\ServiceReference4\Reference.vb:line 5724
+   at Spectrum.frmCallWS.ArticleSynchronizer(String Sitecode) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmCallWS.vb:line 459
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ApplicationException: Data Not Updated for ArticleSynchronizer
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ApplicationException: Getting Updates from BillingSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ApplicationException: sending request parameters to BillingSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ApplicationException: Response from BillingSynchronizer:SUCCESS
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ApplicationException: Data Not Found for Buttonarticle
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ApplicationException: Data Not Found for Buttongroup
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ApplicationException: Data Not Found for Printingdetail
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for MstEan
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:03.10 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for ArticleStockBalances
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.12 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 887
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.12 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.12 PM 
+
+System.ApplicationException: Getting Updates from UomSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.12 PM 
+
+System.ApplicationException: sending request parameters to UomSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.12 PM 
+
+System.ApplicationException: Response from UomSynchronizer:SUCCESS
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.12 PM 
+
+System.ApplicationException: Data Not Found for ArticleUOM
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.12 PM 
+
+System.ApplicationException: Data Not Updated for ArticleUOM
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.12 PM 
+
+System.ApplicationException: Getting Updates from ArticleHierarchySynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.12 PM 
+
+System.ApplicationException: sending request parameters to ArticleHierarchySynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.12 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 887
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.12 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.13 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for MstEan
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.13 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 887
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.14 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.14 PM 
+
+System.ApplicationException: Getting Updates from UomSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.14 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for MstEan
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.25 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 887
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.25 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.25 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for MstEan
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.26 PM 
+
+System.ApplicationException: sending request parameters to CsvFileSyncronizer_ objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.26 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for ArticleStockBalances
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.43 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 887
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.43 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.43 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for MstEan
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.43 PM 
+
+System.ApplicationException: sending request parameters to CsvFileSyncronizer_ objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.47 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 887
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.47 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.47 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for MstEan
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.47 PM 
+
+System.ApplicationException: sending request parameters to CsvFileSyncronizer_ objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.48 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for MstEan
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.48 PM 
+
+System.ApplicationException: sending request parameters to CsvFileSyncronizer_ objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-05-22
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.49 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for ArticleStockBalances
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:04.51 PM 
+
+System.ApplicationException: Data Updated Successfully for MSTEAN
+
+----------------------------------------------------------
+
+Date : 2019-5-24 Time:05.17 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 887
+

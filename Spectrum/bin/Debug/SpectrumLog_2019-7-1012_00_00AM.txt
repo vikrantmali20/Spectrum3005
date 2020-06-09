@@ -1,0 +1,98 @@
+----------------------------------------------------------
+
+------------------ Spectrum Log  -------------------------
+
+Date : 2019-7-10 Time:11:25 AM 
+
+SiteCode: MHMUM201808148 
+
+Terminal ID: T001 
+
+User Name : admin 
+
+----------------------------------------------------------
+
+Date : 2019-7-10 Time:11:25 AM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 942
+
+----------------------------------------------------------
+
+Date : 2019-7-10 Time:11:25 AM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-7-10 Time:11:25 AM 
+
+System.ApplicationException: Getting Updates from IndependentMastersSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-7-10 Time:11:25 AM 
+
+System.ApplicationException: Data Not Updated for IndependentMaster
+
+----------------------------------------------------------
+
+Date : 2019-7-10 Time:11:40 AM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 942
+
+----------------------------------------------------------
+
+Date : 2019-7-10 Time:11:40 AM 
+
+System.ApplicationException: Checking internet connectivity...
+
+----------------------------------------------------------
+
+Date : 2019-7-10 Time:11:40 AM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-7-10 Time:11:40 AM 
+
+System.ApplicationException: Getting Updates from IndependentMastersSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-7-10 Time:11:40 AM 
+
+System.ApplicationException: Data Not Updated for IndependentMaster
+
+----------------------------------------------------------
+
+Date : 2019-7-10 Time:11:40 AM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for MstEan
+
+----------------------------------------------------------
+
+Date : 2019-7-10 Time:11:40 AM 
+
+System.ApplicationException: sending request parameters to CsvFileSyncronizer_ objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-08
+
+----------------------------------------------------------
+
+Date : 2019-7-10 Time:11:40 AM 
+
+System.ApplicationException: Response from CsvFileSyncronizer:FAILED
+
+----------------------------------------------------------
+
+Date : 2019-7-10 Time:11:41 AM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for MstArticle
+

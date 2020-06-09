@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://foAutomaticVersionUpgradeServiceImpl.impl.webservice.dyna.spectrum.criti.com/" name="FOAutomaticVersionUpgradeServiceImplService" targetNamespace="http://foAutomaticVersionUpgradeServiceImpl.impl.webservice.dyna.spectrum.criti.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema targetNamespace="http://foAutomaticVersionUpgradeServiceImpl.impl.webservice.dyna.spectrum.criti.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="executeService" type="tns:executeService" />
+      <xs:element name="executeServiceResponse" type="tns:executeServiceResponse" />
+      <xs:complexType name="executeService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:wsRequest" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="wsRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="dynaColumns" type="tns:dynaRow" />
+          <xs:element minOccurs="0" name="languageCode" type="xs:string" />
+          <xs:element minOccurs="0" name="soapWsHeader" type="tns:soapWsHeader" />
+          <xs:element minOccurs="0" name="webMethod" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="dynaRow">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="dynaColumn" nillable="true" type="tns:dynaColumn" />
+          <xs:element name="rowID" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="dynaColumn">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="columnName" type="xs:string" />
+          <xs:element minOccurs="0" name="columnType" type="xs:string" />
+          <xs:element minOccurs="0" name="columnValue" type="xs:string" />
+          <xs:element minOccurs="0" name="isDateFieldOfFromDate" type="xs:string" />
+          <xs:element minOccurs="0" name="isDateFieldOfToDate" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="soapWsHeader">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="password" type="xs:string" />
+          <xs:element minOccurs="0" name="userName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="executeServiceResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:wsResponse" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="wsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="dynaTables" nillable="true" type="tns:dynaTable" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="faultDTOs" nillable="true" type="tns:faultDTO" />
+          <xs:element name="responseCode" type="xs:int" />
+          <xs:element minOccurs="0" name="responseMessage" type="xs:string" />
+          <xs:element minOccurs="0" name="wsRequest" type="tns:wsRequest" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="dynaTable">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="columnMeta" nillable="true" type="tns:dynaColumn" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="dynaRows" nillable="true" type="tns:dynaRow" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="faultDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="businessError" type="xs:string" />
+          <xs:element minOccurs="0" name="faultLevel" type="xs:string" />
+          <xs:element minOccurs="0" name="faultStackTrace" type="xs:string" />
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </types>
+  <message name="FOAutomaticVersionUpgradeServiceImpl_executeServiceResponse">
+    <part name="executeServiceResponse" element="tns:executeServiceResponse" />
+  </message>
+  <message name="FOAutomaticVersionUpgradeServiceImpl_executeService">
+    <part name="executeService" element="tns:executeService" />
+  </message>
+  <portType name="FOAutomaticVersionUpgradeServiceImpl">
+    <operation name="executeService" parameterOrder="executeService">
+      <input message="tns:FOAutomaticVersionUpgradeServiceImpl_executeService" />
+      <output message="tns:FOAutomaticVersionUpgradeServiceImpl_executeServiceResponse" />
+    </operation>
+  </portType>
+  <binding name="FOAutomaticVersionUpgradeServiceImplBinding" type="tns:FOAutomaticVersionUpgradeServiceImpl">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="executeService">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="FOAutomaticVersionUpgradeServiceImplService">
+    <port name="FOAutomaticVersionUpgradeServiceImplPort" binding="tns:FOAutomaticVersionUpgradeServiceImplBinding">
+      <soap:address location="http://10.10.180.95:10080/posSeam/webservices/FOAutomaticVersionUpgradeServiceImpl" />
+    </port>
+  </service>
+</definitions>

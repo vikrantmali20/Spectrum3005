@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5AF63404-81E4-4AAD-83B6-9B185590DA5C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Spectrum.BL</RootNamespace>
+    <AssemblyName>Spectrum.BL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=2.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Spectrum\SpectrumLite\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.C1Excel.2">
+      <HintPath>..\Assemblies\C1.C1Excel.2.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Spectrum\SpectrumLite\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\Spectrum\SpectrumLite\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Assemblies\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Spectrum\SpectrumLite\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Spectrum.DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Assemblies\Spectrum.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="Spectrum.Logging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Assemblies\Spectrum.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Spectrum.Models, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Assemblies\Spectrum.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArticleHierarchyManager.cs" />
+    <Compile Include="ArticleManager.cs" />
+    <Compile Include="ArticleStockBalancesManager.cs" />
+    <Compile Include="BarcodeManager.cs" />
+    <Compile Include="BusinessInterface\IArticleHierarchyManager.cs" />
+    <Compile Include="BusinessInterface\IArticleManager.cs" />
+    <Compile Include="BusinessInterface\IArticleStockBalancesManager.cs" />
+    <Compile Include="BusinessInterface\IBarcodeManager.cs" />
+    <Compile Include="BusinessInterface\ICharacteristicManager.cs" />
+    <Compile Include="BusinessInterface\ICommonManager.cs" />
+    <Compile Include="BusinessInterface\IMaterialManager.cs" />
+    <Compile Include="BusinessInterface\IPromotionManager.cs" />
+    <Compile Include="BusinessInterface\IShiftManagementManager.cs" />
+    <Compile Include="BusinessInterface\ISupplierManager.cs" />
+    <Compile Include="BusinessInterface\IGenericManager.cs" />
+    <Compile Include="BusinessInterface\ISiteManager.cs" />
+    <Compile Include="BusinessInterface\ITaxManager.cs" />
+    <Compile Include="BusinessInterface\ITenderManager.cs" />
+    <Compile Include="BusinessInterface\IUserManager.cs" />
+    <Compile Include="CharacteristicManager.cs" />
+    <Compile Include="clsTwoLineDisplay.cs" />
+    <Compile Include="CommonManager.cs" />
+    <Compile Include="ConvertListsToExcel.cs" />
+    <Compile Include="ConvertListToExcel.cs" />
+    <Compile Include="GenericManager.cs" />
+    <Compile Include="GlobalizationManager.cs" />
+    <Compile Include="Mappers\BasicMapper.cs" />
+    <Compile Include="Mappers\EntityToModelMappings.cs" />
+    <Compile Include="MaterialManager.cs" />
+    <Compile Include="PredicateBuilder.cs" />
+    <Compile Include="PromotionManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShiftManagementManager.cs" />
+    <Compile Include="SiteManager.cs" />
+    <Compile Include="SupplierManager.cs" />
+    <Compile Include="TaxManager.cs" />
+    <Compile Include="TenderManager.cs" />
+    <Compile Include="UserManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y "$(TargetDir)$(ProjectName).dll" "$(SolutionDir)Assemblies\"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

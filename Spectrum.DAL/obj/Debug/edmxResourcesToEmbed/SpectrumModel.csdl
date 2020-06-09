@@ -1,0 +1,3023 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SpectrumModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="SpectrumEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="MstSupplier" EntityType="SpectrumModel.MstSupplier" />
+    <EntitySet Name="MstTax" EntityType="SpectrumModel.MstTax" />
+    <EntitySet Name="MstTender" EntityType="SpectrumModel.MstTender" />
+    <EntitySet Name="MstTenderType" EntityType="SpectrumModel.MstTenderType" />
+    <AssociationSet Name="FK_MSTTender_MstTenderType" Association="SpectrumModel.FK_MSTTender_MstTenderType">
+      <End Role="MstTenderType" EntitySet="MstTenderType" />
+      <End Role="MstTender" EntitySet="MstTender" />
+    </AssociationSet>
+    <EntitySet Name="MstAreaCode" EntityType="SpectrumModel.MstAreaCode" />
+    <EntitySet Name="GeneralCodeMst" EntityType="SpectrumModel.GeneralCodeMst" />
+    <EntitySet Name="GLNoRangeObjects" EntityType="SpectrumModel.GLNoRangeObjects" />
+    <EntitySet Name="ArticleTreeNodeMap" EntityType="SpectrumModel.ArticleTreeNodeMap" />
+    <EntitySet Name="MstArticleNode" EntityType="SpectrumModel.MstArticleNode" />
+    <AssociationSet Name="FK_ArticleTreeNodeMap_MSTArticleNode" Association="SpectrumModel.FK_ArticleTreeNodeMap_MSTArticleNode">
+      <End Role="MstArticleNode" EntitySet="MstArticleNode" />
+      <End Role="ArticleTreeNodeMap" EntitySet="ArticleTreeNodeMap" />
+    </AssociationSet>
+    <AssociationSet Name="FKE6BE1FC6250E6B8C" Association="SpectrumModel.FKE6BE1FC6250E6B8C">
+      <End Role="MstArticleNode" EntitySet="MstArticleNode" />
+      <End Role="ArticleTreeNodeMap" EntitySet="ArticleTreeNodeMap" />
+    </AssociationSet>
+    <EntitySet Name="MstArticleType" EntityType="SpectrumModel.MstArticleType" />
+    <EntitySet Name="MstUoM" EntityType="SpectrumModel.MstUoM" />
+    <EntitySet Name="Brand" EntityType="SpectrumModel.Brand" />
+    <EntitySet Name="Manufacturer" EntityType="SpectrumModel.Manufacturer" />
+    <AssociationSet Name="Fk_Mfcode" Association="SpectrumModel.Fk_Mfcode">
+      <End Role="Manufacturer" EntitySet="Manufacturer" />
+      <End Role="Brand" EntitySet="Brand" />
+    </AssociationSet>
+    <EntitySet Name="CharacteristicsProfile" EntityType="SpectrumModel.CharacteristicsProfile" />
+    <EntitySet Name="CharacteristicsValue" EntityType="SpectrumModel.CharacteristicsValue" />
+    <EntitySet Name="MstCharacteristics" EntityType="SpectrumModel.MstCharacteristics" />
+    <EntitySet Name="MstCharacteristicsProfile" EntityType="SpectrumModel.MstCharacteristicsProfile" />
+    <AssociationSet Name="FK_CharacteristicsProfile_MSTCharacteristicsProfile" Association="SpectrumModel.FK_CharacteristicsProfile_MSTCharacteristicsProfile">
+      <End Role="MstCharacteristicsProfile" EntitySet="MstCharacteristicsProfile" />
+      <End Role="CharacteristicsProfile" EntitySet="CharacteristicsProfile" />
+    </AssociationSet>
+    <AssociationSet Name="FKDC6AAC71CF5A64AC" Association="SpectrumModel.FKDC6AAC71CF5A64AC">
+      <End Role="MstCharacteristicsProfile" EntitySet="MstCharacteristicsProfile" />
+      <End Role="CharacteristicsProfile" EntitySet="CharacteristicsProfile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CharacteristicsValue_MSTCharacteristics" Association="SpectrumModel.FK_CharacteristicsValue_MSTCharacteristics">
+      <End Role="MstCharacteristics" EntitySet="MstCharacteristics" />
+      <End Role="CharacteristicsValue" EntitySet="CharacteristicsValue" />
+    </AssociationSet>
+    <EntitySet Name="ArticleBatchBinStockBalances" EntityType="SpectrumModel.ArticleBatchBinStockBalances" />
+    <EntitySet Name="ArticleMAP" EntityType="SpectrumModel.ArticleMAP" />
+    <EntitySet Name="ArticleMatrix" EntityType="SpectrumModel.ArticleMatrix" />
+    <EntitySet Name="ArticleNodeMap" EntityType="SpectrumModel.ArticleNodeMap" />
+    <EntitySet Name="ArticleReplenishment" EntityType="SpectrumModel.ArticleReplenishment" />
+    <EntitySet Name="ArticleUOM" EntityType="SpectrumModel.ArticleUOM" />
+    <EntitySet Name="MstArticleImage" EntityType="SpectrumModel.MstArticleImage" />
+    <EntitySet Name="MstArticleKit" EntityType="SpectrumModel.MstArticleKit" />
+    <AssociationSet Name="FK_ArticleMartix_CharacteristicsValue" Association="SpectrumModel.FK_ArticleMartix_CharacteristicsValue">
+      <End Role="CharacteristicsValue" EntitySet="CharacteristicsValue" />
+      <End Role="ArticleMatrix" EntitySet="ArticleMatrix" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ArticleNodeMap_MSTArticleNode" Association="SpectrumModel.FK_ArticleNodeMap_MSTArticleNode">
+      <End Role="MstArticleNode" EntitySet="MstArticleNode" />
+      <End Role="ArticleNodeMap" EntitySet="ArticleNodeMap" />
+    </AssociationSet>
+    <EntitySet Name="MstEAN" EntityType="SpectrumModel.MstEAN" />
+    <EntitySet Name="PurchaseInfoRecord" EntityType="SpectrumModel.PurchaseInfoRecord" />
+    <EntitySet Name="SalesInfoRecord" EntityType="SpectrumModel.SalesInfoRecord" />
+    <AssociationSet Name="FK_ArticleMartix_MSTEan" Association="SpectrumModel.FK_ArticleMartix_MSTEan">
+      <End Role="MstEAN" EntitySet="MstEAN" />
+      <End Role="ArticleMatrix" EntitySet="ArticleMatrix" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ArticleReplenishment_MSTEAN" Association="SpectrumModel.FK_ArticleReplenishment_MSTEAN">
+      <End Role="MstEAN" EntitySet="MstEAN" />
+      <End Role="ArticleReplenishment" EntitySet="ArticleReplenishment" />
+    </AssociationSet>
+    <AssociationSet Name="FKEA93A4E500AC029" Association="SpectrumModel.FKEA93A4E500AC029">
+      <End Role="MstEAN" EntitySet="MstEAN" />
+      <End Role="ArticleReplenishment" EntitySet="ArticleReplenishment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseInfoRecord_EAN" Association="SpectrumModel.FK_PurchaseInfoRecord_EAN">
+      <End Role="MstEAN" EntitySet="MstEAN" />
+      <End Role="PurchaseInfoRecord" EntitySet="PurchaseInfoRecord" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseInfoRecord_SupplierCode1" Association="SpectrumModel.FK_PurchaseInfoRecord_SupplierCode1">
+      <End Role="MstSupplier" EntitySet="MstSupplier" />
+      <End Role="PurchaseInfoRecord" EntitySet="PurchaseInfoRecord" />
+    </AssociationSet>
+    <EntitySet Name="ArticleStockBalances" EntityType="SpectrumModel.ArticleStockBalances" />
+    <EntitySet Name="Invoice" EntityType="SpectrumModel.Invoice" />
+    <EntitySet Name="OrderHdr" EntityType="SpectrumModel.OrderHdr" />
+    <AssociationSet Name="FK_ArticleStockBalances_MSTUOM" Association="SpectrumModel.FK_ArticleStockBalances_MSTUOM">
+      <End Role="MstUoM" EntitySet="MstUoM" />
+      <End Role="ArticleStockBalances" EntitySet="ArticleStockBalances" />
+    </AssociationSet>
+    <EntitySet Name="SiteArticleTaxMapping" EntityType="SpectrumModel.SiteArticleTaxMapping" />
+    <EntitySet Name="StockAdjustment" EntityType="SpectrumModel.StockAdjustment" />
+    <AssociationSet Name="FK_StockAdjustment_MstEAN" Association="SpectrumModel.FK_StockAdjustment_MstEAN">
+      <End Role="MstEAN" EntitySet="MstEAN" />
+      <End Role="StockAdjustment" EntitySet="StockAdjustment" />
+    </AssociationSet>
+    <EntitySet Name="OrderDtl" EntityType="SpectrumModel.OrderDtl" />
+    <AssociationSet Name="FK_OrderDTL_MSTEAN1" Association="SpectrumModel.FK_OrderDTL_MSTEAN1">
+      <End Role="MstEAN" EntitySet="MstEAN" />
+      <End Role="OrderDtl" EntitySet="OrderDtl" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderDtl_OrderHdr" Association="SpectrumModel.FK_OrderDtl_OrderHdr">
+      <End Role="OrderHdr" EntitySet="OrderHdr" />
+      <End Role="OrderDtl" EntitySet="OrderDtl" />
+    </AssociationSet>
+    <EntitySet Name="AuthUsers" EntityType="SpectrumModel.AuthUsers" />
+    <EntitySet Name="MstCLPProgram" EntityType="SpectrumModel.MstCLPProgram" />
+    <EntitySet Name="MstVoucher" EntityType="SpectrumModel.MstVoucher" />
+    <AssociationSet Name="FK_AuthUsers_MstAreaCode" Association="SpectrumModel.FK_AuthUsers_MstAreaCode">
+      <End Role="MstAreaCode" EntitySet="MstAreaCode" />
+      <End Role="AuthUsers" EntitySet="AuthUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FKCDF82920CDC0A838" Association="SpectrumModel.FKCDF82920CDC0A838">
+      <End Role="MstAreaCode" EntitySet="MstAreaCode" />
+      <End Role="AuthUsers" EntitySet="AuthUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MstVoucher_MstTenderType" Association="SpectrumModel.FK_MstVoucher_MstTenderType">
+      <End Role="MstTenderType" EntitySet="MstTenderType" />
+      <End Role="MstVoucher" EntitySet="MstVoucher" />
+    </AssociationSet>
+    <AssociationSet Name="FKB03E5F60E563B22B" Association="SpectrumModel.FKB03E5F60E563B22B">
+      <End Role="MstTenderType" EntitySet="MstTenderType" />
+      <End Role="MstVoucher" EntitySet="MstVoucher" />
+    </AssociationSet>
+    <EntitySet Name="CLPProgramSiteMap" EntityType="SpectrumModel.CLPProgramSiteMap" />
+    <EntitySet Name="MstRole" EntityType="SpectrumModel.MstRole" />
+    <EntitySet Name="AuthRoleTransactionMap" EntityType="SpectrumModel.AuthRoleTransactionMap" />
+    <EntitySet Name="AuthUserSiteRoleMap" EntityType="SpectrumModel.AuthUserSiteRoleMap" />
+    <EntitySet Name="AuthUserSiteTransactionMap" EntityType="SpectrumModel.AuthUserSiteTransactionMap" />
+    <EntitySet Name="MstSalesPerson" EntityType="SpectrumModel.MstSalesPerson" />
+    <AssociationSet Name="FK_AuthRoleTransactionMap_AuthUserRoles" Association="SpectrumModel.FK_AuthRoleTransactionMap_AuthUserRoles">
+      <End Role="MstRole" EntitySet="MstRole" />
+      <End Role="AuthRoleTransactionMap" EntitySet="AuthRoleTransactionMap" />
+    </AssociationSet>
+    <AssociationSet Name="FKFA68779C79FB47A2" Association="SpectrumModel.FKFA68779C79FB47A2">
+      <End Role="MstRole" EntitySet="MstRole" />
+      <End Role="AuthRoleTransactionMap" EntitySet="AuthRoleTransactionMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthUserSiteRoleMap_AuthUsers" Association="SpectrumModel.FK_AuthUserSiteRoleMap_AuthUsers">
+      <End Role="AuthUsers" EntitySet="AuthUsers" />
+      <End Role="AuthUserSiteRoleMap" EntitySet="AuthUserSiteRoleMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRightMap_AuthUsers" Association="SpectrumModel.FK_UserRightMap_AuthUsers">
+      <End Role="AuthUsers" EntitySet="AuthUsers" />
+      <End Role="AuthUserSiteTransactionMap" EntitySet="AuthUserSiteTransactionMap" />
+    </AssociationSet>
+    <AssociationSet Name="FKFE174BD8723BF3F0" Association="SpectrumModel.FKFE174BD8723BF3F0">
+      <End Role="AuthUsers" EntitySet="AuthUsers" />
+      <End Role="AuthUserSiteTransactionMap" EntitySet="AuthUserSiteTransactionMap" />
+    </AssociationSet>
+    <EntitySet Name="TaxSiteMapping" EntityType="SpectrumModel.TaxSiteMapping" />
+    <AssociationSet Name="FK_TaxSiteMapping_MstTax" Association="SpectrumModel.FK_TaxSiteMapping_MstTax">
+      <End Role="MstTax" EntitySet="MstTax" />
+      <End Role="TaxSiteMapping" EntitySet="TaxSiteMapping" />
+    </AssociationSet>
+    <EntitySet Name="MstArticleTree" EntityType="SpectrumModel.MstArticleTree" />
+    <EntitySet Name="MstArticleTreeLevel" EntityType="SpectrumModel.MstArticleTreeLevel" />
+    <AssociationSet Name="FK_ArticleTreeNodeMap_MSTArticleTree" Association="SpectrumModel.FK_ArticleTreeNodeMap_MSTArticleTree">
+      <End Role="MstArticleTree" EntitySet="MstArticleTree" />
+      <End Role="ArticleTreeNodeMap" EntitySet="ArticleTreeNodeMap" />
+    </AssociationSet>
+    <AssociationSet Name="FKE6BE1FC634BFC8C4" Association="SpectrumModel.FKE6BE1FC634BFC8C4">
+      <End Role="MstArticleTree" EntitySet="MstArticleTree" />
+      <End Role="ArticleTreeNodeMap" EntitySet="ArticleTreeNodeMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MstArticleNode_MSTArticleTree" Association="SpectrumModel.FK_MstArticleNode_MSTArticleTree">
+      <End Role="MstArticleTree" EntitySet="MstArticleTree" />
+      <End Role="MstArticleNode" EntitySet="MstArticleNode" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MSTArticleTreeLevel_MSTArticleTree" Association="SpectrumModel.FK_MSTArticleTreeLevel_MSTArticleTree">
+      <End Role="MstArticleTree" EntitySet="MstArticleTree" />
+      <End Role="MstArticleTreeLevel" EntitySet="MstArticleTreeLevel" />
+    </AssociationSet>
+    <AssociationSet Name="FKD02C29BE34BFC8C4" Association="SpectrumModel.FKD02C29BE34BFC8C4">
+      <End Role="MstArticleTree" EntitySet="MstArticleTree" />
+      <End Role="MstArticleTreeLevel" EntitySet="MstArticleTreeLevel" />
+    </AssociationSet>
+    <EntitySet Name="ManualPromotion" EntityType="SpectrumModel.ManualPromotion" />
+    <EntitySet Name="PromotionSiteMap" EntityType="SpectrumModel.PromotionSiteMap" />
+    <EntitySet Name="MstBusiness" EntityType="SpectrumModel.MstBusiness" />
+    <EntitySet Name="MstCurrency" EntityType="SpectrumModel.MstCurrency" />
+    <EntitySet Name="MstFinYear" EntityType="SpectrumModel.MstFinYear" />
+    <EntitySet Name="MstLanguage" EntityType="SpectrumModel.MstLanguage" />
+    <EntitySet Name="MstSiteCurrancyMap" EntityType="SpectrumModel.MstSiteCurrancyMap" />
+    <AssociationSet Name="FK_MstSiteCurrancyMap_MstCurrency" Association="SpectrumModel.FK_MstSiteCurrancyMap_MstCurrency">
+      <End Role="MstCurrency" EntitySet="MstCurrency" />
+      <End Role="MstSiteCurrancyMap" EntitySet="MstSiteCurrancyMap" />
+    </AssociationSet>
+    <EntitySet Name="MstSite" EntityType="SpectrumModel.MstSite" />
+    <AssociationSet Name="FK_ArticleMAP_MstSite" Association="SpectrumModel.FK_ArticleMAP_MstSite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="ArticleMAP" EntitySet="ArticleMAP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthUsers_MstSite" Association="SpectrumModel.FK_AuthUsers_MstSite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="AuthUsers" EntitySet="AuthUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FKCDF82920D969F016" Association="SpectrumModel.FKCDF82920D969F016">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="AuthUsers" EntitySet="AuthUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthUserSiteRoleMap_MSTSite" Association="SpectrumModel.FK_AuthUserSiteRoleMap_MSTSite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="AuthUserSiteRoleMap" EntitySet="AuthUserSiteRoleMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRightMap_MSTSite" Association="SpectrumModel.FK_UserRightMap_MSTSite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="AuthUserSiteTransactionMap" EntitySet="AuthUserSiteTransactionMap" />
+    </AssociationSet>
+    <AssociationSet Name="FKFE174BD8D969F016" Association="SpectrumModel.FKFE174BD8D969F016">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="AuthUserSiteTransactionMap" EntitySet="AuthUserSiteTransactionMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLPProgramSiteMap_MstSite" Association="SpectrumModel.FK_CLPProgramSiteMap_MstSite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="CLPProgramSiteMap" EntitySet="CLPProgramSiteMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MstSite_MstAreaCode" Association="SpectrumModel.FK_MstSite_MstAreaCode">
+      <End Role="MstAreaCode" EntitySet="MstAreaCode" />
+      <End Role="MstSite" EntitySet="MstSite" />
+    </AssociationSet>
+    <AssociationSet Name="FKB4071BD5D108F78D" Association="SpectrumModel.FKB4071BD5D108F78D">
+      <End Role="MstAreaCode" EntitySet="MstAreaCode" />
+      <End Role="MstSite" EntitySet="MstSite" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MstSite_MstBusiness" Association="SpectrumModel.FK_MstSite_MstBusiness">
+      <End Role="MstBusiness" EntitySet="MstBusiness" />
+      <End Role="MstSite" EntitySet="MstSite" />
+    </AssociationSet>
+    <AssociationSet Name="FKB4071BD51CA5C708" Association="SpectrumModel.FKB4071BD51CA5C708">
+      <End Role="MstBusiness" EntitySet="MstBusiness" />
+      <End Role="MstSite" EntitySet="MstSite" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MstRole_MSTSite" Association="SpectrumModel.FK_MstRole_MSTSite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="MstRole" EntitySet="MstRole" />
+    </AssociationSet>
+    <AssociationSet Name="FKB406BD04D969F016" Association="SpectrumModel.FKB406BD04D969F016">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="MstRole" EntitySet="MstRole" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MstSiteCurrancyMap_MstSite" Association="SpectrumModel.FK_MstSiteCurrancyMap_MstSite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="MstSiteCurrancyMap" EntitySet="MstSiteCurrancyMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MstTender_MstSite" Association="SpectrumModel.FK_MstTender_MstSite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="MstTender" EntitySet="MstTender" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderHdr_Mstsite" Association="SpectrumModel.FK_OrderHdr_Mstsite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="OrderHdr" EntitySet="OrderHdr" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseInfoRecord_SiteCode" Association="SpectrumModel.FK_PurchaseInfoRecord_SiteCode">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="PurchaseInfoRecord" EntitySet="PurchaseInfoRecord" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockAdjustment_MstSite" Association="SpectrumModel.FK_StockAdjustment_MstSite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="StockAdjustment" EntitySet="StockAdjustment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TaxSiteMapping_MstSite" Association="SpectrumModel.FK_TaxSiteMapping_MstSite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="TaxSiteMapping" EntitySet="TaxSiteMapping" />
+    </AssociationSet>
+    <EntitySet Name="MstArticle" EntityType="SpectrumModel.MstArticle" />
+    <AssociationSet Name="FK_ArticleMAP_MstArticle" Association="SpectrumModel.FK_ArticleMAP_MstArticle">
+      <End Role="MstArticle" EntitySet="MstArticle" />
+      <End Role="ArticleMAP" EntitySet="ArticleMAP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ArticleNodeMap_MSTArticle" Association="SpectrumModel.FK_ArticleNodeMap_MSTArticle">
+      <End Role="MstArticle" EntitySet="MstArticle" />
+      <End Role="ArticleNodeMap" EntitySet="ArticleNodeMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MSTArticle_MSTArticleTree" Association="SpectrumModel.FK_MSTArticle_MSTArticleTree">
+      <End Role="MstArticleTree" EntitySet="MstArticleTree" />
+      <End Role="MstArticle" EntitySet="MstArticle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MstArticleImage_MSTArticle" Association="SpectrumModel.FK_MstArticleImage_MSTArticle">
+      <End Role="MstArticle" EntitySet="MstArticle" />
+      <End Role="MstArticleImage" EntitySet="MstArticleImage" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MSTEAN_MSTArticle" Association="SpectrumModel.FK_MSTEAN_MSTArticle">
+      <End Role="MstArticle" EntitySet="MstArticle" />
+      <End Role="MstEAN" EntitySet="MstEAN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MstVoucher_MstArticle" Association="SpectrumModel.FK_MstVoucher_MstArticle">
+      <End Role="MstArticle" EntitySet="MstArticle" />
+      <End Role="MstVoucher" EntitySet="MstVoucher" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockAdjustment_MstArticle" Association="SpectrumModel.FK_StockAdjustment_MstArticle">
+      <End Role="MstArticle" EntitySet="MstArticle" />
+      <End Role="StockAdjustment" EntitySet="StockAdjustment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TaxDetail_MSTArticle" Association="SpectrumModel.FK_TaxDetail_MSTArticle">
+      <End Role="MstArticle" EntitySet="MstArticle" />
+      <End Role="SiteArticleTaxMapping" EntitySet="SiteArticleTaxMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FKB03E5F60BF3E43DE" Association="SpectrumModel.FKB03E5F60BF3E43DE">
+      <End Role="MstArticle" EntitySet="MstArticle" />
+      <End Role="MstVoucher" EntitySet="MstVoucher" />
+    </AssociationSet>
+    <EntitySet Name="SiteSupplierMap" EntityType="SpectrumModel.SiteSupplierMap" />
+    <EntitySet Name="MstMaterialType" EntityType="SpectrumModel.MstMaterialType" />
+    <EntitySet Name="ArticleDescInDiffLang" EntityType="SpectrumModel.ArticleDescInDiffLang" />
+    <AssociationSet Name="FK_ArticleDescInDiffLang_MstArticle" Association="SpectrumModel.FK_ArticleDescInDiffLang_MstArticle">
+      <End Role="MstArticle" EntitySet="MstArticle" />
+      <End Role="ArticleDescInDiffLang" EntitySet="ArticleDescInDiffLang" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ArticleDescInDiffLang_MstLanguage" Association="SpectrumModel.FK_ArticleDescInDiffLang_MstLanguage">
+      <End Role="MstLanguage" EntitySet="MstLanguage" />
+      <End Role="ArticleDescInDiffLang" EntitySet="ArticleDescInDiffLang" />
+    </AssociationSet>
+    <EntitySet Name="MasterArticleMap" EntityType="SpectrumModel.MasterArticleMap" />
+    <AssociationSet Name="FK_MasterArticleMap_MasterArticleMap" Association="SpectrumModel.FK_MasterArticleMap_MasterArticleMap">
+      <End Role="MstArticle" EntitySet="MstArticle" />
+      <End Role="MasterArticleMap" EntitySet="MasterArticleMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MasterArticleMap_MstArticle" Association="SpectrumModel.FK_MasterArticleMap_MstArticle">
+      <End Role="MstArticle" EntitySet="MstArticle" />
+      <End Role="MasterArticleMap" EntitySet="MasterArticleMap" />
+    </AssociationSet>
+    <EntitySet Name="MstTransaction" EntityType="SpectrumModel.MstTransaction" />
+    <EntitySet Name="SiteAllowedTransactions" EntityType="SpectrumModel.SiteAllowedTransactions" />
+    <AssociationSet Name="FK_AuthRoleTransactionMap_MSTTransaction" Association="SpectrumModel.FK_AuthRoleTransactionMap_MSTTransaction">
+      <End Role="MstTransaction" EntitySet="MstTransaction" />
+      <End Role="AuthRoleTransactionMap" EntitySet="AuthRoleTransactionMap" />
+    </AssociationSet>
+    <AssociationSet Name="FKFA68779C70BA2E86" Association="SpectrumModel.FKFA68779C70BA2E86">
+      <End Role="MstTransaction" EntitySet="MstTransaction" />
+      <End Role="AuthRoleTransactionMap" EntitySet="AuthRoleTransactionMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRightMap_MSTTransaction" Association="SpectrumModel.FK_UserRightMap_MSTTransaction">
+      <End Role="MstTransaction" EntitySet="MstTransaction" />
+      <End Role="AuthUserSiteTransactionMap" EntitySet="AuthUserSiteTransactionMap" />
+    </AssociationSet>
+    <AssociationSet Name="FKFE174BD870BA2E86" Association="SpectrumModel.FKFE174BD870BA2E86">
+      <End Role="MstTransaction" EntitySet="MstTransaction" />
+      <End Role="AuthUserSiteTransactionMap" EntitySet="AuthUserSiteTransactionMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SiteAllowedTRansactions_MSTSite" Association="SpectrumModel.FK_SiteAllowedTRansactions_MSTSite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="SiteAllowedTransactions" EntitySet="SiteAllowedTransactions" />
+    </AssociationSet>
+    <AssociationSet Name="FKD9C07836D969F016" Association="SpectrumModel.FKD9C07836D969F016">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="SiteAllowedTransactions" EntitySet="SiteAllowedTransactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SiteAllowedTransactions_MstTransaction" Association="SpectrumModel.FK_SiteAllowedTransactions_MstTransaction">
+      <End Role="MstTransaction" EntitySet="MstTransaction" />
+      <End Role="SiteAllowedTransactions" EntitySet="SiteAllowedTransactions" />
+    </AssociationSet>
+    <EntitySet Name="DefaultConfig" EntityType="SpectrumModel.DefaultConfig" />
+    <EntitySet Name="TaxSiteDocMap" EntityType="SpectrumModel.TaxSiteDocMap" />
+    <AssociationSet Name="FK_TaxSiteDocMap_MSTSite" Association="SpectrumModel.FK_TaxSiteDocMap_MSTSite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="TaxSiteDocMap" EntitySet="TaxSiteDocMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TaxSiteDocMap_MstTax" Association="SpectrumModel.FK_TaxSiteDocMap_MstTax">
+      <End Role="MstTax" EntitySet="MstTax" />
+      <End Role="TaxSiteDocMap" EntitySet="TaxSiteDocMap" />
+    </AssociationSet>
+    <EntitySet Name="ArticlelblPrintDtl" EntityType="SpectrumModel.ArticlelblPrintDtl" />
+    <EntitySet Name="MstMaterial" EntityType="SpectrumModel.MstMaterial" />
+    <EntitySet Name="MstMaterialArticleMap" EntityType="SpectrumModel.MstMaterialArticleMap" />
+    <AssociationSet Name="FK_Article_lbl_Print" Association="SpectrumModel.FK_Article_lbl_Print">
+      <End Role="MstArticle" EntitySet="MstArticle" />
+      <End Role="ArticlelblPrintDtl" EntitySet="ArticlelblPrintDtl" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Article_Material_MAP" Association="SpectrumModel.FK_Article_Material_MAP">
+      <End Role="MstMaterial" EntitySet="MstMaterial" />
+      <End Role="MstMaterialArticleMap" EntitySet="MstMaterialArticleMap" />
+    </AssociationSet>
+    <EntitySet Name="MstDocumentTypes" EntityType="SpectrumModel.MstDocumentTypes" />
+    <AssociationSet Name="FK_OrderHDR_DocType" Association="SpectrumModel.FK_OrderHDR_DocType">
+      <End Role="MstDocumentTypes" EntitySet="MstDocumentTypes" />
+      <End Role="OrderHdr" EntitySet="OrderHdr" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TaxSiteDocMap_MstDocumentTypes" Association="SpectrumModel.FK_TaxSiteDocMap_MstDocumentTypes">
+      <End Role="MstDocumentTypes" EntitySet="MstDocumentTypes" />
+      <End Role="TaxSiteDocMap" EntitySet="TaxSiteDocMap" />
+    </AssociationSet>
+    <EntitySet Name="MstShift" EntityType="SpectrumModel.MstShift" />
+  </EntityContainer>
+  <EntityType Name="MstSupplier">
+    <Key>
+      <PropertyRef Name="SupplierCode" />
+    </Key>
+    <Property Name="SupplierCode" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="SupplierName" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="address1" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="address2" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="address3" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="address4" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="CountryCode" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="StateCode" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="CityCode" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="TelephoneNo" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="FaxNo" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="TelexNo" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Pincode" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="LocalSalesTaxNo" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="CentralSalesTaxNo" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="LocalSalesTaxDate" Type="DateTime" Precision="3" />
+    <Property Name="CentralSalesTaxDate" Type="DateTime" Precision="3" />
+    <Property Name="MinMargin" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="PaymentMethod" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="ShipmentMethod" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="EmailId" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="ContactPerson" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="CurrencyCode" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="LanguageCode" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="CREATEDAT" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="CREATEDBY" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="CREATEDON" Type="DateTime" Precision="3" />
+    <Property Name="UPDATEDAT" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="UPDATEDBY" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="UPDATEDON" Type="DateTime" Precision="3" />
+    <Property Name="STATUS" Type="Boolean" />
+    <Property Name="DeliveryDays" Type="Int32" />
+    <Property Name="PaymentDays" Type="Int32" />
+    <Property Name="TINNo" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="PANNo" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="ServiceTaxRegNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="VendorPostingGroup" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="GenBusPostingGroup" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="isActive" Type="Boolean" />
+    <NavigationProperty Name="PurchaseInfoRecord" Relationship="SpectrumModel.FK_PurchaseInfoRecord_SupplierCode1" FromRole="MstSupplier" ToRole="PurchaseInfoRecord" />
+    <Property Type="Boolean" Name="isVisibleForGRNWithoutDoc" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MstTax">
+    <Key>
+      <PropertyRef Name="TaxCode" />
+    </Key>
+    <Property Name="TaxCode" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="TaxName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="TaxSeqProfile" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="Type" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="Inclusive" Type="Boolean" />
+    <Property Name="Value" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CREATEDAT" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="CREATEDBY" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="CREATEDON" Type="DateTime" Precision="3" />
+    <Property Name="UPDATEDAT" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="UPDATEDBY" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="UPDATEDON" Type="DateTime" Precision="3" />
+    <Property Name="STATUS" Type="Boolean" />
+    <Property Name="TaxType" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="TaxSiteMapping" Relationship="SpectrumModel.FK_TaxSiteMapping_MstTax" FromRole="MstTax" ToRole="TaxSiteMapping" />
+    <Property Type="Boolean" Name="InterStateTax" Nullable="false" />
+    <NavigationProperty Name="TaxSiteDocMap" Relationship="SpectrumModel.FK_TaxSiteDocMap_MstTax" FromRole="MstTax" ToRole="TaxSiteDocMap" />
+  </EntityType>
+  <EntityType Name="MstTender">
+    <Key>
+      <PropertyRef Name="TenderHeadCode" />
+      <PropertyRef Name="SiteCode" />
+    </Key>
+    <Property Name="TenderHeadCode" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="SiteCode" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="TenderHeadName" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="TenderType" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="Positive_Negative" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="MaxNo" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="MaxValue" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="MinBillValue" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="DefaultValue" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ProgramId" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="CREATEDAT" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="CREATEDBY" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="CREATEDON" Type="DateTime" Precision="3" />
+    <Property Name="UPDATEDAT" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="UPDATEDBY" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="UPDATEDON" Type="DateTime" Precision="3" />
+    <Property Name="STATUS" Type="Boolean" />
+    <NavigationProperty Name="MstTenderType" Relationship="SpectrumModel.FK_MSTTender_MstTenderType" FromRole="MstTender" ToRole="MstTenderType" />
+    <NavigationProperty Name="MstSite" Relationship="SpectrumModel.FK_MstTender_MstSite" FromRole="MstTender" ToRole="MstSite" />
+    <Property Type="Boolean" Name="IsVisible" />
+  </EntityType>
+  <EntityType Name="MstTenderType">
+    <Key>
+      <PropertyRef Name="TenderType" />
+    </Key>
+    <Property Name="TenderType" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CREATEDAT" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="CREATEDBY" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="CREATEDON" Type="DateTime" Precision="3" />
+    <Property Name="UPDATEDAT" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="UPDATEDBY" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="UPDATEDON" Type="DateTime" Precision="3" />
+    <Property Name="STATUS" Type="Boolean" />
+    <NavigationProperty Name="MstTender" Relationship="SpectrumModel.FK_MSTTender_MstTenderType" FromRole="MstTenderType" ToRole="MstTender" />
+    <NavigationProperty Name="MstVoucher" Relationship="SpectrumModel.FK_MstVoucher_MstTenderType" FromRole="MstTenderType" ToRole="MstVoucher" />
+    <NavigationProperty Name="MstVoucher1" Relationship="SpectrumModel.FKB03E5F60E563B22B" FromRole="MstTenderType" ToRole="MstVoucher" />
+  </EntityType>
+  <Association Name="FK_MSTTender_MstTenderType">
+    <End Role="MstTenderType" Type="SpectrumModel.MstTenderType" Multiplicity="1" />
+    <End Role="MstTender" Type="SpectrumModel.MstTender" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstTenderType">
+        <PropertyRef Name="TenderType" />
+      </Principal>
+      <Dependent Role="MstTender">
+        <PropertyRef Name="TenderType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="MstAreaCode">
+    <Key>
+      <PropertyRef Name="AreaCode" />
+    </Key>
+    <Property Type="String" Name="AreaCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="AreaType" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="ParentCode" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="AuthUsers" Relationship="SpectrumModel.FK_AuthUsers_MstAreaCode" FromRole="MstAreaCode" ToRole="AuthUsers" />
+    <NavigationProperty Name="AuthUsers1" Relationship="SpectrumModel.FKCDF82920CDC0A838" FromRole="MstAreaCode" ToRole="AuthUsers" />
+    <NavigationProperty Name="MstSite" Relationship="SpectrumModel.FK_MstSite_MstAreaCode" FromRole="MstAreaCode" ToRole="MstSite" />
+    <NavigationProperty Name="MstSite1" Relationship="SpectrumModel.FKB4071BD5D108F78D" FromRole="MstAreaCode" ToRole="MstSite" />
+  </EntityType>
+  <EntityType Name="GeneralCodeMst">
+    <Key>
+      <PropertyRef Name="CodeType" />
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Type="String" Name="CodeType" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Code" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ShortDesc" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="LongDesc" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Status" />
+    <Property Type="Int32" Name="IsSysParameter" Nullable="false" />
+    <Property Type="String" Name="Created_By" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Update_By" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CreatedOn" Precision="3" />
+    <Property Type="DateTime" Name="UpdatedOn" Precision="3" />
+    <Property Type="String" Name="CreatedAt" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UpdateAt" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SiteCode" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="SortOrder" />
+  </EntityType>
+  <EntityType Name="GLNoRangeObjects">
+    <Key>
+      <PropertyRef Name="ObjectTypeId" />
+      <PropertyRef Name="ObjectID" />
+      <PropertyRef Name="InternalOrExternal" />
+      <PropertyRef Name="SiteCode" />
+    </Key>
+    <Property Type="String" Name="ObjectTypeId" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ObjectID" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="InternalOrExternal" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="MinNumber" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="MaxNumber" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="Incrementby" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="CurrentNo" Precision="18" Scale="0" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+  </EntityType>
+  <EntityType Name="ArticleTreeNodeMap">
+    <Key>
+      <PropertyRef Name="Nodecode" />
+    </Key>
+    <Property Type="String" Name="Nodecode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ParentNodecode" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Treecode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="ToleranceValue" Precision="18" Scale="0" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="MstArticleNode" Relationship="SpectrumModel.FK_ArticleTreeNodeMap_MSTArticleNode" FromRole="ArticleTreeNodeMap" ToRole="MstArticleNode" />
+    <NavigationProperty Name="MstArticleNode1" Relationship="SpectrumModel.FKE6BE1FC6250E6B8C" FromRole="ArticleTreeNodeMap" ToRole="MstArticleNode" />
+    <NavigationProperty Name="MstArticleTree" Relationship="SpectrumModel.FK_ArticleTreeNodeMap_MSTArticleTree" FromRole="ArticleTreeNodeMap" ToRole="MstArticleTree" />
+    <NavigationProperty Name="MstArticleTree1" Relationship="SpectrumModel.FKE6BE1FC634BFC8C4" FromRole="ArticleTreeNodeMap" ToRole="MstArticleTree" />
+  </EntityType>
+  <EntityType Name="MstArticleNode">
+    <Key>
+      <PropertyRef Name="Nodecode" />
+    </Key>
+    <Property Type="String" Name="Nodecode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NodeName" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Treecode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="ISThisLastNode" />
+    <Property Type="String" Name="LevelCode" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="ArticleTreeNodeMap" Relationship="SpectrumModel.FK_ArticleTreeNodeMap_MSTArticleNode" FromRole="MstArticleNode" ToRole="ArticleTreeNodeMap" />
+    <NavigationProperty Name="ArticleTreeNodeMap1" Relationship="SpectrumModel.FKE6BE1FC6250E6B8C" FromRole="MstArticleNode" ToRole="ArticleTreeNodeMap" />
+    <NavigationProperty Name="ArticleNodeMap" Relationship="SpectrumModel.FK_ArticleNodeMap_MSTArticleNode" FromRole="MstArticleNode" ToRole="ArticleNodeMap" />
+    <NavigationProperty Name="MstArticleTree" Relationship="SpectrumModel.FK_MstArticleNode_MSTArticleTree" FromRole="MstArticleNode" ToRole="MstArticleTree" />
+  </EntityType>
+  <Association Name="FK_ArticleTreeNodeMap_MSTArticleNode">
+    <End Type="SpectrumModel.MstArticleNode" Role="MstArticleNode" Multiplicity="1" />
+    <End Type="SpectrumModel.ArticleTreeNodeMap" Role="ArticleTreeNodeMap" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticleNode">
+        <PropertyRef Name="Nodecode" />
+      </Principal>
+      <Dependent Role="ArticleTreeNodeMap">
+        <PropertyRef Name="Nodecode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKE6BE1FC6250E6B8C">
+    <End Type="SpectrumModel.MstArticleNode" Role="MstArticleNode" Multiplicity="1" />
+    <End Type="SpectrumModel.ArticleTreeNodeMap" Role="ArticleTreeNodeMap" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticleNode">
+        <PropertyRef Name="Nodecode" />
+      </Principal>
+      <Dependent Role="ArticleTreeNodeMap">
+        <PropertyRef Name="Nodecode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="MstArticleType">
+    <Key>
+      <PropertyRef Name="ArticalTypeCode" />
+    </Key>
+    <Property Type="String" Name="ArticalTypeCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ArticalTypeName" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+  </EntityType>
+  <EntityType Name="MstUoM">
+    <Key>
+      <PropertyRef Name="UOMCode" />
+    </Key>
+    <Property Type="String" Name="UOMCode" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UOM" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="ArticleStockBalances" Relationship="SpectrumModel.FK_ArticleStockBalances_MSTUOM" FromRole="MstUoM" ToRole="ArticleStockBalances" />
+  </EntityType>
+  <EntityType Name="Brand">
+    <Key>
+      <PropertyRef Name="BrandCode" />
+    </Key>
+    <Property Type="String" Name="BrandCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="BrandName" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ManufacturerCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="Manufacturer" Relationship="SpectrumModel.Fk_Mfcode" FromRole="Brand" ToRole="Manufacturer" />
+  </EntityType>
+  <EntityType Name="Manufacturer">
+    <Key>
+      <PropertyRef Name="ManufacturerCode" />
+    </Key>
+    <Property Type="String" Name="ManufacturerCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ManufacturerName" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="Brand" Relationship="SpectrumModel.Fk_Mfcode" FromRole="Manufacturer" ToRole="Brand" />
+  </EntityType>
+  <Association Name="Fk_Mfcode">
+    <End Type="SpectrumModel.Manufacturer" Role="Manufacturer" Multiplicity="1" />
+    <End Type="SpectrumModel.Brand" Role="Brand" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Manufacturer">
+        <PropertyRef Name="ManufacturerCode" />
+      </Principal>
+      <Dependent Role="Brand">
+        <PropertyRef Name="ManufacturerCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="CharacteristicsProfile">
+    <Key>
+      <PropertyRef Name="CharProfileCode" />
+      <PropertyRef Name="CharCode" />
+    </Key>
+    <Property Type="String" Name="CharProfileCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CharCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="MstCharacteristicsProfile" Relationship="SpectrumModel.FK_CharacteristicsProfile_MSTCharacteristicsProfile" FromRole="CharacteristicsProfile" ToRole="MstCharacteristicsProfile" />
+    <NavigationProperty Name="MstCharacteristicsProfile1" Relationship="SpectrumModel.FKDC6AAC71CF5A64AC" FromRole="CharacteristicsProfile" ToRole="MstCharacteristicsProfile" />
+  </EntityType>
+  <EntityType Name="CharacteristicsValue">
+    <Key>
+      <PropertyRef Name="CharCode" />
+      <PropertyRef Name="CharValue" />
+    </Key>
+    <Property Type="String" Name="CharCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CharValue" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="MstCharacteristics" Relationship="SpectrumModel.FK_CharacteristicsValue_MSTCharacteristics" FromRole="CharacteristicsValue" ToRole="MstCharacteristics" />
+    <NavigationProperty Name="ArticleMatrix" Relationship="SpectrumModel.FK_ArticleMartix_CharacteristicsValue" FromRole="CharacteristicsValue" ToRole="ArticleMatrix" />
+  </EntityType>
+  <EntityType Name="MstCharacteristics">
+    <Key>
+      <PropertyRef Name="CharCode" />
+    </Key>
+    <Property Type="String" Name="CharCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CharName" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="CharType" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="CharacteristicsValue" Relationship="SpectrumModel.FK_CharacteristicsValue_MSTCharacteristics" FromRole="MstCharacteristics" ToRole="CharacteristicsValue" />
+  </EntityType>
+  <EntityType Name="MstCharacteristicsProfile">
+    <Key>
+      <PropertyRef Name="ProfileCode" />
+    </Key>
+    <Property Type="String" Name="ProfileCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ProfileName" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="CharacteristicsProfile" Relationship="SpectrumModel.FK_CharacteristicsProfile_MSTCharacteristicsProfile" FromRole="MstCharacteristicsProfile" ToRole="CharacteristicsProfile" />
+    <NavigationProperty Name="CharacteristicsProfile1" Relationship="SpectrumModel.FKDC6AAC71CF5A64AC" FromRole="MstCharacteristicsProfile" ToRole="CharacteristicsProfile" />
+  </EntityType>
+  <Association Name="FK_CharacteristicsProfile_MSTCharacteristicsProfile">
+    <End Type="SpectrumModel.MstCharacteristicsProfile" Role="MstCharacteristicsProfile" Multiplicity="1" />
+    <End Type="SpectrumModel.CharacteristicsProfile" Role="CharacteristicsProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstCharacteristicsProfile">
+        <PropertyRef Name="ProfileCode" />
+      </Principal>
+      <Dependent Role="CharacteristicsProfile">
+        <PropertyRef Name="CharProfileCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKDC6AAC71CF5A64AC">
+    <End Type="SpectrumModel.MstCharacteristicsProfile" Role="MstCharacteristicsProfile" Multiplicity="1" />
+    <End Type="SpectrumModel.CharacteristicsProfile" Role="CharacteristicsProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstCharacteristicsProfile">
+        <PropertyRef Name="ProfileCode" />
+      </Principal>
+      <Dependent Role="CharacteristicsProfile">
+        <PropertyRef Name="CharProfileCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CharacteristicsValue_MSTCharacteristics">
+    <End Type="SpectrumModel.MstCharacteristics" Role="MstCharacteristics" Multiplicity="1" />
+    <End Type="SpectrumModel.CharacteristicsValue" Role="CharacteristicsValue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstCharacteristics">
+        <PropertyRef Name="CharCode" />
+      </Principal>
+      <Dependent Role="CharacteristicsValue">
+        <PropertyRef Name="CharCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="ArticleBatchBinStockBalances">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="ArticleCode" />
+      <PropertyRef Name="EAN" />
+      <PropertyRef Name="BatchBarcode" />
+      <PropertyRef Name="Location" />
+    </Key>
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ArticleCode" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EAN" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="BatchBarcode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Location" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UOM" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="PhysicalQty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="ReservedQty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="DamagedQty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="OnOrderQty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="InTrasnsitQty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="NonSaleableQty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TotalPhysicalSaleableQty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TotalPhysicalNonSaleableQty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TotalVirtualNonSaleableQty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TotalSaleableQty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TotalARSQty" Precision="18" Scale="3" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <Property Type="String" Name="StockStatus" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="NextAvailableDate" Precision="3" />
+  </EntityType>
+  <EntityType Name="ArticleMAP">
+    <Key>
+      <PropertyRef Name="Sitecode" />
+      <PropertyRef Name="EAN" />
+      <PropertyRef Name="TransactionDate" />
+    </Key>
+    <Property Type="String" Name="Sitecode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ArticleCode" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EAN" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="TransactionDate" Nullable="false" Precision="3" />
+    <Property Type="Decimal" Name="MAP" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="RecQty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="CumulativeRecQty" Precision="18" Scale="3" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="MstSite" Relationship="SpectrumModel.FK_ArticleMAP_MstSite" FromRole="ArticleMAP" ToRole="MstSite" />
+    <NavigationProperty Name="MstArticle" Relationship="SpectrumModel.FK_ArticleMAP_MstArticle" FromRole="ArticleMAP" ToRole="MstArticle" />
+  </EntityType>
+  <EntityType Name="ArticleMatrix">
+    <Key>
+      <PropertyRef Name="EanCode" />
+      <PropertyRef Name="CharCode" />
+      <PropertyRef Name="CharValue" />
+    </Key>
+    <Property Type="String" Name="EanCode" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CharCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CharValue" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="CharType" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <Property Type="String" Name="ProfileCode" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="RowKey" Precision="18" Scale="0" />
+    <NavigationProperty Name="CharacteristicsValue" Relationship="SpectrumModel.FK_ArticleMartix_CharacteristicsValue" FromRole="ArticleMatrix" ToRole="CharacteristicsValue" />
+    <NavigationProperty Name="MstEAN" Relationship="SpectrumModel.FK_ArticleMartix_MSTEan" FromRole="ArticleMatrix" ToRole="MstEAN" />
+  </EntityType>
+  <EntityType Name="ArticleNodeMap">
+    <Key>
+      <PropertyRef Name="ArticleCode" />
+      <PropertyRef Name="TreeCode" />
+    </Key>
+    <Property Type="String" Name="ArticleCode" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TreeCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="LastNodeCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="MstArticleNode" Relationship="SpectrumModel.FK_ArticleNodeMap_MSTArticleNode" FromRole="ArticleNodeMap" ToRole="MstArticleNode" />
+    <NavigationProperty Name="MstArticle" Relationship="SpectrumModel.FK_ArticleNodeMap_MSTArticle" FromRole="ArticleNodeMap" ToRole="MstArticle" />
+  </EntityType>
+  <EntityType Name="ArticleReplenishment">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="EAN" />
+      <PropertyRef Name="Month" />
+    </Key>
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EAN" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ArticleCode" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ReplenishmentTypeCode" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="StockOnOrder" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="SafetyStockQty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="ReOrderPoint" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="AverageSaleDuration" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="StockCover" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="EstimatedSale" Precision="18" Scale="3" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <Property Type="String" Name="Month" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="RequestingSiteCode" MaxLength="15" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="MstEAN" Relationship="SpectrumModel.FK_ArticleReplenishment_MSTEAN" FromRole="ArticleReplenishment" ToRole="MstEAN" />
+    <NavigationProperty Name="MstEAN1" Relationship="SpectrumModel.FKEA93A4E500AC029" FromRole="ArticleReplenishment" ToRole="MstEAN" />
+  </EntityType>
+  <EntityType Name="ArticleUOM">
+    <Key>
+      <PropertyRef Name="ArticleCode" />
+      <PropertyRef Name="UOMCode" />
+    </Key>
+    <Property Type="String" Name="ArticleCode" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UOMCode" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Divisor" Precision="18" Scale="3" />
+    <Property Type="Boolean" Name="IsDivisor" />
+    <Property Type="String" Name="CreatedBy" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CreatedAt" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CreatedOn" Precision="3" />
+    <Property Type="String" Name="UpdatedBy" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UpdatedAt" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UpdatedOn" Precision="3" />
+    <Property Type="Boolean" Name="Status" />
+    <Property Type="Boolean" Name="defaultUom" />
+  </EntityType>
+  <EntityType Name="MstArticleImage">
+    <Key>
+      <PropertyRef Name="ArticleCode" />
+    </Key>
+    <Property Type="String" Name="ArticleCode" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ArticleImage" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <Property Type="String" Name="GroupID" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="MstArticle" Relationship="SpectrumModel.FK_MstArticleImage_MSTArticle" FromRole="MstArticleImage" ToRole="MstArticle" />
+  </EntityType>
+  <EntityType Name="MstArticleKit">
+    <Key>
+      <PropertyRef Name="Ean" />
+      <PropertyRef Name="ArticleCode" />
+      <PropertyRef Name="KitArticleCode" />
+    </Key>
+    <Property Type="String" Name="Ean" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ArticleCode" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="KitArticleCode" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="SellingPrice" Precision="18" Scale="3" />
+    <Property Type="String" Name="SaleUnitofMeasure" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Quantity" Precision="18" Scale="3" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+  </EntityType>
+  <Association Name="FK_ArticleMartix_CharacteristicsValue">
+    <End Type="SpectrumModel.CharacteristicsValue" Role="CharacteristicsValue" Multiplicity="1" />
+    <End Type="SpectrumModel.ArticleMatrix" Role="ArticleMatrix" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CharacteristicsValue">
+        <PropertyRef Name="CharCode" />
+        <PropertyRef Name="CharValue" />
+      </Principal>
+      <Dependent Role="ArticleMatrix">
+        <PropertyRef Name="CharCode" />
+        <PropertyRef Name="CharValue" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ArticleNodeMap_MSTArticleNode">
+    <End Type="SpectrumModel.MstArticleNode" Role="MstArticleNode" Multiplicity="1" />
+    <End Type="SpectrumModel.ArticleNodeMap" Role="ArticleNodeMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticleNode">
+        <PropertyRef Name="Nodecode" />
+      </Principal>
+      <Dependent Role="ArticleNodeMap">
+        <PropertyRef Name="LastNodeCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="MstEAN">
+    <Key>
+      <PropertyRef Name="EAN" />
+    </Key>
+    <Property Type="String" Name="ArticleCode" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EAN" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Discription" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UOMCode" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UOMTypeCode" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="DefaultEAN" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="ArticleMatrix" Relationship="SpectrumModel.FK_ArticleMartix_MSTEan" FromRole="MstEAN" ToRole="ArticleMatrix" />
+    <NavigationProperty Name="ArticleReplenishment" Relationship="SpectrumModel.FK_ArticleReplenishment_MSTEAN" FromRole="MstEAN" ToRole="ArticleReplenishment" />
+    <NavigationProperty Name="ArticleReplenishment1" Relationship="SpectrumModel.FKEA93A4E500AC029" FromRole="MstEAN" ToRole="ArticleReplenishment" />
+    <NavigationProperty Name="PurchaseInfoRecord" Relationship="SpectrumModel.FK_PurchaseInfoRecord_EAN" FromRole="MstEAN" ToRole="PurchaseInfoRecord" />
+    <NavigationProperty Name="StockAdjustment" Relationship="SpectrumModel.FK_StockAdjustment_MstEAN" FromRole="MstEAN" ToRole="StockAdjustment" />
+    <NavigationProperty Name="OrderDtl" Relationship="SpectrumModel.FK_OrderDTL_MSTEAN1" FromRole="MstEAN" ToRole="OrderDtl" />
+    <NavigationProperty Name="MstArticle" Relationship="SpectrumModel.FK_MSTEAN_MSTArticle" FromRole="MstEAN" ToRole="MstArticle" />
+  </EntityType>
+  <EntityType Name="PurchaseInfoRecord">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="SupplierCode" />
+      <PropertyRef Name="EAN" />
+    </Key>
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SupplierCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="IsDefaultSupplier" />
+    <Property Type="String" Name="ArticleCode" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EAN" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="CPBaseCurr" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="CPLocalCurr" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="MRP" Precision="18" Scale="3" />
+    <Property Type="DateTime" Name="FromDate" Precision="3" />
+    <Property Type="DateTime" Name="ToDate" Precision="3" />
+    <Property Type="Boolean" Name="isARSAllowed" />
+    <Property Type="Boolean" Name="FreezeSB" />
+    <Property Type="Boolean" Name="FreezeSR" />
+    <Property Type="Boolean" Name="FreezeIN" />
+    <Property Type="Boolean" Name="FreezeOB" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <Property Type="Decimal" Name="SRNO" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="MAP" Precision="18" Scale="3" />
+    <NavigationProperty Name="MstEAN" Relationship="SpectrumModel.FK_PurchaseInfoRecord_EAN" FromRole="PurchaseInfoRecord" ToRole="MstEAN" />
+    <NavigationProperty Name="MstSupplier" Relationship="SpectrumModel.FK_PurchaseInfoRecord_SupplierCode1" FromRole="PurchaseInfoRecord" ToRole="MstSupplier" />
+    <NavigationProperty Name="MstSite" Relationship="SpectrumModel.FK_PurchaseInfoRecord_SiteCode" FromRole="PurchaseInfoRecord" ToRole="MstSite" />
+    <Property Type="Single" Name="distributorMargin" />
+    <Property Type="Single" Name="dealerMargin" />
+    <Property Type="Single" Name="calculatedRate" />
+  </EntityType>
+  <EntityType Name="SalesInfoRecord">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="SrNo" />
+      <PropertyRef Name="EAN" />
+    </Key>
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ArticleCode" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="SrNo" Nullable="false" />
+    <Property Type="String" Name="EAN" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="SellingPrice" Precision="18" Scale="2" />
+    <Property Type="DateTime" Name="FromDate" Precision="3" />
+    <Property Type="DateTime" Name="ToDate" Precision="3" />
+    <Property Type="Boolean" Name="FreezeSB" />
+    <Property Type="Boolean" Name="FreezeSR" />
+    <Property Type="Boolean" Name="FreezeIN" />
+    <Property Type="Boolean" Name="FreezeOB" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <Property Type="Decimal" Name="SuggestedSalesPrice" Precision="18" Scale="2" />
+  </EntityType>
+  <Association Name="FK_ArticleMartix_MSTEan">
+    <End Type="SpectrumModel.MstEAN" Role="MstEAN" Multiplicity="1" />
+    <End Type="SpectrumModel.ArticleMatrix" Role="ArticleMatrix" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstEAN">
+        <PropertyRef Name="EAN" />
+      </Principal>
+      <Dependent Role="ArticleMatrix">
+        <PropertyRef Name="EanCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ArticleReplenishment_MSTEAN">
+    <End Type="SpectrumModel.MstEAN" Role="MstEAN" Multiplicity="1" />
+    <End Type="SpectrumModel.ArticleReplenishment" Role="ArticleReplenishment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstEAN">
+        <PropertyRef Name="EAN" />
+      </Principal>
+      <Dependent Role="ArticleReplenishment">
+        <PropertyRef Name="EAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKEA93A4E500AC029">
+    <End Type="SpectrumModel.MstEAN" Role="MstEAN" Multiplicity="1" />
+    <End Type="SpectrumModel.ArticleReplenishment" Role="ArticleReplenishment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstEAN">
+        <PropertyRef Name="EAN" />
+      </Principal>
+      <Dependent Role="ArticleReplenishment">
+        <PropertyRef Name="EAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseInfoRecord_EAN">
+    <End Type="SpectrumModel.MstEAN" Role="MstEAN" Multiplicity="1" />
+    <End Type="SpectrumModel.PurchaseInfoRecord" Role="PurchaseInfoRecord" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstEAN">
+        <PropertyRef Name="EAN" />
+      </Principal>
+      <Dependent Role="PurchaseInfoRecord">
+        <PropertyRef Name="EAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseInfoRecord_SupplierCode1">
+    <End Type="SpectrumModel.MstSupplier" Role="MstSupplier" Multiplicity="1" />
+    <End Type="SpectrumModel.PurchaseInfoRecord" Role="PurchaseInfoRecord" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSupplier">
+        <PropertyRef Name="SupplierCode" />
+      </Principal>
+      <Dependent Role="PurchaseInfoRecord">
+        <PropertyRef Name="SupplierCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="ArticleStockBalances">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="ArticleCode" />
+      <PropertyRef Name="EAN" />
+    </Key>
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ArticleCode" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EAN" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UOM" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="PhysicalQty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="ReservedQty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="DamagedQty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="OnOrderQty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="InTrasnsitQty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="NonSaleableQty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TotalPhysicalSaleableQty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TotalPhysicalNonSaleableQty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TotalVirtualNonSaleableQty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TotalSaleableQty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TotalARSQty" Precision="18" Scale="3" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <Property Type="String" Name="StockStatus" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="NextAvailableDate" Precision="3" />
+    <NavigationProperty Name="MstUoM" Relationship="SpectrumModel.FK_ArticleStockBalances_MSTUOM" FromRole="ArticleStockBalances" ToRole="MstUoM" />
+  </EntityType>
+  <EntityType Name="Invoice">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="InvoiceNumber" />
+    </Key>
+    <Property Type="String" Name="InvoiceCode" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="InvoiceNumber" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="InvoiceType" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="InvoiceAmount" Precision="18" Scale="3" />
+    <Property Type="DateTime" Name="InvoiceDate" Precision="3" />
+    <Property Type="Decimal" Name="PaidAmount" Precision="18" Scale="3" />
+    <Property Type="String" Name="PayTo" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SupplierCode" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PONumber" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GRNNumber" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <Property Type="Decimal" Name="InvoiceDiscount" Precision="18" Scale="3" />
+    <Property Type="Boolean" Name="PhyInvReceived" />
+    <Property Type="DateTime" Name="LastSynchedTimeStamp" />
+  </EntityType>
+  <EntityType Name="OrderHdr">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="FinYear" />
+      <PropertyRef Name="DocumentNumber" />
+    </Key>
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FinYear" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DocumentNumber" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DocumentType" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DocDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="SupplierCode" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="PurchaseGroupCode" Precision="18" Scale="0" />
+    <Property Type="String" Name="DeliverySiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="ExpectedDeliveryDt" Nullable="false" Precision="3" />
+    <Property Type="Decimal" Name="PaymentAfterDelDays" Precision="18" Scale="0" />
+    <Property Type="String" Name="AdditionalTermsNConditions" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="AdditionalPaymentTerms" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="DocNetValue" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="DocGrossValue" Precision="18" Scale="3" />
+    <Property Type="Boolean" Name="IsClosed" />
+    <Property Type="Boolean" Name="IsFreezed" />
+    <Property Type="String" Name="ReturnReasonCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Remarks" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="ApprovedDate" Precision="3" />
+    <Property Type="String" Name="ApprovedLevel" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ApprovalLevel" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NextApprovalAt" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="AmmendmentNo" Precision="18" Scale="0" />
+    <Property Type="DateTime" Name="ClosedDate" Precision="3" />
+    <Property Type="String" Name="Transporter" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DocApprovalID" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ParentOrderNo" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="WayBillNo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="WayBillDate" Precision="3" />
+    <Property Type="String" Name="VehicleDtls" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SalesOrderRef" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="YourRef" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="StrategyCode" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NextApproverId" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="ProcessInstanceID" Precision="19" Scale="0" />
+    <Property Type="Decimal" Name="TaskInstanceID" Precision="19" Scale="0" />
+    <Property Type="Decimal" Name="ProcessInstanceIDCCE" Precision="19" Scale="0" />
+    <Property Type="Decimal" Name="TaskInstanceIDCCE" Precision="19" Scale="0" />
+    <Property Type="String" Name="StrategyStep" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Month" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Day" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Quarter" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="STATUS" />
+    <Property Type="String" Name="OrderStatus" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="WarehouseCharges" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TransportCharges" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="OtherCharges" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="PakingCharges" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="ExchangeRate" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="LocalNetValue" Precision="18" Scale="3" />
+    <Property Type="String" Name="driverDtls" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="pickpackNumber" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ClosingRemarks" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DeliveryChallanNumber" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DeliveryDate" Precision="3" />
+    <Property Type="DateTime" Name="ValidityDate" Precision="3" />
+    <Property Type="String" Name="ReferenceNo" MaxLength="25" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="OrderDtl" Relationship="SpectrumModel.FK_OrderDtl_OrderHdr" FromRole="OrderHdr" ToRole="OrderDtl" />
+    <NavigationProperty Name="MstSite" Relationship="SpectrumModel.FK_OrderHdr_Mstsite" FromRole="OrderHdr" ToRole="MstSite" />
+    <Property Type="String" Name="STRType" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="DocumentTaxAmount" Precision="18" Scale="3" />
+    <Property Type="DateTime" Name="LastSynchedTimeStamp" />
+    <Property Type="Int64" Name="Row_ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="vadilalBillNo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="MstDocumentTypes" Relationship="SpectrumModel.FK_OrderHDR_DocType" FromRole="OrderHdr" ToRole="MstDocumentTypes" />
+  </EntityType>
+  <Association Name="FK_ArticleStockBalances_MSTUOM">
+    <End Type="SpectrumModel.MstUoM" Role="MstUoM" Multiplicity="1" />
+    <End Type="SpectrumModel.ArticleStockBalances" Role="ArticleStockBalances" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstUoM">
+        <PropertyRef Name="UOMCode" />
+      </Principal>
+      <Dependent Role="ArticleStockBalances">
+        <PropertyRef Name="UOM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="SiteArticleTaxMapping">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="ArticleCode" />
+      <PropertyRef Name="TaxCode" />
+      <PropertyRef Name="SupplierCode" />
+    </Key>
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ArticleCode" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TaxCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TaxName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <Property Type="String" Name="SupplierCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="MstArticle" Relationship="SpectrumModel.FK_TaxDetail_MSTArticle" FromRole="SiteArticleTaxMapping" ToRole="MstArticle" />
+  </EntityType>
+  <EntityType Name="StockAdjustment">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="TrnNo" />
+      <PropertyRef Name="FinYear" />
+    </Key>
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="TrnNo" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="FinYear" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="TrnDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="ArticleCode" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EAN" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UOM" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FromLOc" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ToLoc" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Qty" Precision="18" Scale="3" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <Property Type="String" Name="FromBin" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ToBin" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="BaseUOM" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="BaseQty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="OldQty" Precision="18" Scale="3" />
+    <Property Type="String" Name="Reason" MaxLength="500" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="MstEAN" Relationship="SpectrumModel.FK_StockAdjustment_MstEAN" FromRole="StockAdjustment" ToRole="MstEAN" />
+    <NavigationProperty Name="MstSite" Relationship="SpectrumModel.FK_StockAdjustment_MstSite" FromRole="StockAdjustment" ToRole="MstSite" />
+    <NavigationProperty Name="MstArticle" Relationship="SpectrumModel.FK_StockAdjustment_MstArticle" FromRole="StockAdjustment" ToRole="MstArticle" />
+  </EntityType>
+  <Association Name="FK_StockAdjustment_MstEAN">
+    <End Type="SpectrumModel.MstEAN" Role="MstEAN" Multiplicity="1" />
+    <End Type="SpectrumModel.StockAdjustment" Role="StockAdjustment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstEAN">
+        <PropertyRef Name="EAN" />
+      </Principal>
+      <Dependent Role="StockAdjustment">
+        <PropertyRef Name="EAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="OrderDtl">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="FinYear" />
+      <PropertyRef Name="DocumentNumber" />
+      <PropertyRef Name="LineNumber" />
+    </Key>
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FinYear" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DocumentNumber" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ArticleCode" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EAN" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="LineNumber" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="Qty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="Weight" Precision="12" Scale="2" />
+    <Property Type="String" Name="UnitofMeasure" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="OpenQty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="DeliveredQty" Precision="18" Scale="3" />
+    <Property Type="Boolean" Name="DeliveryCompleted" />
+    <Property Type="Decimal" Name="PurchaseGroupCode" Precision="18" Scale="0" />
+    <Property Type="String" Name="RefDocument" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="RefDocumentNo" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PONo" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PoSiteCode" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="PoLineNbr" Precision="18" Scale="0" />
+    <Property Type="String" Name="BirthListId" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SaleOrderNumber" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="AllocationRule" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="MRP" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="CostPrice" Precision="22" Scale="8" />
+    <Property Type="Decimal" Name="NetCostPrice" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="ExciseDutyAmt" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="ExciseDutyRate" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="PurchaseTaxAmt" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="PurchaseTaxRate" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="AdditionalChargeAmt" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="DiscountAmount" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="AdditionalChargeRate" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="DocValue" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="InboundQty" Precision="18" Scale="3" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <Property Type="DateTime" Name="dayOpenDate" Precision="3" />
+    <Property Type="String" Name="RequestedArticle" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="RequestedQty" Precision="18" Scale="3" />
+    <Property Type="String" Name="BaseUom" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="BaseUomQty" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="LocalCostPrice" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="LocalDiscount" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="LocalTaxAmount" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="LocalNetCostPrice" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="ItemTaxAmt" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="LandingCostPrice" Precision="18" Scale="3" />
+    <Property Type="String" Name="BarCode" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="MstEAN" Relationship="SpectrumModel.FK_OrderDTL_MSTEAN1" FromRole="OrderDtl" ToRole="MstEAN" />
+    <NavigationProperty Name="OrderHdr" Relationship="SpectrumModel.FK_OrderDtl_OrderHdr" FromRole="OrderDtl" ToRole="OrderHdr" />
+    <Property Type="DateTime" Name="LastSynchedTimeStamp" />
+    <Property Type="String" Name="Remarks" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ReturnReasonCode" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="Row_ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Single" Name="distributorMargin" />
+    <Property Type="Single" Name="dealerMargin" />
+    <Property Type="Single" Name="calculatedRate" />
+  </EntityType>
+  <Association Name="FK_OrderDTL_MSTEAN1">
+    <End Type="SpectrumModel.MstEAN" Role="MstEAN" Multiplicity="1" />
+    <End Type="SpectrumModel.OrderDtl" Role="OrderDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstEAN">
+        <PropertyRef Name="EAN" />
+      </Principal>
+      <Dependent Role="OrderDtl">
+        <PropertyRef Name="EAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderDtl_OrderHdr">
+    <End Type="SpectrumModel.OrderHdr" Role="OrderHdr" Multiplicity="1" />
+    <End Type="SpectrumModel.OrderDtl" Role="OrderDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderHdr">
+        <PropertyRef Name="SiteCode" />
+        <PropertyRef Name="FinYear" />
+        <PropertyRef Name="DocumentNumber" />
+      </Principal>
+      <Dependent Role="OrderDtl">
+        <PropertyRef Name="SiteCode" />
+        <PropertyRef Name="FinYear" />
+        <PropertyRef Name="DocumentNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="AuthUsers">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Type="String" Name="SiteCode" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UserID" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UserName" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CountryCode" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Designation" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="IDNumber" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Password" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="PasswordUpdateDate" Precision="3" />
+    <Property Type="DateTime" Name="PasswordChangeNextDate" Precision="3" />
+    <Property Type="String" Name="EmailId" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="PasswordExpiredon" Precision="3" />
+    <Property Type="String" Name="Active" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <Property Type="Boolean" Name="issalesperson" />
+    <NavigationProperty Name="MstAreaCode" Relationship="SpectrumModel.FK_AuthUsers_MstAreaCode" FromRole="AuthUsers" ToRole="MstAreaCode" />
+    <NavigationProperty Name="MstAreaCode1" Relationship="SpectrumModel.FKCDF82920CDC0A838" FromRole="AuthUsers" ToRole="MstAreaCode" />
+    <NavigationProperty Name="AuthUserSiteRoleMap" Relationship="SpectrumModel.FK_AuthUserSiteRoleMap_AuthUsers" FromRole="AuthUsers" ToRole="AuthUserSiteRoleMap" />
+    <NavigationProperty Name="AuthUserSiteTransactionMap" Relationship="SpectrumModel.FK_UserRightMap_AuthUsers" FromRole="AuthUsers" ToRole="AuthUserSiteTransactionMap" />
+    <NavigationProperty Name="AuthUserSiteTransactionMap1" Relationship="SpectrumModel.FKFE174BD8723BF3F0" FromRole="AuthUsers" ToRole="AuthUserSiteTransactionMap" />
+    <NavigationProperty Name="MstSite" Relationship="SpectrumModel.FK_AuthUsers_MstSite" FromRole="AuthUsers" ToRole="MstSite" />
+    <NavigationProperty Name="MstSite1" Relationship="SpectrumModel.FKCDF82920D969F016" FromRole="AuthUsers" ToRole="MstSite" />
+    <Property Type="String" Name="ParentId" MaxLength="15" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="MstCLPProgram">
+    <Key>
+      <PropertyRef Name="CLPProgramId" />
+    </Key>
+    <Property Type="String" Name="CLPProgramId" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CLPProgramName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="AccumlationType" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="RedemptionType" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="PhysicalCard" />
+    <Property Type="Boolean" Name="CardManageByHO" />
+    <Property Type="DateTime" Name="StartDate" Precision="3" />
+    <Property Type="DateTime" Name="EndDate" Precision="3" />
+    <Property Type="Boolean" Name="IsAdvanceSaleAllowed" />
+    <Property Type="String" Name="ArticleCode" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <Property Type="Boolean" Name="MaxLimitOnAcc" />
+    <Property Type="Decimal" Name="MaxAccumulationLimit" Precision="18" Scale="0" />
+    <Property Type="Boolean" Name="MaxLimitOnRed" />
+    <Property Type="Boolean" Name="OnlyAtCreatedSite" />
+    <Property Type="Boolean" Name="AccWhenRed" />
+    <Property Type="Boolean" Name="ApplicableOnPromotion" />
+    <Property Type="Boolean" Name="IsUpgradationApplicable" Nullable="false" />
+    <Property Type="Boolean" Name="IsUpgradationAmt" Nullable="false" />
+    <Property Type="Boolean" Name="IsDeactiveInactiveAccount" />
+    <Property Type="Decimal" Name="DeactiveInactiveAccountDays" Precision="18" Scale="0" />
+    <Property Type="Boolean" Name="IsPointsExpiry" />
+    <Property Type="Decimal" Name="PointsExpiryDays" Precision="18" Scale="0" />
+    <Property Type="Boolean" Name="IsJoiningReward" />
+    <Property Type="Decimal" Name="ValueJoiningReward" Precision="18" Scale="0" />
+    <Property Type="Boolean" Name="IsJoiningRewardOnEnrollment" />
+    <Property Type="Boolean" Name="IsRedemptionOnEnrollment" />
+    <Property Type="Boolean" Name="IsDayLimtOnRedemption" />
+    <Property Type="Decimal" Name="ValueDayLimtRedemption" Precision="18" Scale="0" />
+    <Property Type="Boolean" Name="IsOnlinePasskey" />
+    <Property Type="Decimal" Name="OnlinePasskeyValidity" Precision="18" Scale="0" />
+    <Property Type="Boolean" Name="IsPOSPasskey" />
+    <Property Type="Decimal" Name="PosPasskeyValidity" Precision="18" Scale="0" />
+    <Property Type="Boolean" Name="IsGVAgainstLoyalty" />
+    <Property Type="Decimal" Name="ValueMinPointsForRedemption" Precision="18" Scale="0" />
+    <Property Type="Boolean" Name="IsMinPointsForRedemption" />
+  </EntityType>
+  <EntityType Name="MstVoucher">
+    <Key>
+      <PropertyRef Name="VoucherCode" />
+    </Key>
+    <Property Type="String" Name="VoucherCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="VoucherDesc" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="VourcherType" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ArticleCode" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="allowAnyDeno" Nullable="false" />
+    <Property Type="Boolean" Name="IsPrePrinted" Nullable="false" />
+    <Property Type="Boolean" Name="DoesVoucherExpire" />
+    <Property Type="Int32" Name="ExpiryAfterDays" />
+    <Property Type="Boolean" Name="IsAdvanceSaleAllowed" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="MstTenderType" Relationship="SpectrumModel.FK_MstVoucher_MstTenderType" FromRole="MstVoucher" ToRole="MstTenderType" />
+    <NavigationProperty Name="MstTenderType1" Relationship="SpectrumModel.FKB03E5F60E563B22B" FromRole="MstVoucher" ToRole="MstTenderType" />
+    <NavigationProperty Name="MstArticle" Relationship="SpectrumModel.FK_MstVoucher_MstArticle" FromRole="MstVoucher" ToRole="MstArticle" />
+    <NavigationProperty Name="MstArticle1" Relationship="SpectrumModel.FKB03E5F60BF3E43DE" FromRole="MstVoucher" ToRole="MstArticle" />
+  </EntityType>
+  <Association Name="FK_AuthUsers_MstAreaCode">
+    <End Type="SpectrumModel.MstAreaCode" Role="MstAreaCode" Multiplicity="0..1" />
+    <End Type="SpectrumModel.AuthUsers" Role="AuthUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstAreaCode">
+        <PropertyRef Name="AreaCode" />
+      </Principal>
+      <Dependent Role="AuthUsers">
+        <PropertyRef Name="CountryCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKCDF82920CDC0A838">
+    <End Type="SpectrumModel.MstAreaCode" Role="MstAreaCode" Multiplicity="0..1" />
+    <End Type="SpectrumModel.AuthUsers" Role="AuthUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstAreaCode">
+        <PropertyRef Name="AreaCode" />
+      </Principal>
+      <Dependent Role="AuthUsers">
+        <PropertyRef Name="CountryCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MstVoucher_MstTenderType">
+    <End Type="SpectrumModel.MstTenderType" Role="MstTenderType" Multiplicity="1" />
+    <End Type="SpectrumModel.MstVoucher" Role="MstVoucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstTenderType">
+        <PropertyRef Name="TenderType" />
+      </Principal>
+      <Dependent Role="MstVoucher">
+        <PropertyRef Name="VourcherType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKB03E5F60E563B22B">
+    <End Type="SpectrumModel.MstTenderType" Role="MstTenderType" Multiplicity="1" />
+    <End Type="SpectrumModel.MstVoucher" Role="MstVoucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstTenderType">
+        <PropertyRef Name="TenderType" />
+      </Principal>
+      <Dependent Role="MstVoucher">
+        <PropertyRef Name="VourcherType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="CLPProgramSiteMap">
+    <Key>
+      <PropertyRef Name="ClpProgramId" />
+      <PropertyRef Name="Sitecode" />
+    </Key>
+    <Property Type="String" Name="ClpProgramId" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Sitecode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="AccumlationApplicable" />
+    <Property Type="Boolean" Name="RedemptionApplicable" />
+    <Property Type="Boolean" Name="RecvCardfromVender" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="MstSite" Relationship="SpectrumModel.FK_CLPProgramSiteMap_MstSite" FromRole="CLPProgramSiteMap" ToRole="MstSite" />
+  </EntityType>
+  <EntityType Name="MstRole">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Type="String" Name="RoleID" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="AuthRoleTransactionMap" Relationship="SpectrumModel.FK_AuthRoleTransactionMap_AuthUserRoles" FromRole="MstRole" ToRole="AuthRoleTransactionMap" />
+    <NavigationProperty Name="AuthRoleTransactionMap1" Relationship="SpectrumModel.FKFA68779C79FB47A2" FromRole="MstRole" ToRole="AuthRoleTransactionMap" />
+    <NavigationProperty Name="MstSite" Relationship="SpectrumModel.FK_MstRole_MSTSite" FromRole="MstRole" ToRole="MstSite" />
+    <NavigationProperty Name="MstSite1" Relationship="SpectrumModel.FKB406BD04D969F016" FromRole="MstRole" ToRole="MstSite" />
+  </EntityType>
+  <EntityType Name="AuthRoleTransactionMap">
+    <Key>
+      <PropertyRef Name="AuthTransactionCode" />
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Type="String" Name="AuthTransactionCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="RoleID" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="MstRole" Relationship="SpectrumModel.FK_AuthRoleTransactionMap_AuthUserRoles" FromRole="AuthRoleTransactionMap" ToRole="MstRole" />
+    <NavigationProperty Name="MstRole1" Relationship="SpectrumModel.FKFA68779C79FB47A2" FromRole="AuthRoleTransactionMap" ToRole="MstRole" />
+    <NavigationProperty Name="MstTransaction" Relationship="SpectrumModel.FK_AuthRoleTransactionMap_MSTTransaction" FromRole="AuthRoleTransactionMap" ToRole="MstTransaction" />
+    <NavigationProperty Name="MstTransaction1" Relationship="SpectrumModel.FKFA68779C70BA2E86" FromRole="AuthRoleTransactionMap" ToRole="MstTransaction" />
+  </EntityType>
+  <EntityType Name="AuthUserSiteRoleMap">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="SiteCode" />
+    </Key>
+    <Property Type="String" Name="UserID" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GRoleid" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="AuthUsers" Relationship="SpectrumModel.FK_AuthUserSiteRoleMap_AuthUsers" FromRole="AuthUserSiteRoleMap" ToRole="AuthUsers" />
+    <NavigationProperty Name="MstSite" Relationship="SpectrumModel.FK_AuthUserSiteRoleMap_MSTSite" FromRole="AuthUserSiteRoleMap" ToRole="MstSite" />
+  </EntityType>
+  <EntityType Name="AuthUserSiteTransactionMap">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="AuthTransactionCode" />
+    </Key>
+    <Property Type="String" Name="UserID" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="AuthTransactionCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Rights" Nullable="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="AuthUsers" Relationship="SpectrumModel.FK_UserRightMap_AuthUsers" FromRole="AuthUserSiteTransactionMap" ToRole="AuthUsers" />
+    <NavigationProperty Name="AuthUsers1" Relationship="SpectrumModel.FKFE174BD8723BF3F0" FromRole="AuthUserSiteTransactionMap" ToRole="AuthUsers" />
+    <NavigationProperty Name="MstSite" Relationship="SpectrumModel.FK_UserRightMap_MSTSite" FromRole="AuthUserSiteTransactionMap" ToRole="MstSite" />
+    <NavigationProperty Name="MstSite1" Relationship="SpectrumModel.FKFE174BD8D969F016" FromRole="AuthUserSiteTransactionMap" ToRole="MstSite" />
+    <NavigationProperty Name="MstTransaction" Relationship="SpectrumModel.FK_UserRightMap_MSTTransaction" FromRole="AuthUserSiteTransactionMap" ToRole="MstTransaction" />
+    <NavigationProperty Name="MstTransaction1" Relationship="SpectrumModel.FKFE174BD870BA2E86" FromRole="AuthUserSiteTransactionMap" ToRole="MstTransaction" />
+  </EntityType>
+  <EntityType Name="MstSalesPerson">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="Empcode" />
+    </Key>
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Empcode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SalesPersonName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SalesPersonFullName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SalesArea" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SalesSection" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+  </EntityType>
+  <Association Name="FK_AuthRoleTransactionMap_AuthUserRoles">
+    <End Type="SpectrumModel.MstRole" Role="MstRole" Multiplicity="1" />
+    <End Type="SpectrumModel.AuthRoleTransactionMap" Role="AuthRoleTransactionMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstRole">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="AuthRoleTransactionMap">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKFA68779C79FB47A2">
+    <End Type="SpectrumModel.MstRole" Role="MstRole" Multiplicity="1" />
+    <End Type="SpectrumModel.AuthRoleTransactionMap" Role="AuthRoleTransactionMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstRole">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="AuthRoleTransactionMap">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthUserSiteRoleMap_AuthUsers">
+    <End Type="SpectrumModel.AuthUsers" Role="AuthUsers" Multiplicity="1" />
+    <End Type="SpectrumModel.AuthUserSiteRoleMap" Role="AuthUserSiteRoleMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AuthUsers">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="AuthUserSiteRoleMap">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRightMap_AuthUsers">
+    <End Type="SpectrumModel.AuthUsers" Role="AuthUsers" Multiplicity="1" />
+    <End Type="SpectrumModel.AuthUserSiteTransactionMap" Role="AuthUserSiteTransactionMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AuthUsers">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="AuthUserSiteTransactionMap">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKFE174BD8723BF3F0">
+    <End Type="SpectrumModel.AuthUsers" Role="AuthUsers" Multiplicity="1" />
+    <End Type="SpectrumModel.AuthUserSiteTransactionMap" Role="AuthUserSiteTransactionMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AuthUsers">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="AuthUserSiteTransactionMap">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TaxSiteMapping">
+    <Key>
+      <PropertyRef Name="Taxcode" />
+      <PropertyRef Name="Sitecode" />
+    </Key>
+    <Property Type="String" Name="Taxcode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Sitecode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Defaultsite" />
+    <Property Type="String" Name="CreatedAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="createdby" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="createdon" Precision="3" />
+    <Property Type="String" Name="updatedat" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="updatedby" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="updatedon" Precision="3" />
+    <Property Type="Boolean" Name="status" />
+    <NavigationProperty Name="MstTax" Relationship="SpectrumModel.FK_TaxSiteMapping_MstTax" FromRole="TaxSiteMapping" ToRole="MstTax" />
+    <NavigationProperty Name="MstSite" Relationship="SpectrumModel.FK_TaxSiteMapping_MstSite" FromRole="TaxSiteMapping" ToRole="MstSite" />
+  </EntityType>
+  <Association Name="FK_TaxSiteMapping_MstTax">
+    <End Type="SpectrumModel.MstTax" Role="MstTax" Multiplicity="1" />
+    <End Type="SpectrumModel.TaxSiteMapping" Role="TaxSiteMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstTax">
+        <PropertyRef Name="TaxCode" />
+      </Principal>
+      <Dependent Role="TaxSiteMapping">
+        <PropertyRef Name="Taxcode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="MstArticleTree">
+    <Key>
+      <PropertyRef Name="TreeCode" />
+    </Key>
+    <Property Type="String" Name="TreeCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TreeName" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="ArticleTreeNodeMap" Relationship="SpectrumModel.FK_ArticleTreeNodeMap_MSTArticleTree" FromRole="MstArticleTree" ToRole="ArticleTreeNodeMap" />
+    <NavigationProperty Name="ArticleTreeNodeMap1" Relationship="SpectrumModel.FKE6BE1FC634BFC8C4" FromRole="MstArticleTree" ToRole="ArticleTreeNodeMap" />
+    <NavigationProperty Name="MstArticleNode" Relationship="SpectrumModel.FK_MstArticleNode_MSTArticleTree" FromRole="MstArticleTree" ToRole="MstArticleNode" />
+    <NavigationProperty Name="MstArticleTreeLevel" Relationship="SpectrumModel.FK_MSTArticleTreeLevel_MSTArticleTree" FromRole="MstArticleTree" ToRole="MstArticleTreeLevel" />
+    <NavigationProperty Name="MstArticleTreeLevel1" Relationship="SpectrumModel.FKD02C29BE34BFC8C4" FromRole="MstArticleTree" ToRole="MstArticleTreeLevel" />
+    <NavigationProperty Name="MstArticle" Relationship="SpectrumModel.FK_MSTArticle_MSTArticleTree" FromRole="MstArticleTree" ToRole="MstArticle" />
+  </EntityType>
+  <EntityType Name="MstArticleTreeLevel">
+    <Key>
+      <PropertyRef Name="TreeCode" />
+      <PropertyRef Name="LevelCode" />
+    </Key>
+    <Property Type="String" Name="TreeCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="LevelCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="LevelName" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="MstArticleTree" Relationship="SpectrumModel.FK_MSTArticleTreeLevel_MSTArticleTree" FromRole="MstArticleTreeLevel" ToRole="MstArticleTree" />
+    <NavigationProperty Name="MstArticleTree1" Relationship="SpectrumModel.FKD02C29BE34BFC8C4" FromRole="MstArticleTreeLevel" ToRole="MstArticleTree" />
+  </EntityType>
+  <Association Name="FK_ArticleTreeNodeMap_MSTArticleTree">
+    <End Type="SpectrumModel.MstArticleTree" Role="MstArticleTree" Multiplicity="1" />
+    <End Type="SpectrumModel.ArticleTreeNodeMap" Role="ArticleTreeNodeMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticleTree">
+        <PropertyRef Name="TreeCode" />
+      </Principal>
+      <Dependent Role="ArticleTreeNodeMap">
+        <PropertyRef Name="Treecode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKE6BE1FC634BFC8C4">
+    <End Type="SpectrumModel.MstArticleTree" Role="MstArticleTree" Multiplicity="1" />
+    <End Type="SpectrumModel.ArticleTreeNodeMap" Role="ArticleTreeNodeMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticleTree">
+        <PropertyRef Name="TreeCode" />
+      </Principal>
+      <Dependent Role="ArticleTreeNodeMap">
+        <PropertyRef Name="Treecode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MstArticleNode_MSTArticleTree">
+    <End Type="SpectrumModel.MstArticleTree" Role="MstArticleTree" Multiplicity="1" />
+    <End Type="SpectrumModel.MstArticleNode" Role="MstArticleNode" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticleTree">
+        <PropertyRef Name="TreeCode" />
+      </Principal>
+      <Dependent Role="MstArticleNode">
+        <PropertyRef Name="Treecode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MSTArticleTreeLevel_MSTArticleTree">
+    <End Type="SpectrumModel.MstArticleTree" Role="MstArticleTree" Multiplicity="1" />
+    <End Type="SpectrumModel.MstArticleTreeLevel" Role="MstArticleTreeLevel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticleTree">
+        <PropertyRef Name="TreeCode" />
+      </Principal>
+      <Dependent Role="MstArticleTreeLevel">
+        <PropertyRef Name="TreeCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKD02C29BE34BFC8C4">
+    <End Type="SpectrumModel.MstArticleTree" Role="MstArticleTree" Multiplicity="1" />
+    <End Type="SpectrumModel.MstArticleTreeLevel" Role="MstArticleTreeLevel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticleTree">
+        <PropertyRef Name="TreeCode" />
+      </Principal>
+      <Dependent Role="MstArticleTreeLevel">
+        <PropertyRef Name="TreeCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="ManualPromotion">
+    <Key>
+      <PropertyRef Name="PromotionId" />
+    </Key>
+    <Property Type="String" Name="PromotionId" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PromotionName" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="PromotionValue" Precision="18" Scale="3" />
+    <Property Type="Boolean" Name="DiscPer" />
+    <Property Type="Boolean" Name="FixedPriceOff" />
+    <Property Type="Boolean" Name="FixedSelling" />
+    <Property Type="DateTime" Name="StartDate" Precision="3" />
+    <Property Type="DateTime" Name="EndDate" Precision="3" />
+    <Property Type="DateTime" Name="StartTime" Precision="3" />
+    <Property Type="DateTime" Name="EndTime" Precision="3" />
+    <Property Type="Boolean" Name="IsApproved" />
+    <Property Type="Boolean" Name="OfferActive" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+  </EntityType>
+  <EntityType Name="PromotionSiteMap">
+    <Key>
+      <PropertyRef Name="OfferNo" />
+      <PropertyRef Name="SiteCode" />
+    </Key>
+    <Property Type="String" Name="OfferNo" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <Property Type="Boolean" Name="Monday" />
+    <Property Type="Boolean" Name="Tuesday" />
+    <Property Type="Boolean" Name="Wednesday" />
+    <Property Type="Boolean" Name="Thursday" />
+    <Property Type="Boolean" Name="Friday" />
+    <Property Type="Boolean" Name="Saturday" />
+    <Property Type="Boolean" Name="Sunday" />
+  </EntityType>
+  <EntityType Name="MstBusiness">
+    <Key>
+      <PropertyRef Name="BusinessCode" />
+    </Key>
+    <Property Type="String" Name="BusinessCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="BusinessName" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="MstSite" Relationship="SpectrumModel.FK_MstSite_MstBusiness" FromRole="MstBusiness" ToRole="MstSite" />
+    <NavigationProperty Name="MstSite1" Relationship="SpectrumModel.FKB4071BD51CA5C708" FromRole="MstBusiness" ToRole="MstSite" />
+  </EntityType>
+  <EntityType Name="MstCurrency">
+    <Key>
+      <PropertyRef Name="CurrencyCode" />
+    </Key>
+    <Property Type="String" Name="CurrencyCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CurrencyDescription" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CurrencySymbol" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="EMUCurrency" />
+    <Property Type="Decimal" Name="RealisedGain" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="RealisedLoss" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="UNRealisedGain" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="UNRealisedLoss" Precision="18" Scale="3" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="MstSiteCurrancyMap" Relationship="SpectrumModel.FK_MstSiteCurrancyMap_MstCurrency" FromRole="MstCurrency" ToRole="MstSiteCurrancyMap" />
+  </EntityType>
+  <EntityType Name="MstFinYear">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="FinYear" />
+    </Key>
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FinYear" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="ValidFromDt" Nullable="false" Precision="3" />
+    <Property Type="DateTime" Name="ValidToDt" Nullable="false" Precision="3" />
+    <Property Type="Boolean" Name="FinStatus" Nullable="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+  </EntityType>
+  <EntityType Name="MstLanguage">
+    <Key>
+      <PropertyRef Name="LanguageCode" />
+    </Key>
+    <Property Type="String" Name="LanguageCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="LanguageName" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Culture" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="ArticleDescInDiffLang" Relationship="SpectrumModel.FK_ArticleDescInDiffLang_MstLanguage" FromRole="MstLanguage" ToRole="ArticleDescInDiffLang" />
+  </EntityType>
+  <EntityType Name="MstSiteCurrancyMap">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="LocalCurrancyCode" />
+    </Key>
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="LocalCurrancyCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="MstCurrency" Relationship="SpectrumModel.FK_MstSiteCurrancyMap_MstCurrency" FromRole="MstSiteCurrancyMap" ToRole="MstCurrency" />
+    <NavigationProperty Name="MstSite" Relationship="SpectrumModel.FK_MstSiteCurrancyMap_MstSite" FromRole="MstSiteCurrancyMap" ToRole="MstSite" />
+  </EntityType>
+  <Association Name="FK_MstSiteCurrancyMap_MstCurrency">
+    <End Type="SpectrumModel.MstCurrency" Role="MstCurrency" Multiplicity="1" />
+    <End Type="SpectrumModel.MstSiteCurrancyMap" Role="MstSiteCurrancyMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstCurrency">
+        <PropertyRef Name="CurrencyCode" />
+      </Principal>
+      <Dependent Role="MstSiteCurrancyMap">
+        <PropertyRef Name="LocalCurrancyCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="MstSite">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+    </Key>
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="BusinessCode" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SiteShortName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SiteOfficialName" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SiteAddressLn1" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SiteAddressLn2" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SiteAddressLn3" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SitePinCode" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CityCode" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="StateCode" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SiteStdCode" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SiteTelephone1" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SiteTelephone2" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FaxNo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EmailId" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="WebPageURL" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ContactPerson" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CountryCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="LanguageCode" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="LocalSalesTaxNo" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CentralSalesTaxNo" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="LocalSalesTaxDate" Precision="3" />
+    <Property Type="DateTime" Name="CentralSalesTaxDate" Precision="3" />
+    <Property Type="Decimal" Name="SQFTArea" Precision="18" Scale="0" />
+    <Property Type="Boolean" Name="IsARSApplicable" />
+    <Property Type="Boolean" Name="IsActive" />
+    <Property Type="Boolean" Name="IsVATApplicable" />
+    <Property Type="Boolean" Name="IsSalesTaxApplicable" />
+    <Property Type="String" Name="LocalCurrancyCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Password" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="IsMAPApplicable" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <Property Type="String" Name="defaultean" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="IsWarehouseApplicable" />
+    <Property Type="String" Name="WarehouseCode" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="SisUploadFlag" />
+    <Property Type="Boolean" Name="IsBinApplicable" />
+    <Property Type="Boolean" Name="isBatchApplicable" />
+    <NavigationProperty Name="ArticleMAP" Relationship="SpectrumModel.FK_ArticleMAP_MstSite" FromRole="MstSite" ToRole="ArticleMAP" />
+    <NavigationProperty Name="AuthUsers" Relationship="SpectrumModel.FK_AuthUsers_MstSite" FromRole="MstSite" ToRole="AuthUsers" />
+    <NavigationProperty Name="AuthUsers1" Relationship="SpectrumModel.FKCDF82920D969F016" FromRole="MstSite" ToRole="AuthUsers" />
+    <NavigationProperty Name="AuthUserSiteRoleMap" Relationship="SpectrumModel.FK_AuthUserSiteRoleMap_MSTSite" FromRole="MstSite" ToRole="AuthUserSiteRoleMap" />
+    <NavigationProperty Name="AuthUserSiteTransactionMap" Relationship="SpectrumModel.FK_UserRightMap_MSTSite" FromRole="MstSite" ToRole="AuthUserSiteTransactionMap" />
+    <NavigationProperty Name="AuthUserSiteTransactionMap1" Relationship="SpectrumModel.FKFE174BD8D969F016" FromRole="MstSite" ToRole="AuthUserSiteTransactionMap" />
+    <NavigationProperty Name="CLPProgramSiteMap" Relationship="SpectrumModel.FK_CLPProgramSiteMap_MstSite" FromRole="MstSite" ToRole="CLPProgramSiteMap" />
+    <NavigationProperty Name="MstAreaCode" Relationship="SpectrumModel.FK_MstSite_MstAreaCode" FromRole="MstSite" ToRole="MstAreaCode" />
+    <NavigationProperty Name="MstAreaCode1" Relationship="SpectrumModel.FKB4071BD5D108F78D" FromRole="MstSite" ToRole="MstAreaCode" />
+    <NavigationProperty Name="MstBusiness" Relationship="SpectrumModel.FK_MstSite_MstBusiness" FromRole="MstSite" ToRole="MstBusiness" />
+    <NavigationProperty Name="MstBusiness1" Relationship="SpectrumModel.FKB4071BD51CA5C708" FromRole="MstSite" ToRole="MstBusiness" />
+    <NavigationProperty Name="MstRole" Relationship="SpectrumModel.FK_MstRole_MSTSite" FromRole="MstSite" ToRole="MstRole" />
+    <NavigationProperty Name="MstRole1" Relationship="SpectrumModel.FKB406BD04D969F016" FromRole="MstSite" ToRole="MstRole" />
+    <NavigationProperty Name="MstSiteCurrancyMap" Relationship="SpectrumModel.FK_MstSiteCurrancyMap_MstSite" FromRole="MstSite" ToRole="MstSiteCurrancyMap" />
+    <NavigationProperty Name="MstTender" Relationship="SpectrumModel.FK_MstTender_MstSite" FromRole="MstSite" ToRole="MstTender" />
+    <NavigationProperty Name="OrderHdr" Relationship="SpectrumModel.FK_OrderHdr_Mstsite" FromRole="MstSite" ToRole="OrderHdr" />
+    <NavigationProperty Name="PurchaseInfoRecord" Relationship="SpectrumModel.FK_PurchaseInfoRecord_SiteCode" FromRole="MstSite" ToRole="PurchaseInfoRecord" />
+    <NavigationProperty Name="StockAdjustment" Relationship="SpectrumModel.FK_StockAdjustment_MstSite" FromRole="MstSite" ToRole="StockAdjustment" />
+    <NavigationProperty Name="TaxSiteMapping" Relationship="SpectrumModel.FK_TaxSiteMapping_MstSite" FromRole="MstSite" ToRole="TaxSiteMapping" />
+    <Property Type="String" Name="legacySiteCode" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="IsRoomCreationAllowed" />
+    <Property Type="Single" Name="distributorMargin" />
+    <Property Type="Single" Name="dealerMargin" />
+    <NavigationProperty Name="SiteAllowedTransactions" Relationship="SpectrumModel.FK_SiteAllowedTRansactions_MSTSite" FromRole="MstSite" ToRole="SiteAllowedTransactions" />
+    <NavigationProperty Name="SiteAllowedTransactions1" Relationship="SpectrumModel.FKD9C07836D969F016" FromRole="MstSite" ToRole="SiteAllowedTransactions" />
+    <NavigationProperty Name="TaxSiteDocMap" Relationship="SpectrumModel.FK_TaxSiteDocMap_MSTSite" FromRole="MstSite" ToRole="TaxSiteDocMap" />
+  </EntityType>
+  <Association Name="FK_ArticleMAP_MstSite">
+    <End Type="SpectrumModel.MstSite" Role="MstSite" Multiplicity="1" />
+    <End Type="SpectrumModel.ArticleMAP" Role="ArticleMAP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="ArticleMAP">
+        <PropertyRef Name="Sitecode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthUsers_MstSite">
+    <End Type="SpectrumModel.MstSite" Role="MstSite" Multiplicity="0..1" />
+    <End Type="SpectrumModel.AuthUsers" Role="AuthUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="AuthUsers">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKCDF82920D969F016">
+    <End Type="SpectrumModel.MstSite" Role="MstSite" Multiplicity="0..1" />
+    <End Type="SpectrumModel.AuthUsers" Role="AuthUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="AuthUsers">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthUserSiteRoleMap_MSTSite">
+    <End Type="SpectrumModel.MstSite" Role="MstSite" Multiplicity="1" />
+    <End Type="SpectrumModel.AuthUserSiteRoleMap" Role="AuthUserSiteRoleMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="AuthUserSiteRoleMap">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRightMap_MSTSite">
+    <End Type="SpectrumModel.MstSite" Role="MstSite" Multiplicity="1" />
+    <End Type="SpectrumModel.AuthUserSiteTransactionMap" Role="AuthUserSiteTransactionMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="AuthUserSiteTransactionMap">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKFE174BD8D969F016">
+    <End Type="SpectrumModel.MstSite" Role="MstSite" Multiplicity="1" />
+    <End Type="SpectrumModel.AuthUserSiteTransactionMap" Role="AuthUserSiteTransactionMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="AuthUserSiteTransactionMap">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLPProgramSiteMap_MstSite">
+    <End Type="SpectrumModel.MstSite" Role="MstSite" Multiplicity="1" />
+    <End Type="SpectrumModel.CLPProgramSiteMap" Role="CLPProgramSiteMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="CLPProgramSiteMap">
+        <PropertyRef Name="Sitecode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MstSite_MstAreaCode">
+    <End Type="SpectrumModel.MstAreaCode" Role="MstAreaCode" Multiplicity="0..1" />
+    <End Type="SpectrumModel.MstSite" Role="MstSite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstAreaCode">
+        <PropertyRef Name="AreaCode" />
+      </Principal>
+      <Dependent Role="MstSite">
+        <PropertyRef Name="CityCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKB4071BD5D108F78D">
+    <End Type="SpectrumModel.MstAreaCode" Role="MstAreaCode" Multiplicity="0..1" />
+    <End Type="SpectrumModel.MstSite" Role="MstSite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstAreaCode">
+        <PropertyRef Name="AreaCode" />
+      </Principal>
+      <Dependent Role="MstSite">
+        <PropertyRef Name="CityCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MstSite_MstBusiness">
+    <End Type="SpectrumModel.MstBusiness" Role="MstBusiness" Multiplicity="0..1" />
+    <End Type="SpectrumModel.MstSite" Role="MstSite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstBusiness">
+        <PropertyRef Name="BusinessCode" />
+      </Principal>
+      <Dependent Role="MstSite">
+        <PropertyRef Name="BusinessCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKB4071BD51CA5C708">
+    <End Type="SpectrumModel.MstBusiness" Role="MstBusiness" Multiplicity="0..1" />
+    <End Type="SpectrumModel.MstSite" Role="MstSite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstBusiness">
+        <PropertyRef Name="BusinessCode" />
+      </Principal>
+      <Dependent Role="MstSite">
+        <PropertyRef Name="BusinessCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MstRole_MSTSite">
+    <End Type="SpectrumModel.MstSite" Role="MstSite" Multiplicity="1" />
+    <End Type="SpectrumModel.MstRole" Role="MstRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="MstRole">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKB406BD04D969F016">
+    <End Type="SpectrumModel.MstSite" Role="MstSite" Multiplicity="1" />
+    <End Type="SpectrumModel.MstRole" Role="MstRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="MstRole">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MstSiteCurrancyMap_MstSite">
+    <End Type="SpectrumModel.MstSite" Role="MstSite" Multiplicity="1" />
+    <End Type="SpectrumModel.MstSiteCurrancyMap" Role="MstSiteCurrancyMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="MstSiteCurrancyMap">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MstTender_MstSite">
+    <End Type="SpectrumModel.MstSite" Role="MstSite" Multiplicity="1" />
+    <End Type="SpectrumModel.MstTender" Role="MstTender" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="MstTender">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderHdr_Mstsite">
+    <End Type="SpectrumModel.MstSite" Role="MstSite" Multiplicity="1" />
+    <End Type="SpectrumModel.OrderHdr" Role="OrderHdr" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="OrderHdr">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseInfoRecord_SiteCode">
+    <End Type="SpectrumModel.MstSite" Role="MstSite" Multiplicity="1" />
+    <End Type="SpectrumModel.PurchaseInfoRecord" Role="PurchaseInfoRecord" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="PurchaseInfoRecord">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StockAdjustment_MstSite">
+    <End Type="SpectrumModel.MstSite" Role="MstSite" Multiplicity="1" />
+    <End Type="SpectrumModel.StockAdjustment" Role="StockAdjustment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="StockAdjustment">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TaxSiteMapping_MstSite">
+    <End Type="SpectrumModel.MstSite" Role="MstSite" Multiplicity="1" />
+    <End Type="SpectrumModel.TaxSiteMapping" Role="TaxSiteMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="TaxSiteMapping">
+        <PropertyRef Name="Sitecode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="MstArticle">
+    <Key>
+      <PropertyRef Name="ArticleCode" />
+    </Key>
+    <Property Type="String" Name="ArticleCode" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ArticalTypeCode" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ArticalCatCode" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ArticleShortName" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ArticleName" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="BaseUnitofMeasure" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DistributionUnitofMeasure" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SaleUnitofMeasure" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="OrderUnitofMeasure" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CataloguedOn" Precision="3" />
+    <Property Type="Boolean" Name="ArticleActive" Nullable="false" />
+    <Property Type="Boolean" Name="IssueFreeGift" />
+    <Property Type="Boolean" Name="ProductImage" />
+    <Property Type="Decimal" Name="TotalShelfLife" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="RemainingShelfLife" Precision="18" Scale="0" />
+    <Property Type="Boolean" Name="DecimalQtyApplicable" />
+    <Property Type="Boolean" Name="IsMrpOpen" />
+    <Property Type="Decimal" Name="SerialNumber" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="WarrantyPeriod" Precision="18" Scale="0" />
+    <Property Type="String" Name="ParentArt" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TreeID" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="LastNodeCode" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="CharProfileCode" Precision="18" Scale="0" />
+    <Property Type="String" Name="SupplierRef" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="STLocCode" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Salable" />
+    <Property Type="Boolean" Name="ToleranceValue" />
+    <Property Type="String" Name="LegacyArticleCode" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Purchaser" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="IntraStatCodeEurope" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="IntraStatCodeUSA" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="NetWeight" Precision="18" Scale="2" />
+    <Property Type="String" Name="NetWeightUOM" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="GrossWeight" Precision="18" Scale="2" />
+    <Property Type="String" Name="GrossWeightUOM" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Volume" Precision="18" Scale="0" />
+    <Property Type="String" Name="VolumeUOM" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Style" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Season" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Theme" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="IsPremaman" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <Property Type="Boolean" Name="NONRETUNABLE" />
+    <Property Type="String" Name="MaterialTypeCode" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ConsumptionUoM" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="isExpiry" />
+    <Property Type="Boolean" Name="Printable" />
+    <Property Type="Boolean" Name="IsEanAutoGenerate" Nullable="false" />
+    <Property Type="Boolean" Name="IsBatchBarcodeAutoGenerate" Nullable="false" />
+    <Property Type="Decimal" Name="SalesUomValue" Precision="18" Scale="3" />
+    <Property Type="String" Name="ManufacturerCode" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="BrandCode" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="DistributionUomValue" Precision="18" Scale="3" />
+    <NavigationProperty Name="ArticleMAP" Relationship="SpectrumModel.FK_ArticleMAP_MstArticle" FromRole="MstArticle" ToRole="ArticleMAP" />
+    <NavigationProperty Name="ArticleNodeMap" Relationship="SpectrumModel.FK_ArticleNodeMap_MSTArticle" FromRole="MstArticle" ToRole="ArticleNodeMap" />
+    <NavigationProperty Name="MstArticleTree" Relationship="SpectrumModel.FK_MSTArticle_MSTArticleTree" FromRole="MstArticle" ToRole="MstArticleTree" />
+    <NavigationProperty Name="MstArticleImage" Relationship="SpectrumModel.FK_MstArticleImage_MSTArticle" FromRole="MstArticle" ToRole="MstArticleImage" />
+    <NavigationProperty Name="MstEAN" Relationship="SpectrumModel.FK_MSTEAN_MSTArticle" FromRole="MstArticle" ToRole="MstEAN" />
+    <NavigationProperty Name="MstVoucher" Relationship="SpectrumModel.FK_MstVoucher_MstArticle" FromRole="MstArticle" ToRole="MstVoucher" />
+    <NavigationProperty Name="StockAdjustment" Relationship="SpectrumModel.FK_StockAdjustment_MstArticle" FromRole="MstArticle" ToRole="StockAdjustment" />
+    <NavigationProperty Name="SiteArticleTaxMapping" Relationship="SpectrumModel.FK_TaxDetail_MSTArticle" FromRole="MstArticle" ToRole="SiteArticleTaxMapping" />
+    <NavigationProperty Name="MstVoucher1" Relationship="SpectrumModel.FKB03E5F60BF3E43DE" FromRole="MstArticle" ToRole="MstVoucher" />
+    <NavigationProperty Name="ArticleDescInDiffLang" Relationship="SpectrumModel.FK_ArticleDescInDiffLang_MstArticle" FromRole="MstArticle" ToRole="ArticleDescInDiffLang" />
+    <NavigationProperty Name="MasterArticleMap" Relationship="SpectrumModel.FK_MasterArticleMap_MasterArticleMap" FromRole="MstArticle" ToRole="MasterArticleMap" />
+    <NavigationProperty Name="MasterArticleMap1" Relationship="SpectrumModel.FK_MasterArticleMap_MstArticle" FromRole="MstArticle" ToRole="MasterArticleMap" />
+    <Property Type="String" Name="Descriptions" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" MaxLength="8000" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="HSNCode" MaxLength="25" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ArticlelblPrintDtl" Relationship="SpectrumModel.FK_Article_lbl_Print" FromRole="MstArticle" ToRole="ArticlelblPrintDtl" />
+  </EntityType>
+  <Association Name="FK_ArticleMAP_MstArticle">
+    <End Type="SpectrumModel.MstArticle" Role="MstArticle" Multiplicity="1" />
+    <End Type="SpectrumModel.ArticleMAP" Role="ArticleMAP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticle">
+        <PropertyRef Name="ArticleCode" />
+      </Principal>
+      <Dependent Role="ArticleMAP">
+        <PropertyRef Name="ArticleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ArticleNodeMap_MSTArticle">
+    <End Type="SpectrumModel.MstArticle" Role="MstArticle" Multiplicity="1" />
+    <End Type="SpectrumModel.ArticleNodeMap" Role="ArticleNodeMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticle">
+        <PropertyRef Name="ArticleCode" />
+      </Principal>
+      <Dependent Role="ArticleNodeMap">
+        <PropertyRef Name="ArticleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MSTArticle_MSTArticleTree">
+    <End Type="SpectrumModel.MstArticleTree" Role="MstArticleTree" Multiplicity="0..1" />
+    <End Type="SpectrumModel.MstArticle" Role="MstArticle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticleTree">
+        <PropertyRef Name="TreeCode" />
+      </Principal>
+      <Dependent Role="MstArticle">
+        <PropertyRef Name="TreeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MstArticleImage_MSTArticle">
+    <End Type="SpectrumModel.MstArticle" Role="MstArticle" Multiplicity="1" />
+    <End Type="SpectrumModel.MstArticleImage" Role="MstArticleImage" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticle">
+        <PropertyRef Name="ArticleCode" />
+      </Principal>
+      <Dependent Role="MstArticleImage">
+        <PropertyRef Name="ArticleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MSTEAN_MSTArticle">
+    <End Type="SpectrumModel.MstArticle" Role="MstArticle" Multiplicity="1" />
+    <End Type="SpectrumModel.MstEAN" Role="MstEAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticle">
+        <PropertyRef Name="ArticleCode" />
+      </Principal>
+      <Dependent Role="MstEAN">
+        <PropertyRef Name="ArticleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MstVoucher_MstArticle">
+    <End Type="SpectrumModel.MstArticle" Role="MstArticle" Multiplicity="0..1" />
+    <End Type="SpectrumModel.MstVoucher" Role="MstVoucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticle">
+        <PropertyRef Name="ArticleCode" />
+      </Principal>
+      <Dependent Role="MstVoucher">
+        <PropertyRef Name="ArticleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StockAdjustment_MstArticle">
+    <End Type="SpectrumModel.MstArticle" Role="MstArticle" Multiplicity="1" />
+    <End Type="SpectrumModel.StockAdjustment" Role="StockAdjustment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticle">
+        <PropertyRef Name="ArticleCode" />
+      </Principal>
+      <Dependent Role="StockAdjustment">
+        <PropertyRef Name="ArticleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TaxDetail_MSTArticle">
+    <End Type="SpectrumModel.MstArticle" Role="MstArticle" Multiplicity="1" />
+    <End Type="SpectrumModel.SiteArticleTaxMapping" Role="SiteArticleTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticle">
+        <PropertyRef Name="ArticleCode" />
+      </Principal>
+      <Dependent Role="SiteArticleTaxMapping">
+        <PropertyRef Name="ArticleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKB03E5F60BF3E43DE">
+    <End Type="SpectrumModel.MstArticle" Role="MstArticle" Multiplicity="0..1" />
+    <End Type="SpectrumModel.MstVoucher" Role="MstVoucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticle">
+        <PropertyRef Name="ArticleCode" />
+      </Principal>
+      <Dependent Role="MstVoucher">
+        <PropertyRef Name="ArticleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="SiteSupplierMap">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="SupplierCode" />
+    </Key>
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SupplierCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+  </EntityType>
+  <EntityType Name="MstMaterialType">
+    <Key>
+      <PropertyRef Name="MaterialTypeCode" />
+    </Key>
+    <Property Type="String" Name="MaterialTypeCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="MaterialTypeDesc" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+  </EntityType>
+  <EntityType Name="ArticleDescInDiffLang">
+    <Key>
+      <PropertyRef Name="ArticleCode" />
+      <PropertyRef Name="LanguageCode" />
+    </Key>
+    <Property Type="String" Name="ArticleCode" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="LanguageCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ArticleShortName" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ArticleName" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="MstArticle" Relationship="SpectrumModel.FK_ArticleDescInDiffLang_MstArticle" FromRole="ArticleDescInDiffLang" ToRole="MstArticle" />
+    <NavigationProperty Name="MstLanguage" Relationship="SpectrumModel.FK_ArticleDescInDiffLang_MstLanguage" FromRole="ArticleDescInDiffLang" ToRole="MstLanguage" />
+  </EntityType>
+  <Association Name="FK_ArticleDescInDiffLang_MstArticle">
+    <End Type="SpectrumModel.MstArticle" Role="MstArticle" Multiplicity="1" />
+    <End Type="SpectrumModel.ArticleDescInDiffLang" Role="ArticleDescInDiffLang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticle">
+        <PropertyRef Name="ArticleCode" />
+      </Principal>
+      <Dependent Role="ArticleDescInDiffLang">
+        <PropertyRef Name="ArticleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ArticleDescInDiffLang_MstLanguage">
+    <End Type="SpectrumModel.MstLanguage" Role="MstLanguage" Multiplicity="1" />
+    <End Type="SpectrumModel.ArticleDescInDiffLang" Role="ArticleDescInDiffLang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstLanguage">
+        <PropertyRef Name="LanguageCode" />
+      </Principal>
+      <Dependent Role="ArticleDescInDiffLang">
+        <PropertyRef Name="LanguageCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="MasterArticleMap">
+    <Key>
+      <PropertyRef Name="ArticleCode" />
+      <PropertyRef Name="MasterArticleCode" />
+    </Key>
+    <Property Type="String" Name="ArticleCode" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="MasterArticleCode" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" Precision="3" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" Precision="3" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="MstArticle" Relationship="SpectrumModel.FK_MasterArticleMap_MasterArticleMap" FromRole="MasterArticleMap" ToRole="MstArticle" />
+    <NavigationProperty Name="MstArticle1" Relationship="SpectrumModel.FK_MasterArticleMap_MstArticle" FromRole="MasterArticleMap" ToRole="MstArticle" />
+  </EntityType>
+  <Association Name="FK_MasterArticleMap_MasterArticleMap">
+    <End Type="SpectrumModel.MstArticle" Role="MstArticle" Multiplicity="1" />
+    <End Type="SpectrumModel.MasterArticleMap" Role="MasterArticleMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticle">
+        <PropertyRef Name="ArticleCode" />
+      </Principal>
+      <Dependent Role="MasterArticleMap">
+        <PropertyRef Name="ArticleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MasterArticleMap_MstArticle">
+    <End Type="SpectrumModel.MstArticle" Role="MstArticle" Multiplicity="1" />
+    <End Type="SpectrumModel.MasterArticleMap" Role="MasterArticleMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticle">
+        <PropertyRef Name="ArticleCode" />
+      </Principal>
+      <Dependent Role="MasterArticleMap">
+        <PropertyRef Name="MasterArticleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="MstTransaction">
+    <Key>
+      <PropertyRef Name="TransactionCode" />
+    </Key>
+    <Property Type="String" Name="TransactionCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TransactionName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" />
+    <Property Type="Boolean" Name="STATUS" />
+    <Property Type="String" Name="MainFunction" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="subfunction" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AuthRoleTransactionMap" Relationship="SpectrumModel.FK_AuthRoleTransactionMap_MSTTransaction" FromRole="MstTransaction" ToRole="AuthRoleTransactionMap" />
+    <NavigationProperty Name="AuthRoleTransactionMap1" Relationship="SpectrumModel.FKFA68779C70BA2E86" FromRole="MstTransaction" ToRole="AuthRoleTransactionMap" />
+    <NavigationProperty Name="AuthUserSiteTransactionMap" Relationship="SpectrumModel.FK_UserRightMap_MSTTransaction" FromRole="MstTransaction" ToRole="AuthUserSiteTransactionMap" />
+    <NavigationProperty Name="AuthUserSiteTransactionMap1" Relationship="SpectrumModel.FKFE174BD870BA2E86" FromRole="MstTransaction" ToRole="AuthUserSiteTransactionMap" />
+    <NavigationProperty Name="SiteAllowedTransactions" Relationship="SpectrumModel.FK_SiteAllowedTransactions_MstTransaction" FromRole="MstTransaction" ToRole="SiteAllowedTransactions" />
+  </EntityType>
+  <EntityType Name="SiteAllowedTransactions">
+    <Key>
+      <PropertyRef Name="TransactionCode" />
+      <PropertyRef Name="SiteCode" />
+    </Key>
+    <Property Type="String" Name="TransactionCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Active" Nullable="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="STATUS" />
+    <NavigationProperty Name="MstSite" Relationship="SpectrumModel.FK_SiteAllowedTRansactions_MSTSite" FromRole="SiteAllowedTransactions" ToRole="MstSite" />
+    <NavigationProperty Name="MstSite1" Relationship="SpectrumModel.FKD9C07836D969F016" FromRole="SiteAllowedTransactions" ToRole="MstSite" />
+    <NavigationProperty Name="MstTransaction" Relationship="SpectrumModel.FK_SiteAllowedTransactions_MstTransaction" FromRole="SiteAllowedTransactions" ToRole="MstTransaction" />
+  </EntityType>
+  <Association Name="FK_AuthRoleTransactionMap_MSTTransaction">
+    <End Type="SpectrumModel.MstTransaction" Role="MstTransaction" Multiplicity="1" />
+    <End Type="SpectrumModel.AuthRoleTransactionMap" Role="AuthRoleTransactionMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstTransaction">
+        <PropertyRef Name="TransactionCode" />
+      </Principal>
+      <Dependent Role="AuthRoleTransactionMap">
+        <PropertyRef Name="AuthTransactionCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKFA68779C70BA2E86">
+    <End Type="SpectrumModel.MstTransaction" Role="MstTransaction" Multiplicity="1" />
+    <End Type="SpectrumModel.AuthRoleTransactionMap" Role="AuthRoleTransactionMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstTransaction">
+        <PropertyRef Name="TransactionCode" />
+      </Principal>
+      <Dependent Role="AuthRoleTransactionMap">
+        <PropertyRef Name="AuthTransactionCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRightMap_MSTTransaction">
+    <End Type="SpectrumModel.MstTransaction" Role="MstTransaction" Multiplicity="1" />
+    <End Type="SpectrumModel.AuthUserSiteTransactionMap" Role="AuthUserSiteTransactionMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstTransaction">
+        <PropertyRef Name="TransactionCode" />
+      </Principal>
+      <Dependent Role="AuthUserSiteTransactionMap">
+        <PropertyRef Name="AuthTransactionCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKFE174BD870BA2E86">
+    <End Type="SpectrumModel.MstTransaction" Role="MstTransaction" Multiplicity="1" />
+    <End Type="SpectrumModel.AuthUserSiteTransactionMap" Role="AuthUserSiteTransactionMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstTransaction">
+        <PropertyRef Name="TransactionCode" />
+      </Principal>
+      <Dependent Role="AuthUserSiteTransactionMap">
+        <PropertyRef Name="AuthTransactionCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SiteAllowedTRansactions_MSTSite">
+    <End Type="SpectrumModel.MstSite" Role="MstSite" Multiplicity="1" />
+    <End Type="SpectrumModel.SiteAllowedTransactions" Role="SiteAllowedTransactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="SiteAllowedTransactions">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKD9C07836D969F016">
+    <End Type="SpectrumModel.MstSite" Role="MstSite" Multiplicity="1" />
+    <End Type="SpectrumModel.SiteAllowedTransactions" Role="SiteAllowedTransactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="SiteAllowedTransactions">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SiteAllowedTransactions_MstTransaction">
+    <End Type="SpectrumModel.MstTransaction" Role="MstTransaction" Multiplicity="1" />
+    <End Type="SpectrumModel.SiteAllowedTransactions" Role="SiteAllowedTransactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstTransaction">
+        <PropertyRef Name="TransactionCode" />
+      </Principal>
+      <Dependent Role="SiteAllowedTransactions">
+        <PropertyRef Name="TransactionCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="DefaultConfig">
+    <Key>
+      <PropertyRef Name="Sitecode" />
+      <PropertyRef Name="FldLabel" />
+    </Key>
+    <Property Type="String" Name="Sitecode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FldLabel" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FldValue" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DocumentType" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DocumentGroup" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" />
+    <Property Type="Boolean" Name="STATUS" />
+    <Property Type="String" Name="FldType" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Sequence" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="TaxSiteDocMap">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="DocumentType" />
+      <PropertyRef Name="TaxCode" />
+    </Key>
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DocumentType" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TaxCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TaxName" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="IsDocumentLevelTax" />
+    <Property Type="Boolean" Name="Inclusive" />
+    <Property Type="String" Name="Appliedon" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="IsPercentageValue" />
+    <Property Type="Decimal" Name="TaxValue" Precision="18" Scale="2" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" />
+    <Property Type="Boolean" Name="STATUS" />
+    <Property Type="Decimal" Name="SEQUENCE" Precision="18" Scale="0" />
+    <Property Type="String" Name="TaxType" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="MstSite" Relationship="SpectrumModel.FK_TaxSiteDocMap_MSTSite" FromRole="TaxSiteDocMap" ToRole="MstSite" />
+    <NavigationProperty Name="MstTax" Relationship="SpectrumModel.FK_TaxSiteDocMap_MstTax" FromRole="TaxSiteDocMap" ToRole="MstTax" />
+    <NavigationProperty Name="MstDocumentTypes" Relationship="SpectrumModel.FK_TaxSiteDocMap_MstDocumentTypes" FromRole="TaxSiteDocMap" ToRole="MstDocumentTypes" />
+  </EntityType>
+  <Association Name="FK_TaxSiteDocMap_MSTSite">
+    <End Type="SpectrumModel.MstSite" Role="MstSite" Multiplicity="1" />
+    <End Type="SpectrumModel.TaxSiteDocMap" Role="TaxSiteDocMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="TaxSiteDocMap">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TaxSiteDocMap_MstTax">
+    <End Type="SpectrumModel.MstTax" Role="MstTax" Multiplicity="1" />
+    <End Type="SpectrumModel.TaxSiteDocMap" Role="TaxSiteDocMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstTax">
+        <PropertyRef Name="TaxCode" />
+      </Principal>
+      <Dependent Role="TaxSiteDocMap">
+        <PropertyRef Name="TaxCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="ArticlelblPrintDtl">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="ArticleCode" />
+    </Key>
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ArticleCode" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="ExpiryInDays" Precision="4" Scale="0" />
+    <Property Type="String" Name="CreatedAt" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CreatedBy" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CreatedOn" />
+    <Property Type="String" Name="UpdatedAt" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UpdatedBy" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UpdatedOn" />
+    <Property Type="Boolean" Name="Status" />
+    <NavigationProperty Name="MstArticle" Relationship="SpectrumModel.FK_Article_lbl_Print" FromRole="ArticlelblPrintDtl" ToRole="MstArticle" />
+  </EntityType>
+  <EntityType Name="MstMaterial">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="MaterialId" />
+    </Key>
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="MaterialType" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="MaterialId" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="MaterialName" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CreatedAt" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CreatedBy" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CreatedOn" />
+    <Property Type="String" Name="UpdatedAt" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UpdatedBy" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UpdatedOn" />
+    <Property Type="Boolean" Name="Status" />
+    <NavigationProperty Name="MstMaterialArticleMap" Relationship="SpectrumModel.FK_Article_Material_MAP" FromRole="MstMaterial" ToRole="MstMaterialArticleMap" />
+  </EntityType>
+  <EntityType Name="MstMaterialArticleMap">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="ArticleCode" />
+      <PropertyRef Name="MaterialId" />
+    </Key>
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ArticleCode" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="MaterialType" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="MaterialId" Nullable="false" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="MaterialValue" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CreatedAt" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CreatedBy" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CreatedOn" />
+    <Property Type="String" Name="UpdatedAt" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UpdatedBy" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UpdatedOn" />
+    <Property Type="Boolean" Name="Status" />
+    <NavigationProperty Name="MstMaterial" Relationship="SpectrumModel.FK_Article_Material_MAP" FromRole="MstMaterialArticleMap" ToRole="MstMaterial" />
+  </EntityType>
+  <Association Name="FK_Article_lbl_Print">
+    <End Type="SpectrumModel.MstArticle" Role="MstArticle" Multiplicity="1" />
+    <End Type="SpectrumModel.ArticlelblPrintDtl" Role="ArticlelblPrintDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticle">
+        <PropertyRef Name="ArticleCode" />
+      </Principal>
+      <Dependent Role="ArticlelblPrintDtl">
+        <PropertyRef Name="ArticleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Article_Material_MAP">
+    <End Type="SpectrumModel.MstMaterial" Role="MstMaterial" Multiplicity="1" />
+    <End Type="SpectrumModel.MstMaterialArticleMap" Role="MstMaterialArticleMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstMaterial">
+        <PropertyRef Name="SiteCode" />
+        <PropertyRef Name="MaterialId" />
+      </Principal>
+      <Dependent Role="MstMaterialArticleMap">
+        <PropertyRef Name="SiteCode" />
+        <PropertyRef Name="MaterialId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="MstDocumentTypes">
+    <Key>
+      <PropertyRef Name="DocumentType" />
+    </Key>
+    <Property Type="String" Name="DocumentType" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="IsBackOfficeDocument" Nullable="false" />
+    <Property Type="String" Name="DocumentTypeDesc" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" />
+    <Property Type="Boolean" Name="STATUS" />
+    <Property Type="Boolean" Name="IsInboxDocument" Nullable="false" />
+    <NavigationProperty Name="OrderHdr" Relationship="SpectrumModel.FK_OrderHDR_DocType" FromRole="MstDocumentTypes" ToRole="OrderHdr" />
+    <NavigationProperty Name="TaxSiteDocMap" Relationship="SpectrumModel.FK_TaxSiteDocMap_MstDocumentTypes" FromRole="MstDocumentTypes" ToRole="TaxSiteDocMap" />
+  </EntityType>
+  <Association Name="FK_OrderHDR_DocType">
+    <End Type="SpectrumModel.MstDocumentTypes" Role="MstDocumentTypes" Multiplicity="1" />
+    <End Type="SpectrumModel.OrderHdr" Role="OrderHdr" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstDocumentTypes">
+        <PropertyRef Name="DocumentType" />
+      </Principal>
+      <Dependent Role="OrderHdr">
+        <PropertyRef Name="DocumentType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TaxSiteDocMap_MstDocumentTypes">
+    <End Type="SpectrumModel.MstDocumentTypes" Role="MstDocumentTypes" Multiplicity="1" />
+    <End Type="SpectrumModel.TaxSiteDocMap" Role="TaxSiteDocMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstDocumentTypes">
+        <PropertyRef Name="DocumentType" />
+      </Principal>
+      <Dependent Role="TaxSiteDocMap">
+        <PropertyRef Name="DocumentType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="MstShift">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="ShiftId" />
+    </Key>
+    <Property Type="String" Name="SiteCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ShiftId" Nullable="false" />
+    <Property Type="String" Name="ShiftName" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Sequence" Nullable="false" />
+    <Property Type="String" Name="CREATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CREATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATEDON" />
+    <Property Type="String" Name="UPDATEDAT" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UPDATEDBY" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATEDON" />
+    <Property Type="Boolean" Name="STATUS" />
+  </EntityType>
+</Schema>

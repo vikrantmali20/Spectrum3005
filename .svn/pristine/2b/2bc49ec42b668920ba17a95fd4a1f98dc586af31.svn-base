@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://billing.webservices.spectrum.criti.com/" name="BillingSynchronizerService" targetNamespace="http://billing.webservices.spectrum.criti.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema targetNamespace="http://billing.webservices.spectrum.criti.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="retrieveBillingDetails" type="tns:retrieveBillingDetails" />
+      <xs:element name="retrieveBillingDetailsResponse" type="tns:retrieveBillingDetailsResponse" />
+      <xs:element name="saveBillingDetails" type="tns:saveBillingDetails" />
+      <xs:element name="saveBillingDetailsResponse" type="tns:saveBillingDetailsResponse" />
+      <xs:complexType name="retrieveBillingDetails">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:wsRequestDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="wsRequestDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="pushOrPull" type="xs:boolean" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="soapWsHeader" type="tns:soapWsHeader" />
+          <xs:element minOccurs="0" name="syncFromDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="tableName" type="xs:string" />
+          <xs:element minOccurs="0" name="transactionCode" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="soapWsHeader">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="password" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="storePort" type="xs:string" />
+          <xs:element minOccurs="0" name="userName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="retrieveBillingDetailsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:billingDTOs" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="billingDTOs">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="buttonArticleDTO" nillable="true" type="tns:buttonArticleDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="buttonGroupDTO" nillable="true" type="tns:buttonGroupDTO" />
+          <xs:element minOccurs="0" name="calendar" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="cmReceiptTenderDtlDTO" nillable="true" type="tns:cmReceiptTenderDtlDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="cmTenderValidationConfigDTO" nillable="true" type="tns:cmTenderValidationConfigDTO" />
+          <xs:element minOccurs="0" name="faultDTO" type="tns:faultDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="mstReceiptLabelsDTO" nillable="true" type="tns:mstReceiptLabelsDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="mstSalesPersonDTO" nillable="true" type="tns:mstSalesPersonDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="posDeviceProfileDTO" nillable="true" type="tns:posDeviceProfileDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="printingDetailDTO" nillable="true" type="tns:printingDetailDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="buttonArticleDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articleCode" type="xs:string" />
+          <xs:element minOccurs="0" name="articleName" type="xs:string" />
+          <xs:element minOccurs="0" name="buttonArticleId" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="groupId" type="xs:string" />
+          <xs:element minOccurs="0" name="isActive" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="buttonGroupDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="groupId" type="xs:string" />
+          <xs:element minOccurs="0" name="groupName" type="xs:string" />
+          <xs:element minOccurs="0" name="isActive" type="xs:string" />
+          <xs:element minOccurs="0" name="parentGroupId" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="cmReceiptTenderDtlDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="billNo" type="xs:string" />
+          <xs:element minOccurs="0" name="CMRecptLineno" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="fldLabel" type="xs:string" />
+          <xs:element minOccurs="0" name="fldValue" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="tenderTypeCode" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="cmTenderValidationConfigDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="fldLabel" type="xs:string" />
+          <xs:element minOccurs="0" name="fldValueDataType" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="tenderHeadCode" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+          <xs:element minOccurs="0" name="validatiion" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="faultDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="businessError" type="xs:string" />
+          <xs:element minOccurs="0" name="faultLevel" type="xs:string" />
+          <xs:element minOccurs="0" name="faultStackTrace" type="xs:string" />
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mstReceiptLabelsDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="labelDate" type="xs:string" />
+          <xs:element minOccurs="0" name="labelNo_1" type="xs:string" />
+          <xs:element minOccurs="0" name="labelNo_2" type="xs:string" />
+          <xs:element minOccurs="0" name="labelNo_3" type="xs:string" />
+          <xs:element minOccurs="0" name="labelNo_4" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="tenderHeadCode" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mstSalesPersonDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="empcode" type="xs:string" />
+          <xs:element minOccurs="0" name="salesArea" type="xs:string" />
+          <xs:element minOccurs="0" name="salesPersonFullName" type="xs:string" />
+          <xs:element minOccurs="0" name="salesPersonName" type="xs:string" />
+          <xs:element minOccurs="0" name="salesSection" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="posDeviceProfileDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="deviceName" type="xs:string" />
+          <xs:element minOccurs="0" name="deviceType" type="xs:string" />
+          <xs:element minOccurs="0" name="driverType" type="xs:string" />
+          <xs:element minOccurs="0" name="isConfigured" type="xs:string" />
+          <xs:element minOccurs="0" name="logicalName" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="terminalId" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="printingDetailDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="align" type="xs:string" />
+          <xs:element minOccurs="0" name="bold" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="documentType" type="xs:string" />
+          <xs:element minOccurs="0" name="height" type="xs:string" />
+          <xs:element minOccurs="0" name="receiptText" type="xs:string" />
+          <xs:element minOccurs="0" name="sequenceNo" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="srno" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="topBottom" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+          <xs:element minOccurs="0" name="width" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveBillingDetails">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:billingSaveRequestDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="billingSaveRequestDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="billingDTOs" type="tns:billingDTOs" />
+          <xs:element minOccurs="0" name="soapWsHeader" type="tns:soapWsHeader" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveBillingDetailsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:syncResponseDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="syncResponseDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="calendar" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="faultDTO" type="tns:faultDTO" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </types>
+  <message name="BillingSynchronizer_retrieveBillingDetailsResponse">
+    <part name="retrieveBillingDetailsResponse" element="tns:retrieveBillingDetailsResponse" />
+  </message>
+  <message name="BillingSynchronizer_saveBillingDetails">
+    <part name="saveBillingDetails" element="tns:saveBillingDetails" />
+  </message>
+  <message name="BillingSynchronizer_saveBillingDetailsResponse">
+    <part name="saveBillingDetailsResponse" element="tns:saveBillingDetailsResponse" />
+  </message>
+  <message name="BillingSynchronizer_retrieveBillingDetails">
+    <part name="retrieveBillingDetails" element="tns:retrieveBillingDetails" />
+  </message>
+  <portType name="BillingSynchronizer">
+    <operation name="retrieveBillingDetails" parameterOrder="retrieveBillingDetails">
+      <input message="tns:BillingSynchronizer_retrieveBillingDetails" />
+      <output message="tns:BillingSynchronizer_retrieveBillingDetailsResponse" />
+    </operation>
+    <operation name="saveBillingDetails" parameterOrder="saveBillingDetails">
+      <input message="tns:BillingSynchronizer_saveBillingDetails" />
+      <output message="tns:BillingSynchronizer_saveBillingDetailsResponse" />
+    </operation>
+  </portType>
+  <binding name="BillingSynchronizerBinding" type="tns:BillingSynchronizer">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="retrieveBillingDetails">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="saveBillingDetails">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="BillingSynchronizerService">
+    <port name="BillingSynchronizerPort" binding="tns:BillingSynchronizerBinding">
+      <soap:address location="http://Dt148:10080/posSeam/webservices/BillingSynchronizer" />
+    </port>
+  </service>
+</definitions>

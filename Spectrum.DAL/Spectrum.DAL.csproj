@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0D3710AA-7E58-4703-AF66-D9684CE72BD9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Spectrum.DAL</RootNamespace>
+    <AssemblyName>Spectrum.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.C1Excel.2">
+      <HintPath>..\Assemblies\C1.C1Excel.2.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Spectrum\SpectrumLite\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Spectrum\SpectrumLite\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Spectrum.Logging">
+      <HintPath>..\Assemblies\Spectrum.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Spectrum.Models">
+      <HintPath>..\Assemblies\Spectrum.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArticleBatchBinStockBalances.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleDescInDiffLang.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleHierarchyRepository.cs" />
+    <Compile Include="ArticlelblPrintDtl.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleMAP.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleMatrix.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleNodeMap.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleReplenishment.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleRepository.cs" />
+    <Compile Include="ArticleStockBalances.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleStockBalancesRepository.cs" />
+    <Compile Include="ArticleTreeNodeMap.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleUOM.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AuthRoleTransactionMap.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AuthUsers.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AuthUserSiteRoleMap.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AuthUserSiteTransactionMap.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BarcodeRepository.cs" />
+    <Compile Include="Brand.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CharacteristicRepository.cs" />
+    <Compile Include="CharacteristicsProfile.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CharacteristicsRepository.cs" />
+    <Compile Include="CharacteristicsValue.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CLPProgramSiteMap.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CommonRepository.cs" />
+    <Compile Include="ContextFactory.cs" />
+    <Compile Include="CustomEntities\ArticleDALModel.cs" />
+    <Compile Include="DefaultConfig.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityExtensions\EnitityUtility.cs" />
+    <Compile Include="EntityExtensions\EntityDataExtensions.cs" />
+    <Compile Include="EntityExtensions\EntityReferenceExtensions.cs" />
+    <Compile Include="EntityExtensions\EntitySet.cs" />
+    <Compile Include="EntityExtensions\ExpressionVisitor.cs" />
+    <Compile Include="EntityExtensions\Materializer.cs" />
+    <Compile Include="GeneralCodeMst.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GenericRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GLNoRangeObjects.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ManualPromotion.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manufacturer.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MasterArticleMap.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialRepository.cs" />
+    <Compile Include="MstAreaCode.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstArticle.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstArticleImage.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstArticleKit.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstArticleNode.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstArticleTree.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstArticleTreeLevel.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstArticleType.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstBusiness.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstCharacteristics.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstCharacteristicsProfile.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstCLPProgram.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstCurrency.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstDocumentTypes.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstEAN.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstFinYear.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstLanguage.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstMaterial.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstMaterialArticleMap.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstMaterialType.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstRole.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstSalesPerson.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstShift.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstSiteCurrancyMap.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstSite.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstTransaction.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstUoM.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstVoucher.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDtl.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderHdr.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PromotionRepository.cs" />
+    <Compile Include="PromotionSiteMap.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseInfoRecord.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RepositoryInterfaces\IArticleHierarchyRepository.cs" />
+    <Compile Include="RepositoryInterfaces\IArticleRepository.cs" />
+    <Compile Include="RepositoryInterfaces\IArticleStockBalancesRepository.cs" />
+    <Compile Include="RepositoryInterfaces\IBarcodeRepository.cs" />
+    <Compile Include="RepositoryInterfaces\ICharacteristicRepository.cs" />
+    <Compile Include="RepositoryInterfaces\ICharacteristicsRepository.cs" />
+    <Compile Include="RepositoryInterfaces\ICommonRepository.cs" />
+    <Compile Include="RepositoryInterfaces\IMaterialRepository.cs" />
+    <Compile Include="RepositoryInterfaces\IPromotionRepository.cs" />
+    <Compile Include="RepositoryInterfaces\IShiftManagementRepository.cs" />
+    <Compile Include="RepositoryInterfaces\ISupplierRepository.cs" />
+    <Compile Include="RepositoryInterfaces\ITenderRepository.cs" />
+    <Compile Include="RepositoryInterfaces\IUserRepository.cs" />
+    <Compile Include="SalesInfoRecord.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShiftManagementRepository.cs" />
+    <Compile Include="SiteAllowedTransactions.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SiteArticleTaxMapping.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SiteSupplierMap.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockAdjustment.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierRepository.cs" />
+    <Compile Include="TaxRepository.cs" />
+    <Compile Include="MstSupplier.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstTax.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstTender.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstTenderType.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositoryInterfaces\ITaxRepository.cs" />
+    <Compile Include="RepositoryInterfaces\IGenericRepository.cs" />
+    <Compile Include="RepositoryInterfaces\ISiteRepository.cs" />
+    <Compile Include="SiteRepository.cs" />
+    <Compile Include="SpectrumModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpectrumModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SpectrumModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SpectrumModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpectrumModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="TaxSiteDocMap.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaxSiteMapping.cs">
+      <DependentUpon>SpectrumModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TenderRepository.cs" />
+    <Compile Include="UserRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="SpectrumModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SpectrumModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SpectrumModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SpectrumModel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="SpectrumModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SpectrumModel.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y "$(TargetDir)$(ProjectName).dll" "$(SolutionDir)Assemblies\"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

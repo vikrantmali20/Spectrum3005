@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://article.webservices.spectrum.criti.com/" name="ArticleSynchronizerService" targetNamespace="http://article.webservices.spectrum.criti.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema targetNamespace="http://article.webservices.spectrum.criti.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="retrieveArticleDetails" type="tns:retrieveArticleDetails" />
+      <xs:element name="retrieveArticleDetailsResponse" type="tns:retrieveArticleDetailsResponse" />
+      <xs:element name="saveArticleDetails" type="tns:saveArticleDetails" />
+      <xs:element name="saveArticleDetailsResponse" type="tns:saveArticleDetailsResponse" />
+      <xs:complexType name="retrieveArticleDetails">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:wsRequestDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="wsRequestDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="pushOrPull" type="xs:boolean" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="soapWsHeader" type="tns:soapWsHeader" />
+          <xs:element minOccurs="0" name="syncFromDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="tableName" type="xs:string" />
+          <xs:element minOccurs="0" name="transactionCode" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="soapWsHeader">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="password" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="storePort" type="xs:string" />
+          <xs:element minOccurs="0" name="userName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="retrieveArticleDetailsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:articleDTOs" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="articleDTOs">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="articleComponentDTO" nillable="true" type="tns:articleComponentDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="articleListedDTO" nillable="true" type="tns:articleListedDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="articleMatrixDTO" nillable="true" type="tns:articleMatrixDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="articleReplenishmentDTO" nillable="true" type="tns:dynamicColumnArray" />
+          <xs:element minOccurs="0" name="calendar" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="eanDTO" nillable="true" type="tns:mstEanDTO" />
+          <xs:element minOccurs="0" name="faultDTO" type="tns:faultDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="masterArticleMapDTO" nillable="true" type="tns:masterArticleMapDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="mstArticleComboDTO" nillable="true" type="tns:mstArticleComboDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="mstArticleDTO" nillable="true" type="tns:mstArticleDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="mstArticleGroupDTO" nillable="true" type="tns:mstArticleGroupDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="mstArticleGroupDtlDTO" nillable="true" type="tns:mstArticleGroupDtlDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="mstArticleImageDTO" nillable="true" type="tns:mstArticleImageDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="mstArticleKitDTO" nillable="true" type="tns:mstArticleKitDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="mstArticleTreeDTO" nillable="true" type="tns:mstArticleTreeDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="mstArticleTypeDTO" nillable="true" type="tns:mstArticleTypeDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="mstItemCategoryDTO" nillable="true" type="tns:mstItemCategoryDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="mstSpecialFeatureDTO" nillable="true" type="tns:mstSpecialFeatureDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="purchaseInfoRecordDTO" nillable="true" type="tns:purchaseInfoRecordDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="salesInfoRecordDTO" nillable="true" type="tns:salesInfoRecordDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="siteArticleHierarchyMappingDTO" nillable="true" type="tns:siteArticleHierarchyMappingDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="siteArticleTaxMappingDTO" nillable="true" type="tns:siteArticleTaxMappingDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="uoMconversionDTO" nillable="true" type="tns:uoMconversionDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="articleComponentDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articlecode" type="xs:string" />
+          <xs:element minOccurs="0" name="articletypecode" type="xs:string" />
+          <xs:element minOccurs="0" name="compname" type="xs:string" />
+          <xs:element minOccurs="0" name="componentarticle" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="ean" type="xs:string" />
+          <xs:element minOccurs="0" name="quantity" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="uomcode" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="articleListedDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articleCode" type="xs:string" />
+          <xs:element minOccurs="0" name="assortmentCode" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="isImportedAtStore" type="xs:string" />
+          <xs:element minOccurs="0" name="sitecode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="articleMatrixDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articleCode" type="xs:string" />
+          <xs:element minOccurs="0" name="charCode" type="xs:string" />
+          <xs:element minOccurs="0" name="charType" type="xs:string" />
+          <xs:element minOccurs="0" name="charValue" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="eanCode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="dynamicColumn">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="colName" type="xs:string" />
+          <xs:element name="colType" type="xs:int" />
+          <xs:element minOccurs="0" name="colValue" type="xs:anyType" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mstEanDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articleCode" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="defaultEan" type="xs:string" />
+          <xs:element minOccurs="0" name="discription" type="xs:string" />
+          <xs:element minOccurs="0" name="ean" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="uomTypeCode" type="xs:string" />
+          <xs:element minOccurs="0" name="uomcode" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="faultDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="businessError" type="xs:string" />
+          <xs:element minOccurs="0" name="faultLevel" type="xs:string" />
+          <xs:element minOccurs="0" name="faultStackTrace" type="xs:string" />
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="masterArticleMapDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articleCode" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="masterArticleCode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mstArticleComboDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="comboCode" type="xs:string" />
+          <xs:element minOccurs="0" name="cost" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="discount" type="xs:string" />
+          <xs:element minOccurs="0" name="groupIds" type="xs:string" />
+          <xs:element minOccurs="0" name="hierarchy" type="xs:string" />
+          <xs:element minOccurs="0" name="id" type="xs:string" />
+          <xs:element minOccurs="0" name="individualQty" type="xs:string" />
+          <xs:element minOccurs="0" name="item" type="xs:string" />
+          <xs:element minOccurs="0" name="quantity" type="xs:string" />
+          <xs:element minOccurs="0" name="sequence" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updateGroupIds" type="xs:string" />
+          <xs:element minOccurs="0" name="updateHierarchy" type="xs:string" />
+          <xs:element minOccurs="0" name="updateItem" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mstArticleDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articalcatcode" type="xs:string" />
+          <xs:element minOccurs="0" name="articaltypecode" type="xs:string" />
+          <xs:element minOccurs="0" name="articleactive" type="xs:string" />
+          <xs:element minOccurs="0" name="articlecode" type="xs:string" />
+          <xs:element minOccurs="0" name="articlename" type="xs:string" />
+          <xs:element minOccurs="0" name="articleshortname" type="xs:string" />
+          <xs:element minOccurs="0" name="baseunitofmeasure" type="xs:string" />
+          <xs:element minOccurs="0" name="brandCode" type="xs:string" />
+          <xs:element minOccurs="0" name="cataloguedon" type="xs:string" />
+          <xs:element minOccurs="0" name="charprofilecode" type="xs:string" />
+          <xs:element minOccurs="0" name="consumptionUOM" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="decimalqtyapplicable" type="xs:string" />
+          <xs:element minOccurs="0" name="description" type="xs:string" />
+          <xs:element minOccurs="0" name="distributionUomValue" type="xs:string" />
+          <xs:element minOccurs="0" name="distributionunitofmeasure" type="xs:string" />
+          <xs:element minOccurs="0" name="freezein" type="xs:string" />
+          <xs:element minOccurs="0" name="freezeob" type="xs:string" />
+          <xs:element minOccurs="0" name="freezesb" type="xs:string" />
+          <xs:element minOccurs="0" name="freezesr" type="xs:string" />
+          <xs:element minOccurs="0" name="grossweight" type="xs:string" />
+          <xs:element minOccurs="0" name="grossweightuom" type="xs:string" />
+          <xs:element minOccurs="0" name="hsnCode" type="xs:string" />
+          <xs:element minOccurs="0" name="intrastatcodeeurope" type="xs:string" />
+          <xs:element minOccurs="0" name="intrastatcodeusa" type="xs:string" />
+          <xs:element minOccurs="0" name="isBatchBarcodeAutoGenerate" type="xs:string" />
+          <xs:element minOccurs="0" name="isEanAutoGenerate" type="xs:string" />
+          <xs:element minOccurs="0" name="isExpiry" type="xs:string" />
+          <xs:element minOccurs="0" name="ismrpopen" type="xs:string" />
+          <xs:element minOccurs="0" name="ispremaman" type="xs:string" />
+          <xs:element minOccurs="0" name="issuefreegift" type="xs:string" />
+          <xs:element minOccurs="0" name="lastnodecode" type="xs:string" />
+          <xs:element minOccurs="0" name="legacyarticlecode" type="xs:string" />
+          <xs:element minOccurs="0" name="manufacturerCode" type="xs:string" />
+          <xs:element minOccurs="0" name="materialTypeCode" type="xs:string" />
+          <xs:element minOccurs="0" name="netweight" type="xs:string" />
+          <xs:element minOccurs="0" name="netweightuom" type="xs:string" />
+          <xs:element minOccurs="0" name="nonretunable" type="xs:string" />
+          <xs:element minOccurs="0" name="orderunitofmeasure" type="xs:string" />
+          <xs:element minOccurs="0" name="parentart" type="xs:string" />
+          <xs:element minOccurs="0" name="printable" type="xs:string" />
+          <xs:element minOccurs="0" name="productimage" type="xs:string" />
+          <xs:element minOccurs="0" name="purchaser" type="xs:string" />
+          <xs:element minOccurs="0" name="remainingshelflife" type="xs:string" />
+          <xs:element minOccurs="0" name="salable" type="xs:string" />
+          <xs:element minOccurs="0" name="salesUomValue" type="xs:string" />
+          <xs:element minOccurs="0" name="saleunitofmeasure" type="xs:string" />
+          <xs:element minOccurs="0" name="season" type="xs:string" />
+          <xs:element minOccurs="0" name="serialnumber" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="stloccode" type="xs:string" />
+          <xs:element minOccurs="0" name="style" type="xs:string" />
+          <xs:element minOccurs="0" name="supplierref" type="xs:string" />
+          <xs:element minOccurs="0" name="theme" type="xs:string" />
+          <xs:element minOccurs="0" name="tolerancevalue" type="xs:string" />
+          <xs:element minOccurs="0" name="totalshelflife" type="xs:string" />
+          <xs:element minOccurs="0" name="treeid" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+          <xs:element minOccurs="0" name="volume" type="xs:string" />
+          <xs:element minOccurs="0" name="volumeuom" type="xs:string" />
+          <xs:element minOccurs="0" name="warrantyperiod" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mstArticleGroupDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="groupId" type="xs:string" />
+          <xs:element minOccurs="0" name="groupName" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="type" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mstArticleGroupDtlDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articleCode" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="groupId" type="xs:string" />
+          <xs:element minOccurs="0" name="quantity" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="subGroup" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mstArticleImageDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articleCode" type="xs:string" />
+          <xs:element minOccurs="0" name="articleImage" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mstArticleKitDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articleCode" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="ean" type="xs:string" />
+          <xs:element minOccurs="0" name="kitArticleCode" type="xs:string" />
+          <xs:element minOccurs="0" name="quantity" type="xs:string" />
+          <xs:element minOccurs="0" name="saleUnitofMeasure" type="xs:string" />
+          <xs:element minOccurs="0" name="sellingPrice" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mstArticleTreeDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="treeCode" type="xs:string" />
+          <xs:element minOccurs="0" name="treeName" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mstArticleTypeDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articalTypeCode" type="xs:string" />
+          <xs:element minOccurs="0" name="articalTypeName" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mstItemCategoryDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articalCatCode" type="xs:string" />
+          <xs:element minOccurs="0" name="articalCatName" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="parentCatCode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mstSpecialFeatureDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="spfeatureCode" type="xs:string" />
+          <xs:element minOccurs="0" name="spfeatureName" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="purchaseInfoRecordDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articlecode" type="xs:string" />
+          <xs:element minOccurs="0" name="calculatedRate" type="xs:string" />
+          <xs:element minOccurs="0" name="cpbasecurr" type="xs:string" />
+          <xs:element minOccurs="0" name="cplocalcurr" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="dealerMargin" type="xs:string" />
+          <xs:element minOccurs="0" name="distributorMargin" type="xs:string" />
+          <xs:element minOccurs="0" name="ean" type="xs:string" />
+          <xs:element minOccurs="0" name="freezein" type="xs:string" />
+          <xs:element minOccurs="0" name="freezeob" type="xs:string" />
+          <xs:element minOccurs="0" name="freezesb" type="xs:string" />
+          <xs:element minOccurs="0" name="freezesr" type="xs:string" />
+          <xs:element minOccurs="0" name="fromdate" type="xs:string" />
+          <xs:element minOccurs="0" name="isarsallowed" type="xs:string" />
+          <xs:element minOccurs="0" name="isdefaultsupplier" type="xs:string" />
+          <xs:element minOccurs="0" name="map" type="xs:string" />
+          <xs:element minOccurs="0" name="mrp" type="xs:string" />
+          <xs:element minOccurs="0" name="sitecode" type="xs:string" />
+          <xs:element minOccurs="0" name="srno" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="suppliercode" type="xs:string" />
+          <xs:element minOccurs="0" name="todate" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="salesInfoRecordDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articlecode" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="ean" type="xs:string" />
+          <xs:element minOccurs="0" name="freezeIn" type="xs:string" />
+          <xs:element minOccurs="0" name="freezeOb" type="xs:string" />
+          <xs:element minOccurs="0" name="freezeSb" type="xs:string" />
+          <xs:element minOccurs="0" name="freezeSr" type="xs:string" />
+          <xs:element minOccurs="0" name="fromdate" type="xs:string" />
+          <xs:element minOccurs="0" name="sellingprice" type="xs:string" />
+          <xs:element minOccurs="0" name="sitecode" type="xs:string" />
+          <xs:element minOccurs="0" name="srno" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="suggestedSalesPrice" type="xs:string" />
+          <xs:element minOccurs="0" name="todate" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="siteArticleHierarchyMappingDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="treeDescription" type="xs:string" />
+          <xs:element minOccurs="0" name="treeId" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="siteArticleTaxMappingDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articleCode" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="supplierCode" type="xs:string" />
+          <xs:element minOccurs="0" name="taxCode" type="xs:string" />
+          <xs:element minOccurs="0" name="taxName" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="uoMconversionDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articleCode" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="otherUnit" type="xs:string" />
+          <xs:element minOccurs="0" name="otherUnitValue" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveArticleDetails">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:articleSaveRequestDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="articleSaveRequestDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articleDTOs" type="tns:articleDTOs" />
+          <xs:element minOccurs="0" name="soapWsHeader" type="tns:soapWsHeader" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveArticleDetailsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:syncResponseDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="syncResponseDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="calendar" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="faultDTO" type="tns:faultDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="dynamicColumnArray" final="#all">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="item" nillable="true" type="tns:dynamicColumn" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </types>
+  <message name="ArticleSynchronizer_saveArticleDetails">
+    <part name="saveArticleDetails" element="tns:saveArticleDetails" />
+  </message>
+  <message name="ArticleSynchronizer_saveArticleDetailsResponse">
+    <part name="saveArticleDetailsResponse" element="tns:saveArticleDetailsResponse" />
+  </message>
+  <message name="ArticleSynchronizer_retrieveArticleDetails">
+    <part name="retrieveArticleDetails" element="tns:retrieveArticleDetails" />
+  </message>
+  <message name="ArticleSynchronizer_retrieveArticleDetailsResponse">
+    <part name="retrieveArticleDetailsResponse" element="tns:retrieveArticleDetailsResponse" />
+  </message>
+  <portType name="ArticleSynchronizer">
+    <operation name="retrieveArticleDetails" parameterOrder="retrieveArticleDetails">
+      <input message="tns:ArticleSynchronizer_retrieveArticleDetails" />
+      <output message="tns:ArticleSynchronizer_retrieveArticleDetailsResponse" />
+    </operation>
+    <operation name="saveArticleDetails" parameterOrder="saveArticleDetails">
+      <input message="tns:ArticleSynchronizer_saveArticleDetails" />
+      <output message="tns:ArticleSynchronizer_saveArticleDetailsResponse" />
+    </operation>
+  </portType>
+  <binding name="ArticleSynchronizerBinding" type="tns:ArticleSynchronizer">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="retrieveArticleDetails">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="saveArticleDetails">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ArticleSynchronizerService">
+    <port name="ArticleSynchronizerPort" binding="tns:ArticleSynchronizerBinding">
+      <soap:address location="http://Dt148:10080/posSeam/webservices/ArticleSynchronizer" />
+    </port>
+  </service>
+</definitions>

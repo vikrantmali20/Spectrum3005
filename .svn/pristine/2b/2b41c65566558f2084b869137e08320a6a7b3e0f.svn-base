@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9D85D9AA-6EE8-4A64-A7EB-BC8147B8B411}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Spectrum.BO</RootNamespace>
+    <AssemblyName>SpectrumLite</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Spectrum.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.C1Excel.2">
+      <HintPath>..\Assemblies\C1.C1Excel.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.C1Pdf.2">
+      <HintPath>..\Assemblies\C1.C1Pdf.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1BarCode.2">
+      <HintPath>..\Assemblies\C1.Win.C1BarCode.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Command.2">
+      <HintPath>..\Assemblies\C1.Win.C1Command.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.2">
+      <HintPath>..\Assemblies\C1.Win.C1FlexGrid.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Input.2">
+      <HintPath>..\Assemblies\C1.Win.C1Input.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1List.2, Version=2.1.20101.165, Culture=neutral, PublicKeyToken=6b24f8f981dbd7bc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Assemblies\C1.Win.C1List.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Ribbon.2">
+      <HintPath>..\Assemblies\C1.Win.C1Ribbon.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Sizer.2">
+      <HintPath>..\Assemblies\C1.Win.C1Sizer.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1SuperTooltip.2">
+      <HintPath>..\Assemblies\C1.Win.C1SuperTooltip.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1TrueDBGrid.2">
+      <HintPath>..\Assemblies\C1.Win.C1TrueDBGrid.2.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Spectrum\SpectrumLite\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Spectrum\SpectrumLite\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Spectrum\SpectrumLite\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Spectrum\SpectrumLite\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Spectrum.BL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Assemblies\Spectrum.BL.dll</HintPath>
+    </Reference>
+    <Reference Include="Spectrum.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Assemblies\Spectrum.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Spectrum.Cryptography, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Assemblies\Spectrum.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Spectrum.DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Assemblies\Spectrum.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="Spectrum.Factory, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Assemblies\Spectrum.Factory.dll</HintPath>
+    </Reference>
+    <Reference Include="Spectrum.Globalization, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Assemblies\Spectrum.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="Spectrum.Logging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Assemblies\Spectrum.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Spectrum.Models, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Assemblies\Spectrum.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataTableToList.cs" />
+    <Compile Include="frmArticleStockIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArticleStockIn.Designer.cs">
+      <DependentUpon>frmArticleStockIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBarcode.Designer.cs">
+      <DependentUpon>frmBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCharacteristics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCharacteristics.Designer.cs">
+      <DependentUpon>frmCharacteristics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCommonSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCommonSearch.Designer.cs">
+      <DependentUpon>frmCommonSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCommonSearchTrueGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCommonSearchTrueGrid.Designer.cs">
+      <DependentUpon>frmCommonSearchTrueGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmItemHierarchy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmItemHierarchy.Designer.cs">
+      <DependentUpon>frmItemHierarchy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmItemHierarchyPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmItemHierarchyPopup.Designer.cs">
+      <DependentUpon>frmItemHierarchyPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmItemMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmItemMaster.Designer.cs">
+      <DependentUpon>frmItemMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManualPromotion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManualPromotion.Designer.cs">
+      <DependentUpon>frmManualPromotion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPopupMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPopupMessage.Designer.cs">
+      <DependentUpon>frmPopupMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArticleStockOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArticleStockOut.Designer.cs">
+      <DependentUpon>frmArticleStockOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShiftManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShiftManagement.designer.cs">
+      <DependentUpon>frmShiftManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSiteDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSiteDetails.Designer.cs">
+      <DependentUpon>frmSiteDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSupplier.Designer.cs">
+      <DependentUpon>frmSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTax.Designer.cs">
+      <DependentUpon>frmTax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTender.Designer.cs">
+      <DependentUpon>frmTender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportExportItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportExportItem.Designer.cs">
+      <DependentUpon>frmImportExportItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUser.Designer.cs">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDISpectrumLite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDISpectrumLite.Designer.cs">
+      <DependentUpon>MDISpectrumLite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonFunc.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmArticleStockIn.resx">
+      <DependentUpon>frmArticleStockIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBarcode.resx">
+      <DependentUpon>frmBarcode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCharacteristics.resx">
+      <DependentUpon>frmCharacteristics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCommonSearch.resx">
+      <DependentUpon>frmCommonSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCommonSearchTrueGrid.resx">
+      <DependentUpon>frmCommonSearchTrueGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmItemHierarchy.resx">
+      <DependentUpon>frmItemHierarchy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmItemHierarchyPopup.resx">
+      <DependentUpon>frmItemHierarchyPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmItemMaster.resx">
+      <DependentUpon>frmItemMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManualPromotion.resx">
+      <DependentUpon>frmManualPromotion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPopupMessage.resx">
+      <DependentUpon>frmPopupMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArticleStockOut.resx">
+      <DependentUpon>frmArticleStockOut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShiftManagement.resx">
+      <DependentUpon>frmShiftManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSiteDetails.resx">
+      <DependentUpon>frmSiteDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSupplier.resx">
+      <DependentUpon>frmSupplier.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTax.resx">
+      <DependentUpon>frmTax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTender.resx">
+      <DependentUpon>frmTender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportExportItem.resx">
+      <DependentUpon>frmImportExportItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUser.resx">
+      <DependentUpon>frmUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDISpectrumLite.resx">
+      <DependentUpon>MDISpectrumLite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resources\SpectrumLite.en-US.resources" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ArticleDemo.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\calendar_month_16.png" />
+    <Content Include="Resources\delete.jpg" />
+    <Content Include="Resources\SpectrumLite.en-US.txt" />
+    <Content Include="Resources\xls.png" />
+    <Content Include="Spectrum.ico" />
+    <None Include="Resources\Article_XLS.xls" />
+    <None Include="Resources\main_bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\del_icon.png" />
+    <Content Include="Resources\iconFolder.gif" />
+    <Content Include="Resources\iconLeaf.gif" />
+    <Content Include="Resources\search-2.png" />
+    <None Include="Resources\Material_XLS.xls" />
+    <None Include="Resources\Spectrum.ico" />
+    <Content Include="Resources\tree.png" />
+    <Content Include="Resources\treeColapse.gif" />
+    <Content Include="Resources\treeExpand.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y "$(TargetDir)SpectrumLite.dll" "$(SolutionDir)Assemblies\"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

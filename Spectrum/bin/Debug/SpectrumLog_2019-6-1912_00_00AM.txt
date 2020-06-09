@@ -1,0 +1,46 @@
+----------------------------------------------------------
+
+------------------ Spectrum Log  -------------------------
+
+Date : 2019-6-19 Time:03:08 PM 
+
+SiteCode: 0002 
+
+Terminal ID: T004 
+
+User Name : admin 
+
+----------------------------------------------------------
+
+Date : 2019-6-19 Time:03:10 PM 
+
+System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7096
+
+----------------------------------------------------------
+
+Date : 2019-6-19 Time:03:46 PM 
+
+System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7096
+
+----------------------------------------------------------
+
+Date : 2019-6-19 Time:07:23 PM 
+
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'frmTabCashMemo'.
+   at System.Windows.Forms.Control.CreateHandle()
+   at System.Windows.Forms.Form.CreateHandle()
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Form.SelectInternal(Boolean directed, Boolean forward)
+   at System.Windows.Forms.Form.Select(Boolean directed, Boolean forward)
+   at System.Windows.Forms.Control.Select()
+   at Spectrum.MDISpectrum.ShowChildForm(Form& ChildForm, Boolean isdoctoparent) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 1055
+

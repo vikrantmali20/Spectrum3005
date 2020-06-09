@@ -1,0 +1,572 @@
+----------------------------------------------------------
+
+------------------ Spectrum Log  -------------------------
+
+Date : 2019-7-9 Time:11:30 AM 
+
+SiteCode: MHMUM201808148 
+
+Terminal ID: T001 
+
+User Name : admin 
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:30 AM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 941
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:31 AM 
+
+System.ApplicationException: Checking internet connectivity...
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:31 AM 
+
+System.ApplicationException: Checking CCE server Connectivity...
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:31 AM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:31 AM 
+
+System.ApplicationException: Getting Updates from IndependentMastersSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:32 AM 
+
+System.ApplicationException: sending request parameters to IndependentMastersSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-07
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:32 AM 
+
+System.ApplicationException: Response from IndependentMastersSynchronizer:FAILED
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:32 AM 
+
+System.ApplicationException: Data Not Updated for IndependentMaster
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:35 AM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for MstEan
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:36 AM 
+
+System.ApplicationException: sending request parameters to CsvFileSyncronizer_ objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-07
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:37 AM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for MstArticle
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:37 AM 
+
+System.ApplicationException: sending request parameters to CsvFileSyncronizer_ objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-07
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:37 AM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for PurchaseInfoRecord
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:37 AM 
+
+System.ApplicationException: sending request parameters to CsvFileSyncronizer_ objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-07
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:37 AM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for ArticleStockBalances
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:37 AM 
+
+System.ApplicationException: sending request parameters to CsvFileSyncronizer_ objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-07
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:37 AM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for SalesInfoRecord
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:37 AM 
+
+System.ApplicationException: sending request parameters to CsvFileSyncronizer_ objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-07
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:37 AM 
+
+System.ApplicationException: Data Updated Successfully for MSTEAN
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:37 AM 
+
+System.ApplicationException: Data Updated Successfully for MSTARTICLE
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:37 AM 
+
+System.ApplicationException: Data Updated Successfully for PURCHASEINFORECORD
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:37 AM 
+
+System.ApplicationException: Data Updated Successfully for ARTICLESTOCKBALANCES
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:37 AM 
+
+System.ApplicationException: Data Updated Successfully for SALESINFORECORD
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:37 AM 
+
+System.InvalidOperationException: This SqlTransaction has completed; it is no longer usable.
+   at System.Data.SqlClient.SqlTransaction.ZombieCheck()
+   at System.Data.SqlClient.SqlTransaction.Commit()
+   at Spectrum.frmCallWS.btnGet_Click(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmCallWS.vb:line 256
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:55 AM 
+
+System.ApplicationException: Getting Updates from ArticleSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:55 AM 
+
+System.ApplicationException: sending request parameters to ArticleSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-07
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:55 AM 
+
+System.ApplicationException: Response from ArticleSynchronizer:FAILED
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:55 AM 
+
+System.ApplicationException: Data Not Updated for ArticleSynchronizer
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:55 AM 
+
+System.ApplicationException: Getting Updates from ArticleHierarchySynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:55 AM 
+
+System.ApplicationException: sending request parameters to ArticleHierarchySynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-07
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:55 AM 
+
+System.ApplicationException: Response from ArticleHierarchySynchronizer:FAILED
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:55 AM 
+
+System.ApplicationException: Data Not Updated for ArticleHierarchySynchronizer
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:55 AM 
+
+System.ApplicationException: Getting Updates from AuthenticationSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:55 AM 
+
+System.ApplicationException: sending request parameters to AuthenticationSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-07
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:55 AM 
+
+System.ApplicationException: Response from AuthenticationSynchronizer:FAILED
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:55 AM 
+
+System.ApplicationException: Data Not Updated for AuthenticationSynchronizer
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:55 AM 
+
+System.ApplicationException: Getting Updates from BillingSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:55 AM 
+
+System.ApplicationException: sending request parameters to BillingSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-07
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:55 AM 
+
+System.ApplicationException: Response from BillingSynchronizer:FAILED
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:55 AM 
+
+System.ApplicationException: Data Not Updated for BillingSynchronizer
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:11:55 AM 
+
+System.ApplicationException: The data has not been updated.
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:15 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 942
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:19 PM 
+
+System.ApplicationException: Checking internet connectivity...
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:19 PM 
+
+System.ApplicationException: Getting Updates from IndependentMastersSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:19 PM 
+
+System.ApplicationException: Data Not Updated for IndependentMaster
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:20 PM 
+
+System.IO.IOException: The target file "E:\DayCloseReports\Sync" is a directory, not a file.
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at System.IO.File.Copy(String sourceFileName, String destFileName)
+   at Spectrum.frmCallWS.btnGet_Click(Object sender, EventArgs e)
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Checking internet connectivity...
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Getting Updates from IndependentMastersSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Data Not Updated for IndependentMaster
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for MstEan
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: sending request parameters to CsvFileSyncronizer_ objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-07
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Response from CsvFileSyncronizer:FAILED
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for MstArticle
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: sending request parameters to CsvFileSyncronizer_ objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-07
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Response from CsvFileSyncronizer:FAILED
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for PurchaseInfoRecord
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: sending request parameters to CsvFileSyncronizer_ objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-07
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Response from CsvFileSyncronizer:FAILED
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for ArticleStockBalances
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: sending request parameters to CsvFileSyncronizer_ objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-07
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Response from CsvFileSyncronizer:FAILED
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for SalesInfoRecord
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: sending request parameters to CsvFileSyncronizer_ objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-07
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Response from CsvFileSyncronizer:FAILED
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Getting Updates from UomSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: sending request parameters to UomSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-07
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Response from UomSynchronizer:FAILED
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Data Not Updated for ArticleUOM
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: No Response from CsvFileSyncronizer for MstEan
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: No Response from CsvFileSyncronizer for MstArticle
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: No Response from CsvFileSyncronizer for PurchaseInfoRecord
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: No Response from CsvFileSyncronizer for ArticleStockBalances
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: No Response from CsvFileSyncronizer for SalesInfoRecord
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Getting Updates from ArticleSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: sending request parameters to ArticleSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-07
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Response from ArticleSynchronizer:FAILED
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Data Not Updated for ArticleSynchronizer
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Getting Updates from ArticleHierarchySynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: sending request parameters to ArticleHierarchySynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-07
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Response from ArticleHierarchySynchronizer:FAILED
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Data Not Updated for ArticleHierarchySynchronizer
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Getting Updates from AuthenticationSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: sending request parameters to AuthenticationSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-07
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Response from AuthenticationSynchronizer:FAILED
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Data Not Updated for AuthenticationSynchronizer
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Getting Updates from BillingSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: sending request parameters to BillingSynchronizer objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-07
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Response from BillingSynchronizer:FAILED
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: Data Not Updated for BillingSynchronizer
+
+----------------------------------------------------------
+
+Date : 2019-7-9 Time:07:21 PM 
+
+System.ApplicationException: The data has not been updated.
+

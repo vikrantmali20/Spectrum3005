@@ -1,0 +1,92 @@
+----------------------------------------------------------
+
+------------------ Spectrum Log  -------------------------
+
+Date : 2019-5-21 Time:11:34 AM 
+
+SiteCode: MHMUM201808148 
+
+Terminal ID:  
+
+User Name : admin 
+
+----------------------------------------------------------
+
+Date : 2019-5-21 Time:11:34 AM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 887
+
+----------------------------------------------------------
+
+Date : 2019-5-21 Time:11:47 AM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 887
+
+----------------------------------------------------------
+
+Date : 2019-5-21 Time:11:47 AM 
+
+System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7096
+
+----------------------------------------------------------
+
+Date : 2019-5-21 Time:11:47 AM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 887
+
+----------------------------------------------------------
+
+Date : 2019-5-21 Time:11:59 AM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 887
+
+----------------------------------------------------------
+
+Date : 2019-5-21 Time:11:59 AM 
+
+System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7096
+
+----------------------------------------------------------
+
+Date : 2019-5-21 Time:3:41 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 887
+
+----------------------------------------------------------
+
+Date : 2019-5-21 Time:3:42 PM 
+
+System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7096
+

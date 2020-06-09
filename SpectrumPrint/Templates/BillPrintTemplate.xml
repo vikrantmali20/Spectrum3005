@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PrintTemplate>
+  <SiteMaster>
+    <SiteDetails KeyName="SiteCode" Length="20" CropText="True" />
+    <SiteDetails KeyName="SiteShortName" Length="33" Alignment="Center" CropText="True" />
+    <SiteDetails KeyName="FullAddress" Length="34" Alignment="Right" CropText="True" />
+    <SiteDetails KeyName="SiteAddressLn1" Length="40" Alignment="Right" CropText="True" />
+    <SiteDetails KeyName="SiteAddressLn2" Length="40" Alignment="Right" CropText="True" />
+    <SiteDetails KeyName="SiteAddressLn3" Length="40" Alignment="Right" CropText="True" />
+    <SiteDetails KeyName="CityCode" Length="25" Alignment="Right" CropText="True" />
+    <SiteDetails KeyName="SitePinCode" Length="8" Alignment="Right" CropText="True" />
+    <SiteDetails KeyName="SiteTelephone1" Length="15" Alignment="Right" CropText="True" />
+    <SiteDetails KeyName="SiteTelephone2" Length="15" Alignment="Right" CropText="True" />
+    <SiteDetails KeyName="Telephone" Length="30" Alignment="Right" CropText="True" />
+    <SiteDetails KeyName="FaxNo" Length="15" Alignment="Right" CropText="True" />
+    <SiteDetails KeyName="EmailId" Length="40" Alignment="Right" CropText="True" />
+    <SiteDetails KeyName="LocalSalesTaxNo" Length="35" Alignment="Left" CropText="True" />
+    <SiteDetails KeyName="CentralSalesTaxNo" Length="40" Alignment="Right" CropText="True" />
+  </SiteMaster>
+
+  <CashMemoHdr>
+    <CashMemoHeader KeyName="BillNo" Length="18" Alignment="Left" CropText="True" />
+    <CashMemoHeader KeyName="CreatedBy" Length="12" Alignment="Left" CropText="True" />
+    <CashMemoHeader KeyName="BillDate" Length="10" Alignment="Left" CropText="True" />
+    <CashMemoHeader KeyName="BillTime" Length="11" Alignment="Left" CropText="True" />
+    <CashMemoHeader KeyName="SalesExecutiveCode" Length="5" Alignment="Left" CropText="True" />
+    <CashMemoHeader KeyName="TerminalID" Length="5" Alignment="Left" CropText="True" />
+    <CashMemoHeader KeyName="TotalLineItems" Length="5" Alignment="Left" CropText="True" />
+    <CashMemoHeader KeyName="TotalQty" Length="15" Alignment="Right" CropText="True" />
+    <CashMemoHeader KeyName="GrossAmt" Length="11" Alignment="Right" CropText="True" />
+    <CashMemoHeader KeyName="DiscountAmt" Length="11" Alignment="Right" CropText="True" />
+    <CashMemoHeader KeyName="DiscountPercentage" Length="5" Alignment="Left" CropText="True" />
+    <CashMemoHeader KeyName="TotalDiscount" Length="11" Alignment="Right" CropText="True" />
+    <CashMemoHeader KeyName="ServiceTaxAmt" Length="15" Alignment="Right" CropText="True" />
+    <CashMemoHeader KeyName="TotalTaxAmt" Length="15" Alignment="Right" CropText="True" />
+    <CashMemoHeader KeyName="NetAmt" Length="11" Alignment="Right" CropText="True" />
+    <CashMemoHeader KeyName="PaymentAmt" Length="15" Alignment="Right" CropText="True" />
+    <CashMemoHeader KeyName="RoundedAmt" Length="11" Alignment="Right" CropText="True" />
+    <CashMemoHeader KeyName="Remark" Length="22" Alignment="Left" CropText="True" />
+    <CashMemoHeader KeyName="NoofReprints" Length="40" Alignment="Left" CropText="True" />
+    <CashMemoHeader KeyName="ReprintDate" Length="10" Alignment="Left" CropText="True" />
+    <CashMemoHeader KeyName="ReprintTime" Length="11" Alignment="Right" CropText="True" />
+    <CashMemoHeader KeyName="ReprintReason" Length="40" Alignment="Left" CropText="True" />
+    <CashMemoHeader KeyName="CustomerNo" Length="25" Alignment="Left" CropText="True" />
+    <CashMemoHeader KeyName="HDName" Length="25" Alignment="Left" CropText="True" />
+    <CashMemoHeader KeyName="HDAddress" Length="30" Alignment="Left" CropText="False" />
+    <CashMemoHeader KeyName="HDTelNo" Length="30" Alignment="Left" CropText="True" />
+    <CashMemoHeader KeyName="HDEmail" Length="30" Alignment="Left" CropText="True" />
+    <CashMemoHeader KeyName="HDRemark" Length="30" Alignment="Left" CropText="True" />
+    <CashMemoHeader KeyName="CLPPoints" Length="30" Alignment="Left" CropText="True" />
+  </CashMemoHdr>
+
+  <CashMemoDtls>
+    <CashMemoDetails KeyName="BillLineNo" Length="5" Alignment="Left" CropText="True" />
+    <CashMemoDetails KeyName="ArticleCode" Length="12" Alignment="Left" CropText="True" />
+    <CashMemoDetails KeyName="ArticleName" Length="20" Alignment="Left" CropText="True" />
+    <CashMemoDetails KeyName="Quantity" Length="9" Alignment="Left" CropText="True" />
+    <CashMemoDetails KeyName="SellingPrice" Length="9" Alignment="Left" CropText="True" />
+    <CashMemoDetails KeyName="DiscountAmount" Length="5" Alignment="Right" CropText="True" />
+    <CashMemoDetails KeyName="DiscountInPercentage" Length="5" Alignment="Right" CropText="True" />
+    <CashMemoDetails KeyName="ExclusiveTax" Length="6" Alignment="Right" CropText="True" />
+    <CashMemoDetails KeyName="TOTALTAXAMOUNT" Length="5" Alignment="Right" CropText="True" />
+    <CashMemoDetails KeyName="NetAmount" Length="10" Alignment="Right" CropText="True" />
+    <CashMemoDetails KeyName="mrp" Length="9" Alignment="Left" CropText="True" />
+  </CashMemoDtls>
+
+  <CashMemoRcpt>
+    <CashMemoReceipts KeyName="SerialNo" Length="5" Alignment="Right" CropText="True" />
+    <CashMemoReceipts KeyName="TenderTypeCode" Length="25" Alignment="Left" CropText="True" />
+    <CashMemoReceipts KeyName="AmountTendered" Length="10" Alignment="Right" CropText="True" />
+    <CashMemoReceipts KeyName="Currency" Length="5" Alignment="Right" CropText="True" />
+  </CashMemoRcpt>
+
+  <CashMemoTax>
+    <CashMemoTaxDetails KeyName="BillLineNo" Length="5" Alignment="Right" CropText="True" />
+    <CashMemoTaxDetails KeyName="TaxLineNo" Length="5" Alignment="Left" CropText="True" />
+    <CashMemoTaxDetails KeyName="TaxLabel" Length="20" Alignment="Right" CropText="True" />
+    <CashMemoTaxDetails KeyName="TaxValue" Length="11" Alignment="Right" CropText="True" />
+
+    <CashMemoTaxDetails KeyName="TaxType" Length="15" Alignment="Left" CropText="True" />
+    <CashMemoTaxDetails KeyName="TaxName" Length="23" Alignment="Left" CropText="True" />
+  </CashMemoTax>
+
+  <CashMemoComboDtls>
+    <CashMemoComboDetails KeyName="ComboArticleCode" Length="12" Alignment="Left" CropText="True" />
+    <CashMemoComboDetails KeyName="ArticleCode" Length="12" Alignment="Left" CropText="True" />
+    <CashMemoComboDetails KeyName="ArticleName" Length="22" Alignment="Left" CropText="True" />
+    <CashMemoComboDetails KeyName="Quantity" Length="6" Alignment="Right" CropText="True" />
+    <CashMemoComboDetails KeyName="Price" Length="10" Alignment="Right" CropText="True" />
+    <CashMemoComboDetails KeyName="DiscountAmount" Length="5" Alignment="Right" CropText="True" />
+    <CashMemoComboDetails KeyName="DiscountInPercentage" Length="5" Alignment="Right" CropText="True" />
+    <CashMemoComboDetails KeyName="ExclusiveTax" Length="6" Alignment="Right" CropText="True" />
+    <CashMemoComboDetails KeyName="TotalTaxAmount" Length="5" Alignment="Right" CropText="True" />
+    <CashMemoComboDetails KeyName="NetAmount" Length="10" Alignment="Right" CropText="True" />
+  </CashMemoComboDtls>
+
+  <SalesPerson>
+    <SalesPersonDetails KeyName="SalesPersonName" Length="20" Alignment="Left" CropText="True" />
+    <SalesPersonDetails KeyName="SalesPersonFullName" Length="40" Alignment="Left" CropText="True" />
+    <SalesPersonDetails KeyName="SalesSection" Length="20" Alignment="Left" CropText="True" />
+  </SalesPerson>
+
+  <Terminal>
+    <TerminalDetails KeyName="TerminalID" Length="20" Alignment="Right" CropText="True" />
+    <TerminalDetails KeyName="TerminalName" Length="40" Alignment="Left" CropText="True" />
+    <TerminalDetails KeyName="TerminalLocation" Length="20" Alignment="Left" CropText="True" />
+  </Terminal>
+
+  <Customer>
+    <CustomerDetails KeyName="CustomerName" Length="20" Alignment="Right" CropText="True" />
+    <CustomerDetails KeyName="PhoneNo" Length="40" Alignment="Left" CropText="True" />
+    <CustomerDetails KeyName="TotalBalancePoint" Length="20" Alignment="Left" CropText="True" />
+  </Customer>
+
+</PrintTemplate>

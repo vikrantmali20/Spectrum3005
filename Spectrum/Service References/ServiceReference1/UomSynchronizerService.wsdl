@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://uom.webservices.spectrum.criti.com/" name="UomSynchronizerService" targetNamespace="http://uom.webservices.spectrum.criti.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema targetNamespace="http://uom.webservices.spectrum.criti.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="retrieveUomRecords" type="tns:retrieveUomRecords" />
+      <xs:element name="retrieveUomRecordsResponse" type="tns:retrieveUomRecordsResponse" />
+      <xs:element name="saveUomRecords" type="tns:saveUomRecords" />
+      <xs:element name="saveUomRecordsResponse" type="tns:saveUomRecordsResponse" />
+      <xs:complexType name="retrieveUomRecords">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:wsRequestDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="wsRequestDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="pushOrPull" type="xs:boolean" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="soapWsHeader" type="tns:soapWsHeader" />
+          <xs:element minOccurs="0" name="syncFromDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="tableName" type="xs:string" />
+          <xs:element minOccurs="0" name="transactionCode" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="soapWsHeader">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="password" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="storePort" type="xs:string" />
+          <xs:element minOccurs="0" name="userName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="retrieveUomRecordsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:uomdtOs" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="uomdtOs">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="articleUOMDTO" nillable="true" type="tns:articleUOMDTO" />
+          <xs:element minOccurs="0" name="calendar" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="faultDTO" type="tns:faultDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="mstUoMDTO" nillable="true" type="tns:mstUoMDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="mstUoMTypeDTO" nillable="true" type="tns:mstUoMTypeDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="articleUOMDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articleCode" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="defaultUom" type="xs:string" />
+          <xs:element minOccurs="0" name="divisor" type="xs:string" />
+          <xs:element minOccurs="0" name="isDivisor" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="uomCode" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="faultDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="businessError" type="xs:string" />
+          <xs:element minOccurs="0" name="faultLevel" type="xs:string" />
+          <xs:element minOccurs="0" name="faultStackTrace" type="xs:string" />
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mstUoMDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="uom" type="xs:string" />
+          <xs:element minOccurs="0" name="uomCode" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mstUoMTypeDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="uomtype" type="xs:string" />
+          <xs:element minOccurs="0" name="uomtypeCode" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveUomRecords">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:uomSaveRequestDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="uomSaveRequestDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="soapWsHeader" type="tns:soapWsHeader" />
+          <xs:element minOccurs="0" name="uomdtOs" type="tns:uomdtOs" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveUomRecordsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:syncResponseDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="syncResponseDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="calendar" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="faultDTO" type="tns:faultDTO" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </types>
+  <message name="UomSynchronizer_retrieveUomRecords">
+    <part name="retrieveUomRecords" element="tns:retrieveUomRecords" />
+  </message>
+  <message name="UomSynchronizer_retrieveUomRecordsResponse">
+    <part name="retrieveUomRecordsResponse" element="tns:retrieveUomRecordsResponse" />
+  </message>
+  <message name="UomSynchronizer_saveUomRecordsResponse">
+    <part name="saveUomRecordsResponse" element="tns:saveUomRecordsResponse" />
+  </message>
+  <message name="UomSynchronizer_saveUomRecords">
+    <part name="saveUomRecords" element="tns:saveUomRecords" />
+  </message>
+  <portType name="UomSynchronizer">
+    <operation name="retrieveUomRecords" parameterOrder="retrieveUomRecords">
+      <input message="tns:UomSynchronizer_retrieveUomRecords" />
+      <output message="tns:UomSynchronizer_retrieveUomRecordsResponse" />
+    </operation>
+    <operation name="saveUomRecords" parameterOrder="saveUomRecords">
+      <input message="tns:UomSynchronizer_saveUomRecords" />
+      <output message="tns:UomSynchronizer_saveUomRecordsResponse" />
+    </operation>
+  </portType>
+  <binding name="UomSynchronizerBinding" type="tns:UomSynchronizer">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="retrieveUomRecords">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="saveUomRecords">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="UomSynchronizerService">
+    <port name="UomSynchronizerPort" binding="tns:UomSynchronizerBinding">
+      <soap:address location="http://Dt148:10080/posSeam/webservices/UomSynchronizer" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{961ACB62-C92E-4545-AF6D-6F59B90BDAAF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SpectrumBL</RootNamespace>
+    <AssemblyName>SpectrumBL</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SpectrumBL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SpectrumBL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\Assemblies\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=1.2.5.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Assemblies\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CForms\clsCForms.vb" />
+    <Compile Include="CLP\CLP_Data.vb" />
+    <Compile Include="CLP\CLP_Logic.vb" />
+    <Compile Include="clsAdvanceSale.vb" />
+    <Compile Include="clsAdvanceSearch.vb" />
+    <Compile Include="clsArticleCombo.vb" />
+    <Compile Include="clsAuthorization.vb" />
+    <Compile Include="clsBirthList.vb" />
+    <Compile Include="clsBirthListGlobal.vb" />
+    <Compile Include="clsBirthListSales.vb" />
+    <Compile Include="clsBirthListSalesSave.vb" />
+    <Compile Include="clsBirthListSave.vb" />
+    <Compile Include="clsBirthListUpdate.vb" />
+    <Compile Include="clsBirthListUpdateSave.vb" />
+    <Compile Include="clsBulkComboAdd.vb" />
+    <Compile Include="clsCashMemo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsChangeTender.vb" />
+    <Compile Include="clsCLPCustomer.vb" />
+    <Compile Include="clsAcceptPayment.vb" />
+    <Compile Include="clsApplyPromotion.vb" />
+    <Compile Include="clsDataArcive.vb" />
+    <Compile Include="clsDataSync.vb" />
+    <Compile Include="clsDefault.vb" />
+    <Compile Include="clsFoodCost.vb" />
+    <Compile Include="clsGrievance.vb" />
+    <Compile Include="clsHealthCare.vb" />
+    <Compile Include="clsLogin.vb" />
+    <Compile Include="clsOutboundDelivery.vb" />
+    <Compile Include="clsPrinterMapping.vb" />
+    <Compile Include="clsPrintingSettings.vb" />
+    <Compile Include="clsPromotionMaster.vb" />
+    <Compile Include="clsRecordProduction.vb" />
+    <Compile Include="clsReports.vb" />
+    <Compile Include="clsReservation.vb" />
+    <Compile Include="clsSalesOrder.vb" />
+    <Compile Include="clsShift.vb" />
+    <Compile Include="clsSiteBank.vb" />
+    <Compile Include="clsSiteInfo.vb" />
+    <Compile Include="clsSOApplyPromotion.vb" />
+    <Compile Include="clsSOCustomer.vb" />
+    <Compile Include="clsTargetVsActualSales.vb" />
+    <Compile Include="clsTill.vb" />
+    <Compile Include="clsCommon.vb" />
+    <Compile Include="clsTransfer.vb" />
+    <Compile Include="clsUpdateCheckDueDate.vb" />
+    <Compile Include="clsXRead.vb" />
+    <Compile Include="CreateCustomer\CreateCustomer.vb" />
+    <Compile Include="CreateCustomer\CreateCustomerBase.vb" />
+    <Compile Include="CreateCustomer\ICreateCustomer.vb" />
+    <Compile Include="CreditSale\ClsCreditSale.vb" />
+    <Compile Include="CreditSale\ICreditSale.vb" />
+    <Compile Include="DataBaseConnection.vb" />
+    <Compile Include="DayCloseReports\Adsr Report\AdsrReport.vb" />
+    <Compile Include="DayCloseReports\Bank Report\BankReport.vb" />
+    <Compile Include="DayCloseReports\Bank Report\BankSummaryDetails.vb" />
+    <Compile Include="DayCloseReports\Bill wise detail Report\BillWiseReport.vb" />
+    <Compile Include="DayCloseReports\CardDetails.vb" />
+    <Compile Include="DayCloseReports\CashierWiseSales\CashierWiseSalesReport.vb" />
+    <Compile Include="DayCloseReports\CheckList Report\CheckListReport.vb" />
+    <Compile Include="DayCloseReports\CorrectedCashMemo.vb" />
+    <Compile Include="DayCloseReports\CurrencyDetails.vb" />
+    <Compile Include="DayCloseReports\DayCloseNewReport.vb" />
+    <Compile Include="DayCloseReports\DayCloseReport.vb" />
+    <Compile Include="DayCloseReports\DayCloseReportController.vb" />
+    <Compile Include="DayCloseReports\DayCloseStatistics.vb" />
+    <Compile Include="DayCloseReports\DayCloseUsingProc.vb" />
+    <Compile Include="DayCloseReports\DeletedCashMemo.vb" />
+    <Compile Include="DayCloseReports\DiscountDetails.vb" />
+    <Compile Include="DayCloseReports\ExcelReportBase.vb" />
+    <Compile Include="DayCloseReports\FloatingDetails.vb" />
+    <Compile Include="DayCloseReports\GV Report\GiftVoucherReport.vb" />
+    <Compile Include="DayCloseReports\IDayCloseReport.vb" />
+    <Compile Include="DayCloseReports\IncomeDetails.vb" />
+    <Compile Include="DayCloseReports\InconsistencyDetails.vb" />
+    <Compile Include="DayCloseReports\IReports.vb" />
+    <Compile Include="DayCloseReports\KOT Report\KOTReport.vb" />
+    <Compile Include="DayCloseReports\Posting Report\PostingReport.vb" />
+    <Compile Include="DayCloseReports\ReportBase.vb" />
+    <Compile Include="DayCloseReports\SalesByCashier.vb" />
+    <Compile Include="DayCloseReports\TaxDetails.vb" />
+    <Compile Include="DayCloseReports\TaxDetailsReport\SalesTaxDetailsReport.vb" />
+    <Compile Include="DayCloseReports\TimeScheduleReport\TimeScheduleReport.vb" />
+    <Compile Include="DayCloseReports\TotalSales.vb" />
+    <Compile Include="DayClose\clsDayClose.vb" />
+    <Compile Include="DayClose\clsDayCloseBase.vb" />
+    <Compile Include="DayClose\DayCloseBankDetails.vb" />
+    <Compile Include="DayClose\DayCloseFinishedProductDetails.vb" />
+    <Compile Include="DayClose\DayCloseRawMaterialDetails.vb" />
+    <Compile Include="DayClose\DayCloseStockTakeDetails.vb" />
+    <Compile Include="DayClose\DayCloseSubProductDetails.vb" />
+    <Compile Include="DayClose\DayCloseWastageDetails.vb" />
+    <Compile Include="DayClose\IDayCloseBankDetails.vb" />
+    <Compile Include="DayClose\IDayCloseScreens.vb" />
+    <Compile Include="DayClose\IStockTake.vb" />
+    <Compile Include="DBConnection.vb" />
+    <Compile Include="clsIteamSearch.vb" />
+    <Compile Include="dsBirthListUpdation.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBirthListUpdation.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsBirthListUpdation.vb">
+      <DependentUpon>dsBirthListUpdation.xsd</DependentUpon>
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="DSR\DsrReprt.vb" />
+    <Compile Include="Factory\ReportFactory.vb" />
+    <Compile Include="HealthCare\clsHcClinicalHistory.vb" />
+    <Compile Include="HealthCare\clsHcCommon.vb" />
+    <Compile Include="HealthCare\clsHcConsultantsNotes.vb" />
+    <Compile Include="HealthCare\clsHcDoctorInfo.vb" />
+    <Compile Include="HealthCare\clsHcPatientInfo.vb" />
+    <Compile Include="HostManagement\clsHotelReservation.vb" />
+    <Compile Include="KDS\clsExpeditor.vb" />
+    <Compile Include="KDS\clsKdsData.vb" />
+    <Compile Include="License\ClsLicense.vb" />
+    <Compile Include="License\ILicense.vb" />
+    <Compile Include="Membership\clsMembership.vb" />
+    <Compile Include="ModBLCommon.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="PCSalesOrder\clsSalesOrderPC.vb" />
+    <Compile Include="PCSalesOrder\CreateNewCustomer.vb" />
+    <Compile Include="PCSalesOrder\CreateNewCustomerBase.vb" />
+    <Compile Include="PCSalesOrder\ICreateNewCustomer.vb" />
+    <Compile Include="Petty Cash\clsPettyCashBase.vb" />
+    <Compile Include="Petty Cash\IPettyCashVoucher.vb" />
+    <Compile Include="Petty Cash\PettyCashVoucher.vb" />
+    <Compile Include="Quotation\clsQuotation.vb" />
+    <Compile Include="Settings.vb" />
+    <Compile Include="ShiftCloseReports\ShiftCloseReport.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="dsBirthListUpdation.xsc">
+      <DependentUpon>dsBirthListUpdation.xsd</DependentUpon>
+    </None>
+    <None Include="dsBirthListUpdation.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBirthListUpdation.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dsBirthListUpdation.xss">
+      <DependentUpon>dsBirthListUpdation.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SpectrumCommon\SpectrumCommon.vbproj">
+      <Project>{A3273A35-7F60-402B-B26A-84860333A8E4}</Project>
+      <Name>SpectrumCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

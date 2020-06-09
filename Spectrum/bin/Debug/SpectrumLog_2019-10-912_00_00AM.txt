@@ -1,0 +1,821 @@
+----------------------------------------------------------
+
+------------------ Spectrum Log  -------------------------
+
+Date : 2019-10-9 Time:12:57 PM 
+
+SiteCode: SUB0001 
+
+Terminal ID: T001 
+
+User Name : admin 
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:12:58 PM 
+
+System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7128
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:12:59 PM 
+
+System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'UDP_GetPoleDisplayArticle' expects parameter '@SiteCode', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at SpectrumBL.clsCommon.GetArticleONPoledisplay(String SiteCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7105
+ClientConnectionId:68e98947-a2c2-4eeb-9af3-eb7d32fcb5ac
+Error Number:201,State:4,Class:16
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:12:59 PM 
+
+System.NullReferenceException: Object variable or With block variable not set.
+   at Microsoft.VisualBasic.CompilerServices.Symbols.Container..ctor(Object Instance)
+   at Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateGet(Object Instance, Type Type, String MemberName, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, Boolean[] CopyBack)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 938
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:12:59 PM 
+
+System.IO.IOException: The port 'COM4' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7128
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:01:00 PM 
+
+System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'UDP_GetPoleDisplayArticle' expects parameter '@SiteCode', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at SpectrumBL.clsCommon.GetArticleONPoledisplay(String SiteCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7105
+ClientConnectionId:73b96f25-1abe-4cc6-983e-7597b1bde5f4
+Error Number:201,State:4,Class:16
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:01:00 PM 
+
+System.NullReferenceException: Object variable or With block variable not set.
+   at Microsoft.VisualBasic.CompilerServices.Symbols.Container..ctor(Object Instance)
+   at Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateGet(Object Instance, Type Type, String MemberName, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, Boolean[] CopyBack)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 938
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:01:00 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:01:06 PM 
+
+System.IO.IOException: The port 'COM4' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7128
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:01:07 PM 
+
+System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'UDP_GetPoleDisplayArticle' expects parameter '@SiteCode', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at SpectrumBL.clsCommon.GetArticleONPoledisplay(String SiteCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7105
+ClientConnectionId:efb3d129-507e-42ad-b806-53daec122706
+Error Number:201,State:4,Class:16
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:01:07 PM 
+
+System.NullReferenceException: Object variable or With block variable not set.
+   at Microsoft.VisualBasic.CompilerServices.Symbols.Container..ctor(Object Instance)
+   at Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateGet(Object Instance, Type Type, String MemberName, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, Boolean[] CopyBack)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 938
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:01:07 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:01:07 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:01:11 PM 
+
+System.IO.IOException: The port 'COM4' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7128
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:01:14 PM 
+
+System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'UDP_GetPoleDisplayArticle' expects parameter '@SiteCode', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at SpectrumBL.clsCommon.GetArticleONPoledisplay(String SiteCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7105
+ClientConnectionId:f5c2806d-9a35-4771-8b07-e7fa89484c66
+Error Number:201,State:4,Class:16
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:01:14 PM 
+
+System.NullReferenceException: Object variable or With block variable not set.
+   at Microsoft.VisualBasic.CompilerServices.Symbols.Container..ctor(Object Instance)
+   at Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateGet(Object Instance, Type Type, String MemberName, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, Boolean[] CopyBack)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 938
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:01:15 PM 
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Spectrum.frmMergeOrder.CboTableNo_SelectedValueChanged(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmMergeOrder.vb:line 191
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:01:15 PM 
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Spectrum.frmMergeOrder.CboTableNo_SelectedValueChanged(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmMergeOrder.vb:line 191
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:01:15 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:01:15 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:02:37 PM 
+
+System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'UDP_GetPoleDisplayArticle' expects parameter '@SiteCode', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at SpectrumBL.clsCommon.GetArticleONPoledisplay(String SiteCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7105
+ClientConnectionId:a8e3c1fd-6712-4a96-b0fa-5e9a56544b76
+Error Number:201,State:4,Class:16
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:02:37 PM 
+
+System.NullReferenceException: Object variable or With block variable not set.
+   at Microsoft.VisualBasic.CompilerServices.Symbols.Container..ctor(Object Instance)
+   at Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateGet(Object Instance, Type Type, String MemberName, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, Boolean[] CopyBack)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 938
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:02:49 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:02:49 PM 
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Spectrum.frmMergeOrder.CboTableNo_SelectedValueChanged(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmMergeOrder.vb:line 191
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:02:49 PM 
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Spectrum.frmMergeOrder.CboTableNo_SelectedValueChanged(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmMergeOrder.vb:line 191
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:02:51 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:02:52 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:06 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:06 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:06 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:07 PM 
+
+System.IO.IOException: The port 'COM4' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7128
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:14 PM 
+
+System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'UDP_GetPoleDisplayArticle' expects parameter '@SiteCode', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at SpectrumBL.clsCommon.GetArticleONPoledisplay(String SiteCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7105
+ClientConnectionId:8df7da0a-e2eb-408e-87c4-9b0f9a474a0d
+Error Number:201,State:4,Class:16
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:14 PM 
+
+System.NullReferenceException: Object variable or With block variable not set.
+   at Microsoft.VisualBasic.CompilerServices.Symbols.Container..ctor(Object Instance)
+   at Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateGet(Object Instance, Type Type, String MemberName, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, Boolean[] CopyBack)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 938
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:20 PM 
+
+System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_DinInCashMemoHdr'. Cannot insert duplicate key in object 'dbo.DinInCashMemoHdr'. The duplicate key value is (SUB0002, DIT001190001434).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SpectrumBL.clsCommon.InsertOrUpdateRecordForDinein(String Query, DateTime dateopendate, SqlTransaction trans) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 2660
+   at SpectrumBL.clsCashMemo.SaveDinInData(DateTime DayOpenDate, DataSet ds, DataSet dsMainDineInHold, DataTable DtDineInItemRemarks, String sitecode, String finyear, String currentDineInTable, String TerminalId, String Userid, String HoldKey, String& BillNO, Boolean IsNewOrder, String salesPerson, Int16 CustomerSaleType, DataTable dtGenerate, Int32 BillGenerate, String custno, Boolean IsDineIn) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 2950
+ClientConnectionId:df079bbb-6c28-463f-b4eb-0f86e27085dd
+Error Number:2627,State:1,Class:14
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:20 PM 
+
+System.Exception: line No 3070 cmd_savePrint_click
+   at Spectrum.frmTabCashMemo.cmdSavePrint_Click(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmTabCashMemo.vb:line 4369
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:20 PM 
+
+System.IO.IOException: The port 'COM4' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7128
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:21 PM 
+
+System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'UDP_GetPoleDisplayArticle' expects parameter '@SiteCode', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at SpectrumBL.clsCommon.GetArticleONPoledisplay(String SiteCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7105
+ClientConnectionId:894ce856-cdda-4f38-a871-9081197c0c05
+Error Number:201,State:4,Class:16
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:21 PM 
+
+System.NullReferenceException: Object variable or With block variable not set.
+   at Microsoft.VisualBasic.CompilerServices.Symbols.Container..ctor(Object Instance)
+   at Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateGet(Object Instance, Type Type, String MemberName, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, Boolean[] CopyBack)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 938
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:21 PM 
+
+System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_DinInCashMemoHdr'. Cannot insert duplicate key in object 'dbo.DinInCashMemoHdr'. The duplicate key value is (SUB0002, DIT001190001434).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SpectrumBL.clsCommon.InsertOrUpdateRecordForDinein(String Query, DateTime dateopendate, SqlTransaction trans) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 2660
+   at SpectrumBL.clsCashMemo.SaveDinInData(DateTime DayOpenDate, DataSet ds, DataSet dsMainDineInHold, DataTable DtDineInItemRemarks, String sitecode, String finyear, String currentDineInTable, String TerminalId, String Userid, String HoldKey, String& BillNO, Boolean IsNewOrder, String salesPerson, Int16 CustomerSaleType, DataTable dtGenerate, Int32 BillGenerate, String custno, Boolean IsDineIn) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 2950
+ClientConnectionId:894ce856-cdda-4f38-a871-9081197c0c05
+Error Number:2627,State:1,Class:14
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:22 PM 
+
+System.IO.IOException: The port 'COM4' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7128
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:25 PM 
+
+System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'UDP_GetPoleDisplayArticle' expects parameter '@SiteCode', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at SpectrumBL.clsCommon.GetArticleONPoledisplay(String SiteCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7105
+ClientConnectionId:0155f1bb-2a23-4a20-9e00-05c3762f1a49
+Error Number:201,State:4,Class:16
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:25 PM 
+
+System.NullReferenceException: Object variable or With block variable not set.
+   at Microsoft.VisualBasic.CompilerServices.Symbols.Container..ctor(Object Instance)
+   at Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateGet(Object Instance, Type Type, String MemberName, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, Boolean[] CopyBack)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 938
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:36 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:36 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:36 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:36 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:37 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:40 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:40 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:41 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:41 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:43 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:43 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:44 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:52 PM 
+
+System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'UDP_GetPoleDisplayArticle' expects parameter '@SiteCode', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at SpectrumBL.clsCommon.GetArticleONPoledisplay(String SiteCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7105
+ClientConnectionId:9a27de0b-cbc2-408d-97a3-76ba5be89058
+Error Number:201,State:4,Class:16
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:03:52 PM 
+
+System.NullReferenceException: Object variable or With block variable not set.
+   at Microsoft.VisualBasic.CompilerServices.Symbols.Container..ctor(Object Instance)
+   at Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateGet(Object Instance, Type Type, String MemberName, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, Boolean[] CopyBack)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 938
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:04:02 PM 
+
+System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'UDP_GetPoleDisplayArticle' expects parameter '@SiteCode', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at SpectrumBL.clsCommon.GetArticleONPoledisplay(String SiteCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7105
+ClientConnectionId:a9013d8e-7f00-441e-8e82-47b122ffdc2d
+Error Number:201,State:4,Class:16
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:04:02 PM 
+
+System.NullReferenceException: Object variable or With block variable not set.
+   at Microsoft.VisualBasic.CompilerServices.Symbols.Container..ctor(Object Instance)
+   at Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateGet(Object Instance, Type Type, String MemberName, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, Boolean[] CopyBack)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 938
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:04:02 PM 
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Spectrum.frmMergeOrder.CboTableNo_SelectedValueChanged(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmMergeOrder.vb:line 191
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:04:02 PM 
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Spectrum.frmMergeOrder.CboTableNo_SelectedValueChanged(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmMergeOrder.vb:line 191
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:04:03 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:04:03 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:04:04 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:04:04 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:04:04 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:04:05 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:04:16 PM 
+
+System.IO.IOException: The port 'COM4' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7128
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:06:05 PM 
+
+System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'UDP_GetPoleDisplayArticle' expects parameter '@SiteCode', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at SpectrumBL.clsCommon.GetArticleONPoledisplay(String SiteCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7105
+ClientConnectionId:5cb6996f-094c-4532-aefc-a75616a46f74
+Error Number:201,State:4,Class:16
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:06:05 PM 
+
+System.NullReferenceException: Object variable or With block variable not set.
+   at Microsoft.VisualBasic.CompilerServices.Symbols.Container..ctor(Object Instance)
+   at Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateGet(Object Instance, Type Type, String MemberName, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, Boolean[] CopyBack)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 938
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:06:05 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:06:05 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:06:07 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4786
+
+----------------------------------------------------------
+
+Date : 2019-10-9 Time:06:07 PM 
+
+System.IO.IOException: The port 'COM4' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7128
+

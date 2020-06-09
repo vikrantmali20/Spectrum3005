@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://csvFile.webservices.spectrum.criti.com/" name="CsvFileSyncronizerService" targetNamespace="http://csvFile.webservices.spectrum.criti.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema targetNamespace="http://csvFile.webservices.spectrum.criti.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="syncronizeCsvFile" type="tns:syncronizeCsvFile" />
+      <xs:element name="syncronizeCsvFileResponse" type="tns:syncronizeCsvFileResponse" />
+      <xs:element name="syncronizeSaveCsvFile" type="tns:syncronizeSaveCsvFile" />
+      <xs:element name="syncronizeSaveCsvFileResponse" type="tns:syncronizeSaveCsvFileResponse" />
+      <xs:complexType name="syncronizeCsvFile">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:wsRequestDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="wsRequestDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="pushOrPull" type="xs:boolean" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="soapWsHeader" type="tns:soapWsHeader" />
+          <xs:element minOccurs="0" name="syncFromDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="tableName" type="xs:string" />
+          <xs:element minOccurs="0" name="transactionCode" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="soapWsHeader">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="password" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="storePort" type="xs:string" />
+          <xs:element minOccurs="0" name="userName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="syncronizeCsvFileResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:imageSyncResponseDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="imageSyncResponseDTO">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:syncResponseDTO">
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="imageSyncDTO" nillable="true" type="tns:imageSyncDTO" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="syncResponseDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="calendar" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="faultDTO" type="tns:faultDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="imageSyncDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="fileBytes" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="fileName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="faultDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="businessError" type="xs:string" />
+          <xs:element minOccurs="0" name="faultLevel" type="xs:string" />
+          <xs:element minOccurs="0" name="faultStackTrace" type="xs:string" />
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="syncronizeSaveCsvFile">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:imageSyncDTO" />
+          <xs:element minOccurs="0" name="arg1" type="tns:wsRequestDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="syncronizeSaveCsvFileResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:syncResponseDTO" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </types>
+  <message name="CsvFileSyncronizer_syncronizeCsvFile">
+    <part name="syncronizeCsvFile" element="tns:syncronizeCsvFile" />
+  </message>
+  <message name="CsvFileSyncronizer_syncronizeSaveCsvFileResponse">
+    <part name="syncronizeSaveCsvFileResponse" element="tns:syncronizeSaveCsvFileResponse" />
+  </message>
+  <message name="CsvFileSyncronizer_syncronizeCsvFileResponse">
+    <part name="syncronizeCsvFileResponse" element="tns:syncronizeCsvFileResponse" />
+  </message>
+  <message name="CsvFileSyncronizer_syncronizeSaveCsvFile">
+    <part name="syncronizeSaveCsvFile" element="tns:syncronizeSaveCsvFile" />
+  </message>
+  <portType name="CsvFileSyncronizer">
+    <operation name="syncronizeCsvFile" parameterOrder="syncronizeCsvFile">
+      <input message="tns:CsvFileSyncronizer_syncronizeCsvFile" />
+      <output message="tns:CsvFileSyncronizer_syncronizeCsvFileResponse" />
+    </operation>
+    <operation name="syncronizeSaveCsvFile" parameterOrder="syncronizeSaveCsvFile">
+      <input message="tns:CsvFileSyncronizer_syncronizeSaveCsvFile" />
+      <output message="tns:CsvFileSyncronizer_syncronizeSaveCsvFileResponse" />
+    </operation>
+  </portType>
+  <binding name="CsvFileSyncronizerBinding" type="tns:CsvFileSyncronizer">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="syncronizeCsvFile">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="syncronizeSaveCsvFile">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="CsvFileSyncronizerService">
+    <port name="CsvFileSyncronizerPort" binding="tns:CsvFileSyncronizerBinding">
+      <soap:address location="http://Dt148:10080/posSeam/webservices/CsvFileSyncronizer" />
+    </port>
+  </service>
+</definitions>

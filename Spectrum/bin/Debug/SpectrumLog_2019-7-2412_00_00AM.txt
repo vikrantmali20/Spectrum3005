@@ -1,0 +1,224 @@
+----------------------------------------------------------
+
+------------------ Spectrum Log  -------------------------
+
+Date : 2019-7-24 Time:02:46 PM 
+
+SiteCode: SUB0001 
+
+Terminal ID: T001 
+
+User Name : admin 
+
+----------------------------------------------------------
+
+Date : 2019-7-24 Time:02:46 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 942
+
+----------------------------------------------------------
+
+Date : 2019-7-24 Time:02:46 PM 
+
+System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7128
+
+----------------------------------------------------------
+
+Date : 2019-7-24 Time:04:20 PM 
+
+System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
+   at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start(String fileName)
+   at Spectrum.modCommonFunc.OnTouchKeyBoard() in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\modCommonFunc.vb:line 3327
+
+----------------------------------------------------------
+
+Date : 2019-7-24 Time:04:20 PM 
+
+System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7128
+
+----------------------------------------------------------
+
+Date : 2019-7-24 Time:04:21 PM 
+
+System.InvalidCastException: Overload resolution failed because no Public '=' can be called with these arguments:
+    'Public Shared Operator =(a As String, b As String) As Boolean':
+        Argument matching parameter 'a' cannot convert from 'DataRowView' to 'String'.
+   at Microsoft.VisualBasic.CompilerServices.OverloadResolution.ResolveOverloadedCall(String MethodName, List`1 Candidates, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, BindingFlags LookupFlags, Boolean ReportErrors, ResolutionFailure& Failure)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ResolveUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments, Boolean ReportErrors)
+   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeObjectUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(Object Left, Object Right, Boolean TextCompare)
+   at Spectrum.frmNPrinterTillMapping.CboDocType_SelectedIndexChanged(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmNPrinterTillMapping.vb:line 246
+
+----------------------------------------------------------
+
+Date : 2019-7-24 Time:04:21 PM 
+
+System.InvalidCastException: Overload resolution failed because no Public '=' can be called with these arguments:
+    'Public Shared Operator =(a As String, b As String) As Boolean':
+        Argument matching parameter 'a' cannot convert from 'DataRowView' to 'String'.
+   at Microsoft.VisualBasic.CompilerServices.OverloadResolution.ResolveOverloadedCall(String MethodName, List`1 Candidates, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, BindingFlags LookupFlags, Boolean ReportErrors, ResolutionFailure& Failure)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ResolveUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments, Boolean ReportErrors)
+   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeObjectUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(Object Left, Object Right, Boolean TextCompare)
+   at Spectrum.frmNPrinterTillMapping.CboDocType_SelectedIndexChanged(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmNPrinterTillMapping.vb:line 246
+
+----------------------------------------------------------
+
+Date : 2019-7-24 Time:04:21 PM 
+
+System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7128
+
+----------------------------------------------------------
+
+Date : 2019-7-24 Time:04:21 PM 
+
+System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
+   at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start(String fileName)
+   at Spectrum.modCommonFunc.OnTouchKeyBoard() in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\modCommonFunc.vb:line 3327
+
+----------------------------------------------------------
+
+Date : 2019-7-24 Time:04:21 PM 
+
+System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7128
+
+----------------------------------------------------------
+
+Date : 2019-7-24 Time:04:22 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4709
+
+----------------------------------------------------------
+
+Date : 2019-7-24 Time:04:22 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4709
+
+----------------------------------------------------------
+
+Date : 2019-7-24 Time:04:22 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4709
+
+----------------------------------------------------------
+
+Date : 2019-7-24 Time:04:22 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4709
+
+----------------------------------------------------------
+
+Date : 2019-7-24 Time:04:23 PM 
+
+System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7128
+
+----------------------------------------------------------
+
+Date : 2019-7-24 Time:05:14 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4709
+
+----------------------------------------------------------
+
+Date : 2019-7-24 Time:05:14 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4709
+
+----------------------------------------------------------
+
+Date : 2019-7-24 Time:05:14 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4709
+
+----------------------------------------------------------
+
+Date : 2019-7-24 Time:05:14 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4709
+
+----------------------------------------------------------
+
+Date : 2019-7-24 Time:05:14 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4709
+
+----------------------------------------------------------
+
+Date : 2019-7-24 Time:05:14 PM 
+
+System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7128
+
+----------------------------------------------------------
+
+Date : 2019-7-24 Time:06:45 PM 
+
+System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7128
+
+----------------------------------------------------------
+
+Date : 2019-7-24 Time:06:52 PM 
+
+System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7128
+

@@ -1,0 +1,95 @@
+﻿$CMPrintDtls.SiteDetails.SiteShortName
+Add.: $CMPrintDtls.SiteDetails.FullAddress
+Tel.: $CMPrintDtls.SiteDetails.Telephone
+$DrawLine
+#if($CMPrintDtls.HeaderPrintAllowed)
+$CMPrintDtls.HeaderMessage
+$DrawLine
+#end
+#if($CMPrintDtls.WelcomeMessage !="")
+$CMPrintDtls.WelcomeMessage
+$DrawLine
+#end
+Cash Memo: $CMPrintDtls.CashMemoHeader.BillNo $CMPrintDtls.CashMemoHeader.BillDate
+Cashier  : $CMPrintDtls.CashMemoHeader.CreatedBy Time:$CMPrintDtls.CashMemoHeader.BillTime
+#if($CMPrintDtls.SalesPersonAllowed)
+Sales Person :$CMPrintDtls.SalesPersonDetails.SalesPersonName
+#end
+========================================
+Description      
+Qty.       MRP       SP        Net     
+========================================
+#foreach ($billItem in $CMPrintDtls.CashMemoDetails)
+$billItem.ArticleName 
+$billItem.Quantity $billItem.mrp $billItem.SellingPrice $billItem.NetAmount 
+#if($IsComboItemPrinting && $billItem.IsComboArticle == "True")
+#foreach ($billComboItem in $billItem.CashMemoComboDetails)
+$billComboItem.ArticleName $billComboItem.Quantity $billComboItem.NetAmount
+#end
+#end
+#end
+$DrawLine
+Net Amt                 :$CMPrintDtls.CashMemoHeader.GrossAmt $Currency
+#if($CMPrintDtls.CashMemoHeader.DiscountAmt !="")
+Less : $CMPrintDtls.CashMemoHeader.DiscountPercentage % Dis      :$CMPrintDtls.CashMemoHeader.TotalDiscount $Currency
+#end
+#if($CMPrintDtls.TaxPrintAllowed)
+---------------
+Sub Total               :$CMPrintDtls.CashMemoHeader.RoundedAmt $Currency
+#foreach ($taxItem in $CMPrintDtls.CashMemoTaxSummary)
+$taxItem.TaxName :$taxItem.TaxValue $Currency
+#end
+#end
+---------------
+Total to pay            :$CMPrintDtls.CashMemoHeader.NetAmt $Currency
+You Save                :                   $TotalNetSaving $Currency
+$DrawLine
+Payments:-
+#foreach ($billReceipt in $CMPrintDtls.CashMemoReceipts)
+$billReceipt.TenderTypeCode $billReceipt.AmountTendered $Currency
+#end
+$DrawLine
+$CMPrintDtls.CompanyName
+TIN :$CMPrintDtls.SiteDetails.LocalSalesTaxNo
+#if($CMPrintDtls.FooterPrintAllowed)
+$CMPrintDtls.FooterMessage
+#end
+#if($CMPrintDtls.CashMemoHeader.Remark !="")
+Discount Remarks :$CMPrintDtls.CashMemoHeader.Remark
+#end
+$DrawLine
+#if($CMPrintDtls.TaxInformation !="")
+$CMPrintDtls.TaxInformation
+$DrawLine
+#end
+#if($CMPrintDtls.PromotionalMessage !="")
+$CMPrintDtls.PromotionalMessage
+$DrawLine
+#end
+#if($CMPrintDtls.CashMemoHeader.ReprintReason !="")
+Reprint Date:$CMPrintDtls.CashMemoHeader.ReprintDate Time:$CMPrintDtls.CashMemoHeader.ReprintTime
+Reprint Reason: $CMPrintDtls.CashMemoHeader.ReprintReason
+$DrawLine
+#end
+#if($CMPrintDtls.CashMemoHeader.HDName !="")
+Name    :$CMPrintDtls.CashMemoHeader.HDName
+Address :$CMPrintDtls.CashMemoHeader.HDAddress
+Phone   :$CMPrintDtls.CashMemoHeader.HDTelNo
+$DrawLine
+#end
+#if($CMPrintDtls.CustomerDetails.CustomerName !="")
+Customer Name : $CMPrintDtls.CustomerDetails.CustomerName
+Phone No      : $CMPrintDtls.CustomerDetails.PhoneNo
+Total Earning Point $CMPrintDtls.CashMemoHeader.CLPPoints
+Total Balance Point $CMPrintDtls.CustomerDetails.TotalBalancePoint
+#end
+
+
+
+
+
+
+
+
+
+

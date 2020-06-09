@@ -1,0 +1,956 @@
+----------------------------------------------------------
+
+------------------ Spectrum Log  -------------------------
+
+Date : 2019-7-12 Time:04:59 PM 
+
+SiteCode:  
+
+Terminal ID: T001 
+
+User Name :  
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:04:59 PM 
+
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'sa'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Spectrum.frmNDbLocalConnectionBuild.cmdTestCon_Click(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmNDbLocalConnectionBuild.vb:line 61
+ClientConnectionId:beb67b83-047a-43cc-9fef-5c7f93b535d4
+Error Number:18456,State:1,Class:14
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:04:59 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'String' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToString(Object Value)
+   at SpectrumBL.clsCommon.GetSiteByCode(String SiteCode, Boolean SiteStdCodeRequired) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 6142
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:01 PM 
+
+Microsoft.PointOfService.PosLibraryException: There is more than 1 CashDrawer device named '' installed on the system.
+   at Microsoft.PointOfService.PosExplorer.GetDevice(String type, String logicalName)
+   at SpectrumPrint.clsA4Print.OperateDevice(String strDeviceType, String strToPrint, Int32 CDflag) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumPrint\clsA4Print.vb:line 693
+   at Spectrum.frmTillFinancialReport.frmTillFinancialReport_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmTillFinancialReport.vb:line 134
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:01 PM 
+
+Microsoft.PointOfService.PosLibraryException: There is more than 1 CashDrawer device named '' installed on the system.
+   at Microsoft.PointOfService.PosExplorer.GetDevice(String type, String logicalName)
+   at SpectrumPrint.clsA4Print.OperateDevice(String strDeviceType, String strToPrint, Int32 CDflag) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumPrint\clsA4Print.vb:line 693
+   at Spectrum.frmTillFinancialReport.frmTillFinancialReport_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmTillFinancialReport.vb:line 134
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.InvalidCastException: Overload resolution failed because no Public '=' can be called with these arguments:
+    'Public Shared Operator =(a As String, b As String) As Boolean':
+        Argument matching parameter 'a' cannot convert from 'DataRowView' to 'String'.
+   at Microsoft.VisualBasic.CompilerServices.OverloadResolution.ResolveOverloadedCall(String MethodName, List`1 Candidates, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, BindingFlags LookupFlags, Boolean ReportErrors, ResolutionFailure& Failure)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ResolveUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments, Boolean ReportErrors)
+   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeObjectUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(Object Left, Object Right, Boolean TextCompare)
+   at Spectrum.frmNPrinterTillMapping.CboDocType_SelectedIndexChanged(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmNPrinterTillMapping.vb:line 246
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.InvalidCastException: Overload resolution failed because no Public '=' can be called with these arguments:
+    'Public Shared Operator =(a As String, b As String) As Boolean':
+        Argument matching parameter 'a' cannot convert from 'DataRowView' to 'String'.
+   at Microsoft.VisualBasic.CompilerServices.OverloadResolution.ResolveOverloadedCall(String MethodName, List`1 Candidates, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, BindingFlags LookupFlags, Boolean ReportErrors, ResolutionFailure& Failure)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ResolveUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments, Boolean ReportErrors)
+   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeObjectUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(Object Left, Object Right, Boolean TextCompare)
+   at Spectrum.frmNPrinterTillMapping.CboDocType_SelectedIndexChanged(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmNPrinterTillMapping.vb:line 246
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7128
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:02 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:03 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:03 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:03 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:03 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:03 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:03 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:03 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:03 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:03 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:03 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:03 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:03 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:03 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:03 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:03 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:03 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:03 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:03 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:03 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:03 PM 
+
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at System.Data.SqlClient.SqlBuffer.get_Decimal()
+   at System.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at SpectrumBL.DayCloseStockTakeDetails.GetCurrentArticleStock(String siteCode, String articleCode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseStockTakeDetails.vb:line 221
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:03 PM 
+
+System.ApplicationException: Currently User on Day Close - StockTakeDetails screen
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:04 PM 
+
+System.ApplicationException: 
+ EnteredQty|  ArticleCode|                ArticleName|
+-----------|-------------|---------------------------|
+          0|  0CCE0000206|                      Malai|
+          0|  0CCE0000207|                      Mango|
+          0|  0CCE0000209|         TENDER COCONUT TUB|
+          0|  0CCE0000210|                CHICKOO TUB|
+          0|  0CCE0000211|             WATERMELON TUB|
+          0|  0CCE0000212|       PAPAYA PINEAPPLE TUB|
+          0|  0CCE0000213|              JACKFRUIT TUB|
+          0|  0CCE0000214|              MUSKMELON TUB|
+          0|  0CCE0000216|            KAJU KISMIS TUB|
+          0|  0CCE0000217|            KESAR PISTA TUB|
+          0|  0CCE0000218|                 ANJEER TUB|
+          0|  0CCE0000219|          COFFEE WALNUT TUB|
+          0|  0CCE0000220|         ROASTED ALMOND TUB|
+          0|  0CCE0000221|              CHOCOBITE TUB|
+          0|  0CCE0000222|            CHOCO CREAM TUB|
+          0|  0CCE0000223|       CHOCOLATE ALMOND TUB|
+          0|  0CCE0000224|                  MALAI TUB|
+          0|  0CCE0000269|               Malai Khurma|
+          0|  0CCE0001256|                ANJEER BULK|
+          0|  0CCE0001257|               CHICKOO BULK|
+          0|  0CCE0001258|           CHOCO CREAM BULK|
+          0|  0CCE0001259|             CHOCOBITE BULK|
+          0|  0CCE0001260|      CHOCOLATE ALMOND BULK|
+          0|  0CCE0001261|         COFFEE WALNUT BULK|
+          0|  0CCE0001262|             JACKFRUIT BULK|
+          0|  0CCE0001263|           KAJU KISMIS BULK|
+          0|  0CCE0001264|           KESAR PISTA BULK|
+          0|  0CCE0001265|                 MALAI BULK|
+          0|  0CCE0001266|    MANGO (MEDIUM FAT) BULK|
+          0|  0CCE0001267|      PAPAYA PINEAPPLE BULK|
+          0|  0CCE0001268|        ROASTED ALMOND BULK|
+          0|  0CCE0001269|        TENDER COCONUT BULK|
+          0|  0CCE0001270|             MUSKMELON BULK|
+          0|  0CCE0001271|            WATERMELON BULK|
+          0|  0CCE0001272|          MALAI KHURMA BULK|
+          0|  0CCE0001274|                LYCHEE BULK|
+          0|  0CCE0001296|          Anjeer (Fig) BULK|
+          0|  0CCE0001509|              CHICKOO Loose|
+          0|  0CCE0001510|          CHOCO CREAM Loose|
+          0|  0CCE0001511|            CHOCOBITE Loose|
+          0|  0CCE0001512|     CHOCOLATE ALMOND Loose|
+          0|  0CCE0001513|            JACKFRUIT Loose|
+          0|  0CCE0001514|          KESAR PISTA Loose|
+          0|  0CCE0001515|                MALAI Loose|
+          0|  0CCE0001516|   MANGO (MEDIUM FAT) Loose|
+          0|  0CCE0001517|     PAPAYA PINEAPPLE Loose|
+          0|  0CCE0001518|       ROASTED ALMOND Loose|
+          0|  0CCE0001519|       TENDER COCONUT Loose|
+          0|  0CCE0001520|            MUSKMELON Loose|
+          0|  0CCE0001521|           WATERMELON Loose|
+          0|  0CCE0001522|         MALAI KHURMA Loose|
+          0|  0CCE0001523|               LYCHEE Loose|
+          0|  0CCE0001524|         Anjeer (Fig) Loose|
+          0|  0CCE0001540|           GULKAND @P Loose|
+          0|  0CCE0001543|         HONEY CRUNCH Loose|
+          0|  0CCE0001544|        Coffee Walnut Loose|
+          0|  0CCE0001545| Cberrry  BANANA (MF) Loose|
+          0|  0CCE0001548|       KALA JAMUN #MF Loose|
+          0|  0CCE0001549|            Muskmelon Loose|
+          0|  0CCE0001550|          Kaju Kismis Loose|
+          0|  0CCE0001551|                Saunf Loose|
+          0|  0CCE0001552|          Pista Clove Loose|
+          0|  0CCE0001553|          Anjeer Kaju Loose|
+          0|  0CCE0001554|               Cherry Loose|
+          0|  0CCE0001555|        Filter Coffee Loose|
+          0|  0CCE0001556|                Cherry Bulk|
+          0|  0CCE0001557|           Anjeer Kaju Bulk|
+          0| 210010080001|                     Lichee|
+          0| 210010080004|                 LICHEE TUB|
+          0| 210010180001|         KALA JAMUN #MF TUB|
+          0| 210010250002|          MANGO SPECIAL TUB|
+          0| 210010300003|                     Cherry|
+          0| 210011070001|   Cberrry  BANANA #MF BULK|
+          0| 210011070002|    Cberrry  BANANA #MF TUB|
+          0| 210110130003|                Pista Clove|
+          0| 210110250002|                  SAUNF TUB|
+          0| 210110630001|          HONEY CRUNCH BULK|
+          0| 210110630002|           HONEY CRUNCH TUB|
+          0| 210110640002|                ANJEER KAJU|
+          0| 210210130002|                      Mocha|
+          0| 210610000002|             GULKAND @P Tub|
+
+save data successfully
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:04 PM 
+
+System.ApplicationException: User Click on dayclose button
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:04 PM 
+
+System.ApplicationException: started Day Close 
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:04 PM 
+
+System.ApplicationException: Day Close Done Successfully
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:04 PM 
+
+System.ApplicationException: Insert data in day ArticleStockDayCloseBalances
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:04 PM 
+
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.57 SMTP; Client was not authenticated to send anonymous mail during MAIL FROM [PN1PR0101CA0048.INDPRD01.PROD.OUTLOOK.COM]
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Spectrum.CtrlDayCloseBankDetails.SendMail(String Path, String Idlist, Boolean MaintainMailSendStatus) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\DayClose\CtrlDayCloseBankDetails.vb:line 1285
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:05 PM 
+
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.57 SMTP; Client was not authenticated to send anonymous mail during MAIL FROM [PN1PR0101CA0045.INDPRD01.PROD.OUTLOOK.COM]
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Spectrum.CtrlDayCloseBankDetails.SendMail(String Path, String Idlist, Boolean MaintainMailSendStatus) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\DayClose\CtrlDayCloseBankDetails.vb:line 1285
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:05 PM 
+
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.57 SMTP; Client was not authenticated to send anonymous mail during MAIL FROM [PN1PR0101CA0032.INDPRD01.PROD.OUTLOOK.COM]
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Spectrum.CtrlDayCloseBankDetails.SendMail(String Path, String Idlist, Boolean MaintainMailSendStatus) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\DayClose\CtrlDayCloseBankDetails.vb:line 1285
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:05 PM 
+
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.57 SMTP; Client was not authenticated to send anonymous mail during MAIL FROM [PN1PR0101CA0037.INDPRD01.PROD.OUTLOOK.COM]
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Spectrum.CtrlDayCloseBankDetails.SendMail(String Path, String Idlist, Boolean MaintainMailSendStatus) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\DayClose\CtrlDayCloseBankDetails.vb:line 1285
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:05 PM 
+
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.57 SMTP; Client was not authenticated to send anonymous mail during MAIL FROM [PN1PR0101CA0035.INDPRD01.PROD.OUTLOOK.COM]
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Spectrum.CtrlDayCloseBankDetails.SendMail(String Path, String Idlist, Boolean MaintainMailSendStatus) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\DayClose\CtrlDayCloseBankDetails.vb:line 1285
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:05 PM 
+
+System.ApplicationException: manually dayclose form close by user
+
+----------------------------------------------------------
+
+Date : 2019-7-12 Time:05:06 PM 
+
+System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7128
+

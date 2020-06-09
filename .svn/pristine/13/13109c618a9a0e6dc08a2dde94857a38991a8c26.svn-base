@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://articleStockBalances.webservices.spectrum.criti.com/" name="ArticleStockBalancesSynchronizerService" targetNamespace="http://articleStockBalances.webservices.spectrum.criti.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema targetNamespace="http://articleStockBalances.webservices.spectrum.criti.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="retrieveArticleStockBalancesRecords" type="tns:retrieveArticleStockBalancesRecords" />
+      <xs:element name="retrieveArticleStockBalancesRecordsResponse" type="tns:retrieveArticleStockBalancesRecordsResponse" />
+      <xs:element name="saveArticleStockBalancesRecords" type="tns:saveArticleStockBalancesRecords" />
+      <xs:element name="saveArticleStockBalancesRecordsResponse" type="tns:saveArticleStockBalancesRecordsResponse" />
+      <xs:complexType name="retrieveArticleStockBalancesRecords">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:articleStockBalancesRequestDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="articleStockBalancesRequestDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articleCode" type="xs:string" />
+          <xs:element minOccurs="0" name="ean" type="xs:string" />
+          <xs:element minOccurs="0" name="pushOrPull" type="xs:boolean" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="soapWsHeader" type="tns:soapWsHeader" />
+          <xs:element minOccurs="0" name="syncFromDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="transactionCode" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="soapWsHeader">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="password" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="storePort" type="xs:string" />
+          <xs:element minOccurs="0" name="userName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="retrieveArticleStockBalancesRecordsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:articleStockBalancesDtos" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="articleStockBalancesDtos">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="articleStockBalancesDTO" nillable="true" type="tns:articleStockBalancesDTO" />
+          <xs:element minOccurs="0" name="calendar" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="faultDTO" type="tns:faultDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="articleStockBalancesDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articleCode" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="damagedQty" type="xs:string" />
+          <xs:element minOccurs="0" name="EAN" type="xs:string" />
+          <xs:element minOccurs="0" name="inTrasnsitQty" type="xs:string" />
+          <xs:element minOccurs="0" name="nextAvailableDate" type="xs:string" />
+          <xs:element minOccurs="0" name="nonSaleableQty" type="xs:string" />
+          <xs:element minOccurs="0" name="onOrderQty" type="xs:string" />
+          <xs:element minOccurs="0" name="physicalQty" type="xs:string" />
+          <xs:element minOccurs="0" name="reservedQty" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="siteName" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="stockStatus" type="xs:string" />
+          <xs:element minOccurs="0" name="totalARSQty" type="xs:string" />
+          <xs:element minOccurs="0" name="totalPhysicalNonSaleableQty" type="xs:string" />
+          <xs:element minOccurs="0" name="totalPhysicalSaleableQty" type="xs:string" />
+          <xs:element minOccurs="0" name="totalSaleableQty" type="xs:string" />
+          <xs:element minOccurs="0" name="totalVirtualNonSaleableQty" type="xs:string" />
+          <xs:element minOccurs="0" name="UOM" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="faultDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="businessError" type="xs:string" />
+          <xs:element minOccurs="0" name="faultLevel" type="xs:string" />
+          <xs:element minOccurs="0" name="faultStackTrace" type="xs:string" />
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveArticleStockBalancesRecords">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:articleStockBalancesSaveRequestDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="articleStockBalancesSaveRequestDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articleStockBalancesDtos" type="tns:articleStockBalancesDtos" />
+          <xs:element minOccurs="0" name="soapWsHeader" type="tns:soapWsHeader" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveArticleStockBalancesRecordsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:syncResponseDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="syncResponseDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="calendar" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="faultDTO" type="tns:faultDTO" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </types>
+  <message name="ArticleStockBalancesSynchronizer_saveArticleStockBalancesRecords">
+    <part name="saveArticleStockBalancesRecords" element="tns:saveArticleStockBalancesRecords" />
+  </message>
+  <message name="ArticleStockBalancesSynchronizer_retrieveArticleStockBalancesRecordsResponse">
+    <part name="retrieveArticleStockBalancesRecordsResponse" element="tns:retrieveArticleStockBalancesRecordsResponse" />
+  </message>
+  <message name="ArticleStockBalancesSynchronizer_retrieveArticleStockBalancesRecords">
+    <part name="retrieveArticleStockBalancesRecords" element="tns:retrieveArticleStockBalancesRecords" />
+  </message>
+  <message name="ArticleStockBalancesSynchronizer_saveArticleStockBalancesRecordsResponse">
+    <part name="saveArticleStockBalancesRecordsResponse" element="tns:saveArticleStockBalancesRecordsResponse" />
+  </message>
+  <portType name="ArticleStockBalancesSynchronizer">
+    <operation name="retrieveArticleStockBalancesRecords" parameterOrder="retrieveArticleStockBalancesRecords">
+      <input message="tns:ArticleStockBalancesSynchronizer_retrieveArticleStockBalancesRecords" />
+      <output message="tns:ArticleStockBalancesSynchronizer_retrieveArticleStockBalancesRecordsResponse" />
+    </operation>
+    <operation name="saveArticleStockBalancesRecords" parameterOrder="saveArticleStockBalancesRecords">
+      <input message="tns:ArticleStockBalancesSynchronizer_saveArticleStockBalancesRecords" />
+      <output message="tns:ArticleStockBalancesSynchronizer_saveArticleStockBalancesRecordsResponse" />
+    </operation>
+  </portType>
+  <binding name="ArticleStockBalancesSynchronizerBinding" type="tns:ArticleStockBalancesSynchronizer">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="retrieveArticleStockBalancesRecords">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="saveArticleStockBalancesRecords">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ArticleStockBalancesSynchronizerService">
+    <port name="ArticleStockBalancesSynchronizerPort" binding="tns:ArticleStockBalancesSynchronizerBinding">
+      <soap:address location="http://10.10.180.68:8080/posSeam/webservices/ArticleStockBalancesSynchronizer" />
+    </port>
+  </service>
+</definitions>

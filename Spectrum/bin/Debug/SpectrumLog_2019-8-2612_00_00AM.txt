@@ -1,0 +1,70 @@
+----------------------------------------------------------
+
+------------------ Spectrum Log  -------------------------
+
+Date : 2019-8-26 Time:11:49 AM 
+
+SiteCode: SUB0002 
+
+Terminal ID: T001 
+
+User Name : admin 
+
+----------------------------------------------------------
+
+Date : 2019-8-26 Time:11:50 AM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4780
+
+----------------------------------------------------------
+
+Date : 2019-8-26 Time:11:50 AM 
+
+System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7128
+
+----------------------------------------------------------
+
+Date : 2019-8-26 Time:11:52 AM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4780
+
+----------------------------------------------------------
+
+Date : 2019-8-26 Time:11:53 AM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4780
+
+----------------------------------------------------------
+
+Date : 2019-8-26 Time:11:53 AM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4780
+
+----------------------------------------------------------
+
+Date : 2019-8-26 Time:11:54 AM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4780
+
+----------------------------------------------------------
+
+Date : 2019-8-26 Time:11:54 AM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at SpectrumBL.clsCashMemo.GetTrackCustomers(String billno, String currentdineintable, String sitecode) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCashMemo.vb:line 4780
+

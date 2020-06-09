@@ -1,0 +1,4 @@
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.Cryptography\bin\Debug\Spectrum.Cryptography.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.Cryptography\bin\Debug\Spectrum.Cryptography.pdb
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.Cryptography\obj\Debug\Spectrum.Cryptography.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.Cryptography\obj\Debug\Spectrum.Cryptography.pdb

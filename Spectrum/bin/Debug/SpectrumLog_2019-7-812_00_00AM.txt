@@ -1,0 +1,370 @@
+----------------------------------------------------------
+
+------------------ Spectrum Log  -------------------------
+
+Date : 2019-7-8 Time:03:09 PM 
+
+SiteCode: SUB0001 
+
+Terminal ID: T001 
+
+User Name : admin 
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:03:09 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 941
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:04:01 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 941
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:04:06 PM 
+
+System.IO.IOException: Could not complete operation since source directory and target directory are the same.
+   at Microsoft.VisualBasic.FileIO.FileSystem.CopyOrMoveDirectory(CopyOrMove operation, String sourceDirectoryName, String destinationDirectoryName, Boolean overwrite, UIOptionInternal showUI, UICancelOption onUserCancel)
+   at Microsoft.VisualBasic.FileIO.FileSystem.CopyDirectory(String sourceDirectoryName, String destinationDirectoryName)
+   at Spectrum.frmCallWS.btnGet_Click(Object sender, EventArgs e)
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:04:06 PM 
+
+System.MissingMethodException: Method not found: 'Void System.IO.Directory..ctor(System.String, System.IO.FileMode)'.
+   at Spectrum.frmCallWS.btnGet_Click(Object sender, EventArgs e)
+   at Spectrum.frmCallWS.frmNStockCheck_Load(Object sender, EventArgs e)
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:04:06 PM 
+
+System.MissingMethodException: Method not found: 'Void System.IO.Directory..ctor(System.String, System.IO.FileMode)'.
+   at Spectrum.frmCallWS.btnGet_Click(Object sender, EventArgs e)
+   at Spectrum.frmCallWS.frmNStockCheck_Load(Object sender, EventArgs e)
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:04:06 PM 
+
+System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7106
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:04:07 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 941
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:04:26 PM 
+
+System.ComponentModel.InvalidEnumArgumentException: The value of argument 'showUI' (57642948) is invalid for Enum type 'UIOption'.
+Parameter name: showUI
+   at Microsoft.VisualBasic.FileIO.FileSystem.ToUIOptionInternal(UIOption showUI)
+   at Microsoft.VisualBasic.MyServices.FileSystemProxy.DeleteDirectory(String directory, UIOption showUI, RecycleOption recycle)
+   at Spectrum.frmCallWS.btnGet_Click(Object sender, EventArgs e)
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:04:26 PM 
+
+System.ComponentModel.InvalidEnumArgumentException: The value of argument 'showUI' (57642948) is invalid for Enum type 'UIOption'.
+Parameter name: showUI
+   at Microsoft.VisualBasic.FileIO.FileSystem.ToUIOptionInternal(UIOption showUI)
+   at Microsoft.VisualBasic.MyServices.FileSystemProxy.DeleteDirectory(String directory, UIOption showUI, RecycleOption recycle)
+   at Spectrum.frmCallWS.btnGet_Click(Object sender, EventArgs e)
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:04:26 PM 
+
+System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7106
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:04:27 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 941
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:04:34 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for MstEan
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:04:47 PM 
+
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'sa'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Spectrum.frmNDbLocalConnectionBuild.cmdTestCon_Click(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmNDbLocalConnectionBuild.vb:line 61
+ClientConnectionId:1087882a-3844-475a-82e2-ec9059a57d7f
+Error Number:18456,State:1,Class:14
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:04:47 PM 
+
+System.InvalidCastException: Conversion from type 'DBNull' to type 'String' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToString(Object Value)
+   at SpectrumBL.clsCommon.GetSiteByCode(String SiteCode, Boolean SiteStdCodeRequired) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 6120
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:04:49 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 941
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:00 PM 
+
+System.ApplicationException: Checking internet connectivity...
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:00 PM 
+
+System.ApplicationException: Checking CCE server Connectivity...
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:00 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:00 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for MstEan
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:00 PM 
+
+System.ApplicationException: sending request parameters to CsvFileSyncronizer_ objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-06
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:01 PM 
+
+System.ServiceModel.EndpointNotFoundException: There was no endpoint listening at http://dt148:10080/posSeam/webservices/CsvFileSyncronizer?wsdl that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 10.10.181.136:10080
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   at System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Spectrum.ServiceReference2.CsvFileSyncronizer.syncronizeCsvFile(syncronizeCsvFileRequest request)
+   at Spectrum.ServiceReference2.CsvFileSyncronizerClient.ServiceReference2_CsvFileSyncronizer_syncronizeCsvFile(syncronizeCsvFileRequest request) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\Service References\ServiceReference2\Reference.vb:line 710
+   at Spectrum.ServiceReference2.CsvFileSyncronizerClient.syncronizeCsvFile(syncronizeCsvFile syncronizeCsvFile1) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\Service References\ServiceReference2\Reference.vb:line 716
+   at Spectrum.frmCallWS.CsvFileSyncronizer(String Sitecode, String TableNameWS, String JsonP) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmCallWS.vb:line 1380
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:06 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 941
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:06 PM 
+
+System.ApplicationException: Checking internet connectivity...
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:06 PM 
+
+System.ApplicationException: Checking CCE server Connectivity...
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:06 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:06 PM 
+
+System.ApplicationException: Getting Updates from IndependentMastersSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:06 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for MstEan
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:08 PM 
+
+System.ApplicationException: sending request parameters to CsvFileSyncronizer_ objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-06
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:09 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for MstArticle
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:09 PM 
+
+System.ApplicationException: sending request parameters to CsvFileSyncronizer_ objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-06
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:10 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for PurchaseInfoRecord
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:10 PM 
+
+System.ApplicationException: sending request parameters to CsvFileSyncronizer_ objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-06
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:10 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for ArticleStockBalances
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:10 PM 
+
+System.ApplicationException: sending request parameters to CsvFileSyncronizer_ objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-06
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:10 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for SalesInfoRecord
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:10 PM 
+
+System.ApplicationException: sending request parameters to CsvFileSyncronizer_ objRequestDTO.siteCode=MHMUM201808148,objRequestDTO.syncFromDate = 2019-07-06
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:10 PM 
+
+System.ApplicationException: Getting Updates from UomSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:11 PM 
+
+System.ApplicationException: Data Updated Successfully for MSTEAN
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:11 PM 
+
+System.ApplicationException: Data Updated Successfully for MSTARTICLE
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:11 PM 
+
+System.ApplicationException: Data Updated Successfully for PURCHASEINFORECORD
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:11 PM 
+
+System.ApplicationException: Data Updated Successfully for ARTICLESTOCKBALANCES
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:11 PM 
+
+System.ApplicationException: Data Updated Successfully for SALESINFORECORD
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:05:11 PM 
+
+System.ApplicationException: Getting Updates from ArticleSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-7-8 Time:06:31 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 941
+

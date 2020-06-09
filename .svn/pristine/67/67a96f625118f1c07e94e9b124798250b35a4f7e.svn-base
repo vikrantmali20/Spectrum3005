@@ -1,0 +1,3382 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Spectrum
+</name>
+</assembly>
+<members>
+<member name="M:Spectrum.My.MyApplication.MyApplication_NetworkAvailabilityChanged(System.Object,Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs)">
+	<summary>
+ Update the network connectivity status on the main form each time the connection status changes.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.My.MyApplication.MyApplication_Startup(System.Object,Microsoft.VisualBasic.ApplicationServices.StartupEventArgs)">
+	<summary>
+ Include logic here that should be performed before any forms are loaded
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.My.MyApplication.SetConnectionStatus(System.Boolean)">
+	<summary>
+ Update the status strip to denote the current network connection status
+ </summary>
+	<param name="connected"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.BitmapRegion.CreateControlRegion(System.Windows.Forms.Control,System.Drawing.Bitmap)">
+	<summary>
+ Create and apply the region on the supplied control
+ </summary>
+	<param name="control">The Control object to apply the region to</param>
+	<param name="bitmap">The Bitmap object to create the region from</param>
+</member><member name="M:Spectrum.BitmapRegion.CalculateControlGraphicsPath(System.Drawing.Bitmap)">
+	<summary>
+ Calculate the graphics path that representing the figure in the bitmap 
+ excluding the transparent color which is the top left pixel.
+ </summary>
+	<param name="bitmap">The Bitmap object to calculate our graphics path from</param>
+	<returns>Calculated graphics path</returns>
+</member><member name="T:Spectrum.BitmapRegion">
+	<summary>
+ Summary description for BitmapRegion.
+ </summary>
+</member><member name="T:Spectrum.frmNTillOpen">
+	<summary>
+ This class is used for Denomination Calculation
+ </summary>
+	<CreatedBy>Rama Ranjan Jena</CreatedBy>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="T:Spectrum.PrintBirthList.PrintTransactionSet">
+	<summary>
+  Birthlist transaction for printing 
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Spectrum.PrintBirthList.OrderNumber">
+	<summary>
+  Order Number for Created new item information
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.PrintBirthList.PrintTransaction">
+	<summary>
+ Customer Print for sales,retrun or create BL items 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.PrintBirthList.CustomerDetail">
+	<summary>
+ Customer details who ordered or sold or comes to return items 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.PrintBirthList.BirthListItemDetail">
+	<summary>
+  Customer ordered,sold ,return item 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:Spectrum.PrintBirthList._dtVoucherSales">
+	<summary>
+ Voucher Information 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Spectrum.PrintBirthList._dtPaymentHistory">
+	<summary>
+  Payment History  
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Spectrum.PrintBirthList.BirthListCustomerInfo">
+	<summary>
+  Sales and Edit BirthList : Birthlist owner information 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.PrintBirthList.PrintBirthListHeaderAndFooter(System.Text.StringBuilder@,System.Text.StringBuilder@)">
+	<summary>
+  Print setting for birthlist for all birthlist printing 
+ </summary>
+	<UsedBy>frmBirthListCreate.vb,frmBirthListSale.vb,frmBirthListUpdate.vb</UsedBy>
+	<param name="StrSubHeader"></param>
+	<param name="StrFooter"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.PrintBirthList.Print(System.String@)">
+	<summary>
+  Call print function to print delvery note .
+ </summary>
+	<param name="errorMsg"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.PrintBirthList.#ctor">
+	<summary>
+ For only CreditVoucher Printing 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.PrintBirthList.#ctor(Spectrum.PrintBirthList.PrintTransactionSet,System.Data.DataTable,System.Data.DataTable,System.Data.DataTable,System.Data.DataRow,System.Data.DataTable,System.String,System.String,System.Boolean)">
+	<summary>
+  Print BirthList 
+ </summary>
+	<param name="printTran">Transaction:New,Sales,Edit,Retrun </param>
+	<param name="dtcustomerDetails">Customer information </param>
+	<param name="dtbirthlistitem">Birthlist information</param>
+	<param name="dtVoucherDetail">Gift Voucher information </param>
+	<param name="strInvoiceNumber"> Invoice Number for current document only for purchased item</param>
+	<param name="strOrderNumber"> Ordered Number for current item  delivery i.e for pickup item </param>
+	<param name="isReprint">Reprinting of the document  </param>
+	<remarks></remarks>
+</member><member name="T:Spectrum.PrintBirthList">
+	<summary>
+  Print BirthList sales ,Created , or return item 
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNBirthListCreate.IsCustomerSelected">
+	<summary>
+ Checking Customer is selected or not 
+ </summary>
+	<value></value>
+	<returns>Boolean</returns>
+	<remarks>ReadOnly</remarks>
+</member><member name="P:Spectrum.frmNBirthListCreate.IsSalesPersonSelected">
+	<summary>
+ Checking Sales person is selected or not 
+ </summary>
+	<value></value>
+	<returns>Boolean</returns>
+	<remarks>ReadOnly</remarks>
+</member><member name="P:Spectrum.frmNBirthListCreate.SalesPersonName">
+	<summary>
+ Selected Sales Person Name 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNBirthListCreate.CustomerID">
+	<summary>
+ Checking  customer is selected or not  
+ </summary>
+	<value></value>
+	<returns>String</returns>
+	<remarks>ReadOnly</remarks>
+</member><member name="P:Spectrum.frmNBirthListCreate.EventID">
+	<summary>
+   EventID selected by customer 
+ </summary>
+	<value></value>
+	<returns>String</returns>
+	<remarks>ReadOnly</remarks>
+</member><member name="P:Spectrum.frmNBirthListCreate.EventDate">
+	<summary>
+   Event Date  selected by customer 
+ </summary>
+	<value></value>
+	<returns>String</returns>
+	<remarks>ReadOnly</remarks>
+</member><member name="P:Spectrum.frmNBirthListCreate.IsDeliveryDateBackDated">
+	<summary>
+  Validate Delivery date 
+ </summary>
+	<value>Boolean</value>
+	<returns>Boolean</returns>
+	<remarks>ReadOnly</remarks>
+</member><member name="P:Spectrum.frmNBirthListCreate.IsEventDateValid">
+	<summary>
+  Validate EventDate
+ </summary>
+	<value>Boolean</value>
+	<returns>Boolean</returns>
+	<remarks>ReadOnly</remarks>
+</member><member name="M:Spectrum.frmNBirthListCreate.BtnItemSearch_Click(System.Object,System.EventArgs)">
+	<summary>
+  Items search by popup form 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListCreate.GridDataSource">
+	<summary>
+  DataSource for grid 
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListCreate.Display_GridSetting">
+	<summary>
+ Display setting for grid 
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListCreate.btnSaveBirthList_Click(System.Object,System.EventArgs)">
+	<summary>
+ Saving birth list information into database  
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListCreate.grdItemDetails_AfterEdit(System.Object,C1.Win.C1FlexGrid.RowColEventArgs)">
+	<summary>
+  Called after grid row edited
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListCreate.frmBirthListCreate_Load(System.Object,System.EventArgs)">
+	<summary>
+  Loading Event Name display combobox
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListCreate.grdItemDetails_CellButtonClick(System.Object,C1.Win.C1FlexGrid.RowColEventArgs)">
+	<summary>
+ Called when grid delete button pressed
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListCreate.CalculateTotal">
+	<summary>
+ Calculate Total ordered items, amount  
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListCreate.grdItemDetails_RowColChange(System.Object,System.EventArgs)">
+	<summary>
+ Display selected grid row  article image 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListCreate.ManualEnterEANNumber">
+	<summary>
+  Entered EAN number for article by keybord
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListCreate.txtItemSearch_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Callled when pressing entered on EAN textbox
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListCreate.grdItemDetails_BeforeEdit(System.Object,C1.Win.C1FlexGrid.RowColEventArgs)">
+	<summary>
+  Check for value edited in grid row
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListCreate.CreateNewBirthList(System.Boolean)">
+	<summary>
+ Clear current BirthList information 
+ </summary>
+	<param name="IsClearCustomerID">Clear CustomerID </param>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNBirthListSales.IsReprint">
+	<summary>
+  Is  reprint   
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNBirthListSales.dtCustmInfo">
+	<summary>
+ Customer information who is purchasing items in birthlist
+ </summary>
+	<value>DataTable</value>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNBirthListSales.SelectedBirthListInfo">
+	<summary>
+ BirthList owner information
+ </summary>
+	<value>DataRow</value>
+	<returns>DataRow</returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNBirthListSales.IsCLPCustomer">
+	<summary>
+ Check for CustomerType i.e CLP,or SO customer
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNBirthListSales.SalesCustomerType">
+	<summary>
+  Customer Type as Silver ,Gold,...
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNBirthListSales.BirthListInfo">
+	<summary>  
+ Selected birthlist items information
+ </summary>
+	<value>DataTable</value>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.CheckInteger(System.String)">
+	<summary>
+ Check for integer values 
+ </summary>
+	<param name="iValue"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNBirthListSales.BirthListID">
+	<summary>
+Check BirthListID textbox is empty or not 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNBirthListSales.IsPurchaseCustomerSelected">
+	<summary>
+ Check for customer is selected or not . who purchasing the items in birthlist
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:Spectrum.frmNBirthListSales._strGiftReceiptMessage">
+	<summary>
+ Message for giftVocuher documnet
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.#ctor">
+	<summary>
+ Class Construtor 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.btnSearchBirthListID_Click(System.Object,System.EventArgs)">
+	<summary>
+ Search birthlist by BirthListSearch form
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.ReprintView">
+	<summary>
+ Page 
+ </summary>
+	<returns>Boolean</returns>
+	<remarks>ReprintView Method </remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.ReprintView_CalculatepaymentSummaray">
+	<summary>
+  Calculation PaymentTransaction 
+ </summary>
+	<returns></returns>
+	<remarks>ReprintView Method </remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.ReprintGridItem">
+	<summary>
+  Settings for  ItemGrid .
+  Grid will operate into ReadOnly mode
+ </summary>
+	<returns></returns>
+	<remarks>ReprintView Method </remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.ReprintPaymentHistory">
+	<summary>
+ Fill information of Payment Transactions against BirthList 
+ </summary>
+	<remarks>ReprintView Method </remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.ReprintVoucherInfot">
+	<summary>
+ Fill information of voucher against BirthList
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.ReprintLoadInvoiceCombo">
+	<summary>
+  Filling invoice numbers against BirthList
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.ReprintPageSettings">
+	<summary>
+  Page display settings for ReprintView
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Spectrum.frmNBirthListSales.dtMainTax">
+	<summary>
+  Display selected birthlist information
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.ClearBirthListInformation(System.Boolean)">
+	<summary>
+ Clear previous birthlist information 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.CalculateTotalBalanceQty(System.Boolean)">
+	<summary>
+ Calculcate Total balance qunatity for each item in grid
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.grdScanItem_AfterEdit(System.Object,C1.Win.C1FlexGrid.RowColEventArgs)">
+	<summary>
+ Called after row of grid  is edited 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.CheckColumnName(System.String,System.Int32,System.Int32)">
+	<summary>
+ Find Which column value is changed
+ </summary>
+	<param name="strColumn"></param>
+	<param name="iRowIndex"></param>
+	<param name="iColumnIndex"></param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.CalculateAvailabel_PurchaseQty(System.Int32)">
+	<summary>
+ Calculate Availabel items quantity for purchase
+ </summary>
+	<param name="iRowIndex">Editing row index</param>
+	<returns>Total Availabel purchase quantity</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.CheckBalanceQty(System.Boolean)">
+	<summary>
+ Check balance qty and sorting list,changing color
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.EditColumn_NetAmount(System.Int32,System.Int32)">
+	<summary>
+ Calculate NetAmount when purchase quantity is changed
+ </summary>
+	<param name="iRowIndex"></param>
+	<param name="iValue"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.EditColumn_PickUpQty(System.Int32,System.Int32)">
+	<summary>
+ Check for pickup quantity 
+ </summary>
+	<param name="iRowIndex2"></param>
+	<param name="iValue"></param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.frmBirthListSales_Load(System.Object,System.EventArgs)">
+	<summary>
+ Called when form load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>Event</remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.CalculatePaymentReciept">
+	<summary>
+ Calculate total payment summary
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.ClearPaymentReceipt">
+	<summary>
+ Clear Payment summary
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.grdScanItem_RowColChange(System.Object,System.EventArgs)">
+	<summary>
+ Display selected article image 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.grdItemDetails_CellButtonClick(System.Object,C1.Win.C1FlexGrid.RowColEventArgs)">
+	<summary>
+ Called when grid delete button pressed
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.btnAcceptPayment_Click(System.Object,System.EventArgs)">
+	<summary>
+  Open Accept payment form
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>Event</remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.DisplayTotalRecieptAmount">
+	<summary>
+  Payment breakup display
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.btnSavePrint_Click(System.Object,System.EventArgs)">
+	<summary>
+ Saving all sales information into database
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.NewBirthListForSale">
+	<summary>
+ Clear All the Current information. 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.lblBirthListNo_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+  Manually search birthlist id 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.lblBirthListNo_TextChanged(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+  Manually search birthlist id .
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.ManualEnterEANNumber">
+	<summary>
+  Entered EAN number for article by keybord
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.GridDataSource">
+	<summary>
+  DataSource for grid 
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.ValidateInput">
+	<summary>
+ validate user input.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSales.CalculateTotalPurchaseAmt">
+	<summary>
+ Calculate Total Purchased amount 
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSearchCustomer.cboAddressType_SelectionChangeCommitted(System.Object,System.EventArgs)">
+	<summary>
+ Changed Customer Address 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSearchCustomer.CboAddressTypeChanged(System.Data.DataTable@)">
+	<summary>
+ Set Address Type values in Combo Box 
+ </summary>
+	<param name="dtCombo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSOCustomer.frmSOCustomer_Load(System.Object,System.EventArgs)">
+	<summary>
+ Create New Customer for Sales Order and Other Customers
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSOCustomer.BtnNew_Click(System.Object,System.EventArgs)">
+	<summary>
+ Reset Application Filed Values
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSOCustomer.BtnEdit_Click(System.Object,System.EventArgs)">
+	<summary>
+ Save/Update Customer Information
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSOCustomer.BtnDelete_Click(System.Object,System.EventArgs)">
+	<summary>
+ Delete Old Customer Information
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSOCustomer.BtnOk_Click(System.Object,System.EventArgs)">
+	<summary>
+ Close 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSOCustomer.SetClearFields">
+	<summary>
+ Clear Fields
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSOCustomer.SetEnableDisableFields(System.Boolean)">
+	<summary>
+ Enabled or Disable Fields
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSOCustomer.SaveCustomerInformation">
+	<summary>
+ Save Customer Information
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSOCustomer.UpdateCustomerInformation">
+	<summary>
+ Update function for Customer Information
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSOCustomer.PrepareCustmInfoData(System.Data.DataRow@)">
+	<summary>
+ Prepare Customer Information Data
+ </summary>
+	<param name="drCustInfo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSOCustomer.PrepareCustmAddsData(System.Data.DataRow@,System.Int32)">
+	<summary>
+ Prepare Customer Address Information
+ </summary>
+	<param name="drCustAdds"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSOCustomer.ValidatedSOCustomer">
+	<summary>
+ Validate function for Customer Information
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSOCustomer.BtnSearchCustomer_Click(System.Object,System.EventArgs)">
+	<summary>
+ Search Customer Information
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSOCustomer.frmAddCustSO_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Set Key on Search Button
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNUserAuthorisation.TotalAmount">
+	<summary>
+ Total Amount send to form
+ </summary>
+	<value>Decimal</value>
+	<returns>Decimal</returns>
+	<UsedBy>frmBirthListUpdation.vb</UsedBy>
+	<remarks>Only needs to send from BirthList</remarks>
+</member><member name="P:Spectrum.frmNUserAuthorisation.IssueType">
+	<summary>
+  Issue Type is either GiftVoucher or CreditVoucher 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNUserAuthorisation.TotalDiscountAmount">
+	<summary>
+ Total Discount amount 
+ </summary>
+	<value></value>
+	<returns>Decimal </returns>
+	<remarks>Return calculated discount amount </remarks>
+</member><member name="P:Spectrum.frmNUserAuthorisation.IsFormCancel">
+	<summary>
+ Check Discount is   apply   successfully or canceled.
+<CreatedBy>Rahul</CreatedBy>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNUserAuthorisation.UpdateTran">
+	<summary>
+ Checking Transaction type 
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNUserAuthorisation.BLValidate(System.String@)">
+	<summary>
+ Validate textbox entries
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNUserAuthorisation.btnCancelBirthlistDiscount_Click(System.Object,System.EventArgs)">
+	<summary>
+ Birthlist Discout cancel event 
+ </summary>
+	<CreatedBy>Rahul</CreatedBy>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNAdvanceSale.TransactionID">
+	<summary>
+  Used by "TransactionID" property. 
+ </summary>
+	<UsedBy>frmBirthListSales.vb</UsedBy>
+	<CreatedBy>Rahul</CreatedBy>
+	<remarks>"TransactionTypes" defined into comFunctionModule </remarks>    
+ TODO: Required whenever we call this form by BirthlistSales.    
+ <returns></returns>
+</member><member name="P:Spectrum.frmNAdvanceSale.TotalDenomination">
+	<summary>
+ TODO: Total Amount for vouchers.
+ </summary>
+	<UsedBy>frmBirthListUpdate.vb</UsedBy>
+	<CreatedBy>Rahul</CreatedBy>
+	<remarks>Set for only BirtListUpdate screen.</remarks>
+</member><member name="P:Spectrum.frmNAdvanceSale.IsBirthListGV">
+	<summary>
+ TODO: Check For BirthList
+ </summary>
+	<UsedBy>frmBirthListUpdate.vb</UsedBy>
+	<CreatedBy>Rahul</CreatedBy>
+	<remarks>Set for only BirtListUpdate screen.</remarks>
+</member><member name="P:Spectrum.frmNAdvanceSale.IsFormCanceled">
+	<summary>
+ Is Form forcefully closed or transaction canceled
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNAdvanceSale.BirthListID">
+	<summary>
+ BirthList ID 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAdvanceSale.AddClpPointForSale_BirthList">
+	<summary>
+ Adding GV to Table , when we    select CLP
+ </summary>
+	<UsedBy>frmBirthListSales.vb</UsedBy>
+	<CreatedBy>Rahul</CreatedBy>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAdvanceSale.AddGVForSale_BirthList">
+	<summary>
+ Adding GV to Table , when we not select CLP
+ </summary>
+	<UsedBy>frmBirthListSales.vb</UsedBy>
+	<CreatedBy>Rahul</CreatedBy>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAdvanceSale.checkDenomination">
+	<summary>
+  TODO:Checking Denomination is complete 
+ </summary>
+	<CreatedBy>Rahul </CreatedBy>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNCommonView.SetData">
+	<summary>
+ Set the data from Outside to Show
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNCommonView.GetData">
+	<summary>
+ Return the data 
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="T:Spectrum.frmNCommonView">
+	<summary>
+ This Class is Used for Common View of Data
+ </summary>
+	<CreatedBy>Rama Ranjan Jena</CreatedBy>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="F:Spectrum.clsDefaultConfiguration._iDecimalDigits">
+	<summary>
+  Decimal points 
+ </summary>
+	<remarks>SO,BL,CM</remarks>
+</member><member name="M:Spectrum.clsDefaultConfiguration.GetDefaultSettings">
+	<summary>
+ Get the Site default Settings And Set Default Config Object
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Spectrum.frmNAcceptPaymentByCard._Actiontype">
+	<summary>
+  TODO:Taking selected option i.e either gift or save 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Spectrum.frmNAcceptPaymentByCard._decTotalBillAmount">
+	<summary>
+  Total amount to be tendered .
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Spectrum.frmNAcceptPaymentByCard._decTotalCollectAmount">
+	<summary>
+ Total Amount received by Cashier 
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNAcceptPaymentByCard.TotalAmountReturnToCustomer">
+	<summary>
+ Return Amount to customer 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPaymentByCard.ValidateEntries">
+	<summary>
+  Validate user entered inputs
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNBirthListSearch.SearchBirthListInformation">
+	<summary>
+ Return Selected BirthList information
+ </summary>
+	<value>DataRow</value>
+	<returns>DataRow</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSearch.frmBirthListSearch_Load(System.Object,System.EventArgs)">
+	<summary>
+ Loading BirthList Searxh form
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSearch.DisplayDataTable(System.Data.DataTable)">
+	<summary>
+ setting for Display grid
+ </summary>
+	<param name="querydT"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListSearch.grdSearchBirthListId_DoubleClick(System.Object,System.EventArgs)">
+	<summary>
+ Return BirthList information on double click on grid row and close the  form
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNCashMemoReturn.GetResultData">
+	<summary>
+ Used For Returning Item Details to Main Cash Memo
+ </summary>
+	<value></value>
+	<UsedIn>CashMemo</UsedIn>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Spectrum.frmNCashMemoReturn">
+	<summary>
+ This Class is Used for CashMemo Return
+ </summary>
+	<CreatedBy>Rama Ranjan Jena</CreatedBy>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="M:Spectrum.StockWebservice.ArticleStockBalancesSynchronizerService.#ctor">
+	<remarks/>
+</member><member name="E:Spectrum.StockWebservice.ArticleStockBalancesSynchronizerService.retrieveArticleStockBalancesRecordsCompleted">
+	<remarks/>
+</member><member name="E:Spectrum.StockWebservice.ArticleStockBalancesSynchronizerService.saveArticleStockBalancesRecordsCompleted">
+	<remarks/>
+</member><member name="M:Spectrum.StockWebservice.ArticleStockBalancesSynchronizerService.retrieveArticleStockBalancesRecords(Spectrum.StockWebservice.retrieveArticleStockBalancesRecords)">
+	<remarks/>
+</member><member name="M:Spectrum.StockWebservice.ArticleStockBalancesSynchronizerService.retrieveArticleStockBalancesRecordsAsync(Spectrum.StockWebservice.retrieveArticleStockBalancesRecords)">
+	<remarks/>
+</member><member name="M:Spectrum.StockWebservice.ArticleStockBalancesSynchronizerService.retrieveArticleStockBalancesRecordsAsync(Spectrum.StockWebservice.retrieveArticleStockBalancesRecords,System.Object)">
+	<remarks/>
+</member><member name="M:Spectrum.StockWebservice.ArticleStockBalancesSynchronizerService.saveArticleStockBalancesRecords(Spectrum.StockWebservice.saveArticleStockBalancesRecords)">
+	<remarks/>
+</member><member name="M:Spectrum.StockWebservice.ArticleStockBalancesSynchronizerService.saveArticleStockBalancesRecordsAsync(Spectrum.StockWebservice.saveArticleStockBalancesRecords)">
+	<remarks/>
+</member><member name="M:Spectrum.StockWebservice.ArticleStockBalancesSynchronizerService.saveArticleStockBalancesRecordsAsync(Spectrum.StockWebservice.saveArticleStockBalancesRecords,System.Object)">
+	<remarks/>
+</member><member name="M:Spectrum.StockWebservice.ArticleStockBalancesSynchronizerService.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:Spectrum.StockWebservice.ArticleStockBalancesSynchronizerService">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.retrieveArticleStockBalancesRecords.arg0">
+	<remarks/>
+</member><member name="T:Spectrum.StockWebservice.retrieveArticleStockBalancesRecords">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesRequestDTO.articleCode">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesRequestDTO.ean">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesRequestDTO.pushOrPull">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesRequestDTO.pushOrPullSpecified">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesRequestDTO.siteCode">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesRequestDTO.soapWsHeader">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesRequestDTO.syncFromDate">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesRequestDTO.syncFromDateSpecified">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesRequestDTO.transactionCode">
+	<remarks/>
+</member><member name="T:Spectrum.StockWebservice.articleStockBalancesRequestDTO">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.soapWsHeader.password">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.soapWsHeader.userName">
+	<remarks/>
+</member><member name="T:Spectrum.StockWebservice.soapWsHeader">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.syncResponseDTO.calendar">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.syncResponseDTO.calendarSpecified">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.syncResponseDTO.faultDTO">
+	<remarks/>
+</member><member name="T:Spectrum.StockWebservice.syncResponseDTO">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.faultDTO.businessError">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.faultDTO.faultLevel">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.faultDTO.faultStackTrace">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.faultDTO.message">
+	<remarks/>
+</member><member name="T:Spectrum.StockWebservice.faultDTO">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.saveArticleStockBalancesRecordsResponse.return">
+	<remarks/>
+</member><member name="T:Spectrum.StockWebservice.saveArticleStockBalancesRecordsResponse">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesSaveRequestDTO.articleStockBalancesDtos">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesSaveRequestDTO.soapWsHeader">
+	<remarks/>
+</member><member name="T:Spectrum.StockWebservice.articleStockBalancesSaveRequestDTO">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDtos.articleStockBalancesDTO">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDtos.calendar">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDtos.calendarSpecified">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDtos.faultDTO">
+	<remarks/>
+</member><member name="T:Spectrum.StockWebservice.articleStockBalancesDtos">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDTO.articleCode">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDTO.createdat">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDTO.createdby">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDTO.createdon">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDTO.damagedQty">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDTO.EAN">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDTO.inTrasnsitQty">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDTO.nextAvailableDate">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDTO.nonSaleableQty">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDTO.onOrderQty">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDTO.physicalQty">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDTO.reservedQty">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDTO.siteCode">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDTO.siteName">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDTO.status">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDTO.stockStatus">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDTO.totalARSQty">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDTO.totalPhysicalNonSaleableQty">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDTO.totalPhysicalSaleableQty">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDTO.totalSaleableQty">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDTO.totalVirtualNonSaleableQty">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDTO.UOM">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDTO.updatedat">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDTO.updatedby">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.articleStockBalancesDTO.updatedon">
+	<remarks/>
+</member><member name="T:Spectrum.StockWebservice.articleStockBalancesDTO">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.saveArticleStockBalancesRecords.arg0">
+	<remarks/>
+</member><member name="T:Spectrum.StockWebservice.saveArticleStockBalancesRecords">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.retrieveArticleStockBalancesRecordsResponse.return">
+	<remarks/>
+</member><member name="T:Spectrum.StockWebservice.retrieveArticleStockBalancesRecordsResponse">
+	<remarks/>
+</member><member name="T:Spectrum.StockWebservice.retrieveArticleStockBalancesRecordsCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.retrieveArticleStockBalancesRecordsCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Spectrum.StockWebservice.retrieveArticleStockBalancesRecordsCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Spectrum.StockWebservice.saveArticleStockBalancesRecordsCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Spectrum.StockWebservice.saveArticleStockBalancesRecordsCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Spectrum.StockWebservice.saveArticleStockBalancesRecordsCompletedEventArgs">
+	<remarks/>
+</member><member name="P:Spectrum.AboutBox.AppEntryAssembly">
+	<summary>
+ Returns the entry assembly for the current application domain
+ </summary>
+	<remarks>
+ This is usually read-only, but in some weird cases (Smart Client apps) 
+ you won't have an entry assembly, so you may want to set this manually.
+ </remarks>
+</member><member name="P:Spectrum.AboutBox.AppTitle">
+	<summary>
+ single line of text to show in the application title section of the about box dialog
+ </summary>
+	<remarks>
+ defaults to "%title%" 
+ %title% = Assembly: AssemblyTitle
+ </remarks>
+</member><member name="P:Spectrum.AboutBox.AppDescription">
+	<summary>
+ single line of text to show in the description section of the about box dialog
+ </summary>
+	<remarks>
+ defaults to "%description%"
+ %description% = Assembly: AssemblyDescription
+ </remarks>
+</member><member name="P:Spectrum.AboutBox.AppVersion">
+	<summary>
+ single line of text to show in the version section of the about dialog
+ </summary>
+	<remarks>
+ defaults to "Version %version%"
+ %version% = Assembly: AssemblyVersion
+ </remarks>
+</member><member name="P:Spectrum.AboutBox.AppCopyright">
+	<summary>
+ single line of text to show in the copyright section of the about dialog
+ </summary>
+	<remarks>
+ defaults to "Copyright © %year%, %company%"
+ %company% = Assembly: AssemblyCompany
+ %year% = current 4-digit year
+ </remarks>
+</member><member name="P:Spectrum.AboutBox.AppImage">
+	<summary>
+ intended for the default 32x32 application icon to appear in the upper left of the about dialog
+ </summary>
+	<remarks>
+ if you open this form using .ShowDialog(Owner), the icon can be derived from the owning form
+ </remarks>
+</member><member name="P:Spectrum.AboutBox.AppMoreInfo">
+	<summary>
+ multiple lines of miscellaneous text to show in rich text box
+ </summary>
+	<remarks>
+ defaults to "%product% is %copyright%, %trademark%"
+ %product% = Assembly: AssemblyProduct
+ %copyright% = Assembly: AssemblyCopyright
+ %trademark% = Assembly: AssemblyTrademark
+ </remarks>
+</member><member name="P:Spectrum.AboutBox.AppDetailsButton">
+	<summary>
+ determines if the "Details" (advanced assembly details) button is shown
+ </summary>
+</member><member name="M:Spectrum.AboutBox.AssemblyLastWriteTime(System.Reflection.Assembly)">
+	<summary>
+ exception-safe retrieval of LastWriteTime for this assembly.
+ </summary>
+	<returns>File.GetLastWriteTime, or DateTime.MaxValue if exception was encountered.</returns>
+</member><member name="M:Spectrum.AboutBox.AssemblyBuildDate(System.Reflection.Assembly,System.Boolean)">
+	<summary>
+ Returns DateTime this Assembly was last built. Will attempt to calculate from build number, if possible. 
+ If not, the actual LastWriteTime on the assembly file will be returned.
+ </summary>
+	<param name="a">Assembly to get build date for</param>
+	<param name="ForceFileDate">Don't attempt to use the build number to calculate the date</param>
+	<returns>DateTime this assembly was last built</returns>
+</member><member name="M:Spectrum.AboutBox.AssemblyAttribs(System.Reflection.Assembly)">
+	<summary>
+ returns string name / string value pair of all attribs
+ for specified assembly
+ </summary>
+	<remarks>
+ note that Assembly* values are pulled from AssemblyInfo file in project folder
+
+ Trademark       = AssemblyTrademark string
+ Debuggable      = True
+ GUID            = 7FDF68D5-8C6F-44C9-B391-117B5AFB5467
+ CLSCompliant    = True
+ Product         = AssemblyProduct string
+ Copyright       = AssemblyCopyright string
+ Company         = AssemblyCompany string
+ Description     = AssemblyDescription string
+ Title           = AssemblyTitle string
+ </remarks>
+</member><member name="M:Spectrum.AboutBox.RegistryHklmValue(System.String,System.String)">
+	<summary>
+ reads an HKLM Windows Registry key value
+ </summary>
+</member><member name="M:Spectrum.AboutBox.ShowSysInfo">
+	<summary>
+ launch the MSInfo "system information" application (works on XP, 2003, and Vista)
+ </summary>
+</member><member name="M:Spectrum.AboutBox.Populate(System.Windows.Forms.ListView,System.String,System.String)">
+	<summary>
+ populate a listview with the specified key and value strings
+ </summary>
+</member><member name="M:Spectrum.AboutBox.PopulateAppInfo">
+	<summary>
+ populates the Application Information listview
+ </summary>
+</member><member name="M:Spectrum.AboutBox.PopulateAssemblies">
+	<summary>
+ populate Assembly Information listview with ALL assemblies
+ </summary>
+</member><member name="M:Spectrum.AboutBox.PopulateAssemblySummary(System.Reflection.Assembly)">
+	<summary>
+ populate Assembly Information listview with summary view for a specific assembly
+ </summary>
+</member><member name="M:Spectrum.AboutBox.EntryAssemblyAttrib(System.String)">
+	<summary>
+ retrieves a cached value from the entry assembly attribute lookup collection
+ </summary>
+</member><member name="M:Spectrum.AboutBox.PopulateLabels">
+	<summary>
+ Populate all the form labels with tokenized text
+ </summary>
+</member><member name="M:Spectrum.AboutBox.ReplaceTokens(System.String)">
+	<summary>
+ perform assemblyinfo to string replacements on labels
+ </summary>
+</member><member name="M:Spectrum.AboutBox.PopulateAssemblyDetails(System.Reflection.Assembly,System.Windows.Forms.ListView)">
+	<summary>
+ populate details for a single assembly
+ </summary>
+</member><member name="M:Spectrum.AboutBox.MatchAssemblyByName(System.String)">
+	<summary>
+ matches assembly by Assembly.GetName.Name; returns nothing if no match
+ </summary>
+</member><member name="M:Spectrum.AboutBox.AboutBox_Load(System.Object,System.EventArgs)">
+	<summary>
+ things to do when form is loaded
+ </summary>
+</member><member name="M:Spectrum.AboutBox.AboutBox_Paint(System.Object,System.Windows.Forms.PaintEventArgs)">
+	<summary>
+ things to do when form is FIRST painted
+ </summary>
+</member><member name="M:Spectrum.AboutBox.DetailsButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ expand about dialog to show additional advanced details
+ </summary>
+</member><member name="M:Spectrum.AboutBox.SysInfoButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ for detailed system info, launch the external Microsoft system info app
+ </summary>
+</member><member name="M:Spectrum.AboutBox.AssemblyInfoListView_DoubleClick(System.Object,System.EventArgs)">
+	<summary>
+ if an assembly is double-clicked, go to the detail page for that assembly
+ </summary>
+</member><member name="M:Spectrum.AboutBox.AssemblyNamesComboBox_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ if a new assembly is selected from the combo box, show details for that assembly
+ </summary>
+</member><member name="M:Spectrum.AboutBox.AssemblyInfoListView_ColumnClick(System.Object,System.Windows.Forms.ColumnClickEventArgs)">
+	<summary>
+ sort the assembly list by column
+ </summary>
+</member><member name="M:Spectrum.AboutBox.MoreRichTextBox_LinkClicked(System.Object,System.Windows.Forms.LinkClickedEventArgs)">
+	<summary>
+ launch any http:// or mailto: links clicked in the body of the rich text box
+ </summary>
+</member><member name="M:Spectrum.AboutBox.TabPanelDetails_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ things to do when the selected tab is changed
+ </summary>
+</member><member name="T:Spectrum.AboutBox">
+	<summary>
+ generic, self-contained About Box dialog
+ </summary>
+	<remarks>
+ Jeff Atwood
+ http://www.codinghorror.com
+ </remarks>
+</member><member name="M:Spectrum.frmFastCashMemo.GetListofManualPromotion">
+	<summary>
+ Getting the List of all promotions Active in Site
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmFastCashMemo.ApplyManualPromotion(System.String,System.Decimal)">
+	<summary>
+ Applying the Manual Promotion in Current Row
+ </summary>
+	<remarks>Manual Promotion may be(%,fixed price off,Fixed price sale) </remarks>
+</member><member name="M:Spectrum.frmFastCashMemo.CalculateManualPromo(System.Data.DataRow@)">
+	<summary>
+ Calulating Manual promotion on the pass Data Row
+ </summary>
+	<param name="dr">Detail Table row</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmFastCashMemo.SetDefaultSetting">
+	<summary>
+ Applying Default Setting on Screen Set 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmFastCashMemo.GridSettings(System.Boolean)">
+	<summary>
+ Set the Grid Based on Flag
+ </summary>
+	<param name="Update">Update flag</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmFastCashMemo.ReCalculateCM(System.String)">
+	<summary>
+ CalCulating Line Item, Whole
+ </summary>
+	<param name="strItem">Ean code</param>
+	<remarks>If Ean code not sends Calculated All line items</remarks>
+</member><member name="M:Spectrum.frmFastCashMemo.ValidateAll">
+	<summary>
+ Validating the flow Or Form Validations 
+ </summary>
+	<returns>True and False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmFastCashMemo.ClearData">
+	<summary>
+ Clear the Data from DataSet
+ </summary>
+	<remarks>Clears the data from Screen also</remarks>
+</member><member name="M:Spectrum.frmFastCashMemo.PrepareDataforSave(System.Data.DataSet@)">
+	<summary>
+ Preapring the data for save
+ </summary>
+	<param name="dsTemp">Copied dataSet</param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmFastCashMemo.prepareHeader(System.Data.DataRow@)">
+	<summary>
+ Prepare the Header details for save
+ </summary>
+	<param name="dr">datarow</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmFastCashMemo.CreatingLineNO(System.Data.DataSet@,System.String)">
+	<summary>
+ Creating Line No in the Main and Subordinate table in Dataset
+ </summary>
+	<param name="ds">DataSet</param>
+	<param name="TableName">Name of the Table</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmFastCashMemo.calculateTotalbill">
+	<summary>
+ Calculate Total bill and Show in Screen
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmFastCashMemo.UpdatePaymentPrevStru(System.Data.DataTable@)">
+	<summary>
+ Change the Table Columns name For payment module 
+ </summary>
+	<param name="dt"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmFastCashMemo.UpdatePaymentDataSetStru(System.Data.DataSet@,System.Boolean)">
+	<summary>
+ Updating Payment Structure's 
+ </summary>
+	<param name="ds"></param>
+	<param name="UpdateFlag"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmFastCashMemo.PaymentGridSetting">
+	<summary>
+ Set the Payment Grid Layout
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmFastCashMemo.GetCashMemoDetails(System.String,System.String)">
+	<summary>
+ Get previous Cash Memo Details
+ </summary>
+	<param name="strCashMemo">Cash Memo No</param>
+	<param name="strSiteCode">Site Code</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmFastCashMemo.CalculateDiscountAmount(System.Int32,System.Int32)">
+	<summary>
+ Show the Discount Amount on Mouse Move
+ </summary>
+	<param name="row"></param>
+	<param name="col"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmFastCashMemo.CreateDataSetForTaxCalculation(System.String,System.String,System.Double,System.Int32,System.Double,System.String)">
+	<summary>
+ Assign Tax to the Row
+ </summary>
+	<param name="strMatcode">Article Code</param>
+	<param name="TaxableAmount">Amount on which Tax calulated </param>
+	<param name="iRow"> Row No</param>
+	<param name="EAN">Ean Code</param>
+	<returns>Tax amount</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmFastCashMemo.GetBillLabelTax(System.Double)">
+	<summary>
+ Get Bill Lavel Tax
+ </summary>
+	<param name="TaxableAmount">Taxable Amount</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmFastCashMemo.CreateDataSetForTaxCalculation(System.String,System.String,System.Double,System.Data.DataRow@,System.String)">
+	<summary>
+ Assign Tax to the Row
+ </summary>
+	<param name="strMatcode">Article Code</param>
+	<param name="TaxableAmount">Amount on which Tax calulated </param>
+	<param name="dr"> Data Row</param>
+	<param name="EAN">Ean Code</param>
+	<returns>Tax amount</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmFastCashMemo.ClearAllPromo">
+	<summary>
+ Clear all Promotion's
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Spectrum.frmFastCashMemo">
+	<summary>
+ This class is used for cash Memo Functionality 
+ </summary>
+	<CreatedBy>Rama Ranjan Jena </CreatedBy>
+	<Updatedby></Updatedby>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="T:Spectrum.frmPrintingSettings">
+	<summary>
+  Saving printing settings
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.SpectrumStockService.ArticleStockBalancesSynchronizerService.#ctor">
+	<remarks/>
+</member><member name="E:Spectrum.SpectrumStockService.ArticleStockBalancesSynchronizerService.retrieveArticleStockBalancesRecordsCompleted">
+	<remarks/>
+</member><member name="E:Spectrum.SpectrumStockService.ArticleStockBalancesSynchronizerService.saveArticleStockBalancesRecordsCompleted">
+	<remarks/>
+</member><member name="M:Spectrum.SpectrumStockService.ArticleStockBalancesSynchronizerService.retrieveArticleStockBalancesRecords(Spectrum.SpectrumStockService.retrieveArticleStockBalancesRecords)">
+	<remarks/>
+</member><member name="M:Spectrum.SpectrumStockService.ArticleStockBalancesSynchronizerService.retrieveArticleStockBalancesRecordsAsync(Spectrum.SpectrumStockService.retrieveArticleStockBalancesRecords)">
+	<remarks/>
+</member><member name="M:Spectrum.SpectrumStockService.ArticleStockBalancesSynchronizerService.retrieveArticleStockBalancesRecordsAsync(Spectrum.SpectrumStockService.retrieveArticleStockBalancesRecords,System.Object)">
+	<remarks/>
+</member><member name="M:Spectrum.SpectrumStockService.ArticleStockBalancesSynchronizerService.saveArticleStockBalancesRecords(Spectrum.SpectrumStockService.saveArticleStockBalancesRecords)">
+	<remarks/>
+</member><member name="M:Spectrum.SpectrumStockService.ArticleStockBalancesSynchronizerService.saveArticleStockBalancesRecordsAsync(Spectrum.SpectrumStockService.saveArticleStockBalancesRecords)">
+	<remarks/>
+</member><member name="M:Spectrum.SpectrumStockService.ArticleStockBalancesSynchronizerService.saveArticleStockBalancesRecordsAsync(Spectrum.SpectrumStockService.saveArticleStockBalancesRecords,System.Object)">
+	<remarks/>
+</member><member name="M:Spectrum.SpectrumStockService.ArticleStockBalancesSynchronizerService.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:Spectrum.SpectrumStockService.ArticleStockBalancesSynchronizerService">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.retrieveArticleStockBalancesRecords.arg0">
+	<remarks/>
+</member><member name="T:Spectrum.SpectrumStockService.retrieveArticleStockBalancesRecords">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesRequestDTO.articleCode">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesRequestDTO.ean">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesRequestDTO.pushOrPull">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesRequestDTO.pushOrPullSpecified">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesRequestDTO.siteCode">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesRequestDTO.soapWsHeader">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesRequestDTO.syncFromDate">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesRequestDTO.syncFromDateSpecified">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesRequestDTO.transactionCode">
+	<remarks/>
+</member><member name="T:Spectrum.SpectrumStockService.articleStockBalancesRequestDTO">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.soapWsHeader.password">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.soapWsHeader.userName">
+	<remarks/>
+</member><member name="T:Spectrum.SpectrumStockService.soapWsHeader">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.syncResponseDTO.calendar">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.syncResponseDTO.calendarSpecified">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.syncResponseDTO.faultDTO">
+	<remarks/>
+</member><member name="T:Spectrum.SpectrumStockService.syncResponseDTO">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.faultDTO.businessError">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.faultDTO.faultLevel">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.faultDTO.faultStackTrace">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.faultDTO.message">
+	<remarks/>
+</member><member name="T:Spectrum.SpectrumStockService.faultDTO">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.saveArticleStockBalancesRecordsResponse.return">
+	<remarks/>
+</member><member name="T:Spectrum.SpectrumStockService.saveArticleStockBalancesRecordsResponse">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesSaveRequestDTO.articleStockBalancesDtos">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesSaveRequestDTO.soapWsHeader">
+	<remarks/>
+</member><member name="T:Spectrum.SpectrumStockService.articleStockBalancesSaveRequestDTO">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDtos.articleStockBalancesDTO">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDtos.calendar">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDtos.calendarSpecified">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDtos.faultDTO">
+	<remarks/>
+</member><member name="T:Spectrum.SpectrumStockService.articleStockBalancesDtos">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDTO.articleCode">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDTO.createdat">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDTO.createdby">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDTO.createdon">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDTO.damagedQty">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDTO.EAN">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDTO.inTrasnsitQty">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDTO.nonSaleableQty">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDTO.onOrderQty">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDTO.physicalQty">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDTO.reservedQty">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDTO.siteCode">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDTO.status">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDTO.totalARSQty">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDTO.totalPhysicalNonSaleableQty">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDTO.totalPhysicalSaleableQty">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDTO.totalSaleableQty">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDTO.totalVirtualNonSaleableQty">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDTO.UOM">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDTO.updatedat">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDTO.updatedby">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.articleStockBalancesDTO.updatedon">
+	<remarks/>
+</member><member name="T:Spectrum.SpectrumStockService.articleStockBalancesDTO">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.saveArticleStockBalancesRecords.arg0">
+	<remarks/>
+</member><member name="T:Spectrum.SpectrumStockService.saveArticleStockBalancesRecords">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.retrieveArticleStockBalancesRecordsResponse.return">
+	<remarks/>
+</member><member name="T:Spectrum.SpectrumStockService.retrieveArticleStockBalancesRecordsResponse">
+	<remarks/>
+</member><member name="T:Spectrum.SpectrumStockService.retrieveArticleStockBalancesRecordsCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.retrieveArticleStockBalancesRecordsCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Spectrum.SpectrumStockService.retrieveArticleStockBalancesRecordsCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Spectrum.SpectrumStockService.saveArticleStockBalancesRecordsCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Spectrum.SpectrumStockService.saveArticleStockBalancesRecordsCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Spectrum.SpectrumStockService.saveArticleStockBalancesRecordsCompletedEventArgs">
+	<remarks/>
+</member><member name="M:Spectrum.frmNAcceptPayment.#ctor">
+	<summary>
+ Constructor
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNAcceptPayment.IsPostiveTenderType">
+	<summary>
+ Check TotalAmount sign and assgin value to this property
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNAcceptPayment.PaymentType">
+	<summary>
+  Set Payment Type
+ </summary>
+	<value>Default is "Accept"</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNAcceptPayment.AcceptEditBillDataSet">
+	<summary>
+ Property need to set whenever to push bill cash breakup to display into Grid
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNAcceptPayment.TotalBillAmount">
+	<summary>
+ Total Bill Amount to accept from user 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Each time you need to set </remarks>
+</member><member name="P:Spectrum.frmNAcceptPayment.MinimumBillAmount">
+	<summary>
+  Advance payment against total bill amount
+ </summary>
+	<value>
+	</value>
+	<returns></returns>
+	<remarks>Sales order </remarks>
+</member><member name="P:Spectrum.frmNAcceptPayment.TotalReceivedAmount">
+	<summary>
+ Return total received amount from customer
+ </summary>
+	<value>Decimal</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNAcceptPayment.SelectedReceiptType">
+	<summary>
+  Receipt type for amount 
+ </summary>
+	<value>String</value>
+	<returns></returns>
+	<remarks>ReadOnly</remarks>
+</member><member name="P:Spectrum.frmNAcceptPayment.SelectedReceiptTypeCode">
+	<summary>
+  Receipt type code for amount 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNAcceptPayment.SelectedCurrencySymbol">
+	<summary>
+  Currency symbol 
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks>ReadOnly</remarks>
+</member><member name="P:Spectrum.frmNAcceptPayment.SelectedCurrencyDescription">
+	<summary>
+ Currency description
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks>ReadOnly</remarks>
+</member><member name="P:Spectrum.frmNAcceptPayment.SelectedCurrencyIndex">
+	<summary>
+ CurrencyIndex
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks>ReadOnly</remarks>
+</member><member name="P:Spectrum.frmNAcceptPayment.ReciptTotalAmount">
+	<summary>
+ Reciept summary 
+ </summary>
+	<value></value>
+	<returns>DataSet</returns>
+	<remarks>ReadOnly</remarks>
+</member><member name="P:Spectrum.frmNAcceptPayment.EnteredAmount">
+	<summary>
+ Entered amount 
+ </summary>
+	<value></value>
+	<returns>Decimal</returns>
+	<remarks>ReadOnly</remarks>
+</member><member name="P:Spectrum.frmNAcceptPayment.IsSwipeCreditCard">
+	<summary>
+ Check for IsCreditCard swap or not 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNAcceptPayment.IsCancelAcceptPayment">
+	<summary>
+  Check payment is cancel or not 
+ </summary>
+	<value>Default False</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNAcceptPayment.ReturnTOCustomer">
+	<summary>
+ if there is cash receipt type , and amount is exceeds than it's bill amount .
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.CheckAmountTextBox_NullOrInteger(System.String@)">
+	<summary>
+ Check entered amount is null 
+ </summary>
+	<param name="strErrorMsg">Return error message</param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.frmAcceptPayment_Load(System.Object,System.EventArgs)">
+	<summary>
+ Called when form load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.frmLoad">
+	<summary>
+ Sub method of form calling 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.SwipeCard">
+	<summary>
+ Called when make payment by function key 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.Check_PaymentTypeForScreen">
+	<summary>
+  Checking What type of payment
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.ScreenSetting_AdvancePayment">
+	<summary>
+  Display settings for scrren according to PaymentType
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.PaymentType_EditBill">
+	<summary>
+ Changes into last payment summary
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.PaymentType_EditBill_DisplayDataIntoGrid">
+	<summary>
+ sub method of  PaymentType_EditBill()
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.ReceiptTypeCreditCard_ManullyDisplaySetting">
+	<summary>
+  Enabled textbox for credit card entries 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.ReceiptTypeCreditCard_SwipeDisplaySetting">
+	<summary>
+  Enabled textbox for credit card entries 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.InsertCreditCardDeatils">
+	<summary>
+ Inserting credit card details into grid 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.InsertChequeDetails">
+	<summary>
+ Inserting ChequeDetails into grid
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.InsertGiftVoucherDetails">
+	<summary>
+ Accepting GiftVoucher Against Bill as tender mode
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.InsertGiftVoucherIssue">
+	<summary>
+ Issue GiftVoucher Against Bill as tender mode
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.InsertReceiptCashDetails">
+	<summary>
+  Inserting Cash Details into grid
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.InsertDataIntoGrid_CreditNoteR">
+	<summary>
+ Inseritng credit note details into grid 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.InsertDataIntoGrid_CreditNoteI">
+	<summary>
+ Inseritng credit note details into grid 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.Grid_DisplaySetting">
+	<summary>
+  Display grid 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.DisplaySettings_CurrencyCalculation">
+	<summary>
+  On Selection changed of currency.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.ClearTextBox">
+	<summary>
+ Clear TextBox 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.AddRowRecipetAmountInGrid(System.String,System.String)">
+	<summary>
+ Inserting CLP details into grid 
+ </summary>
+	<param name="strRecieptType"></param>
+	<param name="strAmount"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.AddRowRecipetAmountInGrid(System.String,System.String,System.String,System.Object)">
+	<summary>
+  checking Credit Card,Cheque Details 
+ </summary>
+	<param name="strRecieptType"></param>
+	<param name="strAmount"></param>
+	<param name="strNumber"></param>
+	<param name="dtDate"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.IsTotalAmountReceived">
+	<summary>
+  Check Total amount is received
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.CalculateAmountInCurrency(System.Boolean)">
+	<summary>
+ Calculate Total Reciept Summray and display
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.txtCCAuthCode_PreviewKeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+  Called when all information receipt type is filled
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.txtamount_PreviewKeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ On AmountTextBox
+  Called when all information receipt type is filled. 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.dtpcheque_PreviewKeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+  Event of  dtpcheque
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.cboRecieptType_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+  Event of ReceiptType  combobox
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.btndelete_Click(System.Object,System.EventArgs)">
+	<summary>
+ Delete payment entry in grid 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.btnapprove_Click(System.Object,System.EventArgs)">
+	<summary>
+  Insert payment details into grid 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.btnOK_Click(System.Object,System.EventArgs)">
+	<summary>
+ Checks when payment is done 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.CheckDataset_Changes">
+	<summary>
+ Checking dataset set changes only updated row will added into dataset 
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.btnF5_Click(System.Object,System.EventArgs)">
+	<summary>
+ Functional key for cash
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.frmAcceptPayment_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ handle functional key event on Form
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.EnableOrDisable(System.String,System.Windows.Forms.Button)">
+	<summary>
+ Find RecieptType inside ComboBox if available 
+ </summary>
+	<param name="strNameToFind">Name of Receipt find inside Combobox </param>
+	<param name="btnToEorD">Send button if you want enable or disable</param>
+	<returns>If find return True otherwise Flase</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.cflexGridReciept_AfterEdit(System.Object,C1.Win.C1FlexGrid.RowColEventArgs)">
+	<summary>
+  Edit into grid
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.btnF3_Click(System.Object,System.EventArgs)">
+	<summary>
+ ShortCut key for accepting payment by Cheque
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.btnF4CreditNote_Click(System.Object,System.EventArgs)">
+	<summary>
+ ShortCut key for accepting payment by CreditNote
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.cflexGridReciept_BeforeEdit(System.Object,C1.Win.C1FlexGrid.RowColEventArgs)">
+	<summary>
+ You cant allowed to change Credit Voucher row in grid
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPayment.btnCancel_Click(System.Object,System.EventArgs)">
+	<summary>
+ Cancel payment transactions  and close the form.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNBirthListUpdate.IsReprintView">
+	<summary>
+ If you want to Reprint of BirthListItem's ,Set this property as 'true'
+ </summary>
+	<value></value>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNBirthListUpdate.BirthList_CustomerInformation">
+	<summary>
+  Store BirthList Customer Inforamtion
+ </summary>
+	<value>DataRow</value>
+	<returns>DataRow</returns>
+	<remarks>Internal use only</remarks>
+</member><member name="P:Spectrum.frmNBirthListUpdate.BirthListItemMergeTable">
+	<summary>
+  DataSource table to grid 
+ </summary>
+	<value>DataTable</value>
+	<returns>DataTable</returns>
+	<remarks>Internal use only</remarks>
+</member><member name="F:Spectrum.frmNBirthListUpdate._strGiftReceiptMessage">
+	<summary>
+  While giftvoucher printing ,set this property as true  
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNBirthListUpdate.BirthListID">
+	<summary>
+ Validate BirthListID
+ </summary>
+	<value>String</value>
+	<returns>ReadOnly</returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNBirthListUpdate.BirthListOwnerId">
+	<summary>
+   birthlist customer id 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNBirthListUpdate.BirthListIDSearch">
+	<summary>
+  BirthList id is entered for searching 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNBirthListUpdate.OpenAmount">
+	<summary>
+  Used at time of OpenAmount calculation
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNBirthListUpdate.IsDeliveryDateBackDated">
+	<summary>
+  Check Delivery Date 
+ </summary>
+	<value>Boolean</value>
+	<returns>ReadOnly</returns>
+	<remarks>Delivery date can not be less than current date</remarks>
+</member><member name="P:Spectrum.frmNBirthListUpdate.IsCLPCustomer">
+	<summary>
+ Check for CustomerType i.e CLP,or SO customer
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNBirthListUpdate.NewItemAdd">
+	<summary>
+ New item adding to db 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:Spectrum.frmNBirthListUpdate._strEventName">
+	<summary>
+ Birthlist Event 
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNBirthListUpdate.EventDate">
+	<summary>
+ Selected Event date for Birthlist
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.btnSearchBirthListID_Click(System.Object,System.EventArgs)">
+	<summary>
+ For  Searching birthlist  
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>On Button Click</remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.txtBirthListid_TextChanged(System.Object,System.EventArgs)">
+	<summary>
+ BirthList search by textbox
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.SearchBirthListOnTextChange">
+	<summary>
+ Search birthlist on text change 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.ClearBirthListInformation">
+	<summary>
+ Clear BirthList information 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.SaveAndPrint(System.Boolean)">
+	<summary>
+ Save and print selected birthlist 
+ </summary>
+	<returns>On success , true</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.CopyLastReservedQty">
+	<summary>
+  Used for calculation of reserved qty
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.ValidateUserInput">
+	<summary>
+  Validated user provided inouts.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.PrintSalesDetails(System.String,System.String,System.Data.DataTable)">
+	<summary>
+  Printing Birthlist invoice,Status Document.
+ </summary>
+	<param name="strInvoiceNumber">Invoice Number</param>
+	<param name="strOrderNumber">Ordered Number </param>
+	<param name="dtTempGv">Information of GiftVoucher's against selected Birth List    </param>
+	<returns>On Success ,true</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.AddCLPColumns">
+	<summary>
+ Adding CLP Colums(CLPPoints,CLPDiscount) into orginal DataTable (BirthListItemMergeTable)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.pPopulateCustomerDtls">
+	<summary>
+ Display customer information
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.ClearCustomerDtls">
+	<summary>
+ Clear the Birthlist customer information 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.pPopulateItemDtls">
+	<summary>
+  Display Birthlist items  in to  grid
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.AssignDataSourceAddress">
+	<summary>
+ Change DataSource for Combo:AddressType and CustomerAddressBindingSource on CustomerType
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:Spectrum.frmNBirthListUpdate.dtMainTax">
+	<summary>
+  Search BirthListInformation
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.BirthListItemMergeTable_AddColumns">
+	<summary>
+ Adding Birthlist return Columns  to Table ( BirthListItemMergeTable)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.DisplayGVInforamtion">
+	<summary>
+ Display giftvoucher information for selected Birthlist .
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.ReprintView">
+	<summary>
+ Reprint of Selected BirthListItems
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.GetBirthListItemDetails">
+	<summary>
+  Calculate TotalBalance Quantity and NetAmount 
+ </summary>
+	<returns>On Success, True</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.grdScanItem_AfterEdit(System.Object,C1.Win.C1FlexGrid.RowColEventArgs)">
+	<summary>
+ Grid Event for AfterEdit 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.ValidateEditColumnEntry(System.String,System.Int32)">
+	<summary>
+ Validate user inputs for Editable columns into grid 
+ </summary>
+	<param name="strColumnName">Column Name for validation</param>
+	<param name="iRowIndex">Row index </param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.ValidateReservedQty(System.String,System.Int32,System.Int32)">
+	<summary>
+ Validate input against Reserved Qty column.
+ </summary>
+	<param name="strChangedValue"></param>
+	<param name="icolumnIndex"></param>
+	<param name="irowIndex"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.Validate_PurchasedQty(System.Decimal)">
+	<summary>
+ Validate purchased quantity 
+ </summary>
+	<param name="decTotalPice"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.Validate_OpenAmountQty(System.Int32,System.Int32)">
+	<summary>
+ Validate "ConvToVoucher" after editing it's row value
+ </summary>
+	<param name="iRowIndex">Currenct Editing Row index</param>
+	<param name="ibookedqtyBeforeChange">BookedQty</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.ReturnLastSoldPriceForItem(System.String,System.String,System.String@)">
+	<summary>
+  Return item last purchased price 
+ </summary>
+	<param name="strArticleCode"></param>
+	<param name="strEAN"></param>
+	<param name="strErrorMsg"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.CaluculateTotalOpenAmountQTy(System.Decimal)">
+	<summary>
+  Convert sold amount into openamount 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.CalculateTotalOpenAmount_PurchasedQty(System.Decimal)">
+	<summary>
+ Calculate total amount for purchased items into BirthList
+ </summary>
+	<param name="decAmount"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.Validate_PickUpQty(System.Int32,System.Int32)">
+	<summary>
+ Validate "PickUpQty" after edit 
+ </summary>
+	<param name="iRowIndex">Currenct Editing Row index</param>
+	<param name="ibookedqtyBeforeChange">BookedQty</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.Validate_ReturnQty(System.Int32,System.Int32)">
+	<summary>
+ Validation for input provied against Return Quantity columns
+ </summary>
+	<param name="iRowIndex"></param>
+	<param name="ibookedqtyBeforeChange"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.IsDBNull_ColumnValue(C1.Win.C1FlexGrid.Row,System.String)">
+	<summary>
+ Check column value .
+ </summary>
+	<param name="c1GridRow"></param>
+	<param name="strColumnName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.grdscanitem_CellButtonClick_1(System.Object,C1.Win.C1FlexGrid.RowColEventArgs)">
+	<summary>
+ Click delete button on grid 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.DeleteItem_AmountAddToOpenAMount(C1.Win.C1FlexGrid.C1FlexGrid,System.Int32,System.String@)">
+	<summary>
+ Adding Deleted item amount into open Amount .ONly If selected items is sold.
+ </summary>
+	<param name="senderGrid"></param>
+	<param name="iRowGridIndex"></param>
+	<param name="strErrorMsg"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.ReverseCalculationForOpenAmount(System.Int32)">
+	<summary>
+ Reverse the added sold item price from openamount.
+ </summary>
+	<param name="irowIndex"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.CalculateTotalOpenAmount(System.Decimal)">
+	<summary>
+  Calculate OpenAmount after sold items deleted from grid
+ </summary>
+	<param name="decAmount"></param>
+	<remarks></remarks>
+</member><member name="F:Spectrum.frmNBirthListUpdate.isFirst">
+	<summary>
+ Grid row column change event for display image
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.btnClose_Click(System.Object,System.EventArgs)">
+	<summary>
+ Apply Discount and close
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.IsOpenAmountAvailabel">
+	<summary>
+ Check whether OpenAmount is availabel or not 
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.Grid_AddNewItem(System.Data.DataRow,System.Boolean)">
+	<summary>
+  New Article adding to grid
+ </summary>
+	<param name="NewItemAdd"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.CalculateTotal">
+	<summary>
+ Calculate Total Items which are purchsed.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.IsItemAdded(System.String,System.Decimal)">
+	<summary>
+ TODO:Check Is Already item added into grid or not
+ </summary>
+	<returns>Boolean</returns>
+	<usedby>frmBirthList.vb</usedby>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.ManualEnterEANNumber">
+	<summary>
+  Entered EAN number for article by keybord
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNBirthListUpdate.CalculateTotalPurchaseAmt">
+	<summary>
+ Calculate Total Purchased amount 
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmNCommonSearch.SetData">
+	<summary>
+ Set the data from Outside to Show
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNCommonSearch.FillGrid">
+	<summary>
+ Attach the Data to Grid
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Spectrum.frmNCommonSearch">
+	<summary>
+ This form Is Used For Searching
+ </summary>
+	<CreatedBy>Rama Ranjan Jena</CreatedBy>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSearchCLPLookUp.frmSearchCLPLookUp_Load(System.Object,System.EventArgs)">
+	<summary>
+ Load CLP Customer Data
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSearchCLPLookUp.BtnOK_Click(System.Object,System.EventArgs)">
+	<summary>
+ Set CLP Customer Information to Parrent Form
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSearchCLPLookUp.grdCLPCustomerList_DoubleClick(System.Object,System.EventArgs)">
+	<summary>
+ Set CLP Customer Information to Parrent Form
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSearchCLPLookUp.BtnCancel_Click(System.Object,System.EventArgs)">
+	<summary>
+ Cancel Application
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="F:Spectrum.frmNAcceptPaymentByCash._Actiontype">
+	<summary>
+  TODO:Taking selected option i.e either gift or save 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Spectrum.frmNAcceptPaymentByCash._decTotalBillAmount">
+	<summary>
+  Total amount to be tendered .
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Spectrum.frmNAcceptPaymentByCash._decTotalCollectAmount">
+	<summary>
+ Total Amount received by Cashier 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAcceptPaymentByCash.ValidateEntries">
+	<summary>
+  Validate user entered inputs
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Spectrum.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Spectrum.My.Resources.Resources.AcceptPaymentActionTypeGift">
+	<summary>
+  Looks up a localized string similar to Gift.
+</summary>
+</member><member name="P:Spectrum.My.Resources.Resources.AcceptPaymentActionTypeSave">
+	<summary>
+  Looks up a localized string similar to Save.
+</summary>
+</member><member name="P:Spectrum.My.Resources.Resources.ConnectedText">
+	<summary>
+  Looks up a localized string similar to Connected.
+</summary>
+</member><member name="P:Spectrum.My.Resources.Resources.DisconnectedText">
+	<summary>
+  Looks up a localized string similar to Disconnected.
+</summary>
+</member><member name="T:Spectrum.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Spectrum.frmNSalesOrderCancel.frmSalesOrderCancel_Load(System.Object,System.EventArgs)">
+	<summary>
+ Get the Site default Settings And Set Default Config Object
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCancel.TabPageItemDetails_Resize(System.Object,System.EventArgs)">
+	<summary>
+ Resize DataGrid for Display Items Details
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCancel.TabPageInvoiceDetails_Resize(System.Object,System.EventArgs)">
+	<summary>
+ Resize DataGrid for Display Invoice Details
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCancel.BtnSearchSalesOrder_Click(System.Object,System.EventArgs)">
+	<summary>
+ Search Old Sales Order
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCancel.txtSalesNo_PreviewKeyDown(System.Object,System.Windows.Forms.PreviewKeyDownEventArgs)">
+	<summary>
+ Search Old Sales Order
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCancel.SetSalesOrderInForm(System.String)">
+	<summary>
+ Load Old Sales Order in window
+ </summary>
+	<param name="vSalesNo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCancel.#ctor">
+	<summary>
+ Set Languadge in Sales Order Window
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCancel.RefreshLoadSOData">
+	<summary>
+ Refresh Article Scan Data in DataGrid
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCancel.RefreshLoadInvcData">
+	<summary>
+ Refresh Invoice Details Data in DataGrid
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCancel.CalculateSalesOrderSummory(System.Data.DataSet)">
+	<summary>
+ Calculate Sales Order Summary and Show in Screen
+ </summary>
+	<param name="dsScanTemp"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCancel.grdSOItems_RowColChange(System.Object,System.EventArgs)">
+	<summary>
+ Show the image of the Current Selected Article
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCancel.ResetSalesOrder">
+	<summary>
+ Clears All Resource for new sales order
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCancel.BtnSaveSalesOrder_Click(System.Object,System.EventArgs)">
+	<summary>
+ Preapring the Sales Order data for save
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCancel.PrepareInvcDataforSave(System.Data.DataSet@)">
+	<summary>
+ Preapring the Sales Order Invoice data for save
+ </summary>
+	<param name="dsMain"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCancel.BtnAcceptPayment_Click(System.Object,System.EventArgs)">
+	<summary>
+ Accept Payment for current Sales Order
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAddOthrChrgForSO.frmAddOthrChrgForSO_Load(System.Object,System.EventArgs)">
+	<summary>
+ Load Add Other Charges for Sales Order
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAddOthrChrgForSO.BtnOk_Click(System.Object,System.EventArgs)">
+	<summary>
+ Pass values to parrent form
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAddOthrChrgForSO.BtnAdd_Click(System.Object,System.EventArgs)">
+	<summary>
+ Add New Row for add Other Charges
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAddOthrChrgForSO.BtnDelete_Click(System.Object,System.EventArgs)">
+	<summary>
+ Delete Current Row in Other Charges
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.GetListofManualPromotion">
+	<summary>
+ Getting the List of all promotions Active in Site
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.ApplyManualPromotion(System.String,System.Decimal)">
+	<summary>
+ Applying the Manual Promotion in Current Row
+ </summary>
+	<remarks>Manual Promotion may be(%,fixed price off,Fixed price sale) </remarks>
+</member><member name="M:Spectrum.frmCashMemo.CalculateManualPromo(System.Data.DataRow@)">
+	<summary>
+ Calulating Manual promotion on the pass Data Row
+ </summary>
+	<param name="dr">Detail Table row</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.SetDefaultSetting">
+	<summary>
+ Applying Default Setting on Screen Set 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.GridSettings(System.Boolean)">
+	<summary>
+ Set the Grid Based on Flag
+ </summary>
+	<param name="Update">Update flag</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.ReCalculateCM(System.String)">
+	<summary>
+ CalCulating Line Item, Whole
+ </summary>
+	<param name="strItem">Ean code</param>
+	<remarks>If Ean code not sends Calculated All line items</remarks>
+</member><member name="M:Spectrum.frmCashMemo.ValidateAll">
+	<summary>
+ Validating the flow Or Form Validations 
+ </summary>
+	<returns>True and False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.ClearData">
+	<summary>
+ Clear the Data from DataSet
+ </summary>
+	<remarks>Clears the data from Screen also</remarks>
+</member><member name="M:Spectrum.frmCashMemo.PrepareDataforSave(System.Data.DataSet@)">
+	<summary>
+ Preapring the data for save
+ </summary>
+	<param name="dsTemp">Copied dataSet</param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.prepareHeader(System.Data.DataRow@)">
+	<summary>
+ Prepare the Header details for save
+ </summary>
+	<param name="dr">datarow</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.CreatingLineNO(System.Data.DataSet@,System.String)">
+	<summary>
+ Creating Line No in the Main and Subordinate table in Dataset
+ </summary>
+	<param name="ds">DataSet</param>
+	<param name="TableName">Name of the Table</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.calculateTotalbill">
+	<summary>
+ Calculate Total bill and Show in Screen
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.UpdatePaymentPrevStru(System.Data.DataTable@)">
+	<summary>
+ Change the Table Columns name For payment module 
+ </summary>
+	<param name="dt"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.UpdatePaymentDataSetStru(System.Data.DataSet@,System.Boolean)">
+	<summary>
+ Updating Payment Structure's 
+ </summary>
+	<param name="ds"></param>
+	<param name="UpdateFlag"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.PaymentGridSetting">
+	<summary>
+ Set the Payment Grid Layout
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.GetCashMemoDetails(System.String,System.String)">
+	<summary>
+ Get previous Cash Memo Details
+ </summary>
+	<param name="strCashMemo">Cash Memo No</param>
+	<param name="strSiteCode">Site Code</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.CalculateDiscountAmount(System.Int32,System.Int32)">
+	<summary>
+ Show the Discount Amount on Mouse Move
+ </summary>
+	<param name="row"></param>
+	<param name="col"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.CreateDataSetForTaxCalculation(System.String,System.String,System.Double,System.Int32,System.Double,System.String)">
+	<summary>
+ Assign Tax to the Row
+ </summary>
+	<param name="strMatcode">Article Code</param>
+	<param name="TaxableAmount">Amount on which Tax calulated </param>
+	<param name="iRow"> Row No</param>
+	<param name="EAN">Ean Code</param>
+	<returns>Tax amount</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.GetBillLabelTax(System.Double)">
+	<summary>
+ Get Bill Lavel Tax
+ </summary>
+	<param name="TaxableAmount">Taxable Amount</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.CreateDataSetForTaxCalculation(System.String,System.String,System.Double,System.Data.DataRow@,System.String)">
+	<summary>
+ Assign Tax to the Row
+ </summary>
+	<param name="strMatcode">Article Code</param>
+	<param name="TaxableAmount">Amount on which Tax calulated </param>
+	<param name="dr"> Data Row</param>
+	<param name="EAN">Ean Code</param>
+	<returns>Tax amount</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.ClearAllPromo">
+	<summary>
+ Clear all Promotion's
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Spectrum.frmCashMemo">
+	<summary>
+ This class is used for cash Memo Functionality 
+ </summary>
+	<CreatedBy>Rama Ranjan Jena </CreatedBy>
+	<Updatedby></Updatedby>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmSpecialPrompt.ShowTextBox">
+	<summary>
+ Show TextBox And Hide Panel
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmSpecialPrompt.ShowMessage">
+	<summary>
+ Show Message Panel And Hide Text Box
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmSpecialPrompt.AllowDecimal">
+	<summary>
+ Check for allowing decimal value in input field 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmSpecialPrompt.AllowText">
+	<summary>
+ Check for allowing text value in input field 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmSpecialPrompt.GetResult">
+	<summary>
+ Return's TextBox Value 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Spectrum.frmSpecialPrompt">
+	<summary>
+ This Class is Used as Special Prompt
+ </summary>
+	<CreatedBy>Rama Ranjan Jena</CreatedBy>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="F:Spectrum.modCommonFunc._TransactionType">
+	<summary>
+ Used by "TransactionType" proprty 
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Spectrum.modCommonFunc.TransactionTypes">
+	<summary>
+ Stores BirthList Transaction names
+ <UsedBy>frmBirthListSales.vb,frmBirthListUpdation.vb</UsedBy>
+		<CreatedBy>Rahul</CreatedBy>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:Spectrum.modCommonFunc.TransactionType">
+	<summary>
+  Need to set in frmBirthListUpdation.vb ,when we call "apply discount" 
+ </summary>
+	<UsedBy> frmBirthListUpdation.vb</UsedBy>
+	<CreatedBy>Rahul</CreatedBy>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.GenDocNo(System.String,System.Int32,System.String)">
+	<summary>
+ Generates Document No.
+ </summary>
+	<param name="strDocNo">Incomplete document no.</param>
+	<param name="iMaxLength">Max length of document no.</param>
+	<param name="strSuffix">Current incremented value to be suffixed</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.HideColumns(C1.Win.C1FlexGrid.C1FlexGrid,System.Boolean,System.String[])">
+	<summary>
+ Hides the Column's From Grid
+ </summary>
+	<param name="dgGrid">Name of the Grid</param>
+	<param name="show">True/False</param>
+	<usedin>
+ CashMemo,AddOtherChargeForSO,CashMemoReturn,CommonView
+ </usedin>
+	<Updatedby></Updatedby>
+	<Updatedon></Updatedon>
+	<param name="colName">Column Name's</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.ShowMessage(System.String,System.String,System.Boolean)">
+	<summary>
+ Show Special Prompt Messages
+ </summary>
+	<Updatedby></Updatedby>
+	<Updatedon></Updatedon>
+	<param name="msg">Message</param>
+	<param name="Caption">Caption</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.PopulateComboBox(System.Data.DataTable,Spectrum.ctrlCombo@)">
+	<summary>
+ Data attach to combo box
+ </summary>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<param name="dtCombo">Data table</param>
+	<param name="ObjComboBox">Name of ComboBox</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.PopulateGridComboBox(C1.Win.C1FlexGrid.C1FlexGrid@,System.Data.DataTable@,System.String)">
+	<summary>
+ Populate a column in grid as a combobox 
+ </summary>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<param name="FlexGrid">Name of the grid</param>
+	<param name="dtGrid">Data Table</param>
+	<param name="vColName">Name of the Column</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.CreateNewRecord(System.Windows.Forms.Form@,System.Data.DataSet@,System.String[])">
+	<summary>
+ Creating New Records for the Binding Datatable
+ </summary>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<param name="frm">form</param>
+	<param name="ds">DataSet</param>
+	<param name="Tablename">Name of the table's</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.CreateNewRecord(System.Windows.Forms.Form@,System.Data.DataTable@,System.String)">
+	<summary>
+ Creating New Records for the Binding Datatable
+ </summary>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<param name="frm">form</param>
+	<param name="dt">DataTable</param>
+	<param name="Tablename">Name of the table's</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.GetUserAuthDetails(System.String,System.String,System.Data.DataTable@)">
+	<summary>
+ Get the details of User authorisation of Transaction
+ </summary>
+	<usedin>Login</usedin>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<param name="SiteCode">SiteCode</param>
+	<param name="UserId">UserID</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.CheckAuthorisation(System.String,System.String)">
+	<summary>
+ Check Authorisation for User against transactions
+ </summary>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<param name="Userid">UserId</param>
+	<param name="Transaction">Transactions</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.CreatePdf(System.String,System.String)">
+	<summary>
+ Creating Pdf 
+ </summary>
+	<usedin>CashMemo</usedin>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<param name="Title">Page Title</param>
+	<param name="StrPrint">String For Print</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.CheckInterTransactionAuth(System.String,System.Data.DataTable@,System.Decimal,System.Decimal,System.Decimal@,System.String,System.Boolean@,System.String@,System.String,System.Decimal@)">
+	<summary>
+ check User Authorisation of a transaction
+ </summary>
+	<param name="Transaction">Transaction Name</param>
+	<param name="dt">DataTable</param>
+	<param name="isFormCancel">Check Discount is apply to birthlist or not
+  True:Discount apply 
+ False :Discount canceled
+ </param>
+	<returns></returns>
+	<remarks> if current user have no authorisation goes for other user check</remarks>
+</member><member name="M:Spectrum.modCommonFunc.fnPrint(System.String,System.String)">
+	<summary>
+ Function for Printing 
+ </summary>
+	<param name="StrToPrint">String to print</param>
+	<param name="strPrintOrPreview">PRN/PRV</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.printDocument1_PrintPage(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
+	<summary>
+ Printing the Doucment
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.CurrencyFormat(System.Decimal)">
+	<summary>
+ Default currency  format 
+ </summary>
+	<param name="decTotalAmount"></param>
+	<UsedBy>BirthList all forms</UsedBy>
+	<CreatedBy>Rahul</CreatedBy>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:Spectrum.modCommonFunc._strLogFilePath">
+	<summary>
+  Store Log file path and its name 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.LogException(System.Exception)">
+	<summary>
+  Log Exception messages into txt files 
+ </summary>
+	<returns>On success, return true otherwise false </returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.LogFileCreate">
+	<summary>
+  File Create at login time 
+ </summary>
+	<returns>On Success return true,otherwise return false  </returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.CheckInteger(System.Object)">
+	<summary>
+ Checke for entered collect amount 
+ </summary>
+	<param name="objAmount"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.PaymentTransactionByShortCutForms(System.Decimal,System.String,System.String,System.Data.DataSet@)">
+	<summary>
+  Capture data of payment into table
+ </summary>
+	<param name="decAmount"></param>
+	<param name="strReceipttype"></param>
+	<param name="strReceiptTypeCode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.SearchBirthListItem(System.Data.DataTable)">
+	<summary>
+ Birthlist Item search 
+ </summary>
+	<param name="dt">Collection of Ean against Article code</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.ValidateQuantity(C1.Win.C1FlexGrid.C1FlexGrid,System.Int32,System.String)">
+	<summary>
+ Validate Purchase ,Pickup ,Reserved etc. all the quantity fields in side the Birthlist 
+ </summary>
+	<param name="gridFlex">Grid </param>
+	<param name="iRowIndex">Modified Column Index</param>
+	<param name="strColumnName">Column Name</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Spectrum.modCommonFunc">
+	<summary>
+ This Module is Used Commonly Define function's,Methods's 
+ </summary>
+	<CreatedBy>Rama Ranjan Jena</CreatedBy>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAdvanceSearch.getData(System.String)">
+	<summary>
+ Get the Result of the Query
+ </summary>
+	<param name="strQuery">Query</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAdvanceSearch.GetObjects">
+	<summary>
+ Get the diffrent Objects 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAdvanceSearch.SetLayout(System.Int32)">
+	<summary>
+ Set Form Layouts 
+ </summary>
+	<param name="Level">Level no</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAdvanceSearch.CreateGridDataSour">
+	<summary>
+ Get the Structure of Where condition
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAdvanceSearch.fillOperators">
+	<summary>
+ Fill Logical Operators And Normal Operators 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAdvanceSearch.ClearWhere(System.Boolean)">
+	<summary>
+ Clear the Screen
+ </summary>
+	<param name="GridClear">True/False </param>
+	<returns>True/False </returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNAdvanceSearch.MakeQuery(System.String@)">
+	<summary>
+ Make Query Based on Selections
+ </summary>
+	<param name="StrQuery">Return Query</param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="T:Spectrum.frmNAdvanceSearch">
+	<summary>
+ This Class is Used for Advance search oF Item objects
+ </summary>
+	<CreatedBy>Rama Ranjan Jena</CreatedBy>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="T:Spectrum.frmNPrintingSettings">
+	<summary>
+  Saving printing settings
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNItemSearch.GridSetting">
+	<summary>
+ Set the grid Layout
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNItemSearch.fillGrid(System.String)">
+	<summary>
+ Attach data to grid
+ </summary>
+	<param name="filter">Item Filter</param>
+	<remarks></remarks>
+</member><member name="T:Spectrum.frmNItemSearch">
+	<summary>
+ This Class is used for Item searching
+ </summary>
+	<CreatedBy>Rama Ranjan Jena</CreatedBy>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.frmSalesOrderCreation_Load(System.Object,System.EventArgs)">
+	<summary>
+ Get the Site default Settings And Set Default Config Object
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.grdScanItem_Resize(System.Object,System.EventArgs)">
+	<summary>
+ Resize DataGrid for Display Scan Article Details
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.dtpExpDeliveryDate_Leave(System.Object,System.EventArgs)">
+	<summary>
+ Check Delivery Date
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>If Delivery Date is back date then show massage.</remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.frmSalesOrderCreation_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Set Shortcut Button in Action Button
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.BtnSearchItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Get the Item Details 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.txtSearchItem_Leave(System.Object,System.EventArgs)">
+	<summary>
+ Get the Item Details 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.txtSearchItem_PreviewKeyDown(System.Object,System.Windows.Forms.PreviewKeyDownEventArgs)">
+	<summary>
+ Get the Item Details 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.grdScanItem_AfterEdit(System.Object,C1.Win.C1FlexGrid.RowColEventArgs)">
+	<summary>
+ Update Scan Article Quantity, PickupQty and Delivery Date
+ </summary>
+	<param name="sender">Selected Row</param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.grdScanItem_CellButtonClick(System.Object,C1.Win.C1FlexGrid.RowColEventArgs)">
+	<summary>
+ Delete Selected Article from DataGrid
+ </summary>
+	<param name="sender">Select Row</param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.grdScanItem_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Delete Selected Article from DataGrid
+ </summary>
+	<param name="sender">Select Row</param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.grdScanItem_RowColChange(System.Object,System.EventArgs)">
+	<summary>
+ Show the image of the Current Selected Article
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.DeleteScanItemInSO(System.String)">
+	<summary>
+ Delete Selected Article from DataGrid
+ </summary>
+	<param name="vEAN">Selected EAN</param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.SetScanItemInSO(System.Data.DataRow)">
+	<summary>
+ Add Article In Scan DataGrid
+ </summary>
+	<param name="drItemsRow">Data Row</param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.CalculateSalesOrderSummary(System.Data.DataSet)">
+	<summary>
+ Calculate Sales Order Summary and Show in Screen
+ </summary>
+	<param name="dsScanTemp"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.RemoveApplyPromotion(System.Data.DataSet@)">
+	<summary>
+ Remove Apply Promotion on Current Sales Order
+ </summary>
+	<param name="dsScanTemp"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.RefreshScanData(System.Data.DataSet)">
+	<summary>
+ Refresh Article Scan Data in DataGrid
+ </summary>
+	<param name="dsScan"></param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.ResetSalesOrder">
+	<summary>
+ Clears All Resource for new sales order
+ </summary>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.BtnSaveSalesOrder_Click(System.Object,System.EventArgs,System.Boolean)">
+	<summary>
+ Preapring the Sales Order data for save
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.PrepareHdrDataforSave(System.Data.DataSet@)">
+	<summary>
+ Preapring the Sales Order Header data for save
+ </summary>
+	<param name="dsMain"></param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.PrepareDtlDataforSave(System.Data.DataSet@)">
+	<summary>
+ Preapring the Sales Order Details data for save
+ </summary>
+	<param name="dsMain"></param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.PrepareInvcDataforSave(System.Data.DataSet@)">
+	<summary>
+ Preapring the Sales Order Invoice data for save
+ </summary>
+	<param name="dsMain"></param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.PrepareOtherTaxDataforSave(System.Data.DataSet@)">
+	<summary>
+ Preapring the Sales Order Other Tax data for save
+ </summary>
+	<param name="dsMain"></param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.PrepareOrderHdrDataforSave(System.Data.DataSet@)">
+	<summary>
+ Preapring the Order Header data for save
+ </summary>
+	<param name="dsMain"></param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.PrepareOrderDtlDataforSave(System.Data.DataSet@)">
+	<summary>
+ Preapring the Order Details data for save
+ </summary>
+	<param name="dsMain"></param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.PrintSalesOrders(System.Data.DataRow,System.Data.DataRow,System.Data.DataRow)">
+	<summary>
+ Print Sales Order
+ </summary>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.PrintSalesOrdersInvoice(System.Data.DataRow,System.Data.DataRow,System.Data.DataRow)">
+	<summary>
+ Print Sales Order Invoice
+ </summary>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.PrintSalesOrdersDelivery(System.Data.DataRow,System.Data.DataRow,System.Data.DataRow)">
+	<summary>
+ Print Outbound Delivery for Sales Order
+ </summary>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.EnableButton(System.Boolean)">
+	<summary>
+ Set Enable/Disable Property to Standerd Button
+ </summary>
+	<param name="IsEnable">True/False</param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.BtnSONew_Click(System.Object,System.EventArgs)">
+	<summary>
+ Reset Sales Order form for New Sales Order
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.BtnAddOtherCharges_Click(System.Object,System.EventArgs)">
+	<summary>
+ Add Other Charges and Tax in Sales Order
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.BtnAcceptPayment_Click(System.Object,System.EventArgs)">
+	<summary>
+ Accept Payment for current Sales Order
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderCreation.rbbtnDefaultPromo_Click(System.Object,System.EventArgs)">
+	<summary>
+ Applying the Promotion in Current Sales Order
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>Manual Promotion may be(%,fixed price off,Fixed price sale) </remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.frmSalesOrderUpdation_Load(System.Object,System.EventArgs)">
+	<summary>
+ Get the Site default Settings And Set Default Config Object
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.TabPageItemDetails_Resize(System.Object,System.EventArgs)">
+	<summary>
+ Resize DataGrid for Display Items Details
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.TabPageItemDetailsReturn_Resize(System.Object,System.EventArgs)">
+	<summary>
+ Resize DataGrid for Display Items Details
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.TabPageInvoiceDetails_Resize(System.Object,System.EventArgs)">
+	<summary>
+ Resize DataGrid for Display Invoice Details
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.#ctor">
+	<summary>
+ Set Languadge in Sales Order Window
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.BtnSearchItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Get the Item Details 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.txtSearchItem_Leave(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Get the Item Details 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.txtSearchItem_PreviewKeyDown(System.Object,System.Windows.Forms.PreviewKeyDownEventArgs)">
+	<summary>
+ Get the Item Details 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.grdSOItems_AfterEdit(System.Object,C1.Win.C1FlexGrid.RowColEventArgs)">
+	<summary>
+ Update Scan Article Quantity, PickupQty and Delivery Date
+ </summary>
+	<param name="sender">Selected Row</param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.grdScanItem_CellButtonClick(System.Object,C1.Win.C1FlexGrid.RowColEventArgs)">
+	<summary>
+ Delete Selected Article from Item Details DataGrid
+ </summary>
+	<param name="sender">Select Row</param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.grdSOItems_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Delete Selected Article from DataGrid
+ </summary>
+	<param name="sender">Select Row</param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.grdSOItems_RowColChange(System.Object,System.EventArgs)">
+	<summary>
+ Show the image of the Current Selected Article
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.DeleteScanItemInSO(System.String)">
+	<summary>
+ Delete Selected Article from DataGrid
+ </summary>
+	<param name="vEAN">Selected EAN</param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.SetScanItemInSO(System.Data.DataRow)">
+	<summary>
+ Add Article In Scan DataGrid
+ </summary>
+	<param name="drItemsRow">Data Row</param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.BtnSearchSalesOrder_Click(System.Object,System.EventArgs)">
+	<summary>
+ Search Old Sales Order
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.txtSalesNo_Leave(System.Object,System.EventArgs)">
+	<summary>
+ Search Old Sales Order
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.txtSalesNo_PreviewKeyDown(System.Object,System.Windows.Forms.PreviewKeyDownEventArgs)">
+	<summary>
+ Search Old Sales Order
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.SetSalesOrderInForm(System.String)">
+	<summary>
+ Load Old Sales Order in window
+ </summary>
+	<param name="vSalesNo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.RefreshLoadSOData">
+	<summary>
+ Refresh Article Scan Data in DataGrid
+ </summary>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.RefreshLoadInvcData">
+	<summary>
+ Refresh Invoice Details Data in DataGrid
+ </summary>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.CalculateSalesOrderSummory(System.Data.DataSet)">
+	<summary>
+ Calculate Sales Order Summary and Show in Screen
+ </summary>
+	<param name="dsScanTemp"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.RemoveApplyPromotion(System.Data.DataSet@)">
+	<summary>
+ Remove Apply Promotion on Current Sales Order
+ </summary>
+	<param name="dsScanTemp"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.ResetSalesOrder">
+	<summary>
+ Clears All Resource for new sales order
+ </summary>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.BtnSaveSalesOrder_Click(System.Object,System.EventArgs,System.Boolean)">
+	<summary>
+ Uodate sales order
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.PrepareHdrDataforSave(System.Data.DataSet@)">
+	<summary>
+ Preapring the Sales Order Header data for save
+ </summary>
+	<param name="dsMain"></param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.PrepareDtlDataforSave(System.Data.DataSet@,System.Boolean)">
+	<summary>
+ Preapring the Sales Order Details data for save
+ </summary>
+	<param name="dsMain"></param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.PrepareInvcDataforSave(System.Data.DataSet@)">
+	<summary>
+ Preapring the Sales Order Invoice data for save
+ </summary>
+	<param name="dsMain"></param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.PrepareOtherTaxDataforSave(System.Data.DataSet@)">
+	<summary>
+ Preapring the Sales Order Other Tax data for save
+ </summary>
+	<param name="dsMain"></param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.PrepareOrderHdrDataforSave(System.Data.DataSet@)">
+	<summary>
+ Preapring the Order Header data for save
+ </summary>
+	<param name="dsMain"></param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.PrepareOrderDtlDataforSave(System.Data.DataSet@)">
+	<summary>
+ Preapring the Order Details data for save
+ </summary>
+	<param name="dsMain"></param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.BtnAcceptPayment_Click(System.Object,System.EventArgs)">
+	<summary>
+ Accept Payment for current Sales Order
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.BtnAddOtherCharges_Click(System.Object,System.EventArgs)">
+	<summary>
+ Add Other Charges and Tax in Sales Order
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.cmdDefaultPromo_Click(System.Object,System.EventArgs)">
+	<summary>
+ Applying the Promotion in Current Sales Order
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>Manual Promotion may be(%,fixed price off,Fixed price sale) </remarks>
+</member><member name="M:Spectrum.frmNSalesOrderUpdate.ReCalculateSalesOrder">
+	<summary>
+ Calculate Sales Order Summary and Show in Screen
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

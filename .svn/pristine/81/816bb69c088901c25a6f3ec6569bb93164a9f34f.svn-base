@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://clpcustomer.webservices.spectrum.criti.com/" name="ClpCustomerService" targetNamespace="http://clpcustomer.webservices.spectrum.criti.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema targetNamespace="http://clpcustomer.webservices.spectrum.criti.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="viewCustomer" type="tns:viewCustomer" />
+      <xs:element name="viewCustomerResponse" type="tns:viewCustomerResponse" />
+      <xs:complexType name="viewCustomer">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:clpCustomerRequestDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="clpCustomerRequestDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="customerId" type="xs:string" />
+          <xs:element minOccurs="0" name="password" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="viewCustomerResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:clpCustomerDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="clpCustomerDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="birthDate" type="xs:string" />
+          <xs:element minOccurs="0" name="cardNo" type="xs:string" />
+          <xs:element minOccurs="0" name="education" type="xs:string" />
+          <xs:element minOccurs="0" name="emailId" type="xs:string" />
+          <xs:element minOccurs="0" name="faultDTO" type="tns:faultDTO" />
+          <xs:element minOccurs="0" name="firstName" type="xs:string" />
+          <xs:element minOccurs="0" name="gender" type="xs:string" />
+          <xs:element minOccurs="0" name="maritalStatus" type="xs:string" />
+          <xs:element minOccurs="0" name="middleName" type="xs:string" />
+          <xs:element minOccurs="0" name="mobileNo" type="xs:string" />
+          <xs:element minOccurs="0" name="occupation" type="xs:string" />
+          <xs:element minOccurs="0" name="officeNo" type="xs:string" />
+          <xs:element minOccurs="0" name="pointsAccumlated" type="xs:string" />
+          <xs:element minOccurs="0" name="pointsRedeemed" type="xs:string" />
+          <xs:element minOccurs="0" name="promotionInfobyEmail" type="xs:string" />
+          <xs:element minOccurs="0" name="promotionInfobySMS" type="xs:string" />
+          <xs:element minOccurs="0" name="referedBy" type="xs:string" />
+          <xs:element minOccurs="0" name="resPhone" type="xs:string" />
+          <xs:element minOccurs="0" name="surName" type="xs:string" />
+          <xs:element minOccurs="0" name="title" type="xs:string" />
+          <xs:element minOccurs="0" name="totalBalancePoint" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="faultDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="businessError" type="xs:string" />
+          <xs:element minOccurs="0" name="faultLevel" type="xs:string" />
+          <xs:element minOccurs="0" name="faultStackTrace" type="xs:string" />
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </types>
+  <message name="ClpCustomer_viewCustomerResponse">
+    <part name="viewCustomerResponse" element="tns:viewCustomerResponse" />
+  </message>
+  <message name="ClpCustomer_viewCustomer">
+    <part name="viewCustomer" element="tns:viewCustomer" />
+  </message>
+  <portType name="ClpCustomer">
+    <operation name="viewCustomer" parameterOrder="viewCustomer">
+      <input message="tns:ClpCustomer_viewCustomer" />
+      <output message="tns:ClpCustomer_viewCustomerResponse" />
+    </operation>
+  </portType>
+  <binding name="ClpCustomerBinding" type="tns:ClpCustomer">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="viewCustomer">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ClpCustomerService">
+    <port name="ClpCustomerPort" binding="tns:ClpCustomerBinding">
+      <soap:address location="http://10.10.180.77:8090/posSeam/webservices/ClpCustomer" />
+    </port>
+  </service>
+</definitions>

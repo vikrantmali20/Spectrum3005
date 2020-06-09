@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LicenseService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://10.10.180.80:2015/LicenseService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://10.10.180.80:2015/LicenseService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://10.10.180.80:2015/LicenseService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SpectrumLicense.Models" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ILicenseService_SaveLicense_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveLicense" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_SaveLicense_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_SaveLicense1_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveLicense1" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_SaveLicense1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveLicense1Response" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_UpdateLicense_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLicense" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_UpdateLicense_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_DeleteByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteByID" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_DeleteByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_DeleteByHardwareKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteByHardwareKey" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_DeleteByHardwareKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteByHardwareKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseList" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseByClientID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseByClientID" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseByClientID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseByClientIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetClientByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientByID" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetClientByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseByID" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetClientList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientList" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetClientList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_DeactivateLicense_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeactivateLicense" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_DeactivateLicense_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeactivateLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_ActivateLicense_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActivateLicense" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_ActivateLicense_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActivateLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_AllocateLicense_InputMessage">
+    <wsdl:part name="parameters" element="tns:AllocateLicense" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_AllocateLicense_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AllocateLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseByLicenseKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseByLicenseKey" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseByLicenseKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseByLicenseKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseByHardwareKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseByHardwareKey" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseByHardwareKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseByHardwareKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseReconciliationData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseReconciliationData" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseReconciliationData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseReconciliationDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetReconciliationDetailsByClientID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReconciliationDetailsByClientID" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetReconciliationDetailsByClientID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReconciliationDetailsByClientIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_ClientLicenseDetailsByMasterKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClientLicenseDetailsByMasterKey" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_ClientLicenseDetailsByMasterKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClientLicenseDetailsByMasterKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseByClientIDModel_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseByClientIDModel" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseByClientIDModel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseByClientIDModelResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_UpdateLicenseBackDated_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLicenseBackDated" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_UpdateLicenseBackDated_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLicenseBackDatedResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetIssueDateByLicenseKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueDateByLicenseKey" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetIssueDateByLicenseKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueDateByLicenseKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseByHardwareKeys_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseByHardwareKeys" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseByHardwareKeys_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseByHardwareKeysResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetIssueDateByHardwareKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueDateByHardwareKey" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetIssueDateByHardwareKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueDateByHardwareKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetIssueDateByHardwareKeyNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueDateByHardwareKeyNew" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetIssueDateByHardwareKeyNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueDateByHardwareKeyNewResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ILicenseService">
+    <wsdl:operation name="SaveLicense">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/SaveLicense" message="tns:ILicenseService_SaveLicense_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/SaveLicenseResponse" message="tns:ILicenseService_SaveLicense_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveLicense1">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/SaveLicense1" message="tns:ILicenseService_SaveLicense1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/SaveLicense1Response" message="tns:ILicenseService_SaveLicense1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLicense">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/UpdateLicense" message="tns:ILicenseService_UpdateLicense_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/UpdateLicenseResponse" message="tns:ILicenseService_UpdateLicense_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/DeleteByID" message="tns:ILicenseService_DeleteByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/DeleteByIDResponse" message="tns:ILicenseService_DeleteByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteByHardwareKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/DeleteByHardwareKey" message="tns:ILicenseService_DeleteByHardwareKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/DeleteByHardwareKeyResponse" message="tns:ILicenseService_DeleteByHardwareKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/GetLicenseList" message="tns:ILicenseService_GetLicenseList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/GetLicenseListResponse" message="tns:ILicenseService_GetLicenseList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseByClientID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/GetLicenseByClientID" message="tns:ILicenseService_GetLicenseByClientID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/GetLicenseByClientIDResponse" message="tns:ILicenseService_GetLicenseByClientID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/GetClientByID" message="tns:ILicenseService_GetClientByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/GetClientByIDResponse" message="tns:ILicenseService_GetClientByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/GetLicenseByID" message="tns:ILicenseService_GetLicenseByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/GetLicenseByIDResponse" message="tns:ILicenseService_GetLicenseByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/GetClientList" message="tns:ILicenseService_GetClientList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/GetClientListResponse" message="tns:ILicenseService_GetClientList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateLicense">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/DeactivateLicense" message="tns:ILicenseService_DeactivateLicense_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/DeactivateLicenseResponse" message="tns:ILicenseService_DeactivateLicense_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivateLicense">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/ActivateLicense" message="tns:ILicenseService_ActivateLicense_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/ActivateLicenseResponse" message="tns:ILicenseService_ActivateLicense_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AllocateLicense">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/AllocateLicense" message="tns:ILicenseService_AllocateLicense_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/AllocateLicenseResponse" message="tns:ILicenseService_AllocateLicense_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseByLicenseKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/GetLicenseByLicenseKey" message="tns:ILicenseService_GetLicenseByLicenseKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/GetLicenseByLicenseKeyResponse" message="tns:ILicenseService_GetLicenseByLicenseKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseByHardwareKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/GetLicenseByHardwareKey" message="tns:ILicenseService_GetLicenseByHardwareKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/GetLicenseByHardwareKeyResponse" message="tns:ILicenseService_GetLicenseByHardwareKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseReconciliationData">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/GetLicenseReconciliationData" message="tns:ILicenseService_GetLicenseReconciliationData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/GetLicenseReconciliationDataResponse" message="tns:ILicenseService_GetLicenseReconciliationData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReconciliationDetailsByClientID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/GetReconciliationDetailsByClientID" message="tns:ILicenseService_GetReconciliationDetailsByClientID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/GetReconciliationDetailsByClientIDResponse" message="tns:ILicenseService_GetReconciliationDetailsByClientID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClientLicenseDetailsByMasterKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/ClientLicenseDetailsByMasterKey" message="tns:ILicenseService_ClientLicenseDetailsByMasterKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/ClientLicenseDetailsByMasterKeyResponse" message="tns:ILicenseService_ClientLicenseDetailsByMasterKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseByClientIDModel">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/GetLicenseByClientIDModel" message="tns:ILicenseService_GetLicenseByClientIDModel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/GetLicenseByClientIDModelResponse" message="tns:ILicenseService_GetLicenseByClientIDModel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLicenseBackDated">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/UpdateLicenseBackDated" message="tns:ILicenseService_UpdateLicenseBackDated_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/UpdateLicenseBackDatedResponse" message="tns:ILicenseService_UpdateLicenseBackDated_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueDateByLicenseKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/GetIssueDateByLicenseKey" message="tns:ILicenseService_GetIssueDateByLicenseKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/GetIssueDateByLicenseKeyResponse" message="tns:ILicenseService_GetIssueDateByLicenseKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseByHardwareKeys">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/GetLicenseByHardwareKeys" message="tns:ILicenseService_GetLicenseByHardwareKeys_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/GetLicenseByHardwareKeysResponse" message="tns:ILicenseService_GetLicenseByHardwareKeys_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueDateByHardwareKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/GetIssueDateByHardwareKey" message="tns:ILicenseService_GetIssueDateByHardwareKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/GetIssueDateByHardwareKeyResponse" message="tns:ILicenseService_GetIssueDateByHardwareKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueDateByHardwareKeyNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/GetIssueDateByHardwareKeyNew" message="tns:ILicenseService_GetIssueDateByHardwareKeyNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/GetIssueDateByHardwareKeyNewResponse" message="tns:ILicenseService_GetIssueDateByHardwareKeyNew_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ILicenseService" type="tns:ILicenseService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SaveLicense">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/SaveLicense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveLicense1">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/SaveLicense1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLicense">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/UpdateLicense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteByID">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/DeleteByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteByHardwareKey">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/DeleteByHardwareKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseList">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/GetLicenseList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseByClientID">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/GetLicenseByClientID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientByID">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/GetClientByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseByID">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/GetLicenseByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientList">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/GetClientList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateLicense">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/DeactivateLicense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateLicense">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/ActivateLicense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AllocateLicense">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/AllocateLicense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseByLicenseKey">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/GetLicenseByLicenseKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseByHardwareKey">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/GetLicenseByHardwareKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseReconciliationData">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/GetLicenseReconciliationData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReconciliationDetailsByClientID">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/GetReconciliationDetailsByClientID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClientLicenseDetailsByMasterKey">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/ClientLicenseDetailsByMasterKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseByClientIDModel">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/GetLicenseByClientIDModel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLicenseBackDated">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/UpdateLicenseBackDated" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueDateByLicenseKey">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/GetIssueDateByLicenseKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseByHardwareKeys">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/GetLicenseByHardwareKeys" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueDateByHardwareKey">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/GetIssueDateByHardwareKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueDateByHardwareKeyNew">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/GetIssueDateByHardwareKeyNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LicenseService">
+    <wsdl:port name="BasicHttpBinding_ILicenseService" binding="tns:BasicHttpBinding_ILicenseService">
+      <soap:address location="http://10.10.180.80:2015/LicenseService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SpectrumLicense.Models" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SpectrumLicense.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="LicenseModel">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseModel">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ActivationMode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ActivationState" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ApplicationType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ClientID" type="xs:int" />
+          <xs:element minOccurs="0" name="ExpireDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="HardwareKey" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IssueDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LicenseID" type="xs:int" />
+          <xs:element minOccurs="0" name="LicenseKey" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MasterKey" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProductID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SiteCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TerminalID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Validity" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LicenseModel" nillable="true" type="tns:LicenseModel" />
+  <xs:complexType name="BaseModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedOn" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+      <xs:element minOccurs="0" name="UpdatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdatedOn" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseModel" nillable="true" type="tns:BaseModel" />
+  <xs:complexType name="ClientModel">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseModel">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BOLicense" type="xs:int" />
+          <xs:element minOccurs="0" name="BOLicenseActivated" type="xs:int" />
+          <xs:element minOccurs="0" name="BOValidity" type="xs:int" />
+          <xs:element minOccurs="0" name="CCEConnection" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ClienSiteList" nillable="true" type="tns:ArrayOfClientSiteMapModel" />
+          <xs:element minOccurs="0" name="ClientID" type="xs:int" />
+          <xs:element minOccurs="0" name="ClientName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CurrentVersion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LicenseList" nillable="true" type="tns:ArrayOfLicenseModel" />
+          <xs:element minOccurs="0" name="MasterKey" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MobexLicense" type="xs:int" />
+          <xs:element minOccurs="0" name="MobexLicenseActivated" type="xs:int" />
+          <xs:element minOccurs="0" name="MobexValidity" type="xs:int" />
+          <xs:element minOccurs="0" name="POSLicense" type="xs:int" />
+          <xs:element minOccurs="0" name="POSLicenseActivated" type="xs:int" />
+          <xs:element minOccurs="0" name="POSValidity" type="xs:int" />
+          <xs:element minOccurs="0" name="PaymentStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProcurementDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="UpgradedVersion" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ClientModel" nillable="true" type="tns:ClientModel" />
+  <xs:complexType name="ArrayOfClientSiteMapModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ClientSiteMapModel" nillable="true" type="tns:ClientSiteMapModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClientSiteMapModel" nillable="true" type="tns:ArrayOfClientSiteMapModel" />
+  <xs:complexType name="ClientSiteMapModel">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseModel">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BOStatus" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ClientId" type="xs:int" />
+          <xs:element minOccurs="0" name="FOStatus" type="xs:boolean" />
+          <xs:element minOccurs="0" name="SiteCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SiteName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ClientSiteMapModel" nillable="true" type="tns:ClientSiteMapModel" />
+  <xs:complexType name="ArrayOfLicenseModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LicenseModel" nillable="true" type="tns:LicenseModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLicenseModel" nillable="true" type="tns:ArrayOfLicenseModel" />
+  <xs:complexType name="AutoUpdateVersionInfoModel">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseModel">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CurrentVersion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="HardwareKey" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UpgradedVersion" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AutoUpdateVersionInfoModel" nillable="true" type="tns:AutoUpdateVersionInfoModel" />
+  <xs:complexType name="ArrayOfClientModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ClientModel" nillable="true" type="tns:ClientModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClientModel" nillable="true" type="tns:ArrayOfClientModel" />
+  <xs:complexType name="ArrayOfReconciliationModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ReconciliationModel" nillable="true" type="tns:ReconciliationModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfReconciliationModel" nillable="true" type="tns:ArrayOfReconciliationModel" />
+  <xs:complexType name="ReconciliationModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClientID" type="xs:int" />
+      <xs:element minOccurs="0" name="ClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DeactiveLicense" type="xs:int" />
+      <xs:element minOccurs="0" name="POSLicense" type="xs:int" />
+      <xs:element minOccurs="0" name="POSLicenseActivated" type="xs:int" />
+      <xs:element minOccurs="0" name="ReconciliationStatus" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReconciliationModel" nillable="true" type="tns:ReconciliationModel" />
+  <xs:complexType name="LicenseBackDatedModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ExpireDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IssueDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LicenseKey" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Validity" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LicenseBackDatedModel" nillable="true" type="tns:LicenseBackDatedModel" />
+</xs:schema>

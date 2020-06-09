@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <LocalPara>
+    <Label>LicencseServiceUrl</Label>
+    <Value>http://10.10.180.191:2051/LicenseService.svc</Value>
+  </LocalPara>
+   
+</NewDataSet>

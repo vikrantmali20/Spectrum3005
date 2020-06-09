@@ -1,0 +1,12 @@
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.DAL\bin\Debug\Spectrum.DAL.dll.config
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.DAL\bin\Debug\Spectrum.DAL.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.DAL\bin\Debug\Spectrum.DAL.pdb
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.DAL\bin\Debug\C1.C1Excel.2.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.DAL\bin\Debug\EntityFramework.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.DAL\bin\Debug\Spectrum.Logging.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.DAL\bin\Debug\Spectrum.Models.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.DAL\bin\Debug\log4net.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.DAL\obj\Debug\Spectrum.DAL.csprojResolveAssemblyReference.cache
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.DAL\obj\Debug\Spectrum.DAL.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.DAL\obj\Debug\Spectrum.DAL.pdb

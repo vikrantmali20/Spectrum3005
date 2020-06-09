@@ -1,0 +1,13 @@
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.Globalization\bin\Debug\SpectrumLite.en-US.resources
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.Globalization\bin\Debug\SpectrumLite.es-ES.resources
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.Globalization\bin\Debug\Spectrum.Globalization.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.Globalization\bin\Debug\Spectrum.Globalization.pdb
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.Globalization\bin\Debug\en-US\Spectrum.Globalization.resources.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.Globalization\bin\Debug\es-ES\Spectrum.Globalization.resources.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.Globalization\obj\Debug\Spectrum.Globalization.Properties.Resources.resources
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.Globalization\obj\Debug\Spectrum.Globalization.csproj.GenerateResource.Cache
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.Globalization\obj\Debug\en-US\Spectrum.Globalization.resources.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.Globalization\obj\Debug\es-ES\Spectrum.Globalization.resources.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.Globalization\obj\Debug\Spectrum.Globalization.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.Globalization\obj\Debug\Spectrum.Globalization.pdb
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.Globalization\obj\Debug\Spectrum.Globalization.csprojResolveAssemblyReference.cache

@@ -1,0 +1,601 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Spectrum
+</name>
+</assembly>
+<members>
+<member name="M:Spectrum.frmAcceptPayment.#ctor">
+	<summary>
+ Constructor
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmAcceptPayment.PaymentType">
+	<summary>
+  Set Payment Type
+ </summary>
+	<value>Default is "Accept"</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmAcceptPayment.AcceptEditBillDataSet">
+	<summary>
+ Property need to set whenever to push bill cash breakup to display into Grid
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmAcceptPayment.TotalBillAmount">
+	<summary>
+ Total Bill Amount to accept from user 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Each time you need to set </remarks>
+</member><member name="P:Spectrum.frmAcceptPayment.MinimumBillAmount">
+	<summary>
+  Advance payment against total bill amount
+ </summary>
+	<value>
+	</value>
+	<returns></returns>
+	<remarks>Sales order </remarks>
+</member><member name="P:Spectrum.frmAcceptPayment.TotalReceivedAmount">
+	<summary>
+ Return total received amount from customer
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmAcceptPayment.IsCancelAcceptPayment">
+	<summary>
+  Check payment is cancel or not 
+ </summary>
+	<value>Default False</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmAcceptPayment.Grid_DisplaySetting">
+	<summary>
+  Display grid 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmAcceptPayment.DisplaySettings_CurrencyCalculation">
+	<summary>
+  On Selection changed of currency.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmAcceptPayment.ClearTextBox">
+	<summary>
+ Clear TextBox 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmAcceptPayment.IsTotalAmountReceived">
+	<summary>
+  Check Total amount is received
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.clsPrinting.#ctor(System.String)">
+	<summary>
+ Class intillisation 
+ </summary>
+	<param name="BillNo">BillNo</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.clsPrinting.CashMemoPrint(System.String,System.Boolean,System.String,System.String)">
+	<summary>
+ Cash Memo Printing
+ </summary>
+	<param name="Type">Type of Cash Memo</param>
+	<param name="DuplicatePrinting">True/False</param>
+	<param name="DeletedUserid">UserId for Deleted Cash Memo</param>
+	<param name="AuthorisedUser">Authoriser ID</param>
+	<Usedin>CashMemo</Usedin>
+	<Updateby></Updateby>
+	<updatedon></updatedon>
+	<remarks>Print Normal CashMemo,Deleted Cash Memo,Duplicate CashMemo And CashMemo without amount</remarks>
+</member><member name="M:Spectrum.clsPrinting.HoldCMPrint">
+	<summary>
+ Printing Hold Cash Memo
+ </summary>
+	<Usedin>CashMemo</Usedin>
+	<Updatedby></Updatedby>
+	<Updatedon></Updatedon>
+	<remarks></remarks>
+</member><member name="T:Spectrum.clsPrinting">
+	<summary>
+ This Class is used for Cash Memo Printing
+ </summary>
+	<createdby>Rama Ranjan Jena</createdby>
+	<Updatedby></Updatedby>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="P:Spectrum.My.Resources.EnglishResource.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Spectrum.My.Resources.EnglishResource.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Spectrum.My.Resources.EnglishResource.CreditCardManually">
+	<summary>
+  Looks up a localized string similar to Do you want to enter CreditCard Number Manually?.
+</summary>
+</member><member name="P:Spectrum.My.Resources.EnglishResource.MessageBoxTitle">
+	<summary>
+  Looks up a localized string similar to Spectrum.
+</summary>
+</member><member name="T:Spectrum.My.Resources.EnglishResource">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Spectrum.modCommonFunc.HideColumns(C1.Win.C1FlexGrid.C1FlexGrid,System.Boolean,System.String[])">
+	<summary>
+ Hides the Column's From Grid
+ </summary>
+	<param name="dgGrid">Name of the Grid</param>
+	<param name="show">True/False</param>
+	<usedin>
+ CashMemo,AddOtherChargeForSO,CashMemoReturn,CommonView
+ </usedin>
+	<Updatedby></Updatedby>
+	<Updatedon></Updatedon>
+	<param name="colName">Column Name's</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.ShowMessage(System.String,System.String)">
+	<summary>
+ Show Special Prompt Messages
+ </summary>
+	<Updatedby></Updatedby>
+	<Updatedon></Updatedon>
+	<param name="msg">Message</param>
+	<param name="Caption">Caption</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.PopulateComboBox(System.Data.DataTable@,System.Windows.Forms.ComboBox@)">
+	<summary>
+ Data attach to combo box
+ </summary>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<param name="dtCombo">Data table</param>
+	<param name="ObjComboBox">Name of ComboBox</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.PopulateGridComboBox(C1.Win.C1FlexGrid.C1FlexGrid@,System.Data.DataTable@,System.String)">
+	<summary>
+ Populate a column in grid as a combobox 
+ </summary>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<param name="FlexGrid">Name of the grid</param>
+	<param name="dtGrid">Data Table</param>
+	<param name="vColName">Name of the Column</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.CreateNewRecord(System.Windows.Forms.Form@,System.Data.DataSet@,System.String[])">
+	<summary>
+ Creating New Records for the Binding Datatable
+ </summary>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<param name="frm">form</param>
+	<param name="ds">DataSet</param>
+	<param name="Tablename">Name of the table's</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.GetUserAuthDetails(System.String,System.String,System.Data.DataTable@)">
+	<summary>
+ Get the details of User authorisation of Transaction
+ </summary>
+	<usedin>Login</usedin>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<param name="SiteCode">SiteCode</param>
+	<param name="UserId">UserID</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.CheckAuthorisation(System.String,System.String)">
+	<summary>
+ Check Authorisation for User against transactions
+ </summary>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<param name="Userid">UserId</param>
+	<param name="Transaction">Transactions</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.CreatePdf(System.String,System.String)">
+	<summary>
+ Creating Pdf 
+ </summary>
+	<usedin>CashMemo</usedin>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<param name="Title">Page Title</param>
+	<param name="StrPrint">String For Print</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.CheckInterTransactionAuth(System.String,System.Data.DataTable@)">
+	<summary>
+ check User Authorisation of a transaction
+ </summary>
+	<param name="Transaction">Transaction Name</param>
+	<param name="dt">DataTable</param>
+	<returns></returns>
+	<remarks> if current user have no authorisation goes for other user check</remarks>
+</member><member name="M:Spectrum.modCommonFunc.fnPrint(System.String,System.String)">
+	<summary>
+ Function for Printing 
+ </summary>
+	<param name="StrToPrint">String to print</param>
+	<param name="strPrintOrPreview">PRN/PRV</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.modCommonFunc.printDocument1_PrintPage(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
+	<summary>
+ Printing the Doucment
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:Spectrum.modCommonFunc">
+	<summary>
+ This Module is Used Commonly Define function's,Methods's 
+ </summary>
+	<CreatedBy>Rama Ranjan Jena</CreatedBy>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.GetListofManualPromotion">
+	<summary>
+ Getting the List of all promotions Active in Site
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.ApplyManualPromotion">
+	<summary>
+ Applying the Manual Promotion in Current Row
+ </summary>
+	<remarks>Manual Promotion may be(%,fixed price off,Fixed price sale) </remarks>
+</member><member name="M:Spectrum.frmCashMemo.CalculateManualPromo(System.Data.DataRow@)">
+	<summary>
+ Calulating Manual promotion on the pass Data Row
+ </summary>
+	<param name="dr">Detail Table row</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.CalculateManualPromo(System.Int32)">
+	<summary>
+ Calulating Manual promotion on the pass Data Row
+ </summary>
+	<param name="rowno">Row Number</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.ShowArticleImage(System.String)">
+	<summary>
+ Show the image of the Current Selected Article
+ </summary>
+	<param name="StrArticle">ArticleCode</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.getBinding">
+	<summary>
+ Binding the Controls with the DataSet
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.GetDefaultSettings">
+	<summary>
+ Get the Site default Settings And Set Default Config Object
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.SetDefaultSetting">
+	<summary>
+ Applying Default Setting on Screen Set 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.GridSettings(System.Boolean)">
+	<summary>
+ Set the Grid Based on Flag
+ </summary>
+	<param name="Update">Update flag</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.ReCalculateCM(System.String)">
+	<summary>
+ CalCulating Line Item, Whole
+ </summary>
+	<param name="strItem">Ean code</param>
+	<remarks>If Ean code not sends Calculated All line items</remarks>
+</member><member name="M:Spectrum.frmCashMemo.ValidateAll">
+	<summary>
+ Validating the flow Or Form Validations 
+ </summary>
+	<returns>True and False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.ClearData">
+	<summary>
+ Clear the Data from DataSet
+ </summary>
+	<remarks>Clears the data from Screen also</remarks>
+</member><member name="M:Spectrum.frmCashMemo.PrepareDataforSave(System.Data.DataSet@)">
+	<summary>
+ Preapring the data for save
+ </summary>
+	<param name="dsTemp">Copied dataSet</param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.prepareHeader(System.Data.DataRow@)">
+	<summary>
+ Prepare the Header details for save
+ </summary>
+	<param name="dr">datarow</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.CreatingLineNO(System.Data.DataSet@,System.String)">
+	<summary>
+ Creating Line No in the Main and Subordinate table in Dataset
+ </summary>
+	<param name="ds">DataSet</param>
+	<param name="TableName">Name of the Table</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.calculateTotalbill">
+	<summary>
+ Calculate Total bill and Show in Screen
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.UpdatePaymentPrevStru(System.Data.DataTable@)">
+	<summary>
+ Change the Table Columns name For payment module 
+ </summary>
+	<param name="dt"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.UpdatePaymentDataSetStru(System.Data.DataSet@,System.Boolean)">
+	<summary>
+ Updating Payment Structure's 
+ </summary>
+	<param name="ds"></param>
+	<param name="UpdateFlag"></param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.PaymentGridSetting">
+	<summary>
+ Set the Payment Grid Layout
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.Getitemdetails(System.Data.DataTable)">
+	<summary>
+ Get the Item Details 
+ </summary>
+	<param name="dt">Item data table </param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.ReadFile(System.String)">
+	<summary>
+ Reading text file
+ </summary>
+	<param name="Filename">Name of the File</param>
+	<returns>Data Table</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.GetCashMemoDetails(System.String,System.String)">
+	<summary>
+ Get previous Cash Memo Details
+ </summary>
+	<param name="strCashMemo">Cash Memo No</param>
+	<param name="strSiteCode">Site Code</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.CalculateDiscountAmount(System.Int32,System.Int32)">
+	<summary>
+ Show the Discount Amount on Mouse Move
+ </summary>
+	<param name="row"></param>
+	<param name="col"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.CreateDataSetForTaxCalculation(System.String,System.Double,System.Int32,System.Double,System.String)">
+	<summary>
+ Assign Tax to the Row
+ </summary>
+	<param name="strMatcode">Article Code</param>
+	<param name="TaxableAmount">Amount on which Tax calulated </param>
+	<param name="iRow"> Row No</param>
+	<param name="EAN">Ean Code</param>
+	<returns>Tax amount</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.CreateDataSetForTaxCalculation(System.String,System.Double,System.Data.DataRow@,System.String)">
+	<summary>
+ Assign Tax to the Row
+ </summary>
+	<param name="strMatcode">Article Code</param>
+	<param name="TaxableAmount">Amount on which Tax calulated </param>
+	<param name="dr"> Data Row</param>
+	<param name="EAN">Ean Code</param>
+	<returns>Tax amount</returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.LoadsalesData">
+	<summary>
+ Get Sales Person data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCashMemo.ClearAllPromo">
+	<summary>
+ Clear all Promotion's
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Spectrum.frmCashMemo">
+	<summary>
+ This class is used for cash Memo Functionality 
+ </summary>
+	<CreatedBy>Rama Ranjan Jena </CreatedBy>
+	<Updatedby></Updatedby>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmCommonView.SetData">
+	<summary>
+ Set the data from Outside to Show
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmCommonView.GetData">
+	<summary>
+ Return the data 
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="T:Spectrum.frmCommonView">
+	<summary>
+ This Class is Used for Common View of Data
+ </summary>
+	<CreatedBy>Rama Ranjan Jena</CreatedBy>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="P:Spectrum.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Spectrum.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Spectrum.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Spectrum.frmAdvanceSearch.getData(System.String)">
+	<summary>
+ Get the Result of the Query
+ </summary>
+	<param name="strQuery">Query</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmAdvanceSearch.GetObjects">
+	<summary>
+ Get the diffrent Objects 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmAdvanceSearch.SetLayout(System.Int32)">
+	<summary>
+ Set Form Layouts 
+ </summary>
+	<param name="Level">Level no</param>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmAdvanceSearch.CreateGridDataSour">
+	<summary>
+ Get the Structure of Where condition
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmAdvanceSearch.fillOperators">
+	<summary>
+ Fill Logical Operators And Normal Operators 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmAdvanceSearch.ClearWhere(System.Boolean)">
+	<summary>
+ Clear the Screen
+ </summary>
+	<param name="GridClear">True/False </param>
+	<returns>True/False </returns>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmAdvanceSearch.MakeQuery(System.String@)">
+	<summary>
+ Make Query Based on Selections
+ </summary>
+	<param name="StrQuery">Return Query</param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="T:Spectrum.frmAdvanceSearch">
+	<summary>
+ This Class is Used for Advance search oF any objects
+ </summary>
+	<CreatedBy>Rama Ranjan Jena</CreatedBy>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmBirthListUpdate.BirthListUpdateColumns">
+	<summary>
+ Add ConvToVoucher Column  
+ </summary>
+	<returns>On suceess return true otherwise false</returns>
+	<remarks></remarks>
+</member><member name="T:Spectrum.frmDenomination">
+	<summary>
+ This class is used for Denomination Calculation
+ </summary>
+	<CreatedBy>Rama Ranjan Jena</CreatedBy>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmBirthListSales.CheckBalanceQty">
+	<summary>
+ Check balance qty and sorting list,changing color
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmCommonSearch.SetData">
+	<summary>
+ Set the data from Outside to Show
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmCommonSearch.FillGrid">
+	<summary>
+ Attach the Data to Grid
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Spectrum.frmCommonSearch">
+	<summary>
+ This form Is Used For Searching
+ </summary>
+	<CreatedBy>Rama Ranjan Jena</CreatedBy>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmItemSearch.GridSetting">
+	<summary>
+ Set the grid Layout
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Spectrum.frmItemSearch.fillGrid(System.String)">
+	<summary>
+ Attach data to grid
+ </summary>
+	<param name="filter">Item Filter</param>
+	<remarks></remarks>
+</member><member name="T:Spectrum.frmItemSearch">
+	<summary>
+ This Class is used for Item searching
+ </summary>
+	<CreatedBy>Rama Ranjan Jena</CreatedBy>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmSpecialPrompt.ShowMessage">
+	<summary>
+ Show Message Panel And Hide Text Box
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmSpecialPrompt.GetResult">
+	<summary>
+ Return's TextBox Value 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Spectrum.frmSpecialPrompt">
+	<summary>
+ This Class is Used as Special Prompt
+ </summary>
+	<CreatedBy>Rama Ranjan Jena</CreatedBy>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="P:Spectrum.frmCashMemoReturn.GetResultData">
+	<summary>
+ Used For Returning Item Details to Main Cash Memo
+ </summary>
+	<value></value>
+	<UsedIn>CashMemo</UsedIn>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Spectrum.frmCashMemoReturn">
+	<summary>
+ This Class is Used for CashMemo Return
+ </summary>
+	<CreatedBy>Rama Ranjan Jena</CreatedBy>
+	<UpdatedBy></UpdatedBy>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

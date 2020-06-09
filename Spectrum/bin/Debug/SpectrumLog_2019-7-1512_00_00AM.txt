@@ -1,0 +1,89 @@
+----------------------------------------------------------
+
+------------------ Spectrum Log  -------------------------
+
+Date : 2019-7-15 Time:07:35 PM 
+
+SiteCode: SUB0001 
+
+Terminal ID: T002 
+
+User Name : admin 
+
+----------------------------------------------------------
+
+Date : 2019-7-15 Time:07:35 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 942
+
+----------------------------------------------------------
+
+Date : 2019-7-15 Time:07:35 PM 
+
+System.InvalidCastException: Overload resolution failed because no Public '=' can be called with these arguments:
+    'Public Shared Operator =(a As String, b As String) As Boolean':
+        Argument matching parameter 'a' cannot convert from 'DataRowView' to 'String'.
+   at Microsoft.VisualBasic.CompilerServices.OverloadResolution.ResolveOverloadedCall(String MethodName, List`1 Candidates, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, BindingFlags LookupFlags, Boolean ReportErrors, ResolutionFailure& Failure)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ResolveUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments, Boolean ReportErrors)
+   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeObjectUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(Object Left, Object Right, Boolean TextCompare)
+   at Spectrum.frmNPrinterTillMapping.CboDocType_SelectedIndexChanged(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmNPrinterTillMapping.vb:line 246
+
+----------------------------------------------------------
+
+Date : 2019-7-15 Time:07:35 PM 
+
+System.InvalidCastException: Overload resolution failed because no Public '=' can be called with these arguments:
+    'Public Shared Operator =(a As String, b As String) As Boolean':
+        Argument matching parameter 'a' cannot convert from 'DataRowView' to 'String'.
+   at Microsoft.VisualBasic.CompilerServices.OverloadResolution.ResolveOverloadedCall(String MethodName, List`1 Candidates, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, BindingFlags LookupFlags, Boolean ReportErrors, ResolutionFailure& Failure)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ResolveUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments, Boolean ReportErrors)
+   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeObjectUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(Object Left, Object Right, Boolean TextCompare)
+   at Spectrum.frmNPrinterTillMapping.CboDocType_SelectedIndexChanged(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmNPrinterTillMapping.vb:line 246
+
+----------------------------------------------------------
+
+Date : 2019-7-15 Time:07:37 PM 
+
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'G:\DayCloseReports\TaxInvoice_Laarousse Food15-07-2019_19-37-49.pdf'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at SpectrumPrint.clsCashMemoPrint.GenerateaxInvoiceBrandWisePrint(DataSet& DSTaxInvoiceDetails, String BillNo, String SiteCode, String DayCloseReportPath, String BrandName) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumPrint\clsCashMemoPrint.vb:line 6795
+
+----------------------------------------------------------
+
+Date : 2019-7-15 Time:07:37 PM 
+
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'G:\DayCloseReports\TaxInvoice_Amantran15-07-2019_19-37-50.pdf'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at SpectrumPrint.clsCashMemoPrint.GenerateaxInvoiceBrandWisePrint(DataSet& DSTaxInvoiceDetails, String BillNo, String SiteCode, String DayCloseReportPath, String BrandName) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumPrint\clsCashMemoPrint.vb:line 6795
+
+----------------------------------------------------------
+
+Date : 2019-7-15 Time:07:38 PM 
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Spectrum.frmBrandWiseSale.BuildDetails(DataTable dtMain) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmBrandWiseSale.vb:line 53
+
+----------------------------------------------------------
+
+Date : 2019-7-15 Time:07:38 PM 
+
+System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7128
+

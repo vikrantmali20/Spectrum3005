@@ -1,0 +1,1532 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SpectrumModelStoreContainer" CdmEntityContainer="SpectrumEntities">
+    <EntitySetMapping Name="MstSupplier">
+      <EntityTypeMapping TypeName="SpectrumModel.MstSupplier">
+        <MappingFragment StoreEntitySet="MstSupplier">
+          <ScalarProperty Name="isVisibleForGRNWithoutDoc" ColumnName="isVisibleForGRNWithoutDoc" />
+          <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
+          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+          <ScalarProperty Name="address1" ColumnName="address1" />
+          <ScalarProperty Name="address2" ColumnName="address2" />
+          <ScalarProperty Name="address3" ColumnName="address3" />
+          <ScalarProperty Name="address4" ColumnName="address4" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="StateCode" ColumnName="StateCode" />
+          <ScalarProperty Name="CityCode" ColumnName="CityCode" />
+          <ScalarProperty Name="TelephoneNo" ColumnName="TelephoneNo" />
+          <ScalarProperty Name="FaxNo" ColumnName="FaxNo" />
+          <ScalarProperty Name="TelexNo" ColumnName="TelexNo" />
+          <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+          <ScalarProperty Name="LocalSalesTaxNo" ColumnName="LocalSalesTaxNo" />
+          <ScalarProperty Name="CentralSalesTaxNo" ColumnName="CentralSalesTaxNo" />
+          <ScalarProperty Name="LocalSalesTaxDate" ColumnName="LocalSalesTaxDate" />
+          <ScalarProperty Name="CentralSalesTaxDate" ColumnName="CentralSalesTaxDate" />
+          <ScalarProperty Name="MinMargin" ColumnName="MinMargin" />
+          <ScalarProperty Name="PaymentMethod" ColumnName="PaymentMethod" />
+          <ScalarProperty Name="ShipmentMethod" ColumnName="ShipmentMethod" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+          <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+          <ScalarProperty Name="LanguageCode" ColumnName="LanguageCode" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="DeliveryDays" ColumnName="DeliveryDays" />
+          <ScalarProperty Name="PaymentDays" ColumnName="PaymentDays" />
+          <ScalarProperty Name="TINNo" ColumnName="TINNo" />
+          <ScalarProperty Name="PANNo" ColumnName="PANNo" />
+          <ScalarProperty Name="ServiceTaxRegNo" ColumnName="ServiceTaxRegNo" />
+          <ScalarProperty Name="VendorPostingGroup" ColumnName="VendorPostingGroup" />
+          <ScalarProperty Name="GenBusPostingGroup" ColumnName="GenBusPostingGroup" />
+          <ScalarProperty Name="isActive" ColumnName="isActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstTax">
+      <EntityTypeMapping TypeName="SpectrumModel.MstTax">
+        <MappingFragment StoreEntitySet="MstTax">
+          <ScalarProperty Name="InterStateTax" ColumnName="InterStateTax" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="TaxName" ColumnName="TaxName" />
+          <ScalarProperty Name="TaxSeqProfile" ColumnName="TaxSeqProfile" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Inclusive" ColumnName="Inclusive" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="TaxType" ColumnName="TaxType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstTender">
+      <EntityTypeMapping TypeName="SpectrumModel.MstTender">
+        <MappingFragment StoreEntitySet="MstTender">
+          <ScalarProperty Name="IsVisible" ColumnName="IsVisible" />
+          <ScalarProperty Name="TenderHeadCode" ColumnName="TenderHeadCode" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+          <ScalarProperty Name="TenderHeadName" ColumnName="TenderHeadName" />
+          <ScalarProperty Name="TenderType" ColumnName="TenderType" />
+          <ScalarProperty Name="Positive_Negative" ColumnName="Positive_Negative" />
+          <ScalarProperty Name="MaxNo" ColumnName="MaxNo" />
+          <ScalarProperty Name="MaxValue" ColumnName="MaxValue" />
+          <ScalarProperty Name="MinBillValue" ColumnName="MinBillValue" />
+          <ScalarProperty Name="DefaultValue" ColumnName="DefaultValue" />
+          <ScalarProperty Name="ProgramId" ColumnName="ProgramId" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstTenderType">
+      <EntityTypeMapping TypeName="SpectrumModel.MstTenderType">
+        <MappingFragment StoreEntitySet="MstTenderType">
+          <ScalarProperty Name="TenderType" ColumnName="TenderType" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstAreaCode">
+      <EntityTypeMapping TypeName="SpectrumModel.MstAreaCode">
+        <MappingFragment StoreEntitySet="MstAreaCode">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="ParentCode" ColumnName="ParentCode" />
+          <ScalarProperty Name="AreaType" ColumnName="AreaType" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="AreaCode" ColumnName="AreaCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GeneralCodeMst">
+      <EntityTypeMapping TypeName="SpectrumModel.GeneralCodeMst">
+        <MappingFragment StoreEntitySet="GeneralCodeMst">
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+          <ScalarProperty Name="UpdateAt" ColumnName="UpdateAt" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Update_By" ColumnName="Update_By" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="IsSysParameter" ColumnName="IsSysParameter" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="LongDesc" ColumnName="LongDesc" />
+          <ScalarProperty Name="ShortDesc" ColumnName="ShortDesc" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="CodeType" ColumnName="CodeType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GLNoRangeObjects">
+      <EntityTypeMapping TypeName="SpectrumModel.GLNoRangeObjects">
+        <MappingFragment StoreEntitySet="GLNoRangeObjects">
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CurrentNo" ColumnName="CurrentNo" />
+          <ScalarProperty Name="Incrementby" ColumnName="Incrementby" />
+          <ScalarProperty Name="MaxNumber" ColumnName="MaxNumber" />
+          <ScalarProperty Name="MinNumber" ColumnName="MinNumber" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+          <ScalarProperty Name="InternalOrExternal" ColumnName="InternalOrExternal" />
+          <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+          <ScalarProperty Name="ObjectTypeId" ColumnName="ObjectTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArticleTreeNodeMap">
+      <EntityTypeMapping TypeName="SpectrumModel.ArticleTreeNodeMap">
+        <MappingFragment StoreEntitySet="ArticleTreeNodeMap">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="ToleranceValue" ColumnName="ToleranceValue" />
+          <ScalarProperty Name="Treecode" ColumnName="Treecode" />
+          <ScalarProperty Name="ParentNodecode" ColumnName="ParentNodecode" />
+          <ScalarProperty Name="Nodecode" ColumnName="Nodecode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstArticleNode">
+      <EntityTypeMapping TypeName="SpectrumModel.MstArticleNode">
+        <MappingFragment StoreEntitySet="MstArticleNode">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="LevelCode" ColumnName="LevelCode" />
+          <ScalarProperty Name="ISThisLastNode" ColumnName="ISThisLastNode" />
+          <ScalarProperty Name="Treecode" ColumnName="Treecode" />
+          <ScalarProperty Name="NodeName" ColumnName="NodeName" />
+          <ScalarProperty Name="Nodecode" ColumnName="Nodecode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstArticleType">
+      <EntityTypeMapping TypeName="SpectrumModel.MstArticleType">
+        <MappingFragment StoreEntitySet="MstArticleType">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="ArticalTypeName" ColumnName="ArticalTypeName" />
+          <ScalarProperty Name="ArticalTypeCode" ColumnName="ArticalTypeCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstUoM">
+      <EntityTypeMapping TypeName="SpectrumModel.MstUoM">
+        <MappingFragment StoreEntitySet="MstUoM">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="UOMCode" ColumnName="UOMCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Brand">
+      <EntityTypeMapping TypeName="SpectrumModel.Brand">
+        <MappingFragment StoreEntitySet="Brand">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="ManufacturerCode" ColumnName="ManufacturerCode" />
+          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
+          <ScalarProperty Name="BrandCode" ColumnName="BrandCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Manufacturer">
+      <EntityTypeMapping TypeName="SpectrumModel.Manufacturer">
+        <MappingFragment StoreEntitySet="Manufacturer">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="ManufacturerName" ColumnName="ManufacturerName" />
+          <ScalarProperty Name="ManufacturerCode" ColumnName="ManufacturerCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CharacteristicsProfile">
+      <EntityTypeMapping TypeName="SpectrumModel.CharacteristicsProfile">
+        <MappingFragment StoreEntitySet="CharacteristicsProfile">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="CharCode" ColumnName="CharCode" />
+          <ScalarProperty Name="CharProfileCode" ColumnName="CharProfileCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CharacteristicsValue">
+      <EntityTypeMapping TypeName="SpectrumModel.CharacteristicsValue">
+        <MappingFragment StoreEntitySet="CharacteristicsValue">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="CharValue" ColumnName="CharValue" />
+          <ScalarProperty Name="CharCode" ColumnName="CharCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstCharacteristics">
+      <EntityTypeMapping TypeName="SpectrumModel.MstCharacteristics">
+        <MappingFragment StoreEntitySet="MstCharacteristics">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="CharType" ColumnName="CharType" />
+          <ScalarProperty Name="CharName" ColumnName="CharName" />
+          <ScalarProperty Name="CharCode" ColumnName="CharCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstCharacteristicsProfile">
+      <EntityTypeMapping TypeName="SpectrumModel.MstCharacteristicsProfile">
+        <MappingFragment StoreEntitySet="MstCharacteristicsProfile">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="ProfileName" ColumnName="ProfileName" />
+          <ScalarProperty Name="ProfileCode" ColumnName="ProfileCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArticleBatchBinStockBalances">
+      <EntityTypeMapping TypeName="SpectrumModel.ArticleBatchBinStockBalances">
+        <MappingFragment StoreEntitySet="ArticleBatchBinStockBalances">
+          <ScalarProperty Name="NextAvailableDate" ColumnName="NextAvailableDate" />
+          <ScalarProperty Name="StockStatus" ColumnName="StockStatus" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="TotalARSQty" ColumnName="TotalARSQty" />
+          <ScalarProperty Name="TotalSaleableQty" ColumnName="TotalSaleableQty" />
+          <ScalarProperty Name="TotalVirtualNonSaleableQty" ColumnName="TotalVirtualNonSaleableQty" />
+          <ScalarProperty Name="TotalPhysicalNonSaleableQty" ColumnName="TotalPhysicalNonSaleableQty" />
+          <ScalarProperty Name="TotalPhysicalSaleableQty" ColumnName="TotalPhysicalSaleableQty" />
+          <ScalarProperty Name="NonSaleableQty" ColumnName="NonSaleableQty" />
+          <ScalarProperty Name="InTrasnsitQty" ColumnName="InTrasnsitQty" />
+          <ScalarProperty Name="OnOrderQty" ColumnName="OnOrderQty" />
+          <ScalarProperty Name="DamagedQty" ColumnName="DamagedQty" />
+          <ScalarProperty Name="ReservedQty" ColumnName="ReservedQty" />
+          <ScalarProperty Name="PhysicalQty" ColumnName="PhysicalQty" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="BatchBarcode" ColumnName="BatchBarcode" />
+          <ScalarProperty Name="EAN" ColumnName="EAN" />
+          <ScalarProperty Name="ArticleCode" ColumnName="ArticleCode" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArticleMAP">
+      <EntityTypeMapping TypeName="SpectrumModel.ArticleMAP">
+        <MappingFragment StoreEntitySet="ArticleMAP">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="CumulativeRecQty" ColumnName="CumulativeRecQty" />
+          <ScalarProperty Name="RecQty" ColumnName="RecQty" />
+          <ScalarProperty Name="MAP" ColumnName="MAP" />
+          <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+          <ScalarProperty Name="EAN" ColumnName="EAN" />
+          <ScalarProperty Name="ArticleCode" ColumnName="ArticleCode" />
+          <ScalarProperty Name="Sitecode" ColumnName="Sitecode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArticleMatrix">
+      <EntityTypeMapping TypeName="SpectrumModel.ArticleMatrix">
+        <MappingFragment StoreEntitySet="ArticleMatrix">
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="ProfileCode" ColumnName="ProfileCode" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="CharType" ColumnName="CharType" />
+          <ScalarProperty Name="CharValue" ColumnName="CharValue" />
+          <ScalarProperty Name="CharCode" ColumnName="CharCode" />
+          <ScalarProperty Name="EanCode" ColumnName="EanCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArticleNodeMap">
+      <EntityTypeMapping TypeName="SpectrumModel.ArticleNodeMap">
+        <MappingFragment StoreEntitySet="ArticleNodeMap">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="LastNodeCode" ColumnName="LastNodeCode" />
+          <ScalarProperty Name="TreeCode" ColumnName="TreeCode" />
+          <ScalarProperty Name="ArticleCode" ColumnName="ArticleCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArticleReplenishment">
+      <EntityTypeMapping TypeName="SpectrumModel.ArticleReplenishment">
+        <MappingFragment StoreEntitySet="ArticleReplenishment">
+          <ScalarProperty Name="RequestingSiteCode" ColumnName="RequestingSiteCode" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="EstimatedSale" ColumnName="EstimatedSale" />
+          <ScalarProperty Name="StockCover" ColumnName="StockCover" />
+          <ScalarProperty Name="AverageSaleDuration" ColumnName="AverageSaleDuration" />
+          <ScalarProperty Name="ReOrderPoint" ColumnName="ReOrderPoint" />
+          <ScalarProperty Name="SafetyStockQty" ColumnName="SafetyStockQty" />
+          <ScalarProperty Name="StockOnOrder" ColumnName="StockOnOrder" />
+          <ScalarProperty Name="ReplenishmentTypeCode" ColumnName="ReplenishmentTypeCode" />
+          <ScalarProperty Name="ArticleCode" ColumnName="ArticleCode" />
+          <ScalarProperty Name="EAN" ColumnName="EAN" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArticleUOM">
+      <EntityTypeMapping TypeName="SpectrumModel.ArticleUOM">
+        <MappingFragment StoreEntitySet="ArticleUOM">
+          <ScalarProperty Name="defaultUom" ColumnName="defaultUom" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedAt" ColumnName="UpdatedAt" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsDivisor" ColumnName="IsDivisor" />
+          <ScalarProperty Name="Divisor" ColumnName="Divisor" />
+          <ScalarProperty Name="UOMCode" ColumnName="UOMCode" />
+          <ScalarProperty Name="ArticleCode" ColumnName="ArticleCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstArticleImage">
+      <EntityTypeMapping TypeName="SpectrumModel.MstArticleImage">
+        <MappingFragment StoreEntitySet="MstArticleImage">
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="ArticleImage" ColumnName="ArticleImage" />
+          <ScalarProperty Name="ArticleCode" ColumnName="ArticleCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstArticleKit">
+      <EntityTypeMapping TypeName="SpectrumModel.MstArticleKit">
+        <MappingFragment StoreEntitySet="MstArticleKit">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="SaleUnitofMeasure" ColumnName="SaleUnitofMeasure" />
+          <ScalarProperty Name="SellingPrice" ColumnName="SellingPrice" />
+          <ScalarProperty Name="KitArticleCode" ColumnName="KitArticleCode" />
+          <ScalarProperty Name="ArticleCode" ColumnName="ArticleCode" />
+          <ScalarProperty Name="Ean" ColumnName="Ean" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstEAN">
+      <EntityTypeMapping TypeName="SpectrumModel.MstEAN">
+        <MappingFragment StoreEntitySet="MstEAN">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="DefaultEAN" ColumnName="DefaultEAN" />
+          <ScalarProperty Name="UOMTypeCode" ColumnName="UOMTypeCode" />
+          <ScalarProperty Name="UOMCode" ColumnName="UOMCode" />
+          <ScalarProperty Name="Discription" ColumnName="Discription" />
+          <ScalarProperty Name="EAN" ColumnName="EAN" />
+          <ScalarProperty Name="ArticleCode" ColumnName="ArticleCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseInfoRecord">
+      <EntityTypeMapping TypeName="SpectrumModel.PurchaseInfoRecord">
+        <MappingFragment StoreEntitySet="PurchaseInfoRecord">
+          <ScalarProperty Name="calculatedRate" ColumnName="calculatedRate" />
+          <ScalarProperty Name="dealerMargin" ColumnName="dealerMargin" />
+          <ScalarProperty Name="distributorMargin" ColumnName="distributorMargin" />
+          <ScalarProperty Name="MAP" ColumnName="MAP" />
+          <ScalarProperty Name="SRNO" ColumnName="SRNO" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="FreezeOB" ColumnName="FreezeOB" />
+          <ScalarProperty Name="FreezeIN" ColumnName="FreezeIN" />
+          <ScalarProperty Name="FreezeSR" ColumnName="FreezeSR" />
+          <ScalarProperty Name="FreezeSB" ColumnName="FreezeSB" />
+          <ScalarProperty Name="isARSAllowed" ColumnName="isARSAllowed" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="MRP" ColumnName="MRP" />
+          <ScalarProperty Name="CPLocalCurr" ColumnName="CPLocalCurr" />
+          <ScalarProperty Name="CPBaseCurr" ColumnName="CPBaseCurr" />
+          <ScalarProperty Name="EAN" ColumnName="EAN" />
+          <ScalarProperty Name="ArticleCode" ColumnName="ArticleCode" />
+          <ScalarProperty Name="IsDefaultSupplier" ColumnName="IsDefaultSupplier" />
+          <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesInfoRecord">
+      <EntityTypeMapping TypeName="SpectrumModel.SalesInfoRecord">
+        <MappingFragment StoreEntitySet="SalesInfoRecord">
+          <ScalarProperty Name="SuggestedSalesPrice" ColumnName="SuggestedSalesPrice" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="FreezeOB" ColumnName="FreezeOB" />
+          <ScalarProperty Name="FreezeIN" ColumnName="FreezeIN" />
+          <ScalarProperty Name="FreezeSR" ColumnName="FreezeSR" />
+          <ScalarProperty Name="FreezeSB" ColumnName="FreezeSB" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="SellingPrice" ColumnName="SellingPrice" />
+          <ScalarProperty Name="EAN" ColumnName="EAN" />
+          <ScalarProperty Name="SrNo" ColumnName="SrNo" />
+          <ScalarProperty Name="ArticleCode" ColumnName="ArticleCode" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArticleStockBalances">
+      <EntityTypeMapping TypeName="SpectrumModel.ArticleStockBalances">
+        <MappingFragment StoreEntitySet="ArticleStockBalances">
+          <ScalarProperty Name="NextAvailableDate" ColumnName="NextAvailableDate" />
+          <ScalarProperty Name="StockStatus" ColumnName="StockStatus" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="TotalARSQty" ColumnName="TotalARSQty" />
+          <ScalarProperty Name="TotalSaleableQty" ColumnName="TotalSaleableQty" />
+          <ScalarProperty Name="TotalVirtualNonSaleableQty" ColumnName="TotalVirtualNonSaleableQty" />
+          <ScalarProperty Name="TotalPhysicalNonSaleableQty" ColumnName="TotalPhysicalNonSaleableQty" />
+          <ScalarProperty Name="TotalPhysicalSaleableQty" ColumnName="TotalPhysicalSaleableQty" />
+          <ScalarProperty Name="NonSaleableQty" ColumnName="NonSaleableQty" />
+          <ScalarProperty Name="InTrasnsitQty" ColumnName="InTrasnsitQty" />
+          <ScalarProperty Name="OnOrderQty" ColumnName="OnOrderQty" />
+          <ScalarProperty Name="DamagedQty" ColumnName="DamagedQty" />
+          <ScalarProperty Name="ReservedQty" ColumnName="ReservedQty" />
+          <ScalarProperty Name="PhysicalQty" ColumnName="PhysicalQty" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="EAN" ColumnName="EAN" />
+          <ScalarProperty Name="ArticleCode" ColumnName="ArticleCode" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Invoice">
+      <EntityTypeMapping TypeName="SpectrumModel.Invoice">
+        <MappingFragment StoreEntitySet="Invoice">
+          <ScalarProperty Name="LastSynchedTimeStamp" ColumnName="LastSynchedTimeStamp" />
+          <ScalarProperty Name="PhyInvReceived" ColumnName="PhyInvReceived" />
+          <ScalarProperty Name="InvoiceDiscount" ColumnName="InvoiceDiscount" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="GRNNumber" ColumnName="GRNNumber" />
+          <ScalarProperty Name="PONumber" ColumnName="PONumber" />
+          <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
+          <ScalarProperty Name="PayTo" ColumnName="PayTo" />
+          <ScalarProperty Name="PaidAmount" ColumnName="PaidAmount" />
+          <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+          <ScalarProperty Name="InvoiceAmount" ColumnName="InvoiceAmount" />
+          <ScalarProperty Name="InvoiceType" ColumnName="InvoiceType" />
+          <ScalarProperty Name="InvoiceNumber" ColumnName="InvoiceNumber" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+          <ScalarProperty Name="InvoiceCode" ColumnName="InvoiceCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderHdr">
+      <EntityTypeMapping TypeName="SpectrumModel.OrderHdr">
+        <MappingFragment StoreEntitySet="OrderHdr">
+          <ScalarProperty Name="vadilalBillNo" ColumnName="vadilalBillNo" />
+          <ScalarProperty Name="Row_ID" ColumnName="Row_ID" />
+          <ScalarProperty Name="LastSynchedTimeStamp" ColumnName="LastSynchedTimeStamp" />
+          <ScalarProperty Name="DocumentTaxAmount" ColumnName="DocumentTaxAmount" />
+          <ScalarProperty Name="STRType" ColumnName="STRType" />
+          <ScalarProperty Name="ReferenceNo" ColumnName="ReferenceNo" />
+          <ScalarProperty Name="ValidityDate" ColumnName="ValidityDate" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="DeliveryChallanNumber" ColumnName="DeliveryChallanNumber" />
+          <ScalarProperty Name="ClosingRemarks" ColumnName="ClosingRemarks" />
+          <ScalarProperty Name="pickpackNumber" ColumnName="pickpackNumber" />
+          <ScalarProperty Name="driverDtls" ColumnName="driverDtls" />
+          <ScalarProperty Name="LocalNetValue" ColumnName="LocalNetValue" />
+          <ScalarProperty Name="ExchangeRate" ColumnName="ExchangeRate" />
+          <ScalarProperty Name="PakingCharges" ColumnName="PakingCharges" />
+          <ScalarProperty Name="OtherCharges" ColumnName="OtherCharges" />
+          <ScalarProperty Name="TransportCharges" ColumnName="TransportCharges" />
+          <ScalarProperty Name="WarehouseCharges" ColumnName="WarehouseCharges" />
+          <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="Quarter" ColumnName="Quarter" />
+          <ScalarProperty Name="Day" ColumnName="Day" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="StrategyStep" ColumnName="StrategyStep" />
+          <ScalarProperty Name="TaskInstanceIDCCE" ColumnName="TaskInstanceIDCCE" />
+          <ScalarProperty Name="ProcessInstanceIDCCE" ColumnName="ProcessInstanceIDCCE" />
+          <ScalarProperty Name="TaskInstanceID" ColumnName="TaskInstanceID" />
+          <ScalarProperty Name="ProcessInstanceID" ColumnName="ProcessInstanceID" />
+          <ScalarProperty Name="NextApproverId" ColumnName="NextApproverId" />
+          <ScalarProperty Name="StrategyCode" ColumnName="StrategyCode" />
+          <ScalarProperty Name="YourRef" ColumnName="YourRef" />
+          <ScalarProperty Name="SalesOrderRef" ColumnName="SalesOrderRef" />
+          <ScalarProperty Name="VehicleDtls" ColumnName="VehicleDtls" />
+          <ScalarProperty Name="WayBillDate" ColumnName="WayBillDate" />
+          <ScalarProperty Name="WayBillNo" ColumnName="WayBillNo" />
+          <ScalarProperty Name="ParentOrderNo" ColumnName="ParentOrderNo" />
+          <ScalarProperty Name="DocApprovalID" ColumnName="DocApprovalID" />
+          <ScalarProperty Name="Transporter" ColumnName="Transporter" />
+          <ScalarProperty Name="ClosedDate" ColumnName="ClosedDate" />
+          <ScalarProperty Name="AmmendmentNo" ColumnName="AmmendmentNo" />
+          <ScalarProperty Name="NextApprovalAt" ColumnName="NextApprovalAt" />
+          <ScalarProperty Name="ApprovalLevel" ColumnName="ApprovalLevel" />
+          <ScalarProperty Name="ApprovedLevel" ColumnName="ApprovedLevel" />
+          <ScalarProperty Name="ApprovedDate" ColumnName="ApprovedDate" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="ReturnReasonCode" ColumnName="ReturnReasonCode" />
+          <ScalarProperty Name="IsFreezed" ColumnName="IsFreezed" />
+          <ScalarProperty Name="IsClosed" ColumnName="IsClosed" />
+          <ScalarProperty Name="DocGrossValue" ColumnName="DocGrossValue" />
+          <ScalarProperty Name="DocNetValue" ColumnName="DocNetValue" />
+          <ScalarProperty Name="AdditionalPaymentTerms" ColumnName="AdditionalPaymentTerms" />
+          <ScalarProperty Name="AdditionalTermsNConditions" ColumnName="AdditionalTermsNConditions" />
+          <ScalarProperty Name="PaymentAfterDelDays" ColumnName="PaymentAfterDelDays" />
+          <ScalarProperty Name="ExpectedDeliveryDt" ColumnName="ExpectedDeliveryDt" />
+          <ScalarProperty Name="DeliverySiteCode" ColumnName="DeliverySiteCode" />
+          <ScalarProperty Name="PurchaseGroupCode" ColumnName="PurchaseGroupCode" />
+          <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
+          <ScalarProperty Name="DocDate" ColumnName="DocDate" />
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+          <ScalarProperty Name="DocumentNumber" ColumnName="DocumentNumber" />
+          <ScalarProperty Name="FinYear" ColumnName="FinYear" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SiteArticleTaxMapping">
+      <EntityTypeMapping TypeName="SpectrumModel.SiteArticleTaxMapping">
+        <MappingFragment StoreEntitySet="SiteArticleTaxMapping">
+          <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="TaxName" ColumnName="TaxName" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="ArticleCode" ColumnName="ArticleCode" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockAdjustment">
+      <EntityTypeMapping TypeName="SpectrumModel.StockAdjustment">
+        <MappingFragment StoreEntitySet="StockAdjustment">
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="OldQty" ColumnName="OldQty" />
+          <ScalarProperty Name="BaseQty" ColumnName="BaseQty" />
+          <ScalarProperty Name="BaseUOM" ColumnName="BaseUOM" />
+          <ScalarProperty Name="ToBin" ColumnName="ToBin" />
+          <ScalarProperty Name="FromBin" ColumnName="FromBin" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="ToLoc" ColumnName="ToLoc" />
+          <ScalarProperty Name="FromLOc" ColumnName="FromLOc" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="EAN" ColumnName="EAN" />
+          <ScalarProperty Name="ArticleCode" ColumnName="ArticleCode" />
+          <ScalarProperty Name="TrnDate" ColumnName="TrnDate" />
+          <ScalarProperty Name="FinYear" ColumnName="FinYear" />
+          <ScalarProperty Name="TrnNo" ColumnName="TrnNo" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderDtl">
+      <EntityTypeMapping TypeName="SpectrumModel.OrderDtl">
+        <MappingFragment StoreEntitySet="OrderDtl">
+          <ScalarProperty Name="calculatedRate" ColumnName="calculatedRate" />
+          <ScalarProperty Name="dealerMargin" ColumnName="dealerMargin" />
+          <ScalarProperty Name="distributorMargin" ColumnName="distributorMargin" />
+          <ScalarProperty Name="Row_ID" ColumnName="Row_ID" />
+          <ScalarProperty Name="ReturnReasonCode" ColumnName="ReturnReasonCode" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="LastSynchedTimeStamp" ColumnName="LastSynchedTimeStamp" />
+          <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+          <ScalarProperty Name="LandingCostPrice" ColumnName="LandingCostPrice" />
+          <ScalarProperty Name="ItemTaxAmt" ColumnName="ItemTaxAmt" />
+          <ScalarProperty Name="LocalNetCostPrice" ColumnName="LocalNetCostPrice" />
+          <ScalarProperty Name="LocalTaxAmount" ColumnName="LocalTaxAmount" />
+          <ScalarProperty Name="LocalDiscount" ColumnName="LocalDiscount" />
+          <ScalarProperty Name="LocalCostPrice" ColumnName="LocalCostPrice" />
+          <ScalarProperty Name="BaseUomQty" ColumnName="BaseUomQty" />
+          <ScalarProperty Name="BaseUom" ColumnName="BaseUom" />
+          <ScalarProperty Name="RequestedQty" ColumnName="RequestedQty" />
+          <ScalarProperty Name="RequestedArticle" ColumnName="RequestedArticle" />
+          <ScalarProperty Name="dayOpenDate" ColumnName="dayOpenDate" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="InboundQty" ColumnName="InboundQty" />
+          <ScalarProperty Name="DocValue" ColumnName="DocValue" />
+          <ScalarProperty Name="AdditionalChargeRate" ColumnName="AdditionalChargeRate" />
+          <ScalarProperty Name="DiscountAmount" ColumnName="DiscountAmount" />
+          <ScalarProperty Name="AdditionalChargeAmt" ColumnName="AdditionalChargeAmt" />
+          <ScalarProperty Name="PurchaseTaxRate" ColumnName="PurchaseTaxRate" />
+          <ScalarProperty Name="PurchaseTaxAmt" ColumnName="PurchaseTaxAmt" />
+          <ScalarProperty Name="ExciseDutyRate" ColumnName="ExciseDutyRate" />
+          <ScalarProperty Name="ExciseDutyAmt" ColumnName="ExciseDutyAmt" />
+          <ScalarProperty Name="NetCostPrice" ColumnName="NetCostPrice" />
+          <ScalarProperty Name="CostPrice" ColumnName="CostPrice" />
+          <ScalarProperty Name="MRP" ColumnName="MRP" />
+          <ScalarProperty Name="AllocationRule" ColumnName="AllocationRule" />
+          <ScalarProperty Name="SaleOrderNumber" ColumnName="SaleOrderNumber" />
+          <ScalarProperty Name="BirthListId" ColumnName="BirthListId" />
+          <ScalarProperty Name="PoLineNbr" ColumnName="PoLineNbr" />
+          <ScalarProperty Name="PoSiteCode" ColumnName="PoSiteCode" />
+          <ScalarProperty Name="PONo" ColumnName="PONo" />
+          <ScalarProperty Name="RefDocumentNo" ColumnName="RefDocumentNo" />
+          <ScalarProperty Name="RefDocument" ColumnName="RefDocument" />
+          <ScalarProperty Name="PurchaseGroupCode" ColumnName="PurchaseGroupCode" />
+          <ScalarProperty Name="DeliveryCompleted" ColumnName="DeliveryCompleted" />
+          <ScalarProperty Name="DeliveredQty" ColumnName="DeliveredQty" />
+          <ScalarProperty Name="OpenQty" ColumnName="OpenQty" />
+          <ScalarProperty Name="UnitofMeasure" ColumnName="UnitofMeasure" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="LineNumber" ColumnName="LineNumber" />
+          <ScalarProperty Name="EAN" ColumnName="EAN" />
+          <ScalarProperty Name="ArticleCode" ColumnName="ArticleCode" />
+          <ScalarProperty Name="DocumentNumber" ColumnName="DocumentNumber" />
+          <ScalarProperty Name="FinYear" ColumnName="FinYear" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuthUsers">
+      <EntityTypeMapping TypeName="SpectrumModel.AuthUsers">
+        <MappingFragment StoreEntitySet="AuthUsers">
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="issalesperson" ColumnName="issalesperson" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="PasswordExpiredon" ColumnName="PasswordExpiredon" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="PasswordChangeNextDate" ColumnName="PasswordChangeNextDate" />
+          <ScalarProperty Name="PasswordUpdateDate" ColumnName="PasswordUpdateDate" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IDNumber" ColumnName="IDNumber" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstCLPProgram">
+      <EntityTypeMapping TypeName="SpectrumModel.MstCLPProgram">
+        <MappingFragment StoreEntitySet="MstCLPProgram">
+          <ScalarProperty Name="IsMinPointsForRedemption" ColumnName="IsMinPointsForRedemption" />
+          <ScalarProperty Name="ValueMinPointsForRedemption" ColumnName="ValueMinPointsForRedemption" />
+          <ScalarProperty Name="IsGVAgainstLoyalty" ColumnName="IsGVAgainstLoyalty" />
+          <ScalarProperty Name="PosPasskeyValidity" ColumnName="PosPasskeyValidity" />
+          <ScalarProperty Name="IsPOSPasskey" ColumnName="IsPOSPasskey" />
+          <ScalarProperty Name="OnlinePasskeyValidity" ColumnName="OnlinePasskeyValidity" />
+          <ScalarProperty Name="IsOnlinePasskey" ColumnName="IsOnlinePasskey" />
+          <ScalarProperty Name="ValueDayLimtRedemption" ColumnName="ValueDayLimtRedemption" />
+          <ScalarProperty Name="IsDayLimtOnRedemption" ColumnName="IsDayLimtOnRedemption" />
+          <ScalarProperty Name="IsRedemptionOnEnrollment" ColumnName="IsRedemptionOnEnrollment" />
+          <ScalarProperty Name="IsJoiningRewardOnEnrollment" ColumnName="IsJoiningRewardOnEnrollment" />
+          <ScalarProperty Name="ValueJoiningReward" ColumnName="ValueJoiningReward" />
+          <ScalarProperty Name="IsJoiningReward" ColumnName="IsJoiningReward" />
+          <ScalarProperty Name="PointsExpiryDays" ColumnName="PointsExpiryDays" />
+          <ScalarProperty Name="IsPointsExpiry" ColumnName="IsPointsExpiry" />
+          <ScalarProperty Name="DeactiveInactiveAccountDays" ColumnName="DeactiveInactiveAccountDays" />
+          <ScalarProperty Name="IsDeactiveInactiveAccount" ColumnName="IsDeactiveInactiveAccount" />
+          <ScalarProperty Name="IsUpgradationAmt" ColumnName="IsUpgradationAmt" />
+          <ScalarProperty Name="IsUpgradationApplicable" ColumnName="IsUpgradationApplicable" />
+          <ScalarProperty Name="ApplicableOnPromotion" ColumnName="ApplicableOnPromotion" />
+          <ScalarProperty Name="AccWhenRed" ColumnName="AccWhenRed" />
+          <ScalarProperty Name="OnlyAtCreatedSite" ColumnName="OnlyAtCreatedSite" />
+          <ScalarProperty Name="MaxLimitOnRed" ColumnName="MaxLimitOnRed" />
+          <ScalarProperty Name="MaxAccumulationLimit" ColumnName="MaxAccumulationLimit" />
+          <ScalarProperty Name="MaxLimitOnAcc" ColumnName="MaxLimitOnAcc" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="ArticleCode" ColumnName="ArticleCode" />
+          <ScalarProperty Name="IsAdvanceSaleAllowed" ColumnName="IsAdvanceSaleAllowed" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="CardManageByHO" ColumnName="CardManageByHO" />
+          <ScalarProperty Name="PhysicalCard" ColumnName="PhysicalCard" />
+          <ScalarProperty Name="RedemptionType" ColumnName="RedemptionType" />
+          <ScalarProperty Name="AccumlationType" ColumnName="AccumlationType" />
+          <ScalarProperty Name="CLPProgramName" ColumnName="CLPProgramName" />
+          <ScalarProperty Name="CLPProgramId" ColumnName="CLPProgramId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstVoucher">
+      <EntityTypeMapping TypeName="SpectrumModel.MstVoucher">
+        <MappingFragment StoreEntitySet="MstVoucher">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="IsAdvanceSaleAllowed" ColumnName="IsAdvanceSaleAllowed" />
+          <ScalarProperty Name="ExpiryAfterDays" ColumnName="ExpiryAfterDays" />
+          <ScalarProperty Name="DoesVoucherExpire" ColumnName="DoesVoucherExpire" />
+          <ScalarProperty Name="IsPrePrinted" ColumnName="IsPrePrinted" />
+          <ScalarProperty Name="allowAnyDeno" ColumnName="allowAnyDeno" />
+          <ScalarProperty Name="ArticleCode" ColumnName="ArticleCode" />
+          <ScalarProperty Name="VourcherType" ColumnName="VourcherType" />
+          <ScalarProperty Name="VoucherDesc" ColumnName="VoucherDesc" />
+          <ScalarProperty Name="VoucherCode" ColumnName="VoucherCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLPProgramSiteMap">
+      <EntityTypeMapping TypeName="SpectrumModel.CLPProgramSiteMap">
+        <MappingFragment StoreEntitySet="CLPProgramSiteMap">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="RecvCardfromVender" ColumnName="RecvCardfromVender" />
+          <ScalarProperty Name="RedemptionApplicable" ColumnName="RedemptionApplicable" />
+          <ScalarProperty Name="AccumlationApplicable" ColumnName="AccumlationApplicable" />
+          <ScalarProperty Name="Sitecode" ColumnName="Sitecode" />
+          <ScalarProperty Name="ClpProgramId" ColumnName="ClpProgramId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstRole">
+      <EntityTypeMapping TypeName="SpectrumModel.MstRole">
+        <MappingFragment StoreEntitySet="MstRole">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuthRoleTransactionMap">
+      <EntityTypeMapping TypeName="SpectrumModel.AuthRoleTransactionMap">
+        <MappingFragment StoreEntitySet="AuthRoleTransactionMap">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="AuthTransactionCode" ColumnName="AuthTransactionCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuthUserSiteRoleMap">
+      <EntityTypeMapping TypeName="SpectrumModel.AuthUserSiteRoleMap">
+        <MappingFragment StoreEntitySet="AuthUserSiteRoleMap">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="GRoleid" ColumnName="GRoleid" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuthUserSiteTransactionMap">
+      <EntityTypeMapping TypeName="SpectrumModel.AuthUserSiteTransactionMap">
+        <MappingFragment StoreEntitySet="AuthUserSiteTransactionMap">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="Rights" ColumnName="Rights" />
+          <ScalarProperty Name="AuthTransactionCode" ColumnName="AuthTransactionCode" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstSalesPerson">
+      <EntityTypeMapping TypeName="SpectrumModel.MstSalesPerson">
+        <MappingFragment StoreEntitySet="MstSalesPerson">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="SalesSection" ColumnName="SalesSection" />
+          <ScalarProperty Name="SalesArea" ColumnName="SalesArea" />
+          <ScalarProperty Name="SalesPersonFullName" ColumnName="SalesPersonFullName" />
+          <ScalarProperty Name="SalesPersonName" ColumnName="SalesPersonName" />
+          <ScalarProperty Name="Empcode" ColumnName="Empcode" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TaxSiteMapping">
+      <EntityTypeMapping TypeName="SpectrumModel.TaxSiteMapping">
+        <MappingFragment StoreEntitySet="TaxSiteMapping">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="updatedon" ColumnName="updatedon" />
+          <ScalarProperty Name="updatedby" ColumnName="updatedby" />
+          <ScalarProperty Name="updatedat" ColumnName="updatedat" />
+          <ScalarProperty Name="createdon" ColumnName="createdon" />
+          <ScalarProperty Name="createdby" ColumnName="createdby" />
+          <ScalarProperty Name="CreatedAT" ColumnName="CreatedAT" />
+          <ScalarProperty Name="Defaultsite" ColumnName="Defaultsite" />
+          <ScalarProperty Name="Sitecode" ColumnName="Sitecode" />
+          <ScalarProperty Name="Taxcode" ColumnName="Taxcode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstArticleTree">
+      <EntityTypeMapping TypeName="SpectrumModel.MstArticleTree">
+        <MappingFragment StoreEntitySet="MstArticleTree">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="TreeName" ColumnName="TreeName" />
+          <ScalarProperty Name="TreeCode" ColumnName="TreeCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstArticleTreeLevel">
+      <EntityTypeMapping TypeName="SpectrumModel.MstArticleTreeLevel">
+        <MappingFragment StoreEntitySet="MstArticleTreeLevel">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="LevelName" ColumnName="LevelName" />
+          <ScalarProperty Name="LevelCode" ColumnName="LevelCode" />
+          <ScalarProperty Name="TreeCode" ColumnName="TreeCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ManualPromotion">
+      <EntityTypeMapping TypeName="SpectrumModel.ManualPromotion">
+        <MappingFragment StoreEntitySet="ManualPromotion">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="OfferActive" ColumnName="OfferActive" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="FixedSelling" ColumnName="FixedSelling" />
+          <ScalarProperty Name="FixedPriceOff" ColumnName="FixedPriceOff" />
+          <ScalarProperty Name="DiscPer" ColumnName="DiscPer" />
+          <ScalarProperty Name="PromotionValue" ColumnName="PromotionValue" />
+          <ScalarProperty Name="PromotionName" ColumnName="PromotionName" />
+          <ScalarProperty Name="PromotionId" ColumnName="PromotionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PromotionSiteMap">
+      <EntityTypeMapping TypeName="SpectrumModel.PromotionSiteMap">
+        <MappingFragment StoreEntitySet="PromotionSiteMap">
+          <ScalarProperty Name="Sunday" ColumnName="Sunday" />
+          <ScalarProperty Name="Saturday" ColumnName="Saturday" />
+          <ScalarProperty Name="Friday" ColumnName="Friday" />
+          <ScalarProperty Name="Thursday" ColumnName="Thursday" />
+          <ScalarProperty Name="Wednesday" ColumnName="Wednesday" />
+          <ScalarProperty Name="Tuesday" ColumnName="Tuesday" />
+          <ScalarProperty Name="Monday" ColumnName="Monday" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+          <ScalarProperty Name="OfferNo" ColumnName="OfferNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstBusiness">
+      <EntityTypeMapping TypeName="SpectrumModel.MstBusiness">
+        <MappingFragment StoreEntitySet="MstBusiness">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="BusinessName" ColumnName="BusinessName" />
+          <ScalarProperty Name="BusinessCode" ColumnName="BusinessCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstCurrency">
+      <EntityTypeMapping TypeName="SpectrumModel.MstCurrency">
+        <MappingFragment StoreEntitySet="MstCurrency">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="UNRealisedLoss" ColumnName="UNRealisedLoss" />
+          <ScalarProperty Name="UNRealisedGain" ColumnName="UNRealisedGain" />
+          <ScalarProperty Name="RealisedLoss" ColumnName="RealisedLoss" />
+          <ScalarProperty Name="RealisedGain" ColumnName="RealisedGain" />
+          <ScalarProperty Name="EMUCurrency" ColumnName="EMUCurrency" />
+          <ScalarProperty Name="CurrencySymbol" ColumnName="CurrencySymbol" />
+          <ScalarProperty Name="CurrencyDescription" ColumnName="CurrencyDescription" />
+          <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstFinYear">
+      <EntityTypeMapping TypeName="SpectrumModel.MstFinYear">
+        <MappingFragment StoreEntitySet="MstFinYear">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="FinStatus" ColumnName="FinStatus" />
+          <ScalarProperty Name="ValidToDt" ColumnName="ValidToDt" />
+          <ScalarProperty Name="ValidFromDt" ColumnName="ValidFromDt" />
+          <ScalarProperty Name="FinYear" ColumnName="FinYear" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstLanguage">
+      <EntityTypeMapping TypeName="SpectrumModel.MstLanguage">
+        <MappingFragment StoreEntitySet="MstLanguage">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="Culture" ColumnName="Culture" />
+          <ScalarProperty Name="LanguageName" ColumnName="LanguageName" />
+          <ScalarProperty Name="LanguageCode" ColumnName="LanguageCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstSiteCurrancyMap">
+      <EntityTypeMapping TypeName="SpectrumModel.MstSiteCurrancyMap">
+        <MappingFragment StoreEntitySet="MstSiteCurrancyMap">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="LocalCurrancyCode" ColumnName="LocalCurrancyCode" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstSite">
+      <EntityTypeMapping TypeName="SpectrumModel.MstSite">
+        <MappingFragment StoreEntitySet="MstSite">
+          <ScalarProperty Name="dealerMargin" ColumnName="dealerMargin" />
+          <ScalarProperty Name="distributorMargin" ColumnName="distributorMargin" />
+          <ScalarProperty Name="IsRoomCreationAllowed" ColumnName="IsRoomCreationAllowed" />
+          <ScalarProperty Name="legacySiteCode" ColumnName="legacySiteCode" />
+          <ScalarProperty Name="isBatchApplicable" ColumnName="isBatchApplicable" />
+          <ScalarProperty Name="IsBinApplicable" ColumnName="IsBinApplicable" />
+          <ScalarProperty Name="SisUploadFlag" ColumnName="SisUploadFlag" />
+          <ScalarProperty Name="WarehouseCode" ColumnName="WarehouseCode" />
+          <ScalarProperty Name="IsWarehouseApplicable" ColumnName="IsWarehouseApplicable" />
+          <ScalarProperty Name="defaultean" ColumnName="defaultean" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="IsMAPApplicable" ColumnName="IsMAPApplicable" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="LocalCurrancyCode" ColumnName="LocalCurrancyCode" />
+          <ScalarProperty Name="IsSalesTaxApplicable" ColumnName="IsSalesTaxApplicable" />
+          <ScalarProperty Name="IsVATApplicable" ColumnName="IsVATApplicable" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsARSApplicable" ColumnName="IsARSApplicable" />
+          <ScalarProperty Name="SQFTArea" ColumnName="SQFTArea" />
+          <ScalarProperty Name="CentralSalesTaxDate" ColumnName="CentralSalesTaxDate" />
+          <ScalarProperty Name="LocalSalesTaxDate" ColumnName="LocalSalesTaxDate" />
+          <ScalarProperty Name="CentralSalesTaxNo" ColumnName="CentralSalesTaxNo" />
+          <ScalarProperty Name="LocalSalesTaxNo" ColumnName="LocalSalesTaxNo" />
+          <ScalarProperty Name="LanguageCode" ColumnName="LanguageCode" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+          <ScalarProperty Name="WebPageURL" ColumnName="WebPageURL" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="FaxNo" ColumnName="FaxNo" />
+          <ScalarProperty Name="SiteTelephone2" ColumnName="SiteTelephone2" />
+          <ScalarProperty Name="SiteTelephone1" ColumnName="SiteTelephone1" />
+          <ScalarProperty Name="SiteStdCode" ColumnName="SiteStdCode" />
+          <ScalarProperty Name="StateCode" ColumnName="StateCode" />
+          <ScalarProperty Name="CityCode" ColumnName="CityCode" />
+          <ScalarProperty Name="SitePinCode" ColumnName="SitePinCode" />
+          <ScalarProperty Name="SiteAddressLn3" ColumnName="SiteAddressLn3" />
+          <ScalarProperty Name="SiteAddressLn2" ColumnName="SiteAddressLn2" />
+          <ScalarProperty Name="SiteAddressLn1" ColumnName="SiteAddressLn1" />
+          <ScalarProperty Name="SiteOfficialName" ColumnName="SiteOfficialName" />
+          <ScalarProperty Name="SiteShortName" ColumnName="SiteShortName" />
+          <ScalarProperty Name="BusinessCode" ColumnName="BusinessCode" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstArticle">
+      <EntityTypeMapping TypeName="SpectrumModel.MstArticle">
+        <MappingFragment StoreEntitySet="MstArticle">
+          <ScalarProperty Name="HSNCode" ColumnName="HSNCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Descriptions" ColumnName="Descriptions" />
+          <ScalarProperty Name="DistributionUomValue" ColumnName="DistributionUomValue" />
+          <ScalarProperty Name="BrandCode" ColumnName="BrandCode" />
+          <ScalarProperty Name="ManufacturerCode" ColumnName="ManufacturerCode" />
+          <ScalarProperty Name="SalesUomValue" ColumnName="SalesUomValue" />
+          <ScalarProperty Name="IsBatchBarcodeAutoGenerate" ColumnName="IsBatchBarcodeAutoGenerate" />
+          <ScalarProperty Name="IsEanAutoGenerate" ColumnName="IsEanAutoGenerate" />
+          <ScalarProperty Name="Printable" ColumnName="Printable" />
+          <ScalarProperty Name="isExpiry" ColumnName="isExpiry" />
+          <ScalarProperty Name="ConsumptionUoM" ColumnName="ConsumptionUoM" />
+          <ScalarProperty Name="MaterialTypeCode" ColumnName="MaterialTypeCode" />
+          <ScalarProperty Name="NONRETUNABLE" ColumnName="NONRETUNABLE" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="IsPremaman" ColumnName="IsPremaman" />
+          <ScalarProperty Name="Theme" ColumnName="Theme" />
+          <ScalarProperty Name="Season" ColumnName="Season" />
+          <ScalarProperty Name="Style" ColumnName="Style" />
+          <ScalarProperty Name="VolumeUOM" ColumnName="VolumeUOM" />
+          <ScalarProperty Name="Volume" ColumnName="Volume" />
+          <ScalarProperty Name="GrossWeightUOM" ColumnName="GrossWeightUOM" />
+          <ScalarProperty Name="GrossWeight" ColumnName="GrossWeight" />
+          <ScalarProperty Name="NetWeightUOM" ColumnName="NetWeightUOM" />
+          <ScalarProperty Name="NetWeight" ColumnName="NetWeight" />
+          <ScalarProperty Name="IntraStatCodeUSA" ColumnName="IntraStatCodeUSA" />
+          <ScalarProperty Name="IntraStatCodeEurope" ColumnName="IntraStatCodeEurope" />
+          <ScalarProperty Name="Purchaser" ColumnName="Purchaser" />
+          <ScalarProperty Name="LegacyArticleCode" ColumnName="LegacyArticleCode" />
+          <ScalarProperty Name="ToleranceValue" ColumnName="ToleranceValue" />
+          <ScalarProperty Name="Salable" ColumnName="Salable" />
+          <ScalarProperty Name="STLocCode" ColumnName="STLocCode" />
+          <ScalarProperty Name="SupplierRef" ColumnName="SupplierRef" />
+          <ScalarProperty Name="CharProfileCode" ColumnName="CharProfileCode" />
+          <ScalarProperty Name="LastNodeCode" ColumnName="LastNodeCode" />
+          <ScalarProperty Name="TreeID" ColumnName="TreeID" />
+          <ScalarProperty Name="ParentArt" ColumnName="ParentArt" />
+          <ScalarProperty Name="WarrantyPeriod" ColumnName="WarrantyPeriod" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="IsMrpOpen" ColumnName="IsMrpOpen" />
+          <ScalarProperty Name="DecimalQtyApplicable" ColumnName="DecimalQtyApplicable" />
+          <ScalarProperty Name="RemainingShelfLife" ColumnName="RemainingShelfLife" />
+          <ScalarProperty Name="TotalShelfLife" ColumnName="TotalShelfLife" />
+          <ScalarProperty Name="ProductImage" ColumnName="ProductImage" />
+          <ScalarProperty Name="IssueFreeGift" ColumnName="IssueFreeGift" />
+          <ScalarProperty Name="ArticleActive" ColumnName="ArticleActive" />
+          <ScalarProperty Name="CataloguedOn" ColumnName="CataloguedOn" />
+          <ScalarProperty Name="OrderUnitofMeasure" ColumnName="OrderUnitofMeasure" />
+          <ScalarProperty Name="SaleUnitofMeasure" ColumnName="SaleUnitofMeasure" />
+          <ScalarProperty Name="DistributionUnitofMeasure" ColumnName="DistributionUnitofMeasure" />
+          <ScalarProperty Name="BaseUnitofMeasure" ColumnName="BaseUnitofMeasure" />
+          <ScalarProperty Name="ArticleName" ColumnName="ArticleName" />
+          <ScalarProperty Name="ArticleShortName" ColumnName="ArticleShortName" />
+          <ScalarProperty Name="ArticalCatCode" ColumnName="ArticalCatCode" />
+          <ScalarProperty Name="ArticalTypeCode" ColumnName="ArticalTypeCode" />
+          <ScalarProperty Name="ArticleCode" ColumnName="ArticleCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SiteSupplierMap">
+      <EntityTypeMapping TypeName="SpectrumModel.SiteSupplierMap">
+        <MappingFragment StoreEntitySet="SiteSupplierMap">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstMaterialType">
+      <EntityTypeMapping TypeName="SpectrumModel.MstMaterialType">
+        <MappingFragment StoreEntitySet="MstMaterialType">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="MaterialTypeDesc" ColumnName="MaterialTypeDesc" />
+          <ScalarProperty Name="MaterialTypeCode" ColumnName="MaterialTypeCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArticleDescInDiffLang">
+      <EntityTypeMapping TypeName="SpectrumModel.ArticleDescInDiffLang">
+        <MappingFragment StoreEntitySet="ArticleDescInDiffLang">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="ArticleName" ColumnName="ArticleName" />
+          <ScalarProperty Name="ArticleShortName" ColumnName="ArticleShortName" />
+          <ScalarProperty Name="LanguageCode" ColumnName="LanguageCode" />
+          <ScalarProperty Name="ArticleCode" ColumnName="ArticleCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MasterArticleMap">
+      <EntityTypeMapping TypeName="SpectrumModel.MasterArticleMap">
+        <MappingFragment StoreEntitySet="MasterArticleMap">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="MasterArticleCode" ColumnName="MasterArticleCode" />
+          <ScalarProperty Name="ArticleCode" ColumnName="ArticleCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstTransaction">
+      <EntityTypeMapping TypeName="SpectrumModel.MstTransaction">
+        <MappingFragment StoreEntitySet="MstTransaction">
+          <ScalarProperty Name="subfunction" ColumnName="subfunction" />
+          <ScalarProperty Name="MainFunction" ColumnName="MainFunction" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="TransactionName" ColumnName="TransactionName" />
+          <ScalarProperty Name="TransactionCode" ColumnName="TransactionCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SiteAllowedTransactions">
+      <EntityTypeMapping TypeName="SpectrumModel.SiteAllowedTransactions">
+        <MappingFragment StoreEntitySet="SiteAllowedTransactions">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+          <ScalarProperty Name="TransactionCode" ColumnName="TransactionCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DefaultConfig">
+      <EntityTypeMapping TypeName="SpectrumModel.DefaultConfig">
+        <MappingFragment StoreEntitySet="DefaultConfig">
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="FldType" ColumnName="FldType" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="DocumentGroup" ColumnName="DocumentGroup" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+          <ScalarProperty Name="FldValue" ColumnName="FldValue" />
+          <ScalarProperty Name="FldLabel" ColumnName="FldLabel" />
+          <ScalarProperty Name="Sitecode" ColumnName="Sitecode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TaxSiteDocMap">
+      <EntityTypeMapping TypeName="SpectrumModel.TaxSiteDocMap">
+        <MappingFragment StoreEntitySet="TaxSiteDocMap">
+          <ScalarProperty Name="TaxType" ColumnName="TaxType" />
+          <ScalarProperty Name="SEQUENCE" ColumnName="SEQUENCE" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="TaxValue" ColumnName="TaxValue" />
+          <ScalarProperty Name="IsPercentageValue" ColumnName="IsPercentageValue" />
+          <ScalarProperty Name="Appliedon" ColumnName="Appliedon" />
+          <ScalarProperty Name="Inclusive" ColumnName="Inclusive" />
+          <ScalarProperty Name="IsDocumentLevelTax" ColumnName="IsDocumentLevelTax" />
+          <ScalarProperty Name="TaxName" ColumnName="TaxName" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArticlelblPrintDtl">
+      <EntityTypeMapping TypeName="SpectrumModel.ArticlelblPrintDtl">
+        <MappingFragment StoreEntitySet="ArticlelblPrintDtl">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedAt" ColumnName="UpdatedAt" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="ExpiryInDays" ColumnName="ExpiryInDays" />
+          <ScalarProperty Name="ArticleCode" ColumnName="ArticleCode" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstMaterial">
+      <EntityTypeMapping TypeName="SpectrumModel.MstMaterial">
+        <MappingFragment StoreEntitySet="MstMaterial">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedAt" ColumnName="UpdatedAt" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="MaterialName" ColumnName="MaterialName" />
+          <ScalarProperty Name="MaterialId" ColumnName="MaterialId" />
+          <ScalarProperty Name="MaterialType" ColumnName="MaterialType" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstMaterialArticleMap">
+      <EntityTypeMapping TypeName="SpectrumModel.MstMaterialArticleMap">
+        <MappingFragment StoreEntitySet="MstMaterialArticleMap">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedAt" ColumnName="UpdatedAt" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="MaterialValue" ColumnName="MaterialValue" />
+          <ScalarProperty Name="MaterialId" ColumnName="MaterialId" />
+          <ScalarProperty Name="MaterialType" ColumnName="MaterialType" />
+          <ScalarProperty Name="ArticleCode" ColumnName="ArticleCode" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstDocumentTypes">
+      <EntityTypeMapping TypeName="SpectrumModel.MstDocumentTypes">
+        <MappingFragment StoreEntitySet="MstDocumentTypes">
+          <ScalarProperty Name="IsInboxDocument" ColumnName="IsInboxDocument" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="DocumentTypeDesc" ColumnName="DocumentTypeDesc" />
+          <ScalarProperty Name="IsBackOfficeDocument" ColumnName="IsBackOfficeDocument" />
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstShift">
+      <EntityTypeMapping TypeName="SpectrumModel.MstShift">
+        <MappingFragment StoreEntitySet="MstShift">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPDATEDON" ColumnName="UPDATEDON" />
+          <ScalarProperty Name="UPDATEDBY" ColumnName="UPDATEDBY" />
+          <ScalarProperty Name="UPDATEDAT" ColumnName="UPDATEDAT" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="CREATEDAT" ColumnName="CREATEDAT" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="ShiftName" ColumnName="ShiftName" />
+          <ScalarProperty Name="ShiftId" ColumnName="ShiftId" />
+          <ScalarProperty Name="SiteCode" ColumnName="SiteCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

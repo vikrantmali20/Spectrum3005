@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <LocalPara>
+    <Label>Server</Label>
+    <Value>10.10.180.237</Value>
+  </LocalPara>
+  <LocalPara>
+    <Label>UserId</Label>
+    <Value>sa</Value>
+  </LocalPara>
+  <LocalPara>
+    <Label>DataSource</Label>
+    <Value>QAKSL_Store</Value>
+  </LocalPara>
+  <LocalPara>
+    <Label>Password</Label>
+    <Value>£”¦¦Wdef</Value>
+  </LocalPara>
+  <LocalPara>
+    <Label>ServerConnectionString</Label>
+    <Value>Server= 10.10.180.237;DataBase=QAKSL_Store;Uid=sa;pwd=pass$123</Value>
+  </LocalPara>
+  <LocalPara>
+    <Label>POSDBConnectionString</Label>
+    <Value>Server= 10.10.180.237;DataBase=QAKSL_Store;Uid=sa;pwd=pass$123</Value>
+  </LocalPara>
+  <LocalPara>
+    <Label>LocalConnectionString</Label>
+    <Value>Server= 10.10.180.237;DataBase=QAKSL_Store;Uid=sa;pwd=pass$123</Value>
+  </LocalPara>
+  <LocalPara>
+    <Label>FISCALPRINTERNAME</Label>
+    <Value>Modified</Value>
+  </LocalPara>
+  <LocalPara>
+    <Label>TerminalID</Label>
+    <Value>T001</Value>
+  </LocalPara>
+</NewDataSet>

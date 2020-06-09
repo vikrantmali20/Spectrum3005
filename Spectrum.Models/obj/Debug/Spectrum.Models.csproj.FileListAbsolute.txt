@@ -1,0 +1,5 @@
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.Models\bin\Debug\Spectrum.Models.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.Models\bin\Debug\Spectrum.Models.pdb
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.Models\obj\Debug\Spectrum.Models.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.Models\obj\Debug\Spectrum.Models.pdb
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.Models\obj\Debug\Spectrum.Models.csprojResolveAssemblyReference.cache

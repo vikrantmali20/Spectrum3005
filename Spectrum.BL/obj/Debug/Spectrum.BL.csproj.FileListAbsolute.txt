@@ -1,0 +1,15 @@
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.BL\bin\Debug\Spectrum.BL.dll.config
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.BL\bin\Debug\Spectrum.BL.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.BL\bin\Debug\Spectrum.BL.pdb
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.BL\bin\Debug\AutoMapper.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.BL\bin\Debug\C1.C1Excel.2.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.BL\bin\Debug\EntityFramework.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.BL\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.BL\bin\Debug\log4net.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.BL\bin\Debug\Microsoft.Practices.Unity.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.BL\bin\Debug\Spectrum.DAL.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.BL\bin\Debug\Spectrum.Logging.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.BL\bin\Debug\Spectrum.Models.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.BL\obj\Debug\Spectrum.BL.csprojResolveAssemblyReference.cache
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.BL\obj\Debug\Spectrum.BL.dll
+E:\Project\3.0.0.5_HashTag_Sync\Spectrum.BL\obj\Debug\Spectrum.BL.pdb

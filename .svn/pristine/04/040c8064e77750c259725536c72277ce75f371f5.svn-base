@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://authentication.webservices.spectrum.criti.com/" name="AuthenticationSynchronizerService" targetNamespace="http://authentication.webservices.spectrum.criti.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema targetNamespace="http://authentication.webservices.spectrum.criti.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="retrieveAuthenticationRecords" type="tns:retrieveAuthenticationRecords" />
+      <xs:element name="retrieveAuthenticationRecordsResponse" type="tns:retrieveAuthenticationRecordsResponse" />
+      <xs:element name="saveAuthenticationRecords" type="tns:saveAuthenticationRecords" />
+      <xs:element name="saveAuthenticationRecordsResponse" type="tns:saveAuthenticationRecordsResponse" />
+      <xs:complexType name="retrieveAuthenticationRecords">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:wsRequestDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="wsRequestDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="pushOrPull" type="xs:boolean" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="soapWsHeader" type="tns:soapWsHeader" />
+          <xs:element minOccurs="0" name="syncFromDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="tableName" type="xs:string" />
+          <xs:element minOccurs="0" name="transactionCode" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="soapWsHeader">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="password" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="storePort" type="xs:string" />
+          <xs:element minOccurs="0" name="userName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="retrieveAuthenticationRecordsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:authenticationDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="authenticationDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="authRoleTransactionMapDTO" nillable="true" type="tns:authRoleTransactionMapDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="authUserSiteRoleMapDTO" nillable="true" type="tns:authUserSiteRoleMapDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="authUserSiteTransactionMapDTO" nillable="true" type="tns:authUserSiteTransactionMapDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="authUsersDTO" nillable="true" type="tns:authUsersDTO" />
+          <xs:element minOccurs="0" name="calendar" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="faultDTO" type="tns:faultDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="mstRoleDTO" nillable="true" type="tns:mstRoleDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="mstTransactionDTO" nillable="true" type="tns:mstTransactionDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="authRoleTransactionMapDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="authTransactionCode" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="roleID" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="authUserSiteRoleMapDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="GRoleid" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+          <xs:element minOccurs="0" name="userID" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="authUserSiteTransactionMapDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="authTransactionCode" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="rights" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+          <xs:element minOccurs="0" name="userID" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="authUsersDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="active" type="xs:string" />
+          <xs:element minOccurs="0" name="countryCode" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="designation" type="xs:string" />
+          <xs:element minOccurs="0" name="emailId" type="xs:string" />
+          <xs:element minOccurs="0" name="idNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="issalesperson" type="xs:string" />
+          <xs:element minOccurs="0" name="password" type="xs:string" />
+          <xs:element minOccurs="0" name="passwordChangeNextDate" type="xs:string" />
+          <xs:element minOccurs="0" name="passwordExpiredon" type="xs:string" />
+          <xs:element minOccurs="0" name="passwordUpdateDate" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+          <xs:element minOccurs="0" name="userID" type="xs:string" />
+          <xs:element minOccurs="0" name="userName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="faultDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="businessError" type="xs:string" />
+          <xs:element minOccurs="0" name="faultLevel" type="xs:string" />
+          <xs:element minOccurs="0" name="faultStackTrace" type="xs:string" />
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mstRoleDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="description" type="xs:string" />
+          <xs:element minOccurs="0" name="roleID" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mstTransactionDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="mainFunction" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="subFunction" type="xs:string" />
+          <xs:element minOccurs="0" name="transactionCode" type="xs:string" />
+          <xs:element minOccurs="0" name="transactionName" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveAuthenticationRecords">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:authenticationSaveRequestDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="authenticationSaveRequestDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="authenticationDto" type="tns:authenticationDto" />
+          <xs:element minOccurs="0" name="soapWsHeader" type="tns:soapWsHeader" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveAuthenticationRecordsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:syncResponseDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="syncResponseDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="calendar" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="faultDTO" type="tns:faultDTO" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </types>
+  <message name="AuthenticationSynchronizer_saveAuthenticationRecords">
+    <part name="saveAuthenticationRecords" element="tns:saveAuthenticationRecords" />
+  </message>
+  <message name="AuthenticationSynchronizer_retrieveAuthenticationRecords">
+    <part name="retrieveAuthenticationRecords" element="tns:retrieveAuthenticationRecords" />
+  </message>
+  <message name="AuthenticationSynchronizer_retrieveAuthenticationRecordsResponse">
+    <part name="retrieveAuthenticationRecordsResponse" element="tns:retrieveAuthenticationRecordsResponse" />
+  </message>
+  <message name="AuthenticationSynchronizer_saveAuthenticationRecordsResponse">
+    <part name="saveAuthenticationRecordsResponse" element="tns:saveAuthenticationRecordsResponse" />
+  </message>
+  <portType name="AuthenticationSynchronizer">
+    <operation name="retrieveAuthenticationRecords" parameterOrder="retrieveAuthenticationRecords">
+      <input message="tns:AuthenticationSynchronizer_retrieveAuthenticationRecords" />
+      <output message="tns:AuthenticationSynchronizer_retrieveAuthenticationRecordsResponse" />
+    </operation>
+    <operation name="saveAuthenticationRecords" parameterOrder="saveAuthenticationRecords">
+      <input message="tns:AuthenticationSynchronizer_saveAuthenticationRecords" />
+      <output message="tns:AuthenticationSynchronizer_saveAuthenticationRecordsResponse" />
+    </operation>
+  </portType>
+  <binding name="AuthenticationSynchronizerBinding" type="tns:AuthenticationSynchronizer">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="retrieveAuthenticationRecords">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="saveAuthenticationRecords">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="AuthenticationSynchronizerService">
+    <port name="AuthenticationSynchronizerPort" binding="tns:AuthenticationSynchronizerBinding">
+      <soap:address location="http://Dt148:10080/posSeam/webservices/AuthenticationSynchronizer" />
+    </port>
+  </service>
+</definitions>

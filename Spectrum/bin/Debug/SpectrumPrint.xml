@@ -1,0 +1,713 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SpectrumPrint
+</name>
+</assembly>
+<members>
+<member name="T:SpectrumPrint.clsA4Print.DocumentTypeList">
+	<summary>
+ Printing document Types
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4Print._DocumentType">
+	<summary>
+  Assgin for Document Type 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4Print._strA4Title">
+	<summary>
+ Title for Document.
+  <UsedBy>clsBirthList.cs,clsPrintSalesOrder.cs</UsedBy>
+	</summary>
+	<remarks>String</remarks>
+</member><member name="F:SpectrumPrint.clsA4Print._strA4Header">
+	<summary>
+ Header for document
+ </summary>
+	<UsedBy>clsBirthList.cs,clsPrintSalesOrder.cs</UsedBy>
+	<remarks>String</remarks>
+</member><member name="F:SpectrumPrint.clsA4Print._strA4TermsNConitions">
+	<summary>
+ Terms And  Condition for document
+    <UsedBy>clsBirthList.cs,clsPrintSalesOrder.cs</UsedBy>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4Print._strCashierDetails">
+	<summary>
+ Cashier information for display on document
+    <UsedBy>clsBirthList.cs,clsPrintSalesOrder.cs</UsedBy>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4Print._strA4CustomerDetails">
+	<summary>
+ Customer information is only for document .
+ <UsedBy>clsBirthList.cs,clsPrintSalesOrder.cs</UsedBy>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4Print._strA4DeliveryAddress">
+	<summary>
+ Delivery Address for document
+ </summary>
+	<UsedBy>clsBirthList.cs,clsPrintSalesOrder.cs</UsedBy>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4Print._strA4ItemHeader">
+	<summary>
+  Purchased Items Header 
+  <UsedBy>clsBirthList.cs,clsPrintSalesOrder.cs</UsedBy>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4Print._strA4ItemDetails">
+	<summary>
+ All Purchased items details 
+ </summary>
+	<UsedBy>clsBirthList.cs,clsPrintSalesOrder.cs</UsedBy>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4Print._strA4PaymentDetails">
+	<summary>
+ Payment details agianst Bill
+  <UsedBy>clsBirthList.cs,clsPrintSalesOrder.cs</UsedBy>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4Print._strA4Footer">
+	<summary>
+ Footer for document .mainly this contails customer sign etc. details 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4Print._strA4Remark">
+	<summary>
+ Remark   display on printing document .
+  <UsedBy>clsBirthList.cs,clsPrintSalesOrder.cs</UsedBy>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4Print._strA4GiftVoucher">
+	<summary>
+ Message for giftvocuher details for only BirthList Status document.
+  <UsedBy>clsBirthList.cs,clsPrintSalesOrder.cs</UsedBy>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4Print._strA4OpenAmount">
+	<summary>
+  Open Amount for only BirthList Status document
+  <UsedBy>clsBirthList.cs </UsedBy>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4Print._GiftReceiptMessage">
+	<summary>
+ Message for GiftVoucher print document .
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4Print._decFinalDiscount">
+	<summary>
+  Total Discount Amount for only Birhtlist Status Document .
+ <UsedBy>clsBirthList.cs </UsedBy>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4Print._strTotalDiscount">
+	<summary>
+  Total Discount Amount for only Birhtlist Status Document .
+ <UsedBy>clsBirthList.cs </UsedBy>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4Print._strWelcomeMsg">
+	<summary>
+ Welcome message for printing document
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4Print._strTaxInformation">
+	<summary>
+ Tax information on printing document 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4Print._strTaxDetailsInvoice">
+	<summary>
+ Tax details against current invoice   
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4Print._strPromotionMsg">
+	<summary>
+ promotion messages for printing document 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4Print.currentIndex">
+	<summary>
+  Line by line printing 
+ </summary>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.SpectrumPrintFont.Header">
+	<summary>
+  Header Font
+ </summary>
+	<value>system.drawing.Font</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.SpectrumPrintFont.Title">
+	<summary>
+ Title font style  
+ </summary>
+	<value>system.drawing.Font</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.SpectrumPrintFont.CashierDetails">
+	<summary>
+  Cashier Deatils font style 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.SpectrumPrintFont.CustomerInfo">
+	<summary>
+ Customer information font style
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.SpectrumPrintFont.DeliveryAddress">
+	<summary>
+ Customer delivery address font style
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.SpectrumPrintFont.ItemHeader">
+	<summary>
+  Purchased items information header style
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.SpectrumPrintFont.ItemDetail">
+	<summary>
+ Purchased items details font style 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.SpectrumPrintFont.PaymentDetail">
+	<summary>
+ payment information against bill 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.SpectrumPrintFont.Footer">
+	<summary>
+ Footer for document 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.SpectrumPrintFont.Remark">
+	<summary>
+ Remark font style 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:SpectrumPrint.SpectrumPrintFont">
+	<summary>
+ Printing Document font styles 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SpectrumPrint.DbConnectionBuild.SetConnection(System.String)">
+	<summary>
+ Set Sqlconnection
+ </summary>
+	<param name="Strcon">ConnectionString</param>
+	<returns>True/False</returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumPrint.clsPrintCreditSettlementNote.PrintNote(System.Collections.Generic.List{SpectrumCommon.SalesInvoice},System.Data.DataTable,System.String,System.String)">
+	<summary>
+ For Printing Credit Settlement Notes
+ </summary>
+	<param name="TransactionList"></param>
+	<param name="dtprint"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:SpectrumPrint.modCommanFunction.PrintTransactionSet">
+	<summary>
+  Birthlist transaction for printing  
+ </summary>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.modCommanFunction.CreditVoucher_R">
+	<summary>
+ Default values for Credit Voucher Receipt .
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.modCommanFunction.CreditVoucher_I">
+	<summary>
+ Default values for Credit Voucher Issue .
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.modCommanFunction.GIFTVOUCHE_R">
+	<summary>
+ Default values for Gift Voucher Receipt .
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.modCommanFunction.GIFTVOUCHE_I">
+	<summary>
+ Default values for Gift Voucher Issue .
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.modCommanFunction.PrintTransaction">
+	<summary>
+ Customer Print for sales,retrun or create BL items 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.modCommanFunction._strDocumentType">
+	<summary>
+ Printing Document Type
+ i.e  SO,BL,CM
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.modCommanFunction._strSiteCode">
+	<summary>
+ Printing Site Code
+ </summary>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.modCommanFunction.CustomerDetail">
+	<summary>
+ Customer details who ordered or sold or comes to return items 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.modCommanFunction._dtVoucherSales">
+	<summary>
+ Voucher Information 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.modCommanFunction._dtPaymentHistory">
+	<summary>
+  Payment History  
+ </summary>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.modCommanFunction.BirthListCustomerInfo">
+	<summary>
+  Sales and Edit BirthList : Birthlist owner information 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumPrint.modCommanFunction.PrinttHeaderAndFooter(System.Text.StringBuilder@,System.Text.StringBuilder@,System.Text.StringBuilder@,System.Text.StringBuilder@,System.Text.StringBuilder@,System.String,System.String)">
+	<summary>
+  Print setting for birthlist for all birthlist printing 
+ </summary>
+	<UsedBy>frmBirthListCreate.vb,frmBirthListSale.vb,frmBirthListUpdate.vb</UsedBy>
+	<param name="StrSubHeader"></param>
+	<param name="StrFooter"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumPrint.modCommanFunction.SplitString(System.String)">
+	<summary>
+ Only need to pass string, to check its lenght and split into parts
+ </summary>
+	<param name="strCheckString"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:SpectrumPrint.modCommanFunction.printDocument1_PrintPage(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
+	<summary>
+ Printing the Doucment
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:SpectrumPrint.modCommanFunction.GetPrintFormat(System.String,System.String)">
+	<summary>
+ Aded this function to support document to be printed on a specific format
+ </summary>
+	<param name="pTerminal"></param>
+	<param name="pDoc"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:SpectrumPrint.clsA4PrintNew.DocumentTypeList">
+	<summary>
+ Printing document Types
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4PrintNew._DocumentType">
+	<summary>
+  Assgin for Document Type 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4PrintNew._strA4Title">
+	<summary>
+ Title for Document.
+  <UsedBy>clsBirthList.cs,clsPrintSalesOrder.cs</UsedBy>
+	</summary>
+	<remarks>String</remarks>
+</member><member name="F:SpectrumPrint.clsA4PrintNew._strA4Header">
+	<summary>
+ Header for document
+ </summary>
+	<UsedBy>clsBirthList.cs,clsPrintSalesOrder.cs</UsedBy>
+	<remarks>String</remarks>
+</member><member name="F:SpectrumPrint.clsA4PrintNew._strA4SiteHeader">
+	<summary>
+ Header for document
+ </summary>
+	<UsedBy>clsBirthList.cs,clsPrintSalesOrder.cs</UsedBy>
+	<remarks>String</remarks>
+</member><member name="F:SpectrumPrint.clsA4PrintNew._strA4TermsNConitions">
+	<summary>
+ Terms And  Condition for document
+    <UsedBy>clsBirthList.cs,clsPrintSalesOrder.cs</UsedBy>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4PrintNew._strCashierDetails">
+	<summary>
+ Cashier information for display on document
+    <UsedBy>clsBirthList.cs,clsPrintSalesOrder.cs</UsedBy>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4PrintNew._strA4CustomerDetails">
+	<summary>
+ Customer information is only for document .
+ <UsedBy>clsBirthList.cs,clsPrintSalesOrder.cs</UsedBy>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4PrintNew._strA4DeliveryAddress">
+	<summary>
+ Delivery Address for document
+ </summary>
+	<UsedBy>clsBirthList.cs,clsPrintSalesOrder.cs</UsedBy>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4PrintNew._strA4ItemHeader">
+	<summary>
+  Purchased Items Header 
+  <UsedBy>clsBirthList.cs,clsPrintSalesOrder.cs</UsedBy>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4PrintNew._strA4ItemDetails">
+	<summary>
+ All Purchased items details 
+ </summary>
+	<UsedBy>clsBirthList.cs,clsPrintSalesOrder.cs</UsedBy>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4PrintNew._strA4PaymentDetails">
+	<summary>
+ Payment details agianst Bill
+  <UsedBy>clsBirthList.cs,clsPrintSalesOrder.cs</UsedBy>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4PrintNew._strA4Footer">
+	<summary>
+ Footer for document .mainly this contails customer sign etc. details 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4PrintNew._strA4Remark">
+	<summary>
+ Remark   display on printing document .
+  <UsedBy>clsBirthList.cs,clsPrintSalesOrder.cs</UsedBy>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4PrintNew._strA4GiftVoucher">
+	<summary>
+ Message for giftvocuher details for only BirthList Status document.
+  <UsedBy>clsBirthList.cs,clsPrintSalesOrder.cs</UsedBy>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4PrintNew._strA4OpenAmount">
+	<summary>
+  Open Amount for only BirthList Status document
+  <UsedBy>clsBirthList.cs </UsedBy>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4PrintNew._GiftReceiptMessage">
+	<summary>
+ Message for GiftVoucher print document .
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4PrintNew._decFinalDiscount">
+	<summary>
+  Total Discount Amount for only Birhtlist Status Document .
+ <UsedBy>clsBirthList.cs </UsedBy>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4PrintNew._strTotalDiscount">
+	<summary>
+  Total Discount Amount for only Birhtlist Status Document .
+ <UsedBy>clsBirthList.cs </UsedBy>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4PrintNew._strWelcomeMsg">
+	<summary>
+ Welcome message for printing document
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4PrintNew._strTaxInformation">
+	<summary>
+ Tax information on printing document 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4PrintNew._strTaxDetailsInvoice">
+	<summary>
+ Tax details against current invoice   
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4PrintNew._strPromotionMsg">
+	<summary>
+ promotion messages for printing document 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsA4PrintNew.currentIndex">
+	<summary>
+  Line by line printing 
+ </summary>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.SpectrumPrintFontNew.Header">
+	<summary>
+  Header Font
+ </summary>
+	<value>system.drawing.Font</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.SpectrumPrintFontNew.SiteHeader">
+	<summary>
+  Header Font
+ </summary>
+	<value>system.drawing.Font</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.SpectrumPrintFontNew.Title">
+	<summary>
+ Title font style  
+ </summary>
+	<value>system.drawing.Font</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.SpectrumPrintFontNew.CashierDetails">
+	<summary>
+  Cashier Deatils font style 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.SpectrumPrintFontNew.CustomerInfo">
+	<summary>
+ Customer information font style
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.SpectrumPrintFontNew.DeliveryAddress">
+	<summary>
+ Customer delivery address font style
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.SpectrumPrintFontNew.ItemHeader">
+	<summary>
+  Purchased items information header style
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.SpectrumPrintFontNew.ItemDetail">
+	<summary>
+ Purchased items details font style 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.SpectrumPrintFontNew.PaymentDetail">
+	<summary>
+ payment information against bill 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.SpectrumPrintFontNew.Footer">
+	<summary>
+ Footer for document 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.SpectrumPrintFontNew.Remark">
+	<summary>
+ Remark font style 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:SpectrumPrint.SpectrumPrintFontNew">
+	<summary>
+ Printing Document font styles 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SpectrumPrint.clsCashMemoPrint.#ctor(System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.Data.DataTable,System.Boolean,System.String)">
+	<summary>
+ Class intillisation 
+ </summary>
+	<param name="BillNo">BillNo</param>
+	<remarks></remarks>
+</member><member name="M:SpectrumPrint.clsCashMemoPrint.HoldCMPrint(System.String,System.String,System.Boolean,System.String@,System.String)">
+	<summary>
+ Printing Hold Cash Memo
+ </summary>
+	<Usedin>CashMemo</Usedin>
+	<Updatedby></Updatedby>
+	<Updatedon></Updatedon>
+	<remarks></remarks>
+</member><member name="T:SpectrumPrint.clsCashMemoPrint">
+	<summary>
+ This Class is used for Cash Memo Printing
+ </summary>
+	<createdby>Rama Ranjan Jena</createdby>
+	<Updatedby></Updatedby>
+	<UpdatedOn></UpdatedOn>
+	<remarks></remarks>
+</member><member name="T:SpectrumPrint.clsPrintSalesOrder.PrintSOTransactionSet">
+	<summary>
+  Birthlist transaction for printing 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsPrintSalesOrder._dtCreationDate">
+	<summary>
+ Creation Date for printed document.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsPrintSalesOrder._dsOtherCost">
+	<summary>
+ Other cost added into Sales Order.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsPrintSalesOrder._dtSalesOrderTaxDtls">
+	<summary>
+  Tax information against current invoice 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsPrintSalesOrder._SOStatus">
+	<summary>
+  Sales order Status message.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SpectrumPrint.clsPrintSalesOrder.A4GetOtherCharges(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Text.StringBuilder@)">
+	<summary>
+  Other Cost Printing into grid .
+ </summary>
+	<param name="strArticleCode"></param>
+	<param name="strArticleDesc"></param>
+	<param name="strPurchasedQty"></param>
+	<param name="iPrice"></param>
+	<param name="strDisc"></param>
+	<param name="strTax"></param>
+	<param name="iNetAmount"></param>
+	<param name="sbHdrItemInfo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsBirthListNew._printPreview">
+	<summary>
+  Birthlist transaction for printing 
+ </summary>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.clsBirthListNew.PrintBLTransaction">
+	<summary>
+ Customer Print for sales,retrun or create BL items 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsBirthListNew._dtVoucherSales">
+	<summary>
+ Voucher Information 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsBirthListNew._dtPaymentHistory">
+	<summary>
+  Payment History  
+ </summary>
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.clsBirthListNew.OrderNumber">
+	<summary>
+  Order Number for Created new item information
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsBirthListNew._strPrintBLPageSetup">
+	<summary>
+  Page for printing 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SpectrumPrint.clsBirthListNew.#ctor(System.Boolean,System.Boolean,SpectrumPrint.clsBirthListNew.PrintBLTransactionSet,System.String,System.String,System.String,System.String,System.Data.DataTable,System.Data.DataTable,System.Data.DataTable,System.String@,System.String,System.String,System.Decimal,System.Int32,System.Data.DataTable,System.String,System.Data.DataTable,System.String,System.Boolean)">
+	<summary>
+ This constructor is used for Create BirthList and BirthListStatus print out 
+ </summary>
+	<param name="enumTransactionDetails">only BirthListCreate</param>
+	<param name="strSiteCode">Current Site Code </param>
+	<param name="strBirthListID">BirthList ID </param>
+	<param name="dtCustomerDetail">Customer Details </param>
+	<param name="dtSalesItem">BirthList Sales Item</param>
+	<param name="strErrorMsg">Optinal Error Msg</param>
+	<remarks></remarks>
+</member><member name="M:SpectrumPrint.clsBirthListNew.A4SalesItemHdr(System.Text.StringBuilder@)">
+	<remarks></remarks>
+</member><member name="P:SpectrumPrint.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:SpectrumPrint.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:SpectrumPrint.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:SpectrumPrint.clsPrintSalesOrderNew.PrintSOTransactionSet">
+	<summary>
+  Birthlist transaction for printing 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsPrintSalesOrderNew._dtCreationDate">
+	<summary>
+ Creation Date for printed document.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsPrintSalesOrderNew._dsOtherCost">
+	<summary>
+ Other cost added into Sales Order.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsPrintSalesOrderNew._dtSalesOrderTaxDtls">
+	<summary>
+  Tax information against current invoice 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SpectrumPrint.clsPrintSalesOrderNew._SOStatus">
+	<summary>
+  Sales order Status message.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SpectrumPrint.clsPrintSalesOrderNew.A4GetOtherCharges(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Text.StringBuilder@)">
+	<summary>
+  Other Cost Printing into grid .
+ </summary>
+	<param name="strArticleCode"></param>
+	<param name="strArticleDesc"></param>
+	<param name="strPurchasedQty"></param>
+	<param name="iPrice"></param>
+	<param name="strDisc"></param>
+	<param name="strTax"></param>
+	<param name="iNetAmount"></param>
+	<param name="sbHdrItemInfo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,156 @@
+D:\CRITI_SPECTRUM\Spectrum\Spectrum\New Folder\SpectrumBL\bin\Debug\SpectrumBL.dll.config
+D:\CRITI_SPECTRUM\Spectrum\Spectrum\New Folder\SpectrumBL\bin\Debug\SpectrumBL.dll
+D:\CRITI_SPECTRUM\Spectrum\Spectrum\New Folder\SpectrumBL\bin\Debug\SpectrumBL.pdb
+D:\CRITI_SPECTRUM\Spectrum\Spectrum\New Folder\SpectrumBL\bin\Debug\SpectrumBL.xml
+D:\CRITI_SPECTRUM\Spectrum\Spectrum\New Folder\SpectrumBL\obj\Debug\ResolveAssemblyReference.cache
+D:\CRITI_SPECTRUM\Spectrum\Spectrum\New Folder\SpectrumBL\obj\Debug\SpectrumBL.Resources.resources
+D:\CRITI_SPECTRUM\Spectrum\Spectrum\New Folder\SpectrumBL\obj\Debug\SpectrumBL.vbproj.GenerateResource.Cache
+D:\CRITI_SPECTRUM\Spectrum\Spectrum\New Folder\SpectrumBL\obj\Debug\SpectrumBL.dll
+D:\CRITI_SPECTRUM\Spectrum\Spectrum\New Folder\SpectrumBL\obj\Debug\SpectrumBL.xml
+D:\CRITI_SPECTRUM\Spectrum\Spectrum\New Folder\SpectrumBL\obj\Debug\SpectrumBL.pdb
+D:\CRITI_SPECTRUM\Spectrum\New Folder\SpectrumBL\bin\Debug\SpectrumBL.dll.config
+D:\CRITI_SPECTRUM\Spectrum\New Folder\SpectrumBL\bin\Debug\SpectrumBL.dll
+D:\CRITI_SPECTRUM\Spectrum\New Folder\SpectrumBL\bin\Debug\SpectrumBL.pdb
+D:\CRITI_SPECTRUM\Spectrum\New Folder\SpectrumBL\bin\Debug\SpectrumBL.xml
+D:\CRITI_SPECTRUM\Spectrum\New Folder\SpectrumBL\obj\Debug\ResolveAssemblyReference.cache
+D:\CRITI_SPECTRUM\Spectrum\New Folder\SpectrumBL\obj\Debug\SpectrumBL.Resources.resources
+D:\CRITI_SPECTRUM\Spectrum\New Folder\SpectrumBL\obj\Debug\SpectrumBL.vbproj.GenerateResource.Cache
+D:\CRITI_SPECTRUM\Spectrum\New Folder\SpectrumBL\obj\Debug\SpectrumBL.dll
+D:\CRITI_SPECTRUM\Spectrum\New Folder\SpectrumBL\obj\Debug\SpectrumBL.xml
+D:\CRITI_SPECTRUM\Spectrum\New Folder\SpectrumBL\obj\Debug\SpectrumBL.pdb
+D:\SpectrumMain\PremamanCodeBase\ProtoType\Billing\SpectrumBL\bin\Debug\SpectrumBL.dll.config
+D:\SpectrumMain\PremamanCodeBase\ProtoType\Billing\SpectrumBL\bin\Debug\SpectrumBL.dll
+D:\SpectrumMain\PremamanCodeBase\ProtoType\Billing\SpectrumBL\bin\Debug\SpectrumBL.pdb
+D:\SpectrumMain\PremamanCodeBase\ProtoType\Billing\SpectrumBL\bin\Debug\SpectrumBL.xml
+D:\SpectrumMain\PremamanCodeBase\ProtoType\Billing\SpectrumBL\obj\Debug\ResolveAssemblyReference.cache
+D:\SpectrumMain\PremamanCodeBase\ProtoType\Billing\SpectrumBL\obj\Debug\SpectrumBL.Resources.resources
+D:\SpectrumMain\PremamanCodeBase\ProtoType\Billing\SpectrumBL\obj\Debug\SpectrumBL.vbproj.GenerateResource.Cache
+D:\SpectrumMain\PremamanCodeBase\ProtoType\Billing\SpectrumBL\obj\Debug\SpectrumBL.dll
+D:\SpectrumMain\PremamanCodeBase\ProtoType\Billing\SpectrumBL\obj\Debug\SpectrumBL.xml
+D:\SpectrumMain\PremamanCodeBase\ProtoType\Billing\SpectrumBL\obj\Debug\SpectrumBL.pdb
+C:\MyFolder\Working\Bill5Release\SpectrumBL\bin\Debug\app.config
+C:\MyFolder\Working\Bill5Release\SpectrumBL\bin\Debug\SpectrumBL.dll.config
+C:\MyFolder\Working\Bill5Release\SpectrumBL\bin\Debug\SpectrumBL.dll
+C:\MyFolder\Working\Bill5Release\SpectrumBL\bin\Debug\SpectrumBL.pdb
+C:\MyFolder\Working\Bill5Release\SpectrumBL\bin\Debug\SpectrumBL.xml
+C:\MyFolder\Working\Bill5Release\SpectrumBL\obj\Debug\ResolveAssemblyReference.cache
+C:\MyFolder\Working\Bill5Release\SpectrumBL\obj\Debug\SpectrumBL.Resources.resources
+C:\MyFolder\Working\Bill5Release\SpectrumBL\obj\Debug\SpectrumBL.vbproj.GenerateResource.Cache
+C:\MyFolder\Working\Bill5Release\SpectrumBL\obj\Debug\SpectrumBL.dll
+C:\MyFolder\Working\Bill5Release\SpectrumBL\obj\Debug\SpectrumBL.xml
+C:\MyFolder\Working\Bill5Release\SpectrumBL\obj\Debug\SpectrumBL.pdb
+C:\MyFolder\Working\Billing10.8Latetst\SpectrumBL\bin\Debug\app.config
+C:\MyFolder\Working\Billing10.8Latetst\SpectrumBL\bin\Debug\SpectrumBL.dll.config
+C:\MyFolder\Working\Billing10.8Latetst\SpectrumBL\bin\Debug\SpectrumBL.dll
+C:\MyFolder\Working\Billing10.8Latetst\SpectrumBL\bin\Debug\SpectrumBL.pdb
+C:\MyFolder\Working\Billing10.8Latetst\SpectrumBL\bin\Debug\SpectrumBL.xml
+C:\MyFolder\Working\Billing10.8Latetst\SpectrumBL\obj\Debug\ResolveAssemblyReference.cache
+C:\MyFolder\Working\Billing10.8Latetst\SpectrumBL\obj\Debug\SpectrumBL.Resources.resources
+C:\MyFolder\Working\Billing10.8Latetst\SpectrumBL\obj\Debug\SpectrumBL.vbproj.GenerateResource.Cache
+C:\MyFolder\Working\Billing10.8Latetst\SpectrumBL\obj\Debug\SpectrumBL.dll
+C:\MyFolder\Working\Billing10.8Latetst\SpectrumBL\obj\Debug\SpectrumBL.xml
+C:\MyFolder\Working\Billing10.8Latetst\SpectrumBL\obj\Debug\SpectrumBL.pdb
+D:\MyFolder\Working\Billing10.8Latetst\SpectrumBL\bin\Debug\app.config
+D:\MyFolder\Working\Billing10.8Latetst\SpectrumBL\bin\Debug\SpectrumBL.dll.config
+D:\MyFolder\Working\Billing10.8Latetst\SpectrumBL\bin\Debug\SpectrumBL.dll
+D:\MyFolder\Working\Billing10.8Latetst\SpectrumBL\bin\Debug\SpectrumBL.pdb
+D:\MyFolder\Working\Billing10.8Latetst\SpectrumBL\bin\Debug\SpectrumBL.xml
+D:\MyFolder\Working\Billing10.8Latetst\SpectrumBL\obj\Debug\ResolveAssemblyReference.cache
+D:\MyFolder\Working\Billing10.8Latetst\SpectrumBL\obj\Debug\SpectrumBL.Resources.resources
+D:\MyFolder\Working\Billing10.8Latetst\SpectrumBL\obj\Debug\SpectrumBL.vbproj.GenerateResource.Cache
+D:\MyFolder\Working\Billing10.8Latetst\SpectrumBL\obj\Debug\SpectrumBL.dll
+D:\MyFolder\Working\Billing10.8Latetst\SpectrumBL\obj\Debug\SpectrumBL.xml
+D:\MyFolder\Working\Billing10.8Latetst\SpectrumBL\obj\Debug\SpectrumBL.pdb
+E:\Fo\SpectrumBL\bin\Debug\app.config
+E:\Fo\SpectrumBL\bin\Debug\SpectrumBL.dll.config
+E:\Fo\SpectrumBL\bin\Debug\SpectrumBL.dll
+E:\Fo\SpectrumBL\bin\Debug\SpectrumBL.pdb
+E:\Fo\SpectrumBL\bin\Debug\SpectrumBL.xml
+E:\Fo\SpectrumBL\obj\Debug\ResolveAssemblyReference.cache
+E:\Fo\SpectrumBL\obj\Debug\SpectrumBL.Resources.resources
+E:\Fo\SpectrumBL\obj\Debug\GenerateResource-ResGen.read.1.tlog
+E:\Fo\SpectrumBL\obj\Debug\GenerateResource-ResGen.write.1.tlog
+E:\Fo\SpectrumBL\obj\Debug\SpectrumBL.dll
+E:\Fo\SpectrumBL\obj\Debug\SpectrumBL.xml
+E:\Fo\SpectrumBL\obj\Debug\SpectrumBL.pdb
+E:\FO_Setup\SpectrumBL\bin\Debug\app.config
+E:\FO_Setup\SpectrumBL\bin\Debug\SpectrumBL.dll.config
+E:\FO_Setup\SpectrumBL\bin\Debug\SpectrumBL.dll
+E:\FO_Setup\SpectrumBL\bin\Debug\SpectrumBL.pdb
+E:\FO_Setup\SpectrumBL\bin\Debug\SpectrumBL.xml
+E:\FO_Setup\SpectrumBL\obj\Debug\ResolveAssemblyReference.cache
+E:\FO_Setup\SpectrumBL\obj\Debug\SpectrumBL.Resources.resources
+E:\FO_Setup\SpectrumBL\obj\Debug\GenerateResource-ResGen.read.1.tlog
+E:\FO_Setup\SpectrumBL\obj\Debug\GenerateResource-ResGen.write.1.tlog
+E:\FO_Setup\SpectrumBL\obj\Debug\SpectrumBL.dll
+E:\FO_Setup\SpectrumBL\obj\Debug\SpectrumBL.xml
+E:\FO_Setup\SpectrumBL\obj\Debug\SpectrumBL.pdb
+D:\DOM2\SpectrumBL\bin\Debug\app.config
+D:\DOM2\SpectrumBL\bin\Debug\SpectrumBL.dll.config
+D:\DOM2\SpectrumBL\bin\Debug\SpectrumBL.dll
+D:\DOM2\SpectrumBL\bin\Debug\SpectrumBL.pdb
+D:\DOM2\SpectrumBL\bin\Debug\SpectrumBL.xml
+D:\DOM2\SpectrumBL\obj\Debug\ResolveAssemblyReference.cache
+D:\DOM2\SpectrumBL\obj\Debug\SpectrumBL.Resources.resources
+D:\DOM2\SpectrumBL\obj\Debug\ResGen.read.1.tlog
+D:\DOM2\SpectrumBL\obj\Debug\ResGen.write.1.tlog
+D:\DOM2\SpectrumBL\obj\Debug\SpectrumBL.dll
+D:\DOM2\SpectrumBL\obj\Debug\SpectrumBL.xml
+D:\DOM2\SpectrumBL\obj\Debug\SpectrumBL.pdb
+D:\Projects\dom2\SpectrumBL\bin\Debug\app.config
+D:\Projects\dom2\SpectrumBL\bin\Debug\SpectrumBL.dll.config
+D:\Projects\dom2\SpectrumBL\bin\Debug\SpectrumBL.dll
+D:\Projects\dom2\SpectrumBL\bin\Debug\SpectrumBL.pdb
+D:\Projects\dom2\SpectrumBL\bin\Debug\SpectrumBL.xml
+D:\Projects\dom2\SpectrumBL\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\dom2\SpectrumBL\obj\Debug\SpectrumBL.Resources.resources
+D:\Projects\dom2\SpectrumBL\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\Projects\dom2\SpectrumBL\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\Projects\dom2\SpectrumBL\obj\Debug\SpectrumBL.dll
+D:\Projects\dom2\SpectrumBL\obj\Debug\SpectrumBL.xml
+D:\Projects\dom2\SpectrumBL\obj\Debug\SpectrumBL.pdb
+D:\Shared\dom2\SpectrumBL\bin\Debug\app.config
+D:\Shared\dom2\SpectrumBL\bin\Debug\SpectrumBL.dll.config
+D:\Shared\dom2\SpectrumBL\bin\Debug\SpectrumBL.dll
+D:\Shared\dom2\SpectrumBL\bin\Debug\SpectrumBL.pdb
+D:\Shared\dom2\SpectrumBL\bin\Debug\SpectrumBL.xml
+D:\Shared\dom2\SpectrumBL\obj\Debug\ResolveAssemblyReference.cache
+D:\Shared\dom2\SpectrumBL\obj\Debug\SpectrumBL.Resources.resources
+D:\Shared\dom2\SpectrumBL\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\Shared\dom2\SpectrumBL\obj\Debug\ResGen.read.1.tlog
+D:\Shared\dom2\SpectrumBL\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\Shared\dom2\SpectrumBL\obj\Debug\ResGen.write.1.tlog
+D:\Shared\dom2\SpectrumBL\obj\Debug\SpectrumBL.dll
+D:\Shared\dom2\SpectrumBL\obj\Debug\SpectrumBL.xml
+D:\Shared\dom2\SpectrumBL\obj\Debug\SpectrumBL.pdb
+D:\Specrum\dom2\SpectrumBL\bin\Debug\app.config
+D:\Specrum\dom2\SpectrumBL\bin\Debug\SpectrumBL.dll.config
+D:\Specrum\dom2\SpectrumBL\bin\Debug\SpectrumBL.dll
+D:\Specrum\dom2\SpectrumBL\bin\Debug\SpectrumBL.pdb
+D:\Specrum\dom2\SpectrumBL\bin\Debug\SpectrumBL.xml
+D:\Specrum\dom2\SpectrumBL\obj\Debug\ResolveAssemblyReference.cache
+D:\Specrum\dom2\SpectrumBL\obj\Debug\SpectrumBL.Resources.resources
+D:\Specrum\dom2\SpectrumBL\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\Specrum\dom2\SpectrumBL\obj\Debug\ResGen.read.1.tlog
+D:\Specrum\dom2\SpectrumBL\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\Specrum\dom2\SpectrumBL\obj\Debug\ResGen.write.1.tlog
+D:\Specrum\dom2\SpectrumBL\obj\Debug\SpectrumBL.dll
+D:\Specrum\dom2\SpectrumBL\obj\Debug\SpectrumBL.xml
+D:\Specrum\dom2\SpectrumBL\obj\Debug\SpectrumBL.pdb
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\bin\Debug\app.config
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\bin\Debug\SpectrumBL.dll.config
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\bin\Debug\SpectrumBL.dll
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\bin\Debug\SpectrumBL.pdb
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\bin\Debug\SpectrumBL.xml
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\bin\Debug\itextsharp.dll
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\bin\Debug\NPOI.dll
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\bin\Debug\SpectrumCommon.dll
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\bin\Debug\Ionic.Zip.dll
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\bin\Debug\SpectrumCommon.pdb
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\bin\Debug\SpectrumCommon.xml
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\obj\Debug\SpectrumBL.vbprojResolveAssemblyReference.cache
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\obj\Debug\SpectrumBL.Resources.resources
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\obj\Debug\SpectrumBL.vbproj.GenerateResource.Cache
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\obj\Debug\SpectrumBL.dll
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\obj\Debug\SpectrumBL.xml
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\obj\Debug\SpectrumBL.pdb

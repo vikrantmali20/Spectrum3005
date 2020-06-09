@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://independentmasters.webservices.spectrum.criti.com/" name="IndependentMastersSynchronizerService" targetNamespace="http://independentmasters.webservices.spectrum.criti.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema targetNamespace="http://independentmasters.webservices.spectrum.criti.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="retreiveIndependentMastersDetails" type="tns:retreiveIndependentMastersDetails" />
+      <xs:element name="retreiveIndependentMastersDetailsResponse" type="tns:retreiveIndependentMastersDetailsResponse" />
+      <xs:element name="saveIndependentMastersDetails" type="tns:saveIndependentMastersDetails" />
+      <xs:element name="saveIndependentMastersDetailsResponse" type="tns:saveIndependentMastersDetailsResponse" />
+      <xs:complexType name="saveIndependentMastersDetails">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:independentMasterSaveRequestDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="independentMasterSaveRequestDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="independentMasterDTO" type="tns:independentMastersDTO" />
+          <xs:element minOccurs="0" name="soapWsHeader" type="tns:soapWsHeader" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="independentMastersDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="calendar" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="defaultConfigDTO" nillable="true" type="tns:defaultConfigDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="defaultConfigExtensionDTO" nillable="true" type="tns:defaultConfigExtensionDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="deptGrievanceMappingDTO" nillable="true" type="tns:deptGrievanceMappingDTO" />
+          <xs:element minOccurs="0" name="faultDTO" type="tns:faultDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="grievanceAttachmentsDTO" nillable="true" type="tns:grievanceAttachmentsDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="grievanceDetailsDTO" nillable="true" type="tns:grievanceDetailsDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="grievanceFeedbackdtlDTO" nillable="true" type="tns:grievanceFeedbackdtlDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="grievanceHistoryDetailsDTO" nillable="true" type="tns:grievanceHistoryDetailsDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="grievanceRemarkDetailsDTO" nillable="true" type="tns:grievanceRemarkDetailsDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="grievanceReopenHistoryDetailsDTO" nillable="true" type="tns:grievanceReopenHistoryDetailsDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="grievanceSMSDetailsDTO" nillable="true" type="tns:grievanceSMSDetailsDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="grievanceTypeDTO" nillable="true" type="tns:grievanceTypeDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="internetLogDto" nillable="true" type="tns:internetLogDto" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="mstTerminalIDDTO" nillable="true" type="tns:mstTerminalIDDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="userLoginHistoryDTO" nillable="true" type="tns:userLoginHistoryDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="defaultConfigDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="description" type="xs:string" />
+          <xs:element minOccurs="0" name="documentGroup" type="xs:string" />
+          <xs:element minOccurs="0" name="documentType" type="xs:string" />
+          <xs:element minOccurs="0" name="fldLabel" type="xs:string" />
+          <xs:element minOccurs="0" name="fldType" type="xs:string" />
+          <xs:element minOccurs="0" name="fldValue" type="xs:string" />
+          <xs:element minOccurs="0" name="sequence" type="xs:string" />
+          <xs:element minOccurs="0" name="sitecode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="defaultConfigExtensionDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="action" type="xs:string" />
+          <xs:element minOccurs="0" name="createdAt" type="xs:string" />
+          <xs:element minOccurs="0" name="createdBy" type="xs:string" />
+          <xs:element minOccurs="0" name="createdOn" type="xs:string" />
+          <xs:element minOccurs="0" name="date" type="xs:string" />
+          <xs:element minOccurs="0" name="shiftId" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="terminalId" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedAt" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedBy" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedOn" type="xs:string" />
+          <xs:element minOccurs="0" name="value" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="deptGrievanceMappingDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="createdAt" type="xs:string" />
+          <xs:element minOccurs="0" name="createdBy" type="xs:string" />
+          <xs:element minOccurs="0" name="createdOn" type="xs:string" />
+          <xs:element minOccurs="0" name="deptId" type="xs:string" />
+          <xs:element minOccurs="0" name="grivanceTypeId" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedAt" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedBy" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedOn" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="faultDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="businessError" type="xs:string" />
+          <xs:element minOccurs="0" name="faultLevel" type="xs:string" />
+          <xs:element minOccurs="0" name="faultStackTrace" type="xs:string" />
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="grievanceAttachmentsDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CREATEDAT" type="xs:string" />
+          <xs:element minOccurs="0" name="CREATEDBY" type="xs:string" />
+          <xs:element minOccurs="0" name="CREATEDON" type="xs:string" />
+          <xs:element minOccurs="0" name="fileName" type="xs:string" />
+          <xs:element minOccurs="0" name="grievanceAttachmentsSiteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="grievanceId" type="xs:string" />
+          <xs:element minOccurs="0" name="grievanceSiteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="remarkId" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="UPDATEDAT" type="xs:string" />
+          <xs:element minOccurs="0" name="UPDATEDBY" type="xs:string" />
+          <xs:element minOccurs="0" name="UPDATEDON" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="grievanceDetailsDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="assignedSiteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="boldBy" type="xs:string" />
+          <xs:element minOccurs="0" name="CCDepartment" type="xs:string" />
+          <xs:element minOccurs="0" name="CCSite" type="xs:string" />
+          <xs:element minOccurs="0" name="createdAt" type="xs:string" />
+          <xs:element minOccurs="0" name="createdBy" type="xs:string" />
+          <xs:element minOccurs="0" name="createdOn" type="xs:string" />
+          <xs:element minOccurs="0" name="deptId" type="xs:string" />
+          <xs:element minOccurs="0" name="grievanceDesc" type="xs:string" />
+          <xs:element minOccurs="0" name="grievanceId" type="xs:string" />
+          <xs:element minOccurs="0" name="grievanceStatus" type="xs:string" />
+          <xs:element minOccurs="0" name="grievanceTypeId" type="xs:string" />
+          <xs:element minOccurs="0" name="isBold" type="xs:string" />
+          <xs:element minOccurs="0" name="isCCSite" type="xs:string" />
+          <xs:element minOccurs="0" name="isRaisedFromSite" type="xs:string" />
+          <xs:element minOccurs="0" name="isRaisedToSite" type="xs:string" />
+          <xs:element minOccurs="0" name="isRated" type="xs:string" />
+          <xs:element minOccurs="0" name="isViewed" type="xs:string" />
+          <xs:element minOccurs="0" name="mobileList" type="xs:string" />
+          <xs:element minOccurs="0" name="raisedFromSite" type="xs:string" />
+          <xs:element minOccurs="0" name="raisedToDepartment" type="xs:string" />
+          <xs:element minOccurs="0" name="remark" type="xs:string" />
+          <xs:element minOccurs="0" name="sitecode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="title" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedAt" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedBy" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedOn" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="grievanceFeedbackdtlDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="comment" type="xs:string" />
+          <xs:element minOccurs="0" name="createdAt" type="xs:string" />
+          <xs:element minOccurs="0" name="createdOn" type="xs:string" />
+          <xs:element minOccurs="0" name="cretedBy" type="xs:string" />
+          <xs:element minOccurs="0" name="grievanceId" type="xs:string" />
+          <xs:element minOccurs="0" name="rating" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedAt" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedBy" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedOn" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="grievanceHistoryDetailsDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="createdAt" type="xs:string" />
+          <xs:element minOccurs="0" name="createdBy" type="xs:string" />
+          <xs:element minOccurs="0" name="createdOn" type="xs:string" />
+          <xs:element minOccurs="0" name="grievanceId" type="xs:string" />
+          <xs:element minOccurs="0" name="grievanceSiteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="historyId" type="xs:string" />
+          <xs:element minOccurs="0" name="historySiteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="historyText" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedAt" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedBy" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedOn" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="grievanceRemarkDetailsDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CREATEDAT" type="xs:string" />
+          <xs:element minOccurs="0" name="CREATEDBY" type="xs:string" />
+          <xs:element minOccurs="0" name="CREATEDON" type="xs:string" />
+          <xs:element minOccurs="0" name="grievanceId" type="xs:string" />
+          <xs:element minOccurs="0" name="grievanceSiteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="remark" type="xs:string" />
+          <xs:element minOccurs="0" name="remarkId" type="xs:string" />
+          <xs:element minOccurs="0" name="remarksSiteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="UPDATEDAT" type="xs:string" />
+          <xs:element minOccurs="0" name="UPDATEDBY" type="xs:string" />
+          <xs:element minOccurs="0" name="UPDATEDON" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="grievanceReopenHistoryDetailsDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CREATEDAT" type="xs:string" />
+          <xs:element minOccurs="0" name="CREATEDBY" type="xs:string" />
+          <xs:element minOccurs="0" name="CREATEDON" type="xs:string" />
+          <xs:element minOccurs="0" name="grievanceId" type="xs:string" />
+          <xs:element minOccurs="0" name="grievanceSiteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="grievanceStatus" type="xs:string" />
+          <xs:element minOccurs="0" name="reopenHistoryId" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="UPDATEDAT" type="xs:string" />
+          <xs:element minOccurs="0" name="UPDATEDBY" type="xs:string" />
+          <xs:element minOccurs="0" name="UPDATEDON" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="grievanceSMSDetailsDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="createdAt" type="xs:string" />
+          <xs:element minOccurs="0" name="createdBy" type="xs:string" />
+          <xs:element minOccurs="0" name="createdOn" type="xs:string" />
+          <xs:element minOccurs="0" name="grievanceId" type="xs:string" />
+          <xs:element minOccurs="0" name="grievanceSiteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="grievanceStatus" type="xs:string" />
+          <xs:element minOccurs="0" name="mobileNo" type="xs:string" />
+          <xs:element minOccurs="0" name="retryCount" type="xs:string" />
+          <xs:element minOccurs="0" name="send" type="xs:string" />
+          <xs:element minOccurs="0" name="smsId" type="xs:string" />
+          <xs:element minOccurs="0" name="smsSiteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="smsText" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedAt" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedBy" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedOn" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="grievanceTypeDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="createdAt" type="xs:string" />
+          <xs:element minOccurs="0" name="createdBy" type="xs:string" />
+          <xs:element minOccurs="0" name="createdOn" type="xs:string" />
+          <xs:element minOccurs="0" name="grievanceTypeId" type="xs:string" />
+          <xs:element minOccurs="0" name="grievanceTypeName" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedAt" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedBy" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedOn" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="internetLogDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="createdAt" type="xs:string" />
+          <xs:element minOccurs="0" name="createdBy" type="xs:string" />
+          <xs:element minOccurs="0" name="createdOn" type="xs:string" />
+          <xs:element minOccurs="0" name="fromIP" type="xs:string" />
+          <xs:element minOccurs="0" name="fromTimeStamp" type="xs:string" />
+          <xs:element minOccurs="0" name="reason" type="xs:string" />
+          <xs:element minOccurs="0" name="serialNo" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="sync" type="xs:string" />
+          <xs:element minOccurs="0" name="tillNo" type="xs:string" />
+          <xs:element minOccurs="0" name="toIP" type="xs:string" />
+          <xs:element minOccurs="0" name="toTimeStamp" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedAt" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedBy" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedOn" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mstTerminalIDDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="isCashDrawer" type="xs:string" />
+          <xs:element minOccurs="0" name="openCloseStatus" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="terminalID" type="xs:string" />
+          <xs:element minOccurs="0" name="terminalLocation" type="xs:string" />
+          <xs:element minOccurs="0" name="terminalName" type="xs:string" />
+          <xs:element minOccurs="0" name="tillCloseFormat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="userLoginHistoryDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CREATEDAT" type="xs:string" />
+          <xs:element minOccurs="0" name="CREATEDBY" type="xs:string" />
+          <xs:element minOccurs="0" name="CREATEDON" type="xs:string" />
+          <xs:element minOccurs="0" name="IPAddress" type="xs:string" />
+          <xs:element minOccurs="0" name="loginAt" type="xs:string" />
+          <xs:element minOccurs="0" name="loginDateTime" type="xs:string" />
+          <xs:element minOccurs="0" name="logoutDateTime" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="terminalID" type="xs:string" />
+          <xs:element minOccurs="0" name="UPDATEDAT" type="xs:string" />
+          <xs:element minOccurs="0" name="UPDATEDBY" type="xs:string" />
+          <xs:element minOccurs="0" name="UPDATEDON" type="xs:string" />
+          <xs:element minOccurs="0" name="userAgent" type="xs:string" />
+          <xs:element minOccurs="0" name="userID" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="soapWsHeader">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="password" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="storePort" type="xs:string" />
+          <xs:element minOccurs="0" name="userName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveIndependentMastersDetailsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:syncResponseDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="syncResponseDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="calendar" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="faultDTO" type="tns:faultDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="retreiveIndependentMastersDetails">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:wsRequestDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="wsRequestDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="pushOrPull" type="xs:boolean" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="soapWsHeader" type="tns:soapWsHeader" />
+          <xs:element minOccurs="0" name="syncFromDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="tableName" type="xs:string" />
+          <xs:element minOccurs="0" name="transactionCode" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="retreiveIndependentMastersDetailsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:independentMastersDTO" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </types>
+  <message name="IndependentMastersSynchronizer_retreiveIndependentMastersDetails">
+    <part name="retreiveIndependentMastersDetails" element="tns:retreiveIndependentMastersDetails" />
+  </message>
+  <message name="IndependentMastersSynchronizer_retreiveIndependentMastersDetailsResponse">
+    <part name="retreiveIndependentMastersDetailsResponse" element="tns:retreiveIndependentMastersDetailsResponse" />
+  </message>
+  <message name="IndependentMastersSynchronizer_saveIndependentMastersDetails">
+    <part name="saveIndependentMastersDetails" element="tns:saveIndependentMastersDetails" />
+  </message>
+  <message name="IndependentMastersSynchronizer_saveIndependentMastersDetailsResponse">
+    <part name="saveIndependentMastersDetailsResponse" element="tns:saveIndependentMastersDetailsResponse" />
+  </message>
+  <portType name="IndependentMastersSynchronizer">
+    <operation name="retreiveIndependentMastersDetails" parameterOrder="retreiveIndependentMastersDetails">
+      <input message="tns:IndependentMastersSynchronizer_retreiveIndependentMastersDetails" />
+      <output message="tns:IndependentMastersSynchronizer_retreiveIndependentMastersDetailsResponse" />
+    </operation>
+    <operation name="saveIndependentMastersDetails" parameterOrder="saveIndependentMastersDetails">
+      <input message="tns:IndependentMastersSynchronizer_saveIndependentMastersDetails" />
+      <output message="tns:IndependentMastersSynchronizer_saveIndependentMastersDetailsResponse" />
+    </operation>
+  </portType>
+  <binding name="IndependentMastersSynchronizerBinding" type="tns:IndependentMastersSynchronizer">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="retreiveIndependentMastersDetails">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="saveIndependentMastersDetails">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="IndependentMastersSynchronizerService">
+    <port name="IndependentMastersSynchronizerPort" binding="tns:IndependentMastersSynchronizerBinding">
+      <soap:address location="http://Dt148:10080/posSeam/webservices/IndependentMastersSynchronizer" />
+    </port>
+  </service>
+</definitions>

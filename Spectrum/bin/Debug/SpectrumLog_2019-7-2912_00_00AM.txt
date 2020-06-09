@@ -1,0 +1,120 @@
+----------------------------------------------------------
+
+------------------ Spectrum Log  -------------------------
+
+Date : 2019-7-29 Time:02:49 PM 
+
+SiteCode: SUB0001 
+
+Terminal ID: T001 
+
+User Name : admin 
+
+----------------------------------------------------------
+
+Date : 2019-7-29 Time:02:49 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 942
+
+----------------------------------------------------------
+
+Date : 2019-7-29 Time:02:50 PM 
+
+System.Data.SqlClient.SqlException (0x80131904): Only one expression can be specified in the select list when the subquery is not introduced with EXISTS.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at SpectrumBL.clsDayCloseBase.GetReader(String& query) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\clsDayCloseBase.vb:line 150
+ClientConnectionId:14d05589-2d72-4fea-9ae8-ccf8845f27c1
+Error Number:116,State:1,Class:16
+
+----------------------------------------------------------
+
+Date : 2019-7-29 Time:02:50 PM 
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SpectrumBL.DayCloseWastageDetails.GetDayCloseData(DayCloseDataRequestModel`1& request, Boolean AllowQtyZero) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\DayClose\DayCloseWastageDetails.vb:line 68
+
+----------------------------------------------------------
+
+Date : 2019-7-29 Time:02:50 PM 
+
+System.ApplicationException: currently user on stocktake screen
+
+----------------------------------------------------------
+
+Date : 2019-7-29 Time:02:50 PM 
+
+System.ApplicationException: manually stocktake form close by user
+
+----------------------------------------------------------
+
+Date : 2019-7-29 Time:02:50 PM 
+
+System.ApplicationException: 
+
+
+
+data save successfully on closing of stock take form 
+
+----------------------------------------------------------
+
+Date : 2019-7-29 Time:02:51 PM 
+
+System.InvalidCastException: Overload resolution failed because no Public '=' can be called with these arguments:
+    'Public Shared Operator =(a As String, b As String) As Boolean':
+        Argument matching parameter 'a' cannot convert from 'DataRowView' to 'String'.
+   at Microsoft.VisualBasic.CompilerServices.OverloadResolution.ResolveOverloadedCall(String MethodName, List`1 Candidates, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, BindingFlags LookupFlags, Boolean ReportErrors, ResolutionFailure& Failure)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ResolveUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments, Boolean ReportErrors)
+   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeObjectUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(Object Left, Object Right, Boolean TextCompare)
+   at Spectrum.frmNPrinterTillMapping.CboDocType_SelectedIndexChanged(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmNPrinterTillMapping.vb:line 246
+
+----------------------------------------------------------
+
+Date : 2019-7-29 Time:02:51 PM 
+
+System.InvalidCastException: Overload resolution failed because no Public '=' can be called with these arguments:
+    'Public Shared Operator =(a As String, b As String) As Boolean':
+        Argument matching parameter 'a' cannot convert from 'DataRowView' to 'String'.
+   at Microsoft.VisualBasic.CompilerServices.OverloadResolution.ResolveOverloadedCall(String MethodName, List`1 Candidates, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, BindingFlags LookupFlags, Boolean ReportErrors, ResolutionFailure& Failure)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ResolveUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments, Boolean ReportErrors)
+   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeObjectUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(Object Left, Object Right, Boolean TextCompare)
+   at Spectrum.frmNPrinterTillMapping.CboDocType_SelectedIndexChanged(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmNPrinterTillMapping.vb:line 246
+
+----------------------------------------------------------
+
+Date : 2019-7-29 Time:02:51 PM 
+
+System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7128
+
+----------------------------------------------------------
+
+Date : 2019-7-29 Time:02:52 PM 
+
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Spectrum.MDISpectrum.MDISpectrum_Load(Object sender, EventArgs e) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\MDISpectrum.vb:line 942
+

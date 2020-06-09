@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f8d11bca-611d-458b-814b-0ac42f7436b6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://10.10.180.80:2015/LicenseService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LicenseService.wsdl" MetadataType="Wsdl" ID="7990f76f-bd9b-49d0-a9e0-e6542aaab420" SourceId="1" SourceUrl="http://10.10.180.80:2015/LicenseService.svc?wsdl" />
+    <MetadataFile FileName="LicenseService.xsd" MetadataType="Schema" ID="afab1d0e-4877-4758-8498-b0ca1eb8b158" SourceId="1" SourceUrl="http://10.10.180.80:2015/LicenseService.svc?xsd=xsd2" />
+    <MetadataFile FileName="LicenseService1.xsd" MetadataType="Schema" ID="b6bb81fe-a0e6-4b15-9c33-b42ca52e13dc" SourceId="1" SourceUrl="http://10.10.180.80:2015/LicenseService.svc?xsd=xsd0" />
+    <MetadataFile FileName="LicenseService2.xsd" MetadataType="Schema" ID="fb9051a2-3756-47c6-bf4e-c3cd80f1867f" SourceId="1" SourceUrl="http://10.10.180.80:2015/LicenseService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

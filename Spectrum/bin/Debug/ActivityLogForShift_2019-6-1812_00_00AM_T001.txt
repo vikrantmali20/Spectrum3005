@@ -1,0 +1,22 @@
+----------------------------------------------------------
+
+------------------ Shift Activity Log  -------------------------
+
+Date : 2019-6-18 Time:01:08 PM 
+
+SiteCode: 0069 
+
+Terminal ID: T001 
+
+User Name : admin 
+
+----------------------------------------------------------
+
+Date : 2019-6-18  Time:01:08 PM ShiftId :1  
+
+SHIFT CLOSE DENOMINATION DETAILS
+----------------------------------------------------------
+
+Date : 2019-6-18  Time:01:10 PM ShiftId :1  
+
+SHIFT CLOSE DENOMINATION DETAILS

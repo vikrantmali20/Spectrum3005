@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://articlehierarchy.webservices.spectrum.criti.com/" name="ArticleHierarchySynchronizerService" targetNamespace="http://articlehierarchy.webservices.spectrum.criti.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema targetNamespace="http://articlehierarchy.webservices.spectrum.criti.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="retrieveArticleHierarchyRecords" type="tns:retrieveArticleHierarchyRecords" />
+      <xs:element name="retrieveArticleHierarchyRecordsResponse" type="tns:retrieveArticleHierarchyRecordsResponse" />
+      <xs:element name="saveArticleHierarchyRecords" type="tns:saveArticleHierarchyRecords" />
+      <xs:element name="saveArticleHierarchyRecordsResponse" type="tns:saveArticleHierarchyRecordsResponse" />
+      <xs:complexType name="retrieveArticleHierarchyRecords">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:wsRequestDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="wsRequestDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="pushOrPull" type="xs:boolean" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="soapWsHeader" type="tns:soapWsHeader" />
+          <xs:element minOccurs="0" name="syncFromDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="tableName" type="xs:string" />
+          <xs:element minOccurs="0" name="transactionCode" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="soapWsHeader">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="password" type="xs:string" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="storePort" type="xs:string" />
+          <xs:element minOccurs="0" name="userName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="retrieveArticleHierarchyRecordsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:articleHierarchyDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="articleHierarchyDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="articleMapDTO" nillable="true" type="tns:articleMapDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="articleNodeMapDTO" nillable="true" type="tns:articleNodeMapDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="articleNodeRestrictedRoleDTO" nillable="true" type="tns:articleNodeRestrictedRoleDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="articleTreeNodeMapDTO" nillable="true" type="tns:articleTreeNodeMapDTO" />
+          <xs:element minOccurs="0" name="calendar" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="charProfileNodeMapDTO" nillable="true" type="tns:charProfileNodeMapDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="eanHisDTO" nillable="true" type="tns:mstEanHisDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="elementTranslationDTO" nillable="true" type="tns:elementTranslationDTO" />
+          <xs:element minOccurs="0" name="faultDTO" type="tns:faultDTO" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="mstArticleNodeDTO" nillable="true" type="tns:mstArticleNodeDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="articleMapDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articleCode" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="cumulativeRecQty" type="xs:string" />
+          <xs:element minOccurs="0" name="ean" type="xs:string" />
+          <xs:element minOccurs="0" name="map" type="xs:string" />
+          <xs:element minOccurs="0" name="recQty" type="xs:string" />
+          <xs:element minOccurs="0" name="sitecode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="transactionDate" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="articleNodeMapDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articleCode" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="lastNodeCode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="treeCode" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="articleNodeRestrictedRoleDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="createdAt" type="xs:string" />
+          <xs:element minOccurs="0" name="createdBy" type="xs:string" />
+          <xs:element minOccurs="0" name="createdOn" type="xs:string" />
+          <xs:element minOccurs="0" name="nodeCode" type="xs:string" />
+          <xs:element minOccurs="0" name="roleId" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedAt" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedBy" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedOn" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="articleTreeNodeMapDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="nodecode" type="xs:string" />
+          <xs:element minOccurs="0" name="parentNodecode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="toleranceValue" type="xs:string" />
+          <xs:element minOccurs="0" name="treeCode" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="charProfileNodeMapDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="attributeCode" type="xs:string" />
+          <xs:element minOccurs="0" name="charProfileCode" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="nodeId" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="treeCode" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mstEanHisDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articleCode" type="xs:string" />
+          <xs:element minOccurs="0" name="booleanFlag" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="defaultEan" type="xs:string" />
+          <xs:element minOccurs="0" name="discription" type="xs:string" />
+          <xs:element minOccurs="0" name="ean" type="xs:string" />
+          <xs:element minOccurs="0" name="newEan" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="uomTypeCode" type="xs:string" />
+          <xs:element minOccurs="0" name="uomcode" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="elementTranslationDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articleCode" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="elementCode" type="xs:string" />
+          <xs:element minOccurs="0" name="languageCode" type="xs:string" />
+          <xs:element minOccurs="0" name="shortDesc" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="translatedText" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="faultDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="businessError" type="xs:string" />
+          <xs:element minOccurs="0" name="faultLevel" type="xs:string" />
+          <xs:element minOccurs="0" name="faultStackTrace" type="xs:string" />
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mstArticleNodeDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="isthisLastNode" type="xs:string" />
+          <xs:element minOccurs="0" name="levelCode" type="xs:string" />
+          <xs:element minOccurs="0" name="nodeName" type="xs:string" />
+          <xs:element minOccurs="0" name="nodecode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="treeCode" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveArticleHierarchyRecords">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:articleHierarchySaveRequestDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="articleHierarchySaveRequestDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="articleHierarchyDto" type="tns:articleHierarchyDto" />
+          <xs:element minOccurs="0" name="soapWsHeader" type="tns:soapWsHeader" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveArticleHierarchyRecordsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:syncResponseDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="syncResponseDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="calendar" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="faultDTO" type="tns:faultDTO" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </types>
+  <message name="ArticleHierarchySynchronizer_retrieveArticleHierarchyRecords">
+    <part name="retrieveArticleHierarchyRecords" element="tns:retrieveArticleHierarchyRecords" />
+  </message>
+  <message name="ArticleHierarchySynchronizer_retrieveArticleHierarchyRecordsResponse">
+    <part name="retrieveArticleHierarchyRecordsResponse" element="tns:retrieveArticleHierarchyRecordsResponse" />
+  </message>
+  <message name="ArticleHierarchySynchronizer_saveArticleHierarchyRecords">
+    <part name="saveArticleHierarchyRecords" element="tns:saveArticleHierarchyRecords" />
+  </message>
+  <message name="ArticleHierarchySynchronizer_saveArticleHierarchyRecordsResponse">
+    <part name="saveArticleHierarchyRecordsResponse" element="tns:saveArticleHierarchyRecordsResponse" />
+  </message>
+  <portType name="ArticleHierarchySynchronizer">
+    <operation name="retrieveArticleHierarchyRecords" parameterOrder="retrieveArticleHierarchyRecords">
+      <input message="tns:ArticleHierarchySynchronizer_retrieveArticleHierarchyRecords" />
+      <output message="tns:ArticleHierarchySynchronizer_retrieveArticleHierarchyRecordsResponse" />
+    </operation>
+    <operation name="saveArticleHierarchyRecords" parameterOrder="saveArticleHierarchyRecords">
+      <input message="tns:ArticleHierarchySynchronizer_saveArticleHierarchyRecords" />
+      <output message="tns:ArticleHierarchySynchronizer_saveArticleHierarchyRecordsResponse" />
+    </operation>
+  </portType>
+  <binding name="ArticleHierarchySynchronizerBinding" type="tns:ArticleHierarchySynchronizer">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="retrieveArticleHierarchyRecords">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="saveArticleHierarchyRecords">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ArticleHierarchySynchronizerService">
+    <port name="ArticleHierarchySynchronizerPort" binding="tns:ArticleHierarchySynchronizerBinding">
+      <soap:address location="http://Dt148:10080/posSeam/webservices/ArticleHierarchySynchronizer" />
+    </port>
+  </service>
+</definitions>

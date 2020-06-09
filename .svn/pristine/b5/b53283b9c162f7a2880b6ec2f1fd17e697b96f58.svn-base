@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://clpcustomer.webservices.spectrum.criti.com/" name="ClpCustomerService" targetNamespace="http://clpcustomer.webservices.spectrum.criti.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema targetNamespace="http://clpcustomer.webservices.spectrum.criti.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="editCustomer" type="tns:editCustomer" />
+      <xs:element name="editCustomerResponse" type="tns:editCustomerResponse" />
+      <xs:element name="registerCustomer" type="tns:registerCustomer" />
+      <xs:element name="registerCustomerResponse" type="tns:registerCustomerResponse" />
+      <xs:element name="resetPassword" type="tns:resetPassword" />
+      <xs:element name="resetPasswordResponse" type="tns:resetPasswordResponse" />
+      <xs:element name="retrieveDefaults" type="tns:retrieveDefaults" />
+      <xs:element name="retrieveDefaultsResponse" type="tns:retrieveDefaultsResponse" />
+      <xs:element name="sendSMS" type="tns:sendSMS" />
+      <xs:element name="sendSMSResponse" type="tns:sendSMSResponse" />
+      <xs:element name="updateCustomerCsv" type="tns:updateCustomerCsv" />
+      <xs:element name="updateCustomerCsvResponse" type="tns:updateCustomerCsvResponse" />
+      <xs:element name="viewCustomer" type="tns:viewCustomer" />
+      <xs:element name="viewCustomerResponse" type="tns:viewCustomerResponse" />
+      <xs:complexType name="sendSMS">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:clpCustomerDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="clpCustomerDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="accountNo" type="xs:string" />
+          <xs:element minOccurs="0" name="birthDate" type="xs:string" />
+          <xs:element minOccurs="0" name="cardExpiryDT" type="xs:string" />
+          <xs:element minOccurs="0" name="cardIssueDT" type="xs:string" />
+          <xs:element minOccurs="0" name="cardNo" type="xs:string" />
+          <xs:element minOccurs="0" name="cardType" type="xs:string" />
+          <xs:element minOccurs="0" name="cardisActive" type="xs:string" />
+          <xs:element minOccurs="0" name="deliveryAddress" type="tns:clpCustomerAddressDTO" />
+          <xs:element minOccurs="0" name="education" type="xs:string" />
+          <xs:element minOccurs="0" name="emailId" type="xs:string" />
+          <xs:element minOccurs="0" name="facebookId" type="xs:string" />
+          <xs:element minOccurs="0" name="faultDTO" type="tns:faultDTO" />
+          <xs:element minOccurs="0" name="firstName" type="xs:string" />
+          <xs:element minOccurs="0" name="fourSquareId" type="xs:string" />
+          <xs:element minOccurs="0" name="gender" type="xs:string" />
+          <xs:element minOccurs="0" name="googlePlusId" type="xs:string" />
+          <xs:element minOccurs="0" name="hi5Id" type="xs:string" />
+          <xs:element minOccurs="0" name="ibiboId" type="xs:string" />
+          <xs:element minOccurs="0" name="isAddonCard" type="xs:string" />
+          <xs:element minOccurs="0" name="linkedInId" type="xs:string" />
+          <xs:element minOccurs="0" name="maritalStatus" type="xs:string" />
+          <xs:element minOccurs="0" name="marriageAnivDate" type="xs:string" />
+          <xs:element minOccurs="0" name="middleName" type="xs:string" />
+          <xs:element minOccurs="0" name="mobileNo" type="xs:string" />
+          <xs:element minOccurs="0" name="mySpaceId" type="xs:string" />
+          <xs:element minOccurs="0" name="nameOnCard" type="xs:string" />
+          <xs:element minOccurs="0" name="occupation" type="xs:string" />
+          <xs:element minOccurs="0" name="officeNo" type="xs:string" />
+          <xs:element minOccurs="0" name="orkutId" type="xs:string" />
+          <xs:element minOccurs="0" name="passKey" type="xs:string" />
+          <xs:element minOccurs="0" name="passKeyValue" type="xs:string" />
+          <xs:element minOccurs="0" name="pointsAccumlated" type="xs:string" />
+          <xs:element minOccurs="0" name="pointsRedeemed" type="xs:string" />
+          <xs:element minOccurs="0" name="processSubType" type="xs:string" />
+          <xs:element minOccurs="0" name="promotionInfobyEmail" type="xs:string" />
+          <xs:element minOccurs="0" name="promotionInfobySMS" type="xs:string" />
+          <xs:element minOccurs="0" name="referedBy" type="xs:string" />
+          <xs:element minOccurs="0" name="registrationStatus" type="xs:string" />
+          <xs:element minOccurs="0" name="relationWithPrimaryCard" type="xs:string" />
+          <xs:element minOccurs="0" name="resPhone" type="xs:string" />
+          <xs:element minOccurs="0" name="residentialAddress" type="tns:clpCustomerAddressDTO" />
+          <xs:element minOccurs="0" name="siteCode" type="xs:string" />
+          <xs:element minOccurs="0" name="skypeId" type="xs:string" />
+          <xs:element minOccurs="0" name="spouseDob" type="xs:string" />
+          <xs:element minOccurs="0" name="spouseFirstName" type="xs:string" />
+          <xs:element minOccurs="0" name="spouseMiddleName" type="xs:string" />
+          <xs:element minOccurs="0" name="spouseOccupation" type="xs:string" />
+          <xs:element minOccurs="0" name="spouseSurName" type="xs:string" />
+          <xs:element minOccurs="0" name="spouseTitle" type="xs:string" />
+          <xs:element minOccurs="0" name="surName" type="xs:string" />
+          <xs:element minOccurs="0" name="title" type="xs:string" />
+          <xs:element minOccurs="0" name="totalBalancePoint" type="xs:string" />
+          <xs:element minOccurs="0" name="twitterId" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="clpCustomerAddressDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="addressLn1" type="xs:string" />
+          <xs:element minOccurs="0" name="addressLn2" type="xs:string" />
+          <xs:element minOccurs="0" name="addressLn3" type="xs:string" />
+          <xs:element minOccurs="0" name="addressLn4" type="xs:string" />
+          <xs:element minOccurs="0" name="addressType" type="xs:string" />
+          <xs:element minOccurs="0" name="cardNo" type="xs:string" />
+          <xs:element minOccurs="0" name="cityCode" type="xs:string" />
+          <xs:element minOccurs="0" name="clpprogramid" type="xs:string" />
+          <xs:element minOccurs="0" name="countryCode" type="xs:string" />
+          <xs:element minOccurs="0" name="createdat" type="xs:string" />
+          <xs:element minOccurs="0" name="createdby" type="xs:string" />
+          <xs:element minOccurs="0" name="createdon" type="xs:string" />
+          <xs:element minOccurs="0" name="defaults" type="xs:string" />
+          <xs:element minOccurs="0" name="pinCode" type="xs:string" />
+          <xs:element minOccurs="0" name="stateCode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedat" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedby" type="xs:string" />
+          <xs:element minOccurs="0" name="updatedon" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="faultDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="businessError" type="xs:string" />
+          <xs:element minOccurs="0" name="faultLevel" type="xs:string" />
+          <xs:element minOccurs="0" name="faultStackTrace" type="xs:string" />
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="sendSMSResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:syncResponseDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="syncResponseDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="calendar" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="faultDTO" type="tns:faultDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="resetPassword">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:clpCustomerRequestDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="clpCustomerRequestDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="clpCustomerDTO" type="tns:clpCustomerDTO" />
+          <xs:element minOccurs="0" name="customerId" type="xs:string" />
+          <xs:element minOccurs="0" name="idType" type="xs:string" />
+          <xs:element minOccurs="0" name="password" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="resetPasswordResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:syncResponseDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="viewCustomer">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:clpCustomerRequestDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="viewCustomerResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:clpCustomerDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="editCustomer">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:clpCustomerRequestDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="editCustomerResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:syncResponseDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="registerCustomer">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:clpCustomerDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="registerCustomerResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:syncResponseDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="retrieveDefaults">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="retrieveDefaultsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:clpDefaultDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="clpDefaultDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="defaultValues" nillable="true" type="tns:clpDefaultValuesDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="clpDefaultValuesDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="code" type="xs:string" />
+          <xs:element minOccurs="0" name="name" type="xs:string" />
+          <xs:element minOccurs="0" name="type" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="updateCustomerCsv">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:imageSyncDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="imageSyncDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="fileBytes" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="fileName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="updateCustomerCsvResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:syncResponseDTO" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </types>
+  <message name="ClpCustomer_sendSMS">
+    <part name="sendSMS" element="tns:sendSMS" />
+  </message>
+  <message name="ClpCustomer_updateCustomerCsvResponse">
+    <part name="updateCustomerCsvResponse" element="tns:updateCustomerCsvResponse" />
+  </message>
+  <message name="ClpCustomer_viewCustomerResponse">
+    <part name="viewCustomerResponse" element="tns:viewCustomerResponse" />
+  </message>
+  <message name="ClpCustomer_retrieveDefaultsResponse">
+    <part name="retrieveDefaultsResponse" element="tns:retrieveDefaultsResponse" />
+  </message>
+  <message name="ClpCustomer_editCustomerResponse">
+    <part name="editCustomerResponse" element="tns:editCustomerResponse" />
+  </message>
+  <message name="ClpCustomer_registerCustomer">
+    <part name="registerCustomer" element="tns:registerCustomer" />
+  </message>
+  <message name="ClpCustomer_registerCustomerResponse">
+    <part name="registerCustomerResponse" element="tns:registerCustomerResponse" />
+  </message>
+  <message name="ClpCustomer_resetPassword">
+    <part name="resetPassword" element="tns:resetPassword" />
+  </message>
+  <message name="ClpCustomer_editCustomer">
+    <part name="editCustomer" element="tns:editCustomer" />
+  </message>
+  <message name="ClpCustomer_sendSMSResponse">
+    <part name="sendSMSResponse" element="tns:sendSMSResponse" />
+  </message>
+  <message name="ClpCustomer_retrieveDefaults">
+    <part name="retrieveDefaults" element="tns:retrieveDefaults" />
+  </message>
+  <message name="ClpCustomer_viewCustomer">
+    <part name="viewCustomer" element="tns:viewCustomer" />
+  </message>
+  <message name="ClpCustomer_resetPasswordResponse">
+    <part name="resetPasswordResponse" element="tns:resetPasswordResponse" />
+  </message>
+  <message name="ClpCustomer_updateCustomerCsv">
+    <part name="updateCustomerCsv" element="tns:updateCustomerCsv" />
+  </message>
+  <portType name="ClpCustomer">
+    <operation name="editCustomer" parameterOrder="editCustomer">
+      <input message="tns:ClpCustomer_editCustomer" />
+      <output message="tns:ClpCustomer_editCustomerResponse" />
+    </operation>
+    <operation name="registerCustomer" parameterOrder="registerCustomer">
+      <input message="tns:ClpCustomer_registerCustomer" />
+      <output message="tns:ClpCustomer_registerCustomerResponse" />
+    </operation>
+    <operation name="resetPassword" parameterOrder="resetPassword">
+      <input message="tns:ClpCustomer_resetPassword" />
+      <output message="tns:ClpCustomer_resetPasswordResponse" />
+    </operation>
+    <operation name="retrieveDefaults" parameterOrder="retrieveDefaults">
+      <input message="tns:ClpCustomer_retrieveDefaults" />
+      <output message="tns:ClpCustomer_retrieveDefaultsResponse" />
+    </operation>
+    <operation name="sendSMS" parameterOrder="sendSMS">
+      <input message="tns:ClpCustomer_sendSMS" />
+      <output message="tns:ClpCustomer_sendSMSResponse" />
+    </operation>
+    <operation name="updateCustomerCsv" parameterOrder="updateCustomerCsv">
+      <input message="tns:ClpCustomer_updateCustomerCsv" />
+      <output message="tns:ClpCustomer_updateCustomerCsvResponse" />
+    </operation>
+    <operation name="viewCustomer" parameterOrder="viewCustomer">
+      <input message="tns:ClpCustomer_viewCustomer" />
+      <output message="tns:ClpCustomer_viewCustomerResponse" />
+    </operation>
+  </portType>
+  <binding name="ClpCustomerBinding" type="tns:ClpCustomer">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="editCustomer">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="registerCustomer">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="resetPassword">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="retrieveDefaults">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="sendSMS">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updateCustomerCsv">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="viewCustomer">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ClpCustomerService">
+    <port name="ClpCustomerPort" binding="tns:ClpCustomerBinding">
+      <soap:address location="http://10.10.180.68:8080/posSeam/webservices/ClpCustomer" />
+    </port>
+  </service>
+</definitions>

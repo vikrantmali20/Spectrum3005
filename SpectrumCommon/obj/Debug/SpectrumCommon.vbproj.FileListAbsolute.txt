@@ -1,0 +1,12 @@
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumCommon\bin\Debug\SpectrumCommon.dll
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumCommon\bin\Debug\SpectrumCommon.pdb
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumCommon\bin\Debug\SpectrumCommon.xml
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumCommon\bin\Debug\itextsharp.dll
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumCommon\bin\Debug\NPOI.dll
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumCommon\bin\Debug\Ionic.Zip.dll
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumCommon\obj\Debug\SpectrumCommon.Resources.resources
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumCommon\obj\Debug\SpectrumCommon.vbproj.GenerateResource.Cache
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumCommon\obj\Debug\SpectrumCommon.dll
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumCommon\obj\Debug\SpectrumCommon.xml
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumCommon\obj\Debug\SpectrumCommon.pdb
+E:\Project\3.0.0.5_HashTag_Sync\SpectrumCommon\obj\Debug\SpectrumCommon.vbprojResolveAssemblyReference.cache

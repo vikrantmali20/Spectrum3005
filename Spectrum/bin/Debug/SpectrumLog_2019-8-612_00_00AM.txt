@@ -1,0 +1,673 @@
+----------------------------------------------------------
+
+------------------ Spectrum Log  -------------------------
+
+Date : 2019-8-6 Time:01:25 PM 
+
+SiteCode: 0002 
+
+Terminal ID: T001 
+
+User Name : admin 
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:01:25 PM 
+
+System.IO.IOException: The port 'COM1' does not exist.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at SpectrumBL.clsCommon.Display20x2Line(String line1String, String line2String, String portname, Boolean ClearScreen) in E:\Project\3.0.0.5_HashTag_Sync\SpectrumBL\clsCommon.vb:line 7128
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:01:26 PM 
+
+System.ApplicationException: Checking internet connectivity...
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:01:26 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:01:26 PM 
+
+System.ApplicationException: Getting Updates from ArticleSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:01:27 PM 
+
+System.ApplicationException: sending request parameters to ArticleSynchronizer objRequestDTO.siteCode=0002,objRequestDTO.syncFromDate = 2011-05-20
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:01:28 PM 
+
+System.ApplicationException: Response from ArticleSynchronizer:SUCCESS
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:01:32 PM 
+
+System.ApplicationException: Checking internet connectivity...
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:01:32 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:01:32 PM 
+
+System.ApplicationException: Getting Updates from ArticleSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:01:33 PM 
+
+System.ApplicationException: sending request parameters to ArticleSynchronizer objRequestDTO.siteCode=0002,objRequestDTO.syncFromDate = 2011-05-20
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:01:33 PM 
+
+System.ApplicationException: Response from ArticleSynchronizer:SUCCESS
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:01:33 PM 
+
+System.ApplicationException: Creating table mstArticleGroup
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:01:34 PM 
+
+System.ApplicationException: Filling mstArticleGroup with values obtained from response
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:02:41 PM 
+
+System.ApplicationException: Checking internet connectivity...
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:02:41 PM 
+
+System.ApplicationException: Checking CCE server Connectivity...
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:02:41 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:02:42 PM 
+
+System.ApplicationException: Getting Updates from ArticleSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:02:54 PM 
+
+System.ApplicationException: Checking internet connectivity...
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:02:54 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:02:55 PM 
+
+System.ApplicationException: Getting Updates from ArticleSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:02:55 PM 
+
+System.ApplicationException: sending request parameters to ArticleSynchronizer objRequestDTO.siteCode=0002,objRequestDTO.syncFromDate = 2011-05-20
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:02:55 PM 
+
+System.ApplicationException: Response from ArticleSynchronizer:SUCCESS
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:02:55 PM 
+
+System.ApplicationException: Creating table MstArticleGroup
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:02:55 PM 
+
+System.ApplicationException: Filling MstArticleGroup with values obtained from response
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:02:55 PM 
+
+System.ApplicationException: Datatable MstArticleGroup filled successfully
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:03 PM 
+
+System.ApplicationException: Checking internet connectivity...
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:04 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:04 PM 
+
+System.ApplicationException: Getting Updates from ArticleSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:04 PM 
+
+System.ApplicationException: sending request parameters to ArticleSynchronizer objRequestDTO.siteCode=0002,objRequestDTO.syncFromDate = 2011-05-20
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:04 PM 
+
+System.ApplicationException: Response from ArticleSynchronizer:SUCCESS
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:04 PM 
+
+System.ApplicationException: Data Not Found for MstArticleImage
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:04 PM 
+
+System.ApplicationException: Data Not Found for MstArticleCombo
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:04 PM 
+
+System.ApplicationException: Creating table MstArticleGroup
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:04 PM 
+
+System.ApplicationException: Filling MstArticleGroup with values obtained from response
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:04 PM 
+
+System.ApplicationException: Datatable MstArticleGroup filled successfully
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:12 PM 
+
+System.ApplicationException: Checking internet connectivity...
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:12 PM 
+
+System.ApplicationException: Checking CCE server Connectivity...
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:12 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:12 PM 
+
+System.ApplicationException: Getting Updates from IndependentMastersSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:12 PM 
+
+System.ApplicationException: Data Not Updated for IndependentMaster
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:12 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for MstEan
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:12 PM 
+
+System.ApplicationException: sending request parameters to CsvFileSyncronizer_ objRequestDTO.siteCode=0002,objRequestDTO.syncFromDate = 2011-05-20
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:12 PM 
+
+System.ServiceModel.EndpointNotFoundException: There was no endpoint listening at http://dt114:10080/posSeam/webservices/CsvFileSyncronizer?wsdl that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 10.10.181.153:10080
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   at System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Spectrum.ServiceReference2.CsvFileSyncronizer.syncronizeCsvFile(syncronizeCsvFileRequest request)
+   at Spectrum.ServiceReference2.CsvFileSyncronizerClient.ServiceReference2_CsvFileSyncronizer_syncronizeCsvFile(syncronizeCsvFileRequest request) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\Service References\ServiceReference2\Reference.vb:line 710
+   at Spectrum.ServiceReference2.CsvFileSyncronizerClient.syncronizeCsvFile(syncronizeCsvFile syncronizeCsvFile1) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\Service References\ServiceReference2\Reference.vb:line 716
+   at Spectrum.frmCallWS.CsvFileSyncronizer(String Sitecode, String TableNameWS, String JsonP) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmCallWS.vb:line 1416
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:12 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for MstArticle
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:12 PM 
+
+System.ApplicationException: sending request parameters to CsvFileSyncronizer_ objRequestDTO.siteCode=0002,objRequestDTO.syncFromDate = 2011-05-20
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:12 PM 
+
+System.ServiceModel.EndpointNotFoundException: There was no endpoint listening at http://dt114:10080/posSeam/webservices/CsvFileSyncronizer?wsdl that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 10.10.181.153:10080
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   at System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Spectrum.ServiceReference2.CsvFileSyncronizer.syncronizeCsvFile(syncronizeCsvFileRequest request)
+   at Spectrum.ServiceReference2.CsvFileSyncronizerClient.ServiceReference2_CsvFileSyncronizer_syncronizeCsvFile(syncronizeCsvFileRequest request) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\Service References\ServiceReference2\Reference.vb:line 710
+   at Spectrum.ServiceReference2.CsvFileSyncronizerClient.syncronizeCsvFile(syncronizeCsvFile syncronizeCsvFile1) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\Service References\ServiceReference2\Reference.vb:line 716
+   at Spectrum.frmCallWS.CsvFileSyncronizer(String Sitecode, String TableNameWS, String JsonP) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmCallWS.vb:line 1416
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:12 PM 
+
+System.ApplicationException: Checking internet connectivity...
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:12 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:12 PM 
+
+System.ApplicationException: Getting Updates from ArticleSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:12 PM 
+
+System.ApplicationException: sending request parameters to ArticleSynchronizer objRequestDTO.siteCode=0002,objRequestDTO.syncFromDate = 2011-05-20
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:12 PM 
+
+System.ApplicationException: Response from ArticleSynchronizer:SUCCESS
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:13 PM 
+
+System.ApplicationException: Data Not Found for MstArticleImage
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:13 PM 
+
+System.ApplicationException: Data Not Found for MstArticleCombo
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:13 PM 
+
+System.ApplicationException: Creating table MstArticleGroup
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:13 PM 
+
+System.ApplicationException: Filling MstArticleGroup with values obtained from response
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:13 PM 
+
+System.ApplicationException: Datatable MstArticleGroup filled successfully
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:43 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:43 PM 
+
+System.ApplicationException: Getting Updates from ArticleSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:43 PM 
+
+System.ApplicationException: sending request parameters to ArticleSynchronizer objRequestDTO.siteCode=0002,objRequestDTO.syncFromDate = 2011-05-20
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:47 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:49 PM 
+
+System.ApplicationException: Checking internet connectivity...
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:49 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:49 PM 
+
+System.ApplicationException: Getting Updates from ArticleSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:49 PM 
+
+System.ApplicationException: sending request parameters to ArticleSynchronizer objRequestDTO.siteCode=0002,objRequestDTO.syncFromDate = 2011-05-20
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:49 PM 
+
+System.ApplicationException: Response from ArticleSynchronizer:SUCCESS
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:49 PM 
+
+System.ApplicationException: Data Not Found for MstArticleImage
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:49 PM 
+
+System.ApplicationException: Data Not Found for MstArticleCombo
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:49 PM 
+
+System.ApplicationException: Creating table MstArticleGroup
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:49 PM 
+
+System.ApplicationException: Filling MstArticleGroup with values obtained from response
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:49 PM 
+
+System.ApplicationException: Datatable MstArticleGroup filled successfully
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:50 PM 
+
+System.ApplicationException: Data Updated Successfully for MstArticleGroup
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:50 PM 
+
+System.ApplicationException: Data Not Found for mstArticleGroupDtl
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:50 PM 
+
+System.ApplicationException: Data Not Found for MstArticleKit
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:03:50 PM 
+
+System.ApplicationException: Data Updated successfully for ArticleSynchronizer
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:07:42 PM 
+
+System.ApplicationException: Checking internet connectivity...
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:07:42 PM 
+
+System.ApplicationException: Checking CCE server Connectivity...
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:07:42 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:07:42 PM 
+
+System.ApplicationException: Getting Updates from IndependentMastersSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:07:42 PM 
+
+System.ApplicationException: Data Not Updated for IndependentMaster
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:07:42 PM 
+
+System.ApplicationException: Calling CsvFileSyncronizer for MstEan
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:07:42 PM 
+
+System.ApplicationException: sending request parameters to CsvFileSyncronizer_ objRequestDTO.siteCode=0002,objRequestDTO.syncFromDate = 2011-05-20
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:07:42 PM 
+
+System.ServiceModel.EndpointNotFoundException: There was no endpoint listening at http://dt114:10080/posSeam/webservices/CsvFileSyncronizer?wsdl that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 10.10.181.153:10080
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   at System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Spectrum.ServiceReference2.CsvFileSyncronizer.syncronizeCsvFile(syncronizeCsvFileRequest request)
+   at Spectrum.ServiceReference2.CsvFileSyncronizerClient.ServiceReference2_CsvFileSyncronizer_syncronizeCsvFile(syncronizeCsvFileRequest request) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\Service References\ServiceReference2\Reference.vb:line 710
+   at Spectrum.ServiceReference2.CsvFileSyncronizerClient.syncronizeCsvFile(syncronizeCsvFile syncronizeCsvFile1) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\Service References\ServiceReference2\Reference.vb:line 716
+   at Spectrum.frmCallWS.CsvFileSyncronizer(String Sitecode, String TableNameWS, String JsonP) in E:\Project\3.0.0.5_HashTag_Sync\Spectrum\frmCallWS.vb:line 1390
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:07:43 PM 
+
+System.ApplicationException: Checking internet connectivity...
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:07:43 PM 
+
+System.ApplicationException: Started getting Item Updates
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:07:43 PM 
+
+System.ApplicationException: Getting Updates from IndependentMastersSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:07:43 PM 
+
+System.ApplicationException: Getting Updates from ArticleSynchronizer 
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:07:43 PM 
+
+System.ApplicationException: sending request parameters to ArticleSynchronizer objRequestDTO.siteCode=0002,objRequestDTO.syncFromDate = 2011-05-20
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:07:43 PM 
+
+System.ApplicationException: Response from ArticleSynchronizer:SUCCESS
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:07:43 PM 
+
+System.ApplicationException: Data Not Found for MstArticleImage
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:07:43 PM 
+
+System.ApplicationException: Data Not Found for MstArticleCombo
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:07:43 PM 
+
+System.ApplicationException: Creating table MstArticleGroup
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:07:43 PM 
+
+System.ApplicationException: Filling MstArticleGroup with values obtained from response
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:07:43 PM 
+
+System.ApplicationException: Datatable MstArticleGroup filled successfully
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:07:43 PM 
+
+System.ApplicationException: Data Updated Successfully for MstArticleGroup
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:07:44 PM 
+
+System.ApplicationException: Data Not Found for mstArticleGroupDtl
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:07:44 PM 
+
+System.ApplicationException: Data Not Found for MstArticleKit
+
+----------------------------------------------------------
+
+Date : 2019-8-6 Time:07:44 PM 
+
+System.ApplicationException: Data Updated successfully for ArticleSynchronizer
+

@@ -1,0 +1,2865 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SpectrumModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="SpectrumModelStoreContainer">
+    <EntitySet Name="ArticleBatchBinStockBalances" EntityType="SpectrumModel.Store.ArticleBatchBinStockBalances" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ArticleDescInDiffLang" EntityType="SpectrumModel.Store.ArticleDescInDiffLang" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ArticlelblPrintDtl" EntityType="SpectrumModel.Store.ArticlelblPrintDtl" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ArticleMAP" EntityType="SpectrumModel.Store.ArticleMAP" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ArticleMatrix" EntityType="SpectrumModel.Store.ArticleMatrix" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ArticleNodeMap" EntityType="SpectrumModel.Store.ArticleNodeMap" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ArticleReplenishment" EntityType="SpectrumModel.Store.ArticleReplenishment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ArticleStockBalances" EntityType="SpectrumModel.Store.ArticleStockBalances" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ArticleTreeNodeMap" EntityType="SpectrumModel.Store.ArticleTreeNodeMap" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ArticleUOM" EntityType="SpectrumModel.Store.ArticleUOM" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AuthRoleTransactionMap" EntityType="SpectrumModel.Store.AuthRoleTransactionMap" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AuthUsers" EntityType="SpectrumModel.Store.AuthUsers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AuthUserSiteRoleMap" EntityType="SpectrumModel.Store.AuthUserSiteRoleMap" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AuthUserSiteTransactionMap" EntityType="SpectrumModel.Store.AuthUserSiteTransactionMap" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Brand" EntityType="SpectrumModel.Store.Brand" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CharacteristicsProfile" EntityType="SpectrumModel.Store.CharacteristicsProfile" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CharacteristicsValue" EntityType="SpectrumModel.Store.CharacteristicsValue" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CLPProgramSiteMap" EntityType="SpectrumModel.Store.CLPProgramSiteMap" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DefaultConfig" EntityType="SpectrumModel.Store.DefaultConfig" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GeneralCodeMst" EntityType="SpectrumModel.Store.GeneralCodeMst" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GLNoRangeObjects" EntityType="SpectrumModel.Store.GLNoRangeObjects" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Invoice" EntityType="SpectrumModel.Store.Invoice" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ManualPromotion" EntityType="SpectrumModel.Store.ManualPromotion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Manufacturer" EntityType="SpectrumModel.Store.Manufacturer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MasterArticleMap" EntityType="SpectrumModel.Store.MasterArticleMap" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstAreaCode" EntityType="SpectrumModel.Store.MstAreaCode" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstArticle" EntityType="SpectrumModel.Store.MstArticle" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstArticleImage" EntityType="SpectrumModel.Store.MstArticleImage" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstArticleKit" EntityType="SpectrumModel.Store.MstArticleKit" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstArticleNode" EntityType="SpectrumModel.Store.MstArticleNode" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstArticleTree" EntityType="SpectrumModel.Store.MstArticleTree" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstArticleTreeLevel" EntityType="SpectrumModel.Store.MstArticleTreeLevel" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstArticleType" EntityType="SpectrumModel.Store.MstArticleType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstBusiness" EntityType="SpectrumModel.Store.MstBusiness" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstCharacteristics" EntityType="SpectrumModel.Store.MstCharacteristics" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstCharacteristicsProfile" EntityType="SpectrumModel.Store.MstCharacteristicsProfile" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstCLPProgram" EntityType="SpectrumModel.Store.MstCLPProgram" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstCurrency" EntityType="SpectrumModel.Store.MstCurrency" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstDocumentTypes" EntityType="SpectrumModel.Store.MstDocumentTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstEAN" EntityType="SpectrumModel.Store.MstEAN" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstFinYear" EntityType="SpectrumModel.Store.MstFinYear" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstLanguage" EntityType="SpectrumModel.Store.MstLanguage" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstMaterial" EntityType="SpectrumModel.Store.MstMaterial" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstMaterialArticleMap" EntityType="SpectrumModel.Store.MstMaterialArticleMap" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstMaterialType" EntityType="SpectrumModel.Store.MstMaterialType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstRole" EntityType="SpectrumModel.Store.MstRole" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstSalesPerson" EntityType="SpectrumModel.Store.MstSalesPerson" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstShift" EntityType="SpectrumModel.Store.MstShift" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstSite" EntityType="SpectrumModel.Store.MstSite" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstSiteCurrancyMap" EntityType="SpectrumModel.Store.MstSiteCurrancyMap" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstSupplier" EntityType="SpectrumModel.Store.MstSupplier" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstTax" EntityType="SpectrumModel.Store.MstTax" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstTender" EntityType="SpectrumModel.Store.MstTender" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstTenderType" EntityType="SpectrumModel.Store.MstTenderType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstTransaction" EntityType="SpectrumModel.Store.MstTransaction" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstUoM" EntityType="SpectrumModel.Store.MstUoM" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MstVoucher" EntityType="SpectrumModel.Store.MstVoucher" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="OrderDtl" EntityType="SpectrumModel.Store.OrderDtl" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="OrderHdr" EntityType="SpectrumModel.Store.OrderHdr" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PromotionSiteMap" EntityType="SpectrumModel.Store.PromotionSiteMap" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PurchaseInfoRecord" EntityType="SpectrumModel.Store.PurchaseInfoRecord" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SalesInfoRecord" EntityType="SpectrumModel.Store.SalesInfoRecord" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SiteAllowedTransactions" EntityType="SpectrumModel.Store.SiteAllowedTransactions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SiteArticleTaxMapping" EntityType="SpectrumModel.Store.SiteArticleTaxMapping" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SiteSupplierMap" EntityType="SpectrumModel.Store.SiteSupplierMap" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="StockAdjustment" EntityType="SpectrumModel.Store.StockAdjustment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TaxSiteDocMap" EntityType="SpectrumModel.Store.TaxSiteDocMap" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TaxSiteMapping" EntityType="SpectrumModel.Store.TaxSiteMapping" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Article_lbl_Print" Association="SpectrumModel.Store.FK_Article_lbl_Print">
+      <End Role="MstArticle" EntitySet="MstArticle" />
+      <End Role="ArticlelblPrintDtl" EntitySet="ArticlelblPrintDtl" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Article_Material_MAP" Association="SpectrumModel.Store.FK_Article_Material_MAP">
+      <End Role="MstMaterial" EntitySet="MstMaterial" />
+      <End Role="MstMaterialArticleMap" EntitySet="MstMaterialArticleMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ArticleDescInDiffLang_MstArticle" Association="SpectrumModel.Store.FK_ArticleDescInDiffLang_MstArticle">
+      <End Role="MstArticle" EntitySet="MstArticle" />
+      <End Role="ArticleDescInDiffLang" EntitySet="ArticleDescInDiffLang" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ArticleDescInDiffLang_MstLanguage" Association="SpectrumModel.Store.FK_ArticleDescInDiffLang_MstLanguage">
+      <End Role="MstLanguage" EntitySet="MstLanguage" />
+      <End Role="ArticleDescInDiffLang" EntitySet="ArticleDescInDiffLang" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ArticleMAP_MstArticle" Association="SpectrumModel.Store.FK_ArticleMAP_MstArticle">
+      <End Role="MstArticle" EntitySet="MstArticle" />
+      <End Role="ArticleMAP" EntitySet="ArticleMAP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ArticleMAP_MstSite" Association="SpectrumModel.Store.FK_ArticleMAP_MstSite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="ArticleMAP" EntitySet="ArticleMAP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ArticleMartix_CharacteristicsValue" Association="SpectrumModel.Store.FK_ArticleMartix_CharacteristicsValue">
+      <End Role="CharacteristicsValue" EntitySet="CharacteristicsValue" />
+      <End Role="ArticleMatrix" EntitySet="ArticleMatrix" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ArticleMartix_MSTEan" Association="SpectrumModel.Store.FK_ArticleMartix_MSTEan">
+      <End Role="MstEAN" EntitySet="MstEAN" />
+      <End Role="ArticleMatrix" EntitySet="ArticleMatrix" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ArticleNodeMap_MSTArticle" Association="SpectrumModel.Store.FK_ArticleNodeMap_MSTArticle">
+      <End Role="MstArticle" EntitySet="MstArticle" />
+      <End Role="ArticleNodeMap" EntitySet="ArticleNodeMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ArticleNodeMap_MSTArticleNode" Association="SpectrumModel.Store.FK_ArticleNodeMap_MSTArticleNode">
+      <End Role="MstArticleNode" EntitySet="MstArticleNode" />
+      <End Role="ArticleNodeMap" EntitySet="ArticleNodeMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ArticleReplenishment_MSTEAN" Association="SpectrumModel.Store.FK_ArticleReplenishment_MSTEAN">
+      <End Role="MstEAN" EntitySet="MstEAN" />
+      <End Role="ArticleReplenishment" EntitySet="ArticleReplenishment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ArticleStockBalances_MSTUOM" Association="SpectrumModel.Store.FK_ArticleStockBalances_MSTUOM">
+      <End Role="MstUoM" EntitySet="MstUoM" />
+      <End Role="ArticleStockBalances" EntitySet="ArticleStockBalances" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ArticleTreeNodeMap_MSTArticleNode" Association="SpectrumModel.Store.FK_ArticleTreeNodeMap_MSTArticleNode">
+      <End Role="MstArticleNode" EntitySet="MstArticleNode" />
+      <End Role="ArticleTreeNodeMap" EntitySet="ArticleTreeNodeMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ArticleTreeNodeMap_MSTArticleTree" Association="SpectrumModel.Store.FK_ArticleTreeNodeMap_MSTArticleTree">
+      <End Role="MstArticleTree" EntitySet="MstArticleTree" />
+      <End Role="ArticleTreeNodeMap" EntitySet="ArticleTreeNodeMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthRoleTransactionMap_AuthUserRoles" Association="SpectrumModel.Store.FK_AuthRoleTransactionMap_AuthUserRoles">
+      <End Role="MstRole" EntitySet="MstRole" />
+      <End Role="AuthRoleTransactionMap" EntitySet="AuthRoleTransactionMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthRoleTransactionMap_MSTTransaction" Association="SpectrumModel.Store.FK_AuthRoleTransactionMap_MSTTransaction">
+      <End Role="MstTransaction" EntitySet="MstTransaction" />
+      <End Role="AuthRoleTransactionMap" EntitySet="AuthRoleTransactionMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthUsers_MstAreaCode" Association="SpectrumModel.Store.FK_AuthUsers_MstAreaCode">
+      <End Role="MstAreaCode" EntitySet="MstAreaCode" />
+      <End Role="AuthUsers" EntitySet="AuthUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthUsers_MstSite" Association="SpectrumModel.Store.FK_AuthUsers_MstSite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="AuthUsers" EntitySet="AuthUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthUserSiteRoleMap_AuthUsers" Association="SpectrumModel.Store.FK_AuthUserSiteRoleMap_AuthUsers">
+      <End Role="AuthUsers" EntitySet="AuthUsers" />
+      <End Role="AuthUserSiteRoleMap" EntitySet="AuthUserSiteRoleMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthUserSiteRoleMap_MSTSite" Association="SpectrumModel.Store.FK_AuthUserSiteRoleMap_MSTSite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="AuthUserSiteRoleMap" EntitySet="AuthUserSiteRoleMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CharacteristicsProfile_MSTCharacteristicsProfile" Association="SpectrumModel.Store.FK_CharacteristicsProfile_MSTCharacteristicsProfile">
+      <End Role="MstCharacteristicsProfile" EntitySet="MstCharacteristicsProfile" />
+      <End Role="CharacteristicsProfile" EntitySet="CharacteristicsProfile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CharacteristicsValue_MSTCharacteristics" Association="SpectrumModel.Store.FK_CharacteristicsValue_MSTCharacteristics">
+      <End Role="MstCharacteristics" EntitySet="MstCharacteristics" />
+      <End Role="CharacteristicsValue" EntitySet="CharacteristicsValue" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLPProgramSiteMap_MstSite" Association="SpectrumModel.Store.FK_CLPProgramSiteMap_MstSite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="CLPProgramSiteMap" EntitySet="CLPProgramSiteMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MasterArticleMap_MasterArticleMap" Association="SpectrumModel.Store.FK_MasterArticleMap_MasterArticleMap">
+      <End Role="MstArticle" EntitySet="MstArticle" />
+      <End Role="MasterArticleMap" EntitySet="MasterArticleMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MasterArticleMap_MstArticle" Association="SpectrumModel.Store.FK_MasterArticleMap_MstArticle">
+      <End Role="MstArticle" EntitySet="MstArticle" />
+      <End Role="MasterArticleMap" EntitySet="MasterArticleMap" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_Mfcode" Association="SpectrumModel.Store.Fk_Mfcode">
+      <End Role="Manufacturer" EntitySet="Manufacturer" />
+      <End Role="Brand" EntitySet="Brand" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MSTArticle_MSTArticleTree" Association="SpectrumModel.Store.FK_MSTArticle_MSTArticleTree">
+      <End Role="MstArticleTree" EntitySet="MstArticleTree" />
+      <End Role="MstArticle" EntitySet="MstArticle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MstArticleImage_MSTArticle" Association="SpectrumModel.Store.FK_MstArticleImage_MSTArticle">
+      <End Role="MstArticle" EntitySet="MstArticle" />
+      <End Role="MstArticleImage" EntitySet="MstArticleImage" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MstArticleNode_MSTArticleTree" Association="SpectrumModel.Store.FK_MstArticleNode_MSTArticleTree">
+      <End Role="MstArticleTree" EntitySet="MstArticleTree" />
+      <End Role="MstArticleNode" EntitySet="MstArticleNode" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MSTArticleTreeLevel_MSTArticleTree" Association="SpectrumModel.Store.FK_MSTArticleTreeLevel_MSTArticleTree">
+      <End Role="MstArticleTree" EntitySet="MstArticleTree" />
+      <End Role="MstArticleTreeLevel" EntitySet="MstArticleTreeLevel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MSTEAN_MSTArticle" Association="SpectrumModel.Store.FK_MSTEAN_MSTArticle">
+      <End Role="MstArticle" EntitySet="MstArticle" />
+      <End Role="MstEAN" EntitySet="MstEAN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MstRole_MSTSite" Association="SpectrumModel.Store.FK_MstRole_MSTSite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="MstRole" EntitySet="MstRole" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MstSite_MstAreaCode" Association="SpectrumModel.Store.FK_MstSite_MstAreaCode">
+      <End Role="MstAreaCode" EntitySet="MstAreaCode" />
+      <End Role="MstSite" EntitySet="MstSite" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MstSite_MstBusiness" Association="SpectrumModel.Store.FK_MstSite_MstBusiness">
+      <End Role="MstBusiness" EntitySet="MstBusiness" />
+      <End Role="MstSite" EntitySet="MstSite" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MstSiteCurrancyMap_MstCurrency" Association="SpectrumModel.Store.FK_MstSiteCurrancyMap_MstCurrency">
+      <End Role="MstCurrency" EntitySet="MstCurrency" />
+      <End Role="MstSiteCurrancyMap" EntitySet="MstSiteCurrancyMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MstSiteCurrancyMap_MstSite" Association="SpectrumModel.Store.FK_MstSiteCurrancyMap_MstSite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="MstSiteCurrancyMap" EntitySet="MstSiteCurrancyMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MstTender_MstSite" Association="SpectrumModel.Store.FK_MstTender_MstSite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="MstTender" EntitySet="MstTender" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MSTTender_MstTenderType" Association="SpectrumModel.Store.FK_MSTTender_MstTenderType">
+      <End Role="MstTenderType" EntitySet="MstTenderType" />
+      <End Role="MstTender" EntitySet="MstTender" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MstVoucher_MstArticle" Association="SpectrumModel.Store.FK_MstVoucher_MstArticle">
+      <End Role="MstArticle" EntitySet="MstArticle" />
+      <End Role="MstVoucher" EntitySet="MstVoucher" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MstVoucher_MstTenderType" Association="SpectrumModel.Store.FK_MstVoucher_MstTenderType">
+      <End Role="MstTenderType" EntitySet="MstTenderType" />
+      <End Role="MstVoucher" EntitySet="MstVoucher" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderDTL_MSTEAN1" Association="SpectrumModel.Store.FK_OrderDTL_MSTEAN1">
+      <End Role="MstEAN" EntitySet="MstEAN" />
+      <End Role="OrderDtl" EntitySet="OrderDtl" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderDtl_OrderHdr" Association="SpectrumModel.Store.FK_OrderDtl_OrderHdr">
+      <End Role="OrderHdr" EntitySet="OrderHdr" />
+      <End Role="OrderDtl" EntitySet="OrderDtl" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderHDR_DocType" Association="SpectrumModel.Store.FK_OrderHDR_DocType">
+      <End Role="MstDocumentTypes" EntitySet="MstDocumentTypes" />
+      <End Role="OrderHdr" EntitySet="OrderHdr" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderHdr_Mstsite" Association="SpectrumModel.Store.FK_OrderHdr_Mstsite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="OrderHdr" EntitySet="OrderHdr" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseInfoRecord_EAN" Association="SpectrumModel.Store.FK_PurchaseInfoRecord_EAN">
+      <End Role="MstEAN" EntitySet="MstEAN" />
+      <End Role="PurchaseInfoRecord" EntitySet="PurchaseInfoRecord" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseInfoRecord_SiteCode" Association="SpectrumModel.Store.FK_PurchaseInfoRecord_SiteCode">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="PurchaseInfoRecord" EntitySet="PurchaseInfoRecord" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseInfoRecord_SupplierCode1" Association="SpectrumModel.Store.FK_PurchaseInfoRecord_SupplierCode1">
+      <End Role="MstSupplier" EntitySet="MstSupplier" />
+      <End Role="PurchaseInfoRecord" EntitySet="PurchaseInfoRecord" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SiteAllowedTRansactions_MSTSite" Association="SpectrumModel.Store.FK_SiteAllowedTRansactions_MSTSite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="SiteAllowedTransactions" EntitySet="SiteAllowedTransactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SiteAllowedTransactions_MstTransaction" Association="SpectrumModel.Store.FK_SiteAllowedTransactions_MstTransaction">
+      <End Role="MstTransaction" EntitySet="MstTransaction" />
+      <End Role="SiteAllowedTransactions" EntitySet="SiteAllowedTransactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockAdjustment_MstArticle" Association="SpectrumModel.Store.FK_StockAdjustment_MstArticle">
+      <End Role="MstArticle" EntitySet="MstArticle" />
+      <End Role="StockAdjustment" EntitySet="StockAdjustment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockAdjustment_MstEAN" Association="SpectrumModel.Store.FK_StockAdjustment_MstEAN">
+      <End Role="MstEAN" EntitySet="MstEAN" />
+      <End Role="StockAdjustment" EntitySet="StockAdjustment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockAdjustment_MstSite" Association="SpectrumModel.Store.FK_StockAdjustment_MstSite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="StockAdjustment" EntitySet="StockAdjustment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TaxDetail_MSTArticle" Association="SpectrumModel.Store.FK_TaxDetail_MSTArticle">
+      <End Role="MstArticle" EntitySet="MstArticle" />
+      <End Role="SiteArticleTaxMapping" EntitySet="SiteArticleTaxMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TaxSiteDocMap_MstDocumentTypes" Association="SpectrumModel.Store.FK_TaxSiteDocMap_MstDocumentTypes">
+      <End Role="MstDocumentTypes" EntitySet="MstDocumentTypes" />
+      <End Role="TaxSiteDocMap" EntitySet="TaxSiteDocMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TaxSiteDocMap_MSTSite" Association="SpectrumModel.Store.FK_TaxSiteDocMap_MSTSite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="TaxSiteDocMap" EntitySet="TaxSiteDocMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TaxSiteDocMap_MstTax" Association="SpectrumModel.Store.FK_TaxSiteDocMap_MstTax">
+      <End Role="MstTax" EntitySet="MstTax" />
+      <End Role="TaxSiteDocMap" EntitySet="TaxSiteDocMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TaxSiteMapping_MstSite" Association="SpectrumModel.Store.FK_TaxSiteMapping_MstSite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="TaxSiteMapping" EntitySet="TaxSiteMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TaxSiteMapping_MstTax" Association="SpectrumModel.Store.FK_TaxSiteMapping_MstTax">
+      <End Role="MstTax" EntitySet="MstTax" />
+      <End Role="TaxSiteMapping" EntitySet="TaxSiteMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRightMap_AuthUsers" Association="SpectrumModel.Store.FK_UserRightMap_AuthUsers">
+      <End Role="AuthUsers" EntitySet="AuthUsers" />
+      <End Role="AuthUserSiteTransactionMap" EntitySet="AuthUserSiteTransactionMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRightMap_MSTSite" Association="SpectrumModel.Store.FK_UserRightMap_MSTSite">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="AuthUserSiteTransactionMap" EntitySet="AuthUserSiteTransactionMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRightMap_MSTTransaction" Association="SpectrumModel.Store.FK_UserRightMap_MSTTransaction">
+      <End Role="MstTransaction" EntitySet="MstTransaction" />
+      <End Role="AuthUserSiteTransactionMap" EntitySet="AuthUserSiteTransactionMap" />
+    </AssociationSet>
+    <AssociationSet Name="FKB03E5F60BF3E43DE" Association="SpectrumModel.Store.FKB03E5F60BF3E43DE">
+      <End Role="MstArticle" EntitySet="MstArticle" />
+      <End Role="MstVoucher" EntitySet="MstVoucher" />
+    </AssociationSet>
+    <AssociationSet Name="FKB03E5F60E563B22B" Association="SpectrumModel.Store.FKB03E5F60E563B22B">
+      <End Role="MstTenderType" EntitySet="MstTenderType" />
+      <End Role="MstVoucher" EntitySet="MstVoucher" />
+    </AssociationSet>
+    <AssociationSet Name="FKB406BD04D969F016" Association="SpectrumModel.Store.FKB406BD04D969F016">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="MstRole" EntitySet="MstRole" />
+    </AssociationSet>
+    <AssociationSet Name="FKB4071BD51CA5C708" Association="SpectrumModel.Store.FKB4071BD51CA5C708">
+      <End Role="MstBusiness" EntitySet="MstBusiness" />
+      <End Role="MstSite" EntitySet="MstSite" />
+    </AssociationSet>
+    <AssociationSet Name="FKB4071BD5D108F78D" Association="SpectrumModel.Store.FKB4071BD5D108F78D">
+      <End Role="MstAreaCode" EntitySet="MstAreaCode" />
+      <End Role="MstSite" EntitySet="MstSite" />
+    </AssociationSet>
+    <AssociationSet Name="FKCDF82920CDC0A838" Association="SpectrumModel.Store.FKCDF82920CDC0A838">
+      <End Role="MstAreaCode" EntitySet="MstAreaCode" />
+      <End Role="AuthUsers" EntitySet="AuthUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FKCDF82920D969F016" Association="SpectrumModel.Store.FKCDF82920D969F016">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="AuthUsers" EntitySet="AuthUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FKD02C29BE34BFC8C4" Association="SpectrumModel.Store.FKD02C29BE34BFC8C4">
+      <End Role="MstArticleTree" EntitySet="MstArticleTree" />
+      <End Role="MstArticleTreeLevel" EntitySet="MstArticleTreeLevel" />
+    </AssociationSet>
+    <AssociationSet Name="FKD9C07836D969F016" Association="SpectrumModel.Store.FKD9C07836D969F016">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="SiteAllowedTransactions" EntitySet="SiteAllowedTransactions" />
+    </AssociationSet>
+    <AssociationSet Name="FKDC6AAC71CF5A64AC" Association="SpectrumModel.Store.FKDC6AAC71CF5A64AC">
+      <End Role="MstCharacteristicsProfile" EntitySet="MstCharacteristicsProfile" />
+      <End Role="CharacteristicsProfile" EntitySet="CharacteristicsProfile" />
+    </AssociationSet>
+    <AssociationSet Name="FKE6BE1FC6250E6B8C" Association="SpectrumModel.Store.FKE6BE1FC6250E6B8C">
+      <End Role="MstArticleNode" EntitySet="MstArticleNode" />
+      <End Role="ArticleTreeNodeMap" EntitySet="ArticleTreeNodeMap" />
+    </AssociationSet>
+    <AssociationSet Name="FKE6BE1FC634BFC8C4" Association="SpectrumModel.Store.FKE6BE1FC634BFC8C4">
+      <End Role="MstArticleTree" EntitySet="MstArticleTree" />
+      <End Role="ArticleTreeNodeMap" EntitySet="ArticleTreeNodeMap" />
+    </AssociationSet>
+    <AssociationSet Name="FKEA93A4E500AC029" Association="SpectrumModel.Store.FKEA93A4E500AC029">
+      <End Role="MstEAN" EntitySet="MstEAN" />
+      <End Role="ArticleReplenishment" EntitySet="ArticleReplenishment" />
+    </AssociationSet>
+    <AssociationSet Name="FKFA68779C70BA2E86" Association="SpectrumModel.Store.FKFA68779C70BA2E86">
+      <End Role="MstTransaction" EntitySet="MstTransaction" />
+      <End Role="AuthRoleTransactionMap" EntitySet="AuthRoleTransactionMap" />
+    </AssociationSet>
+    <AssociationSet Name="FKFA68779C79FB47A2" Association="SpectrumModel.Store.FKFA68779C79FB47A2">
+      <End Role="MstRole" EntitySet="MstRole" />
+      <End Role="AuthRoleTransactionMap" EntitySet="AuthRoleTransactionMap" />
+    </AssociationSet>
+    <AssociationSet Name="FKFE174BD870BA2E86" Association="SpectrumModel.Store.FKFE174BD870BA2E86">
+      <End Role="MstTransaction" EntitySet="MstTransaction" />
+      <End Role="AuthUserSiteTransactionMap" EntitySet="AuthUserSiteTransactionMap" />
+    </AssociationSet>
+    <AssociationSet Name="FKFE174BD8723BF3F0" Association="SpectrumModel.Store.FKFE174BD8723BF3F0">
+      <End Role="AuthUsers" EntitySet="AuthUsers" />
+      <End Role="AuthUserSiteTransactionMap" EntitySet="AuthUserSiteTransactionMap" />
+    </AssociationSet>
+    <AssociationSet Name="FKFE174BD8D969F016" Association="SpectrumModel.Store.FKFE174BD8D969F016">
+      <End Role="MstSite" EntitySet="MstSite" />
+      <End Role="AuthUserSiteTransactionMap" EntitySet="AuthUserSiteTransactionMap" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ArticleBatchBinStockBalances">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="ArticleCode" />
+      <PropertyRef Name="EAN" />
+      <PropertyRef Name="BatchBarcode" />
+      <PropertyRef Name="Location" />
+    </Key>
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ArticleCode" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="EAN" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="BatchBarcode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="Location" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="UOM" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="PhysicalQty" Type="numeric" Scale="3" />
+    <Property Name="ReservedQty" Type="numeric" Scale="3" />
+    <Property Name="DamagedQty" Type="numeric" Scale="3" />
+    <Property Name="OnOrderQty" Type="numeric" Scale="3" />
+    <Property Name="InTrasnsitQty" Type="numeric" Scale="3" />
+    <Property Name="NonSaleableQty" Type="numeric" Scale="3" />
+    <Property Name="TotalPhysicalSaleableQty" Type="numeric" Scale="3" />
+    <Property Name="TotalPhysicalNonSaleableQty" Type="numeric" Scale="3" />
+    <Property Name="TotalVirtualNonSaleableQty" Type="numeric" Scale="3" />
+    <Property Name="TotalSaleableQty" Type="numeric" Scale="3" />
+    <Property Name="TotalARSQty" Type="numeric" Scale="3" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+    <Property Name="StockStatus" Type="varchar" MaxLength="50" />
+    <Property Name="NextAvailableDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ArticleDescInDiffLang">
+    <Key>
+      <PropertyRef Name="ArticleCode" />
+      <PropertyRef Name="LanguageCode" />
+    </Key>
+    <Property Name="ArticleCode" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="LanguageCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ArticleShortName" Type="varchar" MaxLength="30" />
+    <Property Name="ArticleName" Type="varchar" MaxLength="60" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="ArticlelblPrintDtl">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="ArticleCode" />
+    </Key>
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ArticleCode" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="ExpiryInDays" Type="numeric" Precision="4" />
+    <Property Name="CreatedAt" Type="varchar" MaxLength="15" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedAt" Type="varchar" MaxLength="15" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="Status" Type="bit" />
+  </EntityType>
+  <EntityType Name="ArticleMAP">
+    <Key>
+      <PropertyRef Name="Sitecode" />
+      <PropertyRef Name="EAN" />
+      <PropertyRef Name="TransactionDate" />
+    </Key>
+    <Property Name="Sitecode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ArticleCode" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="EAN" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="TransactionDate" Type="datetime" Nullable="false" />
+    <Property Name="MAP" Type="numeric" Scale="2" />
+    <Property Name="RecQty" Type="numeric" Scale="3" />
+    <Property Name="CumulativeRecQty" Type="numeric" Scale="3" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="ArticleMatrix">
+    <Key>
+      <PropertyRef Name="EanCode" />
+      <PropertyRef Name="CharCode" />
+      <PropertyRef Name="CharValue" />
+    </Key>
+    <Property Name="EanCode" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="CharCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="CharValue" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="CharType" Type="bit" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+    <Property Name="ProfileCode" Type="varchar" MaxLength="15" />
+    <Property Name="RowKey" Type="numeric" />
+  </EntityType>
+  <EntityType Name="ArticleNodeMap">
+    <Key>
+      <PropertyRef Name="ArticleCode" />
+      <PropertyRef Name="TreeCode" />
+    </Key>
+    <Property Name="ArticleCode" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="TreeCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="LastNodeCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="ArticleReplenishment">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="EAN" />
+      <PropertyRef Name="Month" />
+    </Key>
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="EAN" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="ArticleCode" Type="varchar" MaxLength="26" />
+    <Property Name="ReplenishmentTypeCode" Type="varchar" MaxLength="5" />
+    <Property Name="StockOnOrder" Type="numeric" />
+    <Property Name="SafetyStockQty" Type="numeric" Scale="3" />
+    <Property Name="ReOrderPoint" Type="numeric" Scale="3" />
+    <Property Name="AverageSaleDuration" Type="numeric" />
+    <Property Name="StockCover" Type="numeric" />
+    <Property Name="EstimatedSale" Type="numeric" Scale="3" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+    <Property Name="Month" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="RequestingSiteCode" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="ArticleStockBalances">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="ArticleCode" />
+      <PropertyRef Name="EAN" />
+    </Key>
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ArticleCode" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="EAN" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="UOM" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="PhysicalQty" Type="numeric" Scale="3" />
+    <Property Name="ReservedQty" Type="numeric" Scale="3" />
+    <Property Name="DamagedQty" Type="numeric" Scale="3" />
+    <Property Name="OnOrderQty" Type="numeric" Scale="3" />
+    <Property Name="InTrasnsitQty" Type="numeric" Scale="3" />
+    <Property Name="NonSaleableQty" Type="numeric" Scale="3" />
+    <Property Name="TotalPhysicalSaleableQty" Type="numeric" Scale="3" />
+    <Property Name="TotalPhysicalNonSaleableQty" Type="numeric" Scale="3" />
+    <Property Name="TotalVirtualNonSaleableQty" Type="numeric" Scale="3" />
+    <Property Name="TotalSaleableQty" Type="numeric" Scale="3" />
+    <Property Name="TotalARSQty" Type="numeric" Scale="3" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+    <Property Name="StockStatus" Type="varchar" MaxLength="50" />
+    <Property Name="NextAvailableDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ArticleTreeNodeMap">
+    <Key>
+      <PropertyRef Name="Nodecode" />
+    </Key>
+    <Property Name="Nodecode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ParentNodecode" Type="varchar" MaxLength="15" />
+    <Property Name="Treecode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ToleranceValue" Type="numeric" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="ArticleUOM">
+    <Key>
+      <PropertyRef Name="ArticleCode" />
+      <PropertyRef Name="UOMCode" />
+    </Key>
+    <Property Name="ArticleCode" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="UOMCode" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Divisor" Type="numeric" Scale="3" />
+    <Property Name="IsDivisor" Type="bit" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="15" />
+    <Property Name="CreatedAt" Type="varchar" MaxLength="15" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="15" />
+    <Property Name="UpdatedAt" Type="varchar" MaxLength="15" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="defaultUom" Type="bit" />
+  </EntityType>
+  <EntityType Name="AuthRoleTransactionMap">
+    <Key>
+      <PropertyRef Name="AuthTransactionCode" />
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="AuthTransactionCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="RoleID" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="AuthUsers">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="SiteCode" Type="varchar" MaxLength="15" />
+    <Property Name="UserID" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="UserName" Type="varchar" MaxLength="45" />
+    <Property Name="CountryCode" Type="varchar" MaxLength="15" />
+    <Property Name="Designation" Type="varchar" MaxLength="50" />
+    <Property Name="IDNumber" Type="varchar" MaxLength="100" />
+    <Property Name="Password" Type="varchar" MaxLength="150" />
+    <Property Name="PasswordUpdateDate" Type="datetime" />
+    <Property Name="PasswordChangeNextDate" Type="datetime" />
+    <Property Name="EmailId" Type="varchar" MaxLength="100" />
+    <Property Name="PasswordExpiredon" Type="datetime" />
+    <Property Name="Active" Type="varchar" MaxLength="2" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+    <Property Name="issalesperson" Type="bit" />
+    <Property Name="ParentId" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="AuthUserSiteRoleMap">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="SiteCode" />
+    </Key>
+    <Property Name="UserID" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="GRoleid" Type="varchar" MaxLength="1000" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="AuthUserSiteTransactionMap">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="AuthTransactionCode" />
+    </Key>
+    <Property Name="UserID" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="AuthTransactionCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="Rights" Type="bit" Nullable="false" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="Brand">
+    <Key>
+      <PropertyRef Name="BrandCode" />
+    </Key>
+    <Property Name="BrandCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="BrandName" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="ManufacturerCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="CharacteristicsProfile">
+    <Key>
+      <PropertyRef Name="CharProfileCode" />
+      <PropertyRef Name="CharCode" />
+    </Key>
+    <Property Name="CharProfileCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="CharCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="CharacteristicsValue">
+    <Key>
+      <PropertyRef Name="CharCode" />
+      <PropertyRef Name="CharValue" />
+    </Key>
+    <Property Name="CharCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="CharValue" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="CLPProgramSiteMap">
+    <Key>
+      <PropertyRef Name="ClpProgramId" />
+      <PropertyRef Name="Sitecode" />
+    </Key>
+    <Property Name="ClpProgramId" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="Sitecode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="AccumlationApplicable" Type="bit" />
+    <Property Name="RedemptionApplicable" Type="bit" />
+    <Property Name="RecvCardfromVender" Type="bit" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="DefaultConfig">
+    <Key>
+      <PropertyRef Name="Sitecode" />
+      <PropertyRef Name="FldLabel" />
+    </Key>
+    <Property Name="Sitecode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="FldLabel" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="FldValue" Type="varchar" MaxLength="4000" />
+    <Property Name="DocumentType" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="Description" Type="varchar" MaxLength="50" />
+    <Property Name="DocumentGroup" Type="varchar" MaxLength="50" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+    <Property Name="FldType" Type="varchar" MaxLength="10" />
+    <Property Name="Sequence" Type="numeric" />
+  </EntityType>
+  <EntityType Name="GeneralCodeMst">
+    <Key>
+      <PropertyRef Name="CodeType" />
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="CodeType" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Code" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ShortDesc" Type="varchar" MaxLength="20" />
+    <Property Name="LongDesc" Type="varchar" MaxLength="50" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="IsSysParameter" Type="int" Nullable="false" />
+    <Property Name="Created_By" Type="varchar" MaxLength="50" />
+    <Property Name="Update_By" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="CreatedAt" Type="varchar" MaxLength="5" />
+    <Property Name="UpdateAt" Type="varchar" MaxLength="5" />
+    <Property Name="SiteCode" Type="varchar" MaxLength="15" />
+    <Property Name="SortOrder" Type="int" />
+  </EntityType>
+  <EntityType Name="GLNoRangeObjects">
+    <Key>
+      <PropertyRef Name="ObjectTypeId" />
+      <PropertyRef Name="ObjectID" />
+      <PropertyRef Name="InternalOrExternal" />
+      <PropertyRef Name="SiteCode" />
+    </Key>
+    <Property Name="ObjectTypeId" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ObjectID" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="InternalOrExternal" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="MinNumber" Type="numeric" />
+    <Property Name="MaxNumber" Type="numeric" />
+    <Property Name="Incrementby" Type="numeric" />
+    <Property Name="CurrentNo" Type="numeric" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Invoice">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="InvoiceNumber" />
+    </Key>
+    <Property Name="InvoiceCode" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="InvoiceNumber" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="InvoiceType" Type="varchar" MaxLength="15" />
+    <Property Name="InvoiceAmount" Type="numeric" Scale="3" />
+    <Property Name="InvoiceDate" Type="datetime" />
+    <Property Name="PaidAmount" Type="numeric" Scale="3" />
+    <Property Name="PayTo" Type="varchar" MaxLength="200" />
+    <Property Name="SupplierCode" Type="varchar" MaxLength="15" />
+    <Property Name="PONumber" Type="varchar" MaxLength="15" />
+    <Property Name="GRNNumber" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+    <Property Name="InvoiceDiscount" Type="numeric" Scale="3" />
+    <Property Name="PhyInvReceived" Type="bit" />
+    <Property Name="LastSynchedTimeStamp" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ManualPromotion">
+    <Key>
+      <PropertyRef Name="PromotionId" />
+    </Key>
+    <Property Name="PromotionId" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="PromotionName" Type="varchar" MaxLength="100" />
+    <Property Name="PromotionValue" Type="numeric" Scale="3" />
+    <Property Name="DiscPer" Type="bit" />
+    <Property Name="FixedPriceOff" Type="bit" />
+    <Property Name="FixedSelling" Type="bit" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="StartTime" Type="datetime" />
+    <Property Name="EndTime" Type="datetime" />
+    <Property Name="IsApproved" Type="bit" />
+    <Property Name="OfferActive" Type="bit" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="Manufacturer">
+    <Key>
+      <PropertyRef Name="ManufacturerCode" />
+    </Key>
+    <Property Name="ManufacturerCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ManufacturerName" Type="varchar" MaxLength="100" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="MasterArticleMap">
+    <Key>
+      <PropertyRef Name="ArticleCode" />
+      <PropertyRef Name="MasterArticleCode" />
+    </Key>
+    <Property Name="ArticleCode" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="MasterArticleCode" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="MstAreaCode">
+    <Key>
+      <PropertyRef Name="AreaCode" />
+    </Key>
+    <Property Name="AreaCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="Description" Type="varchar" MaxLength="100" />
+    <Property Name="AreaType" Type="numeric" Nullable="false" />
+    <Property Name="ParentCode" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="MstArticle">
+    <Key>
+      <PropertyRef Name="ArticleCode" />
+    </Key>
+    <Property Name="ArticleCode" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="ArticalTypeCode" Type="varchar" MaxLength="15" />
+    <Property Name="ArticalCatCode" Type="varchar" MaxLength="15" />
+    <Property Name="ArticleShortName" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="ArticleName" Type="varchar" MaxLength="60" />
+    <Property Name="BaseUnitofMeasure" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="DistributionUnitofMeasure" Type="varchar" MaxLength="10" />
+    <Property Name="SaleUnitofMeasure" Type="varchar" MaxLength="10" />
+    <Property Name="OrderUnitofMeasure" Type="varchar" MaxLength="10" />
+    <Property Name="CataloguedOn" Type="datetime" />
+    <Property Name="ArticleActive" Type="bit" Nullable="false" />
+    <Property Name="IssueFreeGift" Type="bit" />
+    <Property Name="ProductImage" Type="bit" />
+    <Property Name="TotalShelfLife" Type="numeric" />
+    <Property Name="RemainingShelfLife" Type="numeric" />
+    <Property Name="DecimalQtyApplicable" Type="bit" />
+    <Property Name="IsMrpOpen" Type="bit" />
+    <Property Name="SerialNumber" Type="numeric" />
+    <Property Name="WarrantyPeriod" Type="numeric" />
+    <Property Name="ParentArt" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="TreeID" Type="varchar" MaxLength="15" />
+    <Property Name="LastNodeCode" Type="varchar" MaxLength="15" />
+    <Property Name="CharProfileCode" Type="numeric" />
+    <Property Name="SupplierRef" Type="varchar" MaxLength="200" />
+    <Property Name="STLocCode" Type="varchar" MaxLength="15" />
+    <Property Name="Salable" Type="bit" />
+    <Property Name="ToleranceValue" Type="bit" />
+    <Property Name="LegacyArticleCode" Type="varchar" MaxLength="26" />
+    <Property Name="Purchaser" Type="varchar" MaxLength="20" />
+    <Property Name="IntraStatCodeEurope" Type="varchar" MaxLength="50" />
+    <Property Name="IntraStatCodeUSA" Type="varchar" MaxLength="50" />
+    <Property Name="NetWeight" Type="numeric" Scale="2" />
+    <Property Name="NetWeightUOM" Type="varchar" MaxLength="15" />
+    <Property Name="GrossWeight" Type="numeric" Scale="2" />
+    <Property Name="GrossWeightUOM" Type="varchar" MaxLength="15" />
+    <Property Name="Volume" Type="numeric" />
+    <Property Name="VolumeUOM" Type="varchar" MaxLength="15" />
+    <Property Name="Style" Type="varchar" MaxLength="50" />
+    <Property Name="Season" Type="varchar" MaxLength="50" />
+    <Property Name="Theme" Type="varchar" MaxLength="50" />
+    <Property Name="IsPremaman" Type="bit" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+    <Property Name="NONRETUNABLE" Type="bit" />
+    <Property Name="MaterialTypeCode" Type="varchar" MaxLength="15" />
+    <Property Name="ConsumptionUoM" Type="varchar" MaxLength="10" />
+    <Property Name="isExpiry" Type="bit" />
+    <Property Name="Printable" Type="bit" />
+    <Property Name="Descriptions" Type="varchar" MaxLength="4000" />
+    <Property Name="IsEanAutoGenerate" Type="bit" Nullable="false" />
+    <Property Name="IsBatchBarcodeAutoGenerate" Type="bit" Nullable="false" />
+    <Property Name="SalesUomValue" Type="numeric" Scale="3" />
+    <Property Name="ManufacturerCode" Type="varchar" MaxLength="15" />
+    <Property Name="BrandCode" Type="varchar" MaxLength="15" />
+    <Property Name="DistributionUomValue" Type="numeric" Scale="3" />
+    <Property Name="Description" Type="varchar" />
+    <Property Name="HSNCode" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="MstArticleImage">
+    <Key>
+      <PropertyRef Name="ArticleCode" />
+    </Key>
+    <Property Name="ArticleCode" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="ArticleImage" Type="varchar" MaxLength="100" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+    <Property Name="GroupID" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="MstArticleKit">
+    <Key>
+      <PropertyRef Name="Ean" />
+      <PropertyRef Name="ArticleCode" />
+      <PropertyRef Name="KitArticleCode" />
+    </Key>
+    <Property Name="Ean" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="ArticleCode" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="KitArticleCode" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="SellingPrice" Type="numeric" Scale="3" />
+    <Property Name="SaleUnitofMeasure" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Quantity" Type="numeric" Scale="3" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="MstArticleNode">
+    <Key>
+      <PropertyRef Name="Nodecode" />
+    </Key>
+    <Property Name="Nodecode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="NodeName" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="Treecode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ISThisLastNode" Type="bit" />
+    <Property Name="LevelCode" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="MstArticleTree">
+    <Key>
+      <PropertyRef Name="TreeCode" />
+    </Key>
+    <Property Name="TreeCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="TreeName" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="MstArticleTreeLevel">
+    <Key>
+      <PropertyRef Name="TreeCode" />
+      <PropertyRef Name="LevelCode" />
+    </Key>
+    <Property Name="TreeCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="LevelCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="LevelName" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="MstArticleType">
+    <Key>
+      <PropertyRef Name="ArticalTypeCode" />
+    </Key>
+    <Property Name="ArticalTypeCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ArticalTypeName" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="MstBusiness">
+    <Key>
+      <PropertyRef Name="BusinessCode" />
+    </Key>
+    <Property Name="BusinessCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="BusinessName" Type="varchar" MaxLength="45" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="MstCharacteristics">
+    <Key>
+      <PropertyRef Name="CharCode" />
+    </Key>
+    <Property Name="CharCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="CharName" Type="varchar" MaxLength="40" />
+    <Property Name="CharType" Type="bit" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="MstCharacteristicsProfile">
+    <Key>
+      <PropertyRef Name="ProfileCode" />
+    </Key>
+    <Property Name="ProfileCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ProfileName" Type="varchar" MaxLength="40" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="MstCLPProgram">
+    <Key>
+      <PropertyRef Name="CLPProgramId" />
+    </Key>
+    <Property Name="CLPProgramId" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="CLPProgramName" Type="varchar" MaxLength="50" />
+    <Property Name="AccumlationType" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="RedemptionType" Type="varchar" MaxLength="15" />
+    <Property Name="PhysicalCard" Type="bit" />
+    <Property Name="CardManageByHO" Type="bit" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="IsAdvanceSaleAllowed" Type="bit" />
+    <Property Name="ArticleCode" Type="varchar" MaxLength="26" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+    <Property Name="MaxLimitOnAcc" Type="bit" />
+    <Property Name="MaxAccumulationLimit" Type="numeric" />
+    <Property Name="MaxLimitOnRed" Type="bit" />
+    <Property Name="OnlyAtCreatedSite" Type="bit" />
+    <Property Name="AccWhenRed" Type="bit" />
+    <Property Name="ApplicableOnPromotion" Type="bit" />
+    <Property Name="IsUpgradationApplicable" Type="bit" Nullable="false" />
+    <Property Name="IsUpgradationAmt" Type="bit" Nullable="false" />
+    <Property Name="IsDeactiveInactiveAccount" Type="bit" />
+    <Property Name="DeactiveInactiveAccountDays" Type="numeric" />
+    <Property Name="IsPointsExpiry" Type="bit" />
+    <Property Name="PointsExpiryDays" Type="numeric" />
+    <Property Name="IsJoiningReward" Type="bit" />
+    <Property Name="ValueJoiningReward" Type="numeric" />
+    <Property Name="IsJoiningRewardOnEnrollment" Type="bit" />
+    <Property Name="IsRedemptionOnEnrollment" Type="bit" />
+    <Property Name="IsDayLimtOnRedemption" Type="bit" />
+    <Property Name="ValueDayLimtRedemption" Type="numeric" />
+    <Property Name="IsOnlinePasskey" Type="bit" />
+    <Property Name="OnlinePasskeyValidity" Type="numeric" />
+    <Property Name="IsPOSPasskey" Type="bit" />
+    <Property Name="PosPasskeyValidity" Type="numeric" />
+    <Property Name="IsGVAgainstLoyalty" Type="bit" />
+    <Property Name="ValueMinPointsForRedemption" Type="numeric" />
+    <Property Name="IsMinPointsForRedemption" Type="bit" />
+  </EntityType>
+  <EntityType Name="MstCurrency">
+    <Key>
+      <PropertyRef Name="CurrencyCode" />
+    </Key>
+    <Property Name="CurrencyCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="CurrencyDescription" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="CurrencySymbol" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="EMUCurrency" Type="bit" />
+    <Property Name="RealisedGain" Type="numeric" Scale="3" />
+    <Property Name="RealisedLoss" Type="numeric" Scale="3" />
+    <Property Name="UNRealisedGain" Type="numeric" Scale="3" />
+    <Property Name="UNRealisedLoss" Type="numeric" Scale="3" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="MstDocumentTypes">
+    <Key>
+      <PropertyRef Name="DocumentType" />
+    </Key>
+    <Property Name="DocumentType" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="IsBackOfficeDocument" Type="bit" Nullable="false" />
+    <Property Name="DocumentTypeDesc" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+    <Property Name="IsInboxDocument" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MstEAN">
+    <Key>
+      <PropertyRef Name="EAN" />
+    </Key>
+    <Property Name="ArticleCode" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="EAN" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="Discription" Type="varchar" MaxLength="60" />
+    <Property Name="UOMCode" Type="varchar" MaxLength="15" />
+    <Property Name="UOMTypeCode" Type="varchar" MaxLength="15" />
+    <Property Name="DefaultEAN" Type="bit" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="MstFinYear">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="FinYear" />
+    </Key>
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="FinYear" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="ValidFromDt" Type="datetime" Nullable="false" />
+    <Property Name="ValidToDt" Type="datetime" Nullable="false" />
+    <Property Name="FinStatus" Type="bit" Nullable="false" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="MstLanguage">
+    <Key>
+      <PropertyRef Name="LanguageCode" />
+    </Key>
+    <Property Name="LanguageCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="LanguageName" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Culture" Type="varchar" MaxLength="50" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="MstMaterial">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="MaterialId" />
+    </Key>
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="MaterialType" Type="varchar" MaxLength="20" />
+    <Property Name="MaterialId" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="MaterialName" Type="varchar" MaxLength="250" />
+    <Property Name="CreatedAt" Type="varchar" MaxLength="15" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedAt" Type="varchar" MaxLength="15" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="Status" Type="bit" />
+  </EntityType>
+  <EntityType Name="MstMaterialArticleMap">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="ArticleCode" />
+      <PropertyRef Name="MaterialId" />
+    </Key>
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ArticleCode" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="MaterialType" Type="varchar" MaxLength="20" />
+    <Property Name="MaterialId" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="MaterialValue" Type="varchar" MaxLength="250" />
+    <Property Name="CreatedAt" Type="varchar" MaxLength="15" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedAt" Type="varchar" MaxLength="15" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="Status" Type="bit" />
+  </EntityType>
+  <EntityType Name="MstMaterialType">
+    <Key>
+      <PropertyRef Name="MaterialTypeCode" />
+    </Key>
+    <Property Name="MaterialTypeCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="MaterialTypeDesc" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="MstRole">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="RoleID" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="Description" Type="varchar" MaxLength="50" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="MstSalesPerson">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="Empcode" />
+    </Key>
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="Empcode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="SalesPersonName" Type="varchar" MaxLength="50" />
+    <Property Name="SalesPersonFullName" Type="varchar" MaxLength="50" />
+    <Property Name="SalesArea" Type="varchar" MaxLength="50" />
+    <Property Name="SalesSection" Type="varchar" MaxLength="50" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="MstShift">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="ShiftId" />
+    </Key>
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ShiftId" Type="int" Nullable="false" />
+    <Property Name="ShiftName" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="Sequence" Type="int" Nullable="false" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="MstSite">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+    </Key>
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="BusinessCode" Type="varchar" MaxLength="15" />
+    <Property Name="SiteShortName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="SiteOfficialName" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="SiteAddressLn1" Type="varchar" MaxLength="250" />
+    <Property Name="SiteAddressLn2" Type="varchar" MaxLength="250" />
+    <Property Name="SiteAddressLn3" Type="varchar" MaxLength="250" />
+    <Property Name="SitePinCode" Type="varchar" MaxLength="50" />
+    <Property Name="CityCode" Type="varchar" MaxLength="15" />
+    <Property Name="StateCode" Type="varchar" MaxLength="15" />
+    <Property Name="SiteStdCode" Type="varchar" MaxLength="50" />
+    <Property Name="SiteTelephone1" Type="varchar" MaxLength="50" />
+    <Property Name="SiteTelephone2" Type="varchar" MaxLength="50" />
+    <Property Name="FaxNo" Type="varchar" MaxLength="50" />
+    <Property Name="EmailId" Type="varchar" MaxLength="150" />
+    <Property Name="WebPageURL" Type="varchar" MaxLength="250" />
+    <Property Name="ContactPerson" Type="varchar" MaxLength="100" />
+    <Property Name="CountryCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="LanguageCode" Type="varchar" MaxLength="15" />
+    <Property Name="LocalSalesTaxNo" Type="varchar" MaxLength="45" />
+    <Property Name="CentralSalesTaxNo" Type="varchar" MaxLength="45" />
+    <Property Name="LocalSalesTaxDate" Type="datetime" />
+    <Property Name="CentralSalesTaxDate" Type="datetime" />
+    <Property Name="SQFTArea" Type="numeric" />
+    <Property Name="IsARSApplicable" Type="bit" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="IsVATApplicable" Type="bit" />
+    <Property Name="IsSalesTaxApplicable" Type="bit" />
+    <Property Name="LocalCurrancyCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="IsMAPApplicable" Type="bit" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+    <Property Name="defaultean" Type="varchar" MaxLength="15" />
+    <Property Name="IsWarehouseApplicable" Type="bit" />
+    <Property Name="WarehouseCode" Type="varchar" MaxLength="15" />
+    <Property Name="SisUploadFlag" Type="bit" />
+    <Property Name="IsBinApplicable" Type="bit" />
+    <Property Name="isBatchApplicable" Type="bit" />
+    <Property Name="legacySiteCode" Type="varchar" MaxLength="100" />
+    <Property Name="IsRoomCreationAllowed" Type="bit" />
+    <Property Name="distributorMargin" Type="real" />
+    <Property Name="dealerMargin" Type="real" />
+  </EntityType>
+  <EntityType Name="MstSiteCurrancyMap">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="LocalCurrancyCode" />
+    </Key>
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="LocalCurrancyCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="MstSupplier">
+    <Key>
+      <PropertyRef Name="SupplierCode" />
+    </Key>
+    <Property Name="SupplierCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="SupplierName" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="address1" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="address2" Type="varchar" MaxLength="45" />
+    <Property Name="address3" Type="varchar" MaxLength="45" />
+    <Property Name="address4" Type="varchar" MaxLength="45" />
+    <Property Name="CountryCode" Type="varchar" MaxLength="15" />
+    <Property Name="StateCode" Type="varchar" MaxLength="15" />
+    <Property Name="CityCode" Type="varchar" MaxLength="15" />
+    <Property Name="TelephoneNo" Type="varchar" MaxLength="45" />
+    <Property Name="FaxNo" Type="varchar" MaxLength="45" />
+    <Property Name="TelexNo" Type="varchar" MaxLength="45" />
+    <Property Name="Pincode" Type="varchar" MaxLength="45" />
+    <Property Name="LocalSalesTaxNo" Type="varchar" MaxLength="45" />
+    <Property Name="CentralSalesTaxNo" Type="varchar" MaxLength="45" />
+    <Property Name="LocalSalesTaxDate" Type="datetime" />
+    <Property Name="CentralSalesTaxDate" Type="datetime" />
+    <Property Name="MinMargin" Type="numeric" />
+    <Property Name="PaymentMethod" Type="varchar" MaxLength="200" />
+    <Property Name="ShipmentMethod" Type="varchar" MaxLength="200" />
+    <Property Name="EmailId" Type="varchar" MaxLength="200" />
+    <Property Name="ContactPerson" Type="varchar" MaxLength="200" />
+    <Property Name="CurrencyCode" Type="varchar" MaxLength="15" />
+    <Property Name="LanguageCode" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+    <Property Name="DeliveryDays" Type="int" />
+    <Property Name="PaymentDays" Type="int" />
+    <Property Name="TINNo" Type="varchar" MaxLength="11" />
+    <Property Name="PANNo" Type="varchar" MaxLength="20" />
+    <Property Name="ServiceTaxRegNo" Type="varchar" MaxLength="50" />
+    <Property Name="VendorPostingGroup" Type="varchar" MaxLength="10" />
+    <Property Name="GenBusPostingGroup" Type="varchar" MaxLength="10" />
+    <Property Name="isActive" Type="bit" />
+    <Property Name="isVisibleForGRNWithoutDoc" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MstTax">
+    <Key>
+      <PropertyRef Name="TaxCode" />
+    </Key>
+    <Property Name="TaxCode" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="TaxName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="TaxSeqProfile" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="Type" Type="varchar" MaxLength="5" />
+    <Property Name="Inclusive" Type="bit" />
+    <Property Name="Value" Type="numeric" Scale="2" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+    <Property Name="TaxType" Type="varchar" MaxLength="50" />
+    <Property Name="InterStateTax" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MstTender">
+    <Key>
+      <PropertyRef Name="TenderHeadCode" />
+      <PropertyRef Name="SiteCode" />
+    </Key>
+    <Property Name="TenderHeadCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="TenderHeadName" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="TenderType" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="Positive_Negative" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="MaxNo" Type="numeric" />
+    <Property Name="MaxValue" Type="numeric" Scale="3" />
+    <Property Name="MinBillValue" Type="numeric" Scale="3" />
+    <Property Name="DefaultValue" Type="varchar" MaxLength="50" />
+    <Property Name="ProgramId" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+    <Property Name="IsVisible" Type="bit" />
+  </EntityType>
+  <EntityType Name="MstTenderType">
+    <Key>
+      <PropertyRef Name="TenderType" />
+    </Key>
+    <Property Name="TenderType" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="Description" Type="varchar" MaxLength="50" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="MstTransaction">
+    <Key>
+      <PropertyRef Name="TransactionCode" />
+    </Key>
+    <Property Name="TransactionCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="TransactionName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+    <Property Name="MainFunction" Type="varchar" MaxLength="30" />
+    <Property Name="subfunction" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="MstUoM">
+    <Key>
+      <PropertyRef Name="UOMCode" />
+    </Key>
+    <Property Name="UOMCode" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="UOM" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="MstVoucher">
+    <Key>
+      <PropertyRef Name="VoucherCode" />
+    </Key>
+    <Property Name="VoucherCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="VoucherDesc" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="VourcherType" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ArticleCode" Type="varchar" MaxLength="26" />
+    <Property Name="allowAnyDeno" Type="bit" Nullable="false" />
+    <Property Name="IsPrePrinted" Type="bit" Nullable="false" />
+    <Property Name="DoesVoucherExpire" Type="bit" />
+    <Property Name="ExpiryAfterDays" Type="int" />
+    <Property Name="IsAdvanceSaleAllowed" Type="bit" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="OrderDtl">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="FinYear" />
+      <PropertyRef Name="DocumentNumber" />
+      <PropertyRef Name="LineNumber" />
+    </Key>
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="FinYear" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="DocumentNumber" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ArticleCode" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="EAN" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="LineNumber" Type="numeric" Nullable="false" />
+    <Property Name="Qty" Type="numeric" Scale="3" />
+    <Property Name="Weight" Type="numeric" Precision="12" Scale="2" />
+    <Property Name="UnitofMeasure" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="OpenQty" Type="numeric" Scale="3" />
+    <Property Name="DeliveredQty" Type="numeric" Scale="3" />
+    <Property Name="DeliveryCompleted" Type="bit" />
+    <Property Name="PurchaseGroupCode" Type="numeric" />
+    <Property Name="RefDocument" Type="varchar" MaxLength="45" />
+    <Property Name="RefDocumentNo" Type="varchar" MaxLength="15" />
+    <Property Name="PONo" Type="varchar" MaxLength="15" />
+    <Property Name="PoSiteCode" Type="varchar" MaxLength="15" />
+    <Property Name="PoLineNbr" Type="numeric" />
+    <Property Name="BirthListId" Type="varchar" MaxLength="15" />
+    <Property Name="SaleOrderNumber" Type="varchar" MaxLength="15" />
+    <Property Name="AllocationRule" Type="varchar" MaxLength="15" />
+    <Property Name="MRP" Type="numeric" Scale="3" />
+    <Property Name="CostPrice" Type="numeric" Precision="22" Scale="8" />
+    <Property Name="NetCostPrice" Type="numeric" Scale="3" />
+    <Property Name="ExciseDutyAmt" Type="numeric" Scale="3" />
+    <Property Name="ExciseDutyRate" Type="numeric" Scale="3" />
+    <Property Name="PurchaseTaxAmt" Type="numeric" Scale="3" />
+    <Property Name="PurchaseTaxRate" Type="numeric" Scale="3" />
+    <Property Name="AdditionalChargeAmt" Type="numeric" Scale="3" />
+    <Property Name="DiscountAmount" Type="numeric" Scale="3" />
+    <Property Name="AdditionalChargeRate" Type="numeric" Scale="3" />
+    <Property Name="DocValue" Type="numeric" Scale="3" />
+    <Property Name="InboundQty" Type="numeric" Scale="3" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+    <Property Name="dayOpenDate" Type="datetime" />
+    <Property Name="RequestedArticle" Type="varchar" MaxLength="26" />
+    <Property Name="RequestedQty" Type="numeric" Scale="3" />
+    <Property Name="BaseUom" Type="varchar" MaxLength="10" />
+    <Property Name="BaseUomQty" Type="numeric" Scale="3" />
+    <Property Name="LocalCostPrice" Type="numeric" Scale="3" />
+    <Property Name="LocalDiscount" Type="numeric" Scale="3" />
+    <Property Name="LocalTaxAmount" Type="numeric" Scale="3" />
+    <Property Name="LocalNetCostPrice" Type="numeric" Scale="3" />
+    <Property Name="ItemTaxAmt" Type="numeric" Scale="3" />
+    <Property Name="LandingCostPrice" Type="numeric" Scale="3" />
+    <Property Name="BarCode" Type="varchar" MaxLength="50" />
+    <Property Name="LastSynchedTimeStamp" Type="datetime" />
+    <Property Name="Remarks" Type="varchar" MaxLength="1000" />
+    <Property Name="ReturnReasonCode" Type="varchar" MaxLength="100" />
+    <Property Name="Row_ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="distributorMargin" Type="real" />
+    <Property Name="dealerMargin" Type="real" />
+    <Property Name="calculatedRate" Type="real" />
+  </EntityType>
+  <EntityType Name="OrderHdr">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="FinYear" />
+      <PropertyRef Name="DocumentNumber" />
+    </Key>
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="FinYear" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="DocumentNumber" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="DocumentType" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="DocDate" Type="datetime" Nullable="false" />
+    <Property Name="SupplierCode" Type="varchar" MaxLength="15" />
+    <Property Name="PurchaseGroupCode" Type="numeric" />
+    <Property Name="DeliverySiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ExpectedDeliveryDt" Type="datetime" Nullable="false" />
+    <Property Name="PaymentAfterDelDays" Type="numeric" />
+    <Property Name="AdditionalTermsNConditions" Type="varchar" MaxLength="100" />
+    <Property Name="AdditionalPaymentTerms" Type="varchar" MaxLength="100" />
+    <Property Name="DocNetValue" Type="numeric" Scale="3" />
+    <Property Name="DocGrossValue" Type="numeric" Scale="3" />
+    <Property Name="IsClosed" Type="bit" />
+    <Property Name="IsFreezed" Type="bit" />
+    <Property Name="ReturnReasonCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="Remarks" Type="varchar" MaxLength="500" />
+    <Property Name="ApprovedDate" Type="datetime" />
+    <Property Name="ApprovedLevel" Type="varchar" MaxLength="15" />
+    <Property Name="ApprovalLevel" Type="varchar" MaxLength="15" />
+    <Property Name="NextApprovalAt" Type="varchar" MaxLength="15" />
+    <Property Name="AmmendmentNo" Type="numeric" />
+    <Property Name="ClosedDate" Type="datetime" />
+    <Property Name="Transporter" Type="varchar" MaxLength="45" />
+    <Property Name="DocApprovalID" Type="varchar" MaxLength="15" />
+    <Property Name="ParentOrderNo" Type="varchar" MaxLength="15" />
+    <Property Name="WayBillNo" Type="varchar" MaxLength="50" />
+    <Property Name="WayBillDate" Type="datetime" />
+    <Property Name="VehicleDtls" Type="varchar" MaxLength="255" />
+    <Property Name="SalesOrderRef" Type="varchar" MaxLength="100" />
+    <Property Name="YourRef" Type="varchar" MaxLength="100" />
+    <Property Name="StrategyCode" Type="varchar" MaxLength="15" />
+    <Property Name="NextApproverId" Type="varchar" MaxLength="50" />
+    <Property Name="ProcessInstanceID" Type="numeric" Precision="19" />
+    <Property Name="TaskInstanceID" Type="numeric" Precision="19" />
+    <Property Name="ProcessInstanceIDCCE" Type="numeric" Precision="19" />
+    <Property Name="TaskInstanceIDCCE" Type="numeric" Precision="19" />
+    <Property Name="StrategyStep" Type="varchar" MaxLength="15" />
+    <Property Name="Month" Type="varchar" MaxLength="3" />
+    <Property Name="Day" Type="varchar" MaxLength="2" />
+    <Property Name="Quarter" Type="varchar" MaxLength="2" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="STATUS" Type="bit" />
+    <Property Name="OrderStatus" Type="varchar" MaxLength="50" />
+    <Property Name="WarehouseCharges" Type="numeric" Scale="3" />
+    <Property Name="TransportCharges" Type="numeric" Scale="3" />
+    <Property Name="OtherCharges" Type="numeric" Scale="3" />
+    <Property Name="PakingCharges" Type="numeric" Scale="3" />
+    <Property Name="ExchangeRate" Type="numeric" Scale="3" />
+    <Property Name="LocalNetValue" Type="numeric" Scale="3" />
+    <Property Name="driverDtls" Type="varchar" MaxLength="255" />
+    <Property Name="pickpackNumber" Type="varchar" MaxLength="26" />
+    <Property Name="ClosingRemarks" Type="varchar" MaxLength="100" />
+    <Property Name="DeliveryChallanNumber" Type="varchar" MaxLength="50" />
+    <Property Name="DeliveryDate" Type="datetime" />
+    <Property Name="ValidityDate" Type="datetime" />
+    <Property Name="ReferenceNo" Type="varchar" MaxLength="25" />
+    <Property Name="STRType" Type="varchar" MaxLength="50" />
+    <Property Name="DocumentTaxAmount" Type="numeric" Scale="3" />
+    <Property Name="LastSynchedTimeStamp" Type="datetime" />
+    <Property Name="Row_ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="vadilalBillNo" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PromotionSiteMap">
+    <Key>
+      <PropertyRef Name="OfferNo" />
+      <PropertyRef Name="SiteCode" />
+    </Key>
+    <Property Name="OfferNo" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+    <Property Name="Monday" Type="bit" />
+    <Property Name="Tuesday" Type="bit" />
+    <Property Name="Wednesday" Type="bit" />
+    <Property Name="Thursday" Type="bit" />
+    <Property Name="Friday" Type="bit" />
+    <Property Name="Saturday" Type="bit" />
+    <Property Name="Sunday" Type="bit" />
+  </EntityType>
+  <EntityType Name="PurchaseInfoRecord">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="SupplierCode" />
+      <PropertyRef Name="EAN" />
+    </Key>
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="SupplierCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="IsDefaultSupplier" Type="bit" />
+    <Property Name="ArticleCode" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="EAN" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="CPBaseCurr" Type="numeric" Scale="3" />
+    <Property Name="CPLocalCurr" Type="numeric" Scale="3" />
+    <Property Name="MRP" Type="numeric" Scale="3" />
+    <Property Name="FromDate" Type="datetime" />
+    <Property Name="ToDate" Type="datetime" />
+    <Property Name="isARSAllowed" Type="bit" />
+    <Property Name="FreezeSB" Type="bit" />
+    <Property Name="FreezeSR" Type="bit" />
+    <Property Name="FreezeIN" Type="bit" />
+    <Property Name="FreezeOB" Type="bit" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+    <Property Name="SRNO" Type="numeric" />
+    <Property Name="MAP" Type="numeric" Scale="3" />
+    <Property Name="distributorMargin" Type="real" />
+    <Property Name="dealerMargin" Type="real" />
+    <Property Name="calculatedRate" Type="real" />
+  </EntityType>
+  <EntityType Name="SalesInfoRecord">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="SrNo" />
+      <PropertyRef Name="EAN" />
+    </Key>
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ArticleCode" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="SrNo" Type="int" Nullable="false" />
+    <Property Name="EAN" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="SellingPrice" Type="numeric" Scale="2" />
+    <Property Name="FromDate" Type="datetime" />
+    <Property Name="ToDate" Type="datetime" />
+    <Property Name="FreezeSB" Type="bit" />
+    <Property Name="FreezeSR" Type="bit" />
+    <Property Name="FreezeIN" Type="bit" />
+    <Property Name="FreezeOB" Type="bit" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+    <Property Name="SuggestedSalesPrice" Type="numeric" Scale="2" />
+  </EntityType>
+  <EntityType Name="SiteAllowedTransactions">
+    <Key>
+      <PropertyRef Name="TransactionCode" />
+      <PropertyRef Name="SiteCode" />
+    </Key>
+    <Property Name="TransactionCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="Active" Type="bit" Nullable="false" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="SiteArticleTaxMapping">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="ArticleCode" />
+      <PropertyRef Name="TaxCode" />
+      <PropertyRef Name="SupplierCode" />
+    </Key>
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ArticleCode" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="TaxCode" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="TaxName" Type="varchar" MaxLength="50" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+    <Property Name="SupplierCode" Type="varchar" Nullable="false" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="SiteSupplierMap">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="SupplierCode" />
+    </Key>
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="SupplierCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+  </EntityType>
+  <EntityType Name="StockAdjustment">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="TrnNo" />
+      <PropertyRef Name="FinYear" />
+    </Key>
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="TrnNo" Type="numeric" Nullable="false" />
+    <Property Name="FinYear" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="TrnDate" Type="datetime" Nullable="false" />
+    <Property Name="ArticleCode" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="EAN" Type="varchar" Nullable="false" MaxLength="26" />
+    <Property Name="UOM" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="FromLOc" Type="varchar" MaxLength="15" />
+    <Property Name="ToLoc" Type="varchar" MaxLength="15" />
+    <Property Name="Qty" Type="numeric" Scale="3" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+    <Property Name="FromBin" Type="varchar" MaxLength="15" />
+    <Property Name="ToBin" Type="varchar" MaxLength="15" />
+    <Property Name="BaseUOM" Type="varchar" MaxLength="10" />
+    <Property Name="BaseQty" Type="numeric" Scale="3" />
+    <Property Name="OldQty" Type="numeric" Scale="3" />
+    <Property Name="Reason" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="TaxSiteDocMap">
+    <Key>
+      <PropertyRef Name="SiteCode" />
+      <PropertyRef Name="DocumentType" />
+      <PropertyRef Name="TaxCode" />
+    </Key>
+    <Property Name="SiteCode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="DocumentType" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="TaxCode" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="TaxName" Type="varchar" MaxLength="100" />
+    <Property Name="IsDocumentLevelTax" Type="bit" />
+    <Property Name="Inclusive" Type="bit" />
+    <Property Name="Appliedon" Type="varchar" MaxLength="15" />
+    <Property Name="IsPercentageValue" Type="bit" />
+    <Property Name="TaxValue" Type="numeric" Scale="2" />
+    <Property Name="CREATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="UPDATEDAT" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDBY" Type="varchar" MaxLength="15" />
+    <Property Name="UPDATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="bit" />
+    <Property Name="SEQUENCE" Type="numeric" />
+    <Property Name="TaxType" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TaxSiteMapping">
+    <Key>
+      <PropertyRef Name="Taxcode" />
+      <PropertyRef Name="Sitecode" />
+    </Key>
+    <Property Name="Taxcode" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Sitecode" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="Defaultsite" Type="bit" />
+    <Property Name="CreatedAT" Type="varchar" MaxLength="15" />
+    <Property Name="createdby" Type="varchar" MaxLength="15" />
+    <Property Name="createdon" Type="datetime" />
+    <Property Name="updatedat" Type="varchar" MaxLength="15" />
+    <Property Name="updatedby" Type="varchar" MaxLength="15" />
+    <Property Name="updatedon" Type="datetime" />
+    <Property Name="status" Type="bit" />
+  </EntityType>
+  <Association Name="FK_Article_lbl_Print">
+    <End Role="MstArticle" Type="SpectrumModel.Store.MstArticle" Multiplicity="1" />
+    <End Role="ArticlelblPrintDtl" Type="SpectrumModel.Store.ArticlelblPrintDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticle">
+        <PropertyRef Name="ArticleCode" />
+      </Principal>
+      <Dependent Role="ArticlelblPrintDtl">
+        <PropertyRef Name="ArticleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Article_Material_MAP">
+    <End Role="MstMaterial" Type="SpectrumModel.Store.MstMaterial" Multiplicity="1" />
+    <End Role="MstMaterialArticleMap" Type="SpectrumModel.Store.MstMaterialArticleMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstMaterial">
+        <PropertyRef Name="SiteCode" />
+        <PropertyRef Name="MaterialId" />
+      </Principal>
+      <Dependent Role="MstMaterialArticleMap">
+        <PropertyRef Name="SiteCode" />
+        <PropertyRef Name="MaterialId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ArticleDescInDiffLang_MstArticle">
+    <End Role="MstArticle" Type="SpectrumModel.Store.MstArticle" Multiplicity="1" />
+    <End Role="ArticleDescInDiffLang" Type="SpectrumModel.Store.ArticleDescInDiffLang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticle">
+        <PropertyRef Name="ArticleCode" />
+      </Principal>
+      <Dependent Role="ArticleDescInDiffLang">
+        <PropertyRef Name="ArticleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ArticleDescInDiffLang_MstLanguage">
+    <End Role="MstLanguage" Type="SpectrumModel.Store.MstLanguage" Multiplicity="1" />
+    <End Role="ArticleDescInDiffLang" Type="SpectrumModel.Store.ArticleDescInDiffLang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstLanguage">
+        <PropertyRef Name="LanguageCode" />
+      </Principal>
+      <Dependent Role="ArticleDescInDiffLang">
+        <PropertyRef Name="LanguageCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ArticleMAP_MstArticle">
+    <End Role="MstArticle" Type="SpectrumModel.Store.MstArticle" Multiplicity="1" />
+    <End Role="ArticleMAP" Type="SpectrumModel.Store.ArticleMAP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticle">
+        <PropertyRef Name="ArticleCode" />
+      </Principal>
+      <Dependent Role="ArticleMAP">
+        <PropertyRef Name="ArticleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ArticleMAP_MstSite">
+    <End Role="MstSite" Type="SpectrumModel.Store.MstSite" Multiplicity="1" />
+    <End Role="ArticleMAP" Type="SpectrumModel.Store.ArticleMAP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="ArticleMAP">
+        <PropertyRef Name="Sitecode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ArticleMartix_CharacteristicsValue">
+    <End Role="CharacteristicsValue" Type="SpectrumModel.Store.CharacteristicsValue" Multiplicity="1" />
+    <End Role="ArticleMatrix" Type="SpectrumModel.Store.ArticleMatrix" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CharacteristicsValue">
+        <PropertyRef Name="CharCode" />
+        <PropertyRef Name="CharValue" />
+      </Principal>
+      <Dependent Role="ArticleMatrix">
+        <PropertyRef Name="CharCode" />
+        <PropertyRef Name="CharValue" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ArticleMartix_MSTEan">
+    <End Role="MstEAN" Type="SpectrumModel.Store.MstEAN" Multiplicity="1" />
+    <End Role="ArticleMatrix" Type="SpectrumModel.Store.ArticleMatrix" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstEAN">
+        <PropertyRef Name="EAN" />
+      </Principal>
+      <Dependent Role="ArticleMatrix">
+        <PropertyRef Name="EanCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ArticleNodeMap_MSTArticle">
+    <End Role="MstArticle" Type="SpectrumModel.Store.MstArticle" Multiplicity="1" />
+    <End Role="ArticleNodeMap" Type="SpectrumModel.Store.ArticleNodeMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticle">
+        <PropertyRef Name="ArticleCode" />
+      </Principal>
+      <Dependent Role="ArticleNodeMap">
+        <PropertyRef Name="ArticleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ArticleNodeMap_MSTArticleNode">
+    <End Role="MstArticleNode" Type="SpectrumModel.Store.MstArticleNode" Multiplicity="1" />
+    <End Role="ArticleNodeMap" Type="SpectrumModel.Store.ArticleNodeMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticleNode">
+        <PropertyRef Name="Nodecode" />
+      </Principal>
+      <Dependent Role="ArticleNodeMap">
+        <PropertyRef Name="LastNodeCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ArticleReplenishment_MSTEAN">
+    <End Role="MstEAN" Type="SpectrumModel.Store.MstEAN" Multiplicity="1" />
+    <End Role="ArticleReplenishment" Type="SpectrumModel.Store.ArticleReplenishment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstEAN">
+        <PropertyRef Name="EAN" />
+      </Principal>
+      <Dependent Role="ArticleReplenishment">
+        <PropertyRef Name="EAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ArticleStockBalances_MSTUOM">
+    <End Role="MstUoM" Type="SpectrumModel.Store.MstUoM" Multiplicity="1" />
+    <End Role="ArticleStockBalances" Type="SpectrumModel.Store.ArticleStockBalances" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstUoM">
+        <PropertyRef Name="UOMCode" />
+      </Principal>
+      <Dependent Role="ArticleStockBalances">
+        <PropertyRef Name="UOM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ArticleTreeNodeMap_MSTArticleNode">
+    <End Role="MstArticleNode" Type="SpectrumModel.Store.MstArticleNode" Multiplicity="1" />
+    <End Role="ArticleTreeNodeMap" Type="SpectrumModel.Store.ArticleTreeNodeMap" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticleNode">
+        <PropertyRef Name="Nodecode" />
+      </Principal>
+      <Dependent Role="ArticleTreeNodeMap">
+        <PropertyRef Name="Nodecode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ArticleTreeNodeMap_MSTArticleTree">
+    <End Role="MstArticleTree" Type="SpectrumModel.Store.MstArticleTree" Multiplicity="1" />
+    <End Role="ArticleTreeNodeMap" Type="SpectrumModel.Store.ArticleTreeNodeMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticleTree">
+        <PropertyRef Name="TreeCode" />
+      </Principal>
+      <Dependent Role="ArticleTreeNodeMap">
+        <PropertyRef Name="Treecode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthRoleTransactionMap_AuthUserRoles">
+    <End Role="MstRole" Type="SpectrumModel.Store.MstRole" Multiplicity="1" />
+    <End Role="AuthRoleTransactionMap" Type="SpectrumModel.Store.AuthRoleTransactionMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstRole">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="AuthRoleTransactionMap">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthRoleTransactionMap_MSTTransaction">
+    <End Role="MstTransaction" Type="SpectrumModel.Store.MstTransaction" Multiplicity="1" />
+    <End Role="AuthRoleTransactionMap" Type="SpectrumModel.Store.AuthRoleTransactionMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstTransaction">
+        <PropertyRef Name="TransactionCode" />
+      </Principal>
+      <Dependent Role="AuthRoleTransactionMap">
+        <PropertyRef Name="AuthTransactionCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthUsers_MstAreaCode">
+    <End Role="MstAreaCode" Type="SpectrumModel.Store.MstAreaCode" Multiplicity="0..1" />
+    <End Role="AuthUsers" Type="SpectrumModel.Store.AuthUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstAreaCode">
+        <PropertyRef Name="AreaCode" />
+      </Principal>
+      <Dependent Role="AuthUsers">
+        <PropertyRef Name="CountryCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthUsers_MstSite">
+    <End Role="MstSite" Type="SpectrumModel.Store.MstSite" Multiplicity="0..1" />
+    <End Role="AuthUsers" Type="SpectrumModel.Store.AuthUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="AuthUsers">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthUserSiteRoleMap_AuthUsers">
+    <End Role="AuthUsers" Type="SpectrumModel.Store.AuthUsers" Multiplicity="1" />
+    <End Role="AuthUserSiteRoleMap" Type="SpectrumModel.Store.AuthUserSiteRoleMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AuthUsers">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="AuthUserSiteRoleMap">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthUserSiteRoleMap_MSTSite">
+    <End Role="MstSite" Type="SpectrumModel.Store.MstSite" Multiplicity="1" />
+    <End Role="AuthUserSiteRoleMap" Type="SpectrumModel.Store.AuthUserSiteRoleMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="AuthUserSiteRoleMap">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CharacteristicsProfile_MSTCharacteristicsProfile">
+    <End Role="MstCharacteristicsProfile" Type="SpectrumModel.Store.MstCharacteristicsProfile" Multiplicity="1" />
+    <End Role="CharacteristicsProfile" Type="SpectrumModel.Store.CharacteristicsProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstCharacteristicsProfile">
+        <PropertyRef Name="ProfileCode" />
+      </Principal>
+      <Dependent Role="CharacteristicsProfile">
+        <PropertyRef Name="CharProfileCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CharacteristicsValue_MSTCharacteristics">
+    <End Role="MstCharacteristics" Type="SpectrumModel.Store.MstCharacteristics" Multiplicity="1" />
+    <End Role="CharacteristicsValue" Type="SpectrumModel.Store.CharacteristicsValue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstCharacteristics">
+        <PropertyRef Name="CharCode" />
+      </Principal>
+      <Dependent Role="CharacteristicsValue">
+        <PropertyRef Name="CharCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLPProgramSiteMap_MstSite">
+    <End Role="MstSite" Type="SpectrumModel.Store.MstSite" Multiplicity="1" />
+    <End Role="CLPProgramSiteMap" Type="SpectrumModel.Store.CLPProgramSiteMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="CLPProgramSiteMap">
+        <PropertyRef Name="Sitecode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MasterArticleMap_MasterArticleMap">
+    <End Role="MstArticle" Type="SpectrumModel.Store.MstArticle" Multiplicity="1" />
+    <End Role="MasterArticleMap" Type="SpectrumModel.Store.MasterArticleMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticle">
+        <PropertyRef Name="ArticleCode" />
+      </Principal>
+      <Dependent Role="MasterArticleMap">
+        <PropertyRef Name="ArticleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MasterArticleMap_MstArticle">
+    <End Role="MstArticle" Type="SpectrumModel.Store.MstArticle" Multiplicity="1" />
+    <End Role="MasterArticleMap" Type="SpectrumModel.Store.MasterArticleMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticle">
+        <PropertyRef Name="ArticleCode" />
+      </Principal>
+      <Dependent Role="MasterArticleMap">
+        <PropertyRef Name="MasterArticleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_Mfcode">
+    <End Role="Manufacturer" Type="SpectrumModel.Store.Manufacturer" Multiplicity="1" />
+    <End Role="Brand" Type="SpectrumModel.Store.Brand" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Manufacturer">
+        <PropertyRef Name="ManufacturerCode" />
+      </Principal>
+      <Dependent Role="Brand">
+        <PropertyRef Name="ManufacturerCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MSTArticle_MSTArticleTree">
+    <End Role="MstArticleTree" Type="SpectrumModel.Store.MstArticleTree" Multiplicity="0..1" />
+    <End Role="MstArticle" Type="SpectrumModel.Store.MstArticle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticleTree">
+        <PropertyRef Name="TreeCode" />
+      </Principal>
+      <Dependent Role="MstArticle">
+        <PropertyRef Name="TreeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MstArticleImage_MSTArticle">
+    <End Role="MstArticle" Type="SpectrumModel.Store.MstArticle" Multiplicity="1" />
+    <End Role="MstArticleImage" Type="SpectrumModel.Store.MstArticleImage" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticle">
+        <PropertyRef Name="ArticleCode" />
+      </Principal>
+      <Dependent Role="MstArticleImage">
+        <PropertyRef Name="ArticleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MstArticleNode_MSTArticleTree">
+    <End Role="MstArticleTree" Type="SpectrumModel.Store.MstArticleTree" Multiplicity="1" />
+    <End Role="MstArticleNode" Type="SpectrumModel.Store.MstArticleNode" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticleTree">
+        <PropertyRef Name="TreeCode" />
+      </Principal>
+      <Dependent Role="MstArticleNode">
+        <PropertyRef Name="Treecode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MSTArticleTreeLevel_MSTArticleTree">
+    <End Role="MstArticleTree" Type="SpectrumModel.Store.MstArticleTree" Multiplicity="1" />
+    <End Role="MstArticleTreeLevel" Type="SpectrumModel.Store.MstArticleTreeLevel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticleTree">
+        <PropertyRef Name="TreeCode" />
+      </Principal>
+      <Dependent Role="MstArticleTreeLevel">
+        <PropertyRef Name="TreeCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MSTEAN_MSTArticle">
+    <End Role="MstArticle" Type="SpectrumModel.Store.MstArticle" Multiplicity="1" />
+    <End Role="MstEAN" Type="SpectrumModel.Store.MstEAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticle">
+        <PropertyRef Name="ArticleCode" />
+      </Principal>
+      <Dependent Role="MstEAN">
+        <PropertyRef Name="ArticleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MstRole_MSTSite">
+    <End Role="MstSite" Type="SpectrumModel.Store.MstSite" Multiplicity="1" />
+    <End Role="MstRole" Type="SpectrumModel.Store.MstRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="MstRole">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MstSite_MstAreaCode">
+    <End Role="MstAreaCode" Type="SpectrumModel.Store.MstAreaCode" Multiplicity="0..1" />
+    <End Role="MstSite" Type="SpectrumModel.Store.MstSite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstAreaCode">
+        <PropertyRef Name="AreaCode" />
+      </Principal>
+      <Dependent Role="MstSite">
+        <PropertyRef Name="CityCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MstSite_MstBusiness">
+    <End Role="MstBusiness" Type="SpectrumModel.Store.MstBusiness" Multiplicity="0..1" />
+    <End Role="MstSite" Type="SpectrumModel.Store.MstSite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstBusiness">
+        <PropertyRef Name="BusinessCode" />
+      </Principal>
+      <Dependent Role="MstSite">
+        <PropertyRef Name="BusinessCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MstSiteCurrancyMap_MstCurrency">
+    <End Role="MstCurrency" Type="SpectrumModel.Store.MstCurrency" Multiplicity="1" />
+    <End Role="MstSiteCurrancyMap" Type="SpectrumModel.Store.MstSiteCurrancyMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstCurrency">
+        <PropertyRef Name="CurrencyCode" />
+      </Principal>
+      <Dependent Role="MstSiteCurrancyMap">
+        <PropertyRef Name="LocalCurrancyCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MstSiteCurrancyMap_MstSite">
+    <End Role="MstSite" Type="SpectrumModel.Store.MstSite" Multiplicity="1" />
+    <End Role="MstSiteCurrancyMap" Type="SpectrumModel.Store.MstSiteCurrancyMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="MstSiteCurrancyMap">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MstTender_MstSite">
+    <End Role="MstSite" Type="SpectrumModel.Store.MstSite" Multiplicity="1" />
+    <End Role="MstTender" Type="SpectrumModel.Store.MstTender" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="MstTender">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MSTTender_MstTenderType">
+    <End Role="MstTenderType" Type="SpectrumModel.Store.MstTenderType" Multiplicity="1" />
+    <End Role="MstTender" Type="SpectrumModel.Store.MstTender" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstTenderType">
+        <PropertyRef Name="TenderType" />
+      </Principal>
+      <Dependent Role="MstTender">
+        <PropertyRef Name="TenderType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MstVoucher_MstArticle">
+    <End Role="MstArticle" Type="SpectrumModel.Store.MstArticle" Multiplicity="0..1" />
+    <End Role="MstVoucher" Type="SpectrumModel.Store.MstVoucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticle">
+        <PropertyRef Name="ArticleCode" />
+      </Principal>
+      <Dependent Role="MstVoucher">
+        <PropertyRef Name="ArticleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MstVoucher_MstTenderType">
+    <End Role="MstTenderType" Type="SpectrumModel.Store.MstTenderType" Multiplicity="1" />
+    <End Role="MstVoucher" Type="SpectrumModel.Store.MstVoucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstTenderType">
+        <PropertyRef Name="TenderType" />
+      </Principal>
+      <Dependent Role="MstVoucher">
+        <PropertyRef Name="VourcherType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderDTL_MSTEAN1">
+    <End Role="MstEAN" Type="SpectrumModel.Store.MstEAN" Multiplicity="1" />
+    <End Role="OrderDtl" Type="SpectrumModel.Store.OrderDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstEAN">
+        <PropertyRef Name="EAN" />
+      </Principal>
+      <Dependent Role="OrderDtl">
+        <PropertyRef Name="EAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderDtl_OrderHdr">
+    <End Role="OrderHdr" Type="SpectrumModel.Store.OrderHdr" Multiplicity="1" />
+    <End Role="OrderDtl" Type="SpectrumModel.Store.OrderDtl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderHdr">
+        <PropertyRef Name="SiteCode" />
+        <PropertyRef Name="FinYear" />
+        <PropertyRef Name="DocumentNumber" />
+      </Principal>
+      <Dependent Role="OrderDtl">
+        <PropertyRef Name="SiteCode" />
+        <PropertyRef Name="FinYear" />
+        <PropertyRef Name="DocumentNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderHDR_DocType">
+    <End Role="MstDocumentTypes" Type="SpectrumModel.Store.MstDocumentTypes" Multiplicity="1" />
+    <End Role="OrderHdr" Type="SpectrumModel.Store.OrderHdr" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstDocumentTypes">
+        <PropertyRef Name="DocumentType" />
+      </Principal>
+      <Dependent Role="OrderHdr">
+        <PropertyRef Name="DocumentType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderHdr_Mstsite">
+    <End Role="MstSite" Type="SpectrumModel.Store.MstSite" Multiplicity="1" />
+    <End Role="OrderHdr" Type="SpectrumModel.Store.OrderHdr" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="OrderHdr">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseInfoRecord_EAN">
+    <End Role="MstEAN" Type="SpectrumModel.Store.MstEAN" Multiplicity="1" />
+    <End Role="PurchaseInfoRecord" Type="SpectrumModel.Store.PurchaseInfoRecord" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstEAN">
+        <PropertyRef Name="EAN" />
+      </Principal>
+      <Dependent Role="PurchaseInfoRecord">
+        <PropertyRef Name="EAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseInfoRecord_SiteCode">
+    <End Role="MstSite" Type="SpectrumModel.Store.MstSite" Multiplicity="1" />
+    <End Role="PurchaseInfoRecord" Type="SpectrumModel.Store.PurchaseInfoRecord" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="PurchaseInfoRecord">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseInfoRecord_SupplierCode1">
+    <End Role="MstSupplier" Type="SpectrumModel.Store.MstSupplier" Multiplicity="1" />
+    <End Role="PurchaseInfoRecord" Type="SpectrumModel.Store.PurchaseInfoRecord" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSupplier">
+        <PropertyRef Name="SupplierCode" />
+      </Principal>
+      <Dependent Role="PurchaseInfoRecord">
+        <PropertyRef Name="SupplierCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SiteAllowedTRansactions_MSTSite">
+    <End Role="MstSite" Type="SpectrumModel.Store.MstSite" Multiplicity="1" />
+    <End Role="SiteAllowedTransactions" Type="SpectrumModel.Store.SiteAllowedTransactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="SiteAllowedTransactions">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SiteAllowedTransactions_MstTransaction">
+    <End Role="MstTransaction" Type="SpectrumModel.Store.MstTransaction" Multiplicity="1" />
+    <End Role="SiteAllowedTransactions" Type="SpectrumModel.Store.SiteAllowedTransactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstTransaction">
+        <PropertyRef Name="TransactionCode" />
+      </Principal>
+      <Dependent Role="SiteAllowedTransactions">
+        <PropertyRef Name="TransactionCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StockAdjustment_MstArticle">
+    <End Role="MstArticle" Type="SpectrumModel.Store.MstArticle" Multiplicity="1" />
+    <End Role="StockAdjustment" Type="SpectrumModel.Store.StockAdjustment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticle">
+        <PropertyRef Name="ArticleCode" />
+      </Principal>
+      <Dependent Role="StockAdjustment">
+        <PropertyRef Name="ArticleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StockAdjustment_MstEAN">
+    <End Role="MstEAN" Type="SpectrumModel.Store.MstEAN" Multiplicity="1" />
+    <End Role="StockAdjustment" Type="SpectrumModel.Store.StockAdjustment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstEAN">
+        <PropertyRef Name="EAN" />
+      </Principal>
+      <Dependent Role="StockAdjustment">
+        <PropertyRef Name="EAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StockAdjustment_MstSite">
+    <End Role="MstSite" Type="SpectrumModel.Store.MstSite" Multiplicity="1" />
+    <End Role="StockAdjustment" Type="SpectrumModel.Store.StockAdjustment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="StockAdjustment">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TaxDetail_MSTArticle">
+    <End Role="MstArticle" Type="SpectrumModel.Store.MstArticle" Multiplicity="1" />
+    <End Role="SiteArticleTaxMapping" Type="SpectrumModel.Store.SiteArticleTaxMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticle">
+        <PropertyRef Name="ArticleCode" />
+      </Principal>
+      <Dependent Role="SiteArticleTaxMapping">
+        <PropertyRef Name="ArticleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TaxSiteDocMap_MstDocumentTypes">
+    <End Role="MstDocumentTypes" Type="SpectrumModel.Store.MstDocumentTypes" Multiplicity="1" />
+    <End Role="TaxSiteDocMap" Type="SpectrumModel.Store.TaxSiteDocMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstDocumentTypes">
+        <PropertyRef Name="DocumentType" />
+      </Principal>
+      <Dependent Role="TaxSiteDocMap">
+        <PropertyRef Name="DocumentType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TaxSiteDocMap_MSTSite">
+    <End Role="MstSite" Type="SpectrumModel.Store.MstSite" Multiplicity="1" />
+    <End Role="TaxSiteDocMap" Type="SpectrumModel.Store.TaxSiteDocMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="TaxSiteDocMap">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TaxSiteDocMap_MstTax">
+    <End Role="MstTax" Type="SpectrumModel.Store.MstTax" Multiplicity="1" />
+    <End Role="TaxSiteDocMap" Type="SpectrumModel.Store.TaxSiteDocMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstTax">
+        <PropertyRef Name="TaxCode" />
+      </Principal>
+      <Dependent Role="TaxSiteDocMap">
+        <PropertyRef Name="TaxCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TaxSiteMapping_MstSite">
+    <End Role="MstSite" Type="SpectrumModel.Store.MstSite" Multiplicity="1" />
+    <End Role="TaxSiteMapping" Type="SpectrumModel.Store.TaxSiteMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="TaxSiteMapping">
+        <PropertyRef Name="Sitecode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TaxSiteMapping_MstTax">
+    <End Role="MstTax" Type="SpectrumModel.Store.MstTax" Multiplicity="1" />
+    <End Role="TaxSiteMapping" Type="SpectrumModel.Store.TaxSiteMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstTax">
+        <PropertyRef Name="TaxCode" />
+      </Principal>
+      <Dependent Role="TaxSiteMapping">
+        <PropertyRef Name="Taxcode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRightMap_AuthUsers">
+    <End Role="AuthUsers" Type="SpectrumModel.Store.AuthUsers" Multiplicity="1" />
+    <End Role="AuthUserSiteTransactionMap" Type="SpectrumModel.Store.AuthUserSiteTransactionMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AuthUsers">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="AuthUserSiteTransactionMap">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRightMap_MSTSite">
+    <End Role="MstSite" Type="SpectrumModel.Store.MstSite" Multiplicity="1" />
+    <End Role="AuthUserSiteTransactionMap" Type="SpectrumModel.Store.AuthUserSiteTransactionMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="AuthUserSiteTransactionMap">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRightMap_MSTTransaction">
+    <End Role="MstTransaction" Type="SpectrumModel.Store.MstTransaction" Multiplicity="1" />
+    <End Role="AuthUserSiteTransactionMap" Type="SpectrumModel.Store.AuthUserSiteTransactionMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstTransaction">
+        <PropertyRef Name="TransactionCode" />
+      </Principal>
+      <Dependent Role="AuthUserSiteTransactionMap">
+        <PropertyRef Name="AuthTransactionCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKB03E5F60BF3E43DE">
+    <End Role="MstArticle" Type="SpectrumModel.Store.MstArticle" Multiplicity="0..1" />
+    <End Role="MstVoucher" Type="SpectrumModel.Store.MstVoucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticle">
+        <PropertyRef Name="ArticleCode" />
+      </Principal>
+      <Dependent Role="MstVoucher">
+        <PropertyRef Name="ArticleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKB03E5F60E563B22B">
+    <End Role="MstTenderType" Type="SpectrumModel.Store.MstTenderType" Multiplicity="1" />
+    <End Role="MstVoucher" Type="SpectrumModel.Store.MstVoucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstTenderType">
+        <PropertyRef Name="TenderType" />
+      </Principal>
+      <Dependent Role="MstVoucher">
+        <PropertyRef Name="VourcherType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKB406BD04D969F016">
+    <End Role="MstSite" Type="SpectrumModel.Store.MstSite" Multiplicity="1" />
+    <End Role="MstRole" Type="SpectrumModel.Store.MstRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="MstRole">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKB4071BD51CA5C708">
+    <End Role="MstBusiness" Type="SpectrumModel.Store.MstBusiness" Multiplicity="0..1" />
+    <End Role="MstSite" Type="SpectrumModel.Store.MstSite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstBusiness">
+        <PropertyRef Name="BusinessCode" />
+      </Principal>
+      <Dependent Role="MstSite">
+        <PropertyRef Name="BusinessCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKB4071BD5D108F78D">
+    <End Role="MstAreaCode" Type="SpectrumModel.Store.MstAreaCode" Multiplicity="0..1" />
+    <End Role="MstSite" Type="SpectrumModel.Store.MstSite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstAreaCode">
+        <PropertyRef Name="AreaCode" />
+      </Principal>
+      <Dependent Role="MstSite">
+        <PropertyRef Name="CityCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKCDF82920CDC0A838">
+    <End Role="MstAreaCode" Type="SpectrumModel.Store.MstAreaCode" Multiplicity="0..1" />
+    <End Role="AuthUsers" Type="SpectrumModel.Store.AuthUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstAreaCode">
+        <PropertyRef Name="AreaCode" />
+      </Principal>
+      <Dependent Role="AuthUsers">
+        <PropertyRef Name="CountryCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKCDF82920D969F016">
+    <End Role="MstSite" Type="SpectrumModel.Store.MstSite" Multiplicity="0..1" />
+    <End Role="AuthUsers" Type="SpectrumModel.Store.AuthUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="AuthUsers">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKD02C29BE34BFC8C4">
+    <End Role="MstArticleTree" Type="SpectrumModel.Store.MstArticleTree" Multiplicity="1" />
+    <End Role="MstArticleTreeLevel" Type="SpectrumModel.Store.MstArticleTreeLevel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticleTree">
+        <PropertyRef Name="TreeCode" />
+      </Principal>
+      <Dependent Role="MstArticleTreeLevel">
+        <PropertyRef Name="TreeCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKD9C07836D969F016">
+    <End Role="MstSite" Type="SpectrumModel.Store.MstSite" Multiplicity="1" />
+    <End Role="SiteAllowedTransactions" Type="SpectrumModel.Store.SiteAllowedTransactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="SiteAllowedTransactions">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKDC6AAC71CF5A64AC">
+    <End Role="MstCharacteristicsProfile" Type="SpectrumModel.Store.MstCharacteristicsProfile" Multiplicity="1" />
+    <End Role="CharacteristicsProfile" Type="SpectrumModel.Store.CharacteristicsProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstCharacteristicsProfile">
+        <PropertyRef Name="ProfileCode" />
+      </Principal>
+      <Dependent Role="CharacteristicsProfile">
+        <PropertyRef Name="CharProfileCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKE6BE1FC6250E6B8C">
+    <End Role="MstArticleNode" Type="SpectrumModel.Store.MstArticleNode" Multiplicity="1" />
+    <End Role="ArticleTreeNodeMap" Type="SpectrumModel.Store.ArticleTreeNodeMap" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticleNode">
+        <PropertyRef Name="Nodecode" />
+      </Principal>
+      <Dependent Role="ArticleTreeNodeMap">
+        <PropertyRef Name="Nodecode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKE6BE1FC634BFC8C4">
+    <End Role="MstArticleTree" Type="SpectrumModel.Store.MstArticleTree" Multiplicity="1" />
+    <End Role="ArticleTreeNodeMap" Type="SpectrumModel.Store.ArticleTreeNodeMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstArticleTree">
+        <PropertyRef Name="TreeCode" />
+      </Principal>
+      <Dependent Role="ArticleTreeNodeMap">
+        <PropertyRef Name="Treecode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKEA93A4E500AC029">
+    <End Role="MstEAN" Type="SpectrumModel.Store.MstEAN" Multiplicity="1" />
+    <End Role="ArticleReplenishment" Type="SpectrumModel.Store.ArticleReplenishment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstEAN">
+        <PropertyRef Name="EAN" />
+      </Principal>
+      <Dependent Role="ArticleReplenishment">
+        <PropertyRef Name="EAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKFA68779C70BA2E86">
+    <End Role="MstTransaction" Type="SpectrumModel.Store.MstTransaction" Multiplicity="1" />
+    <End Role="AuthRoleTransactionMap" Type="SpectrumModel.Store.AuthRoleTransactionMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstTransaction">
+        <PropertyRef Name="TransactionCode" />
+      </Principal>
+      <Dependent Role="AuthRoleTransactionMap">
+        <PropertyRef Name="AuthTransactionCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKFA68779C79FB47A2">
+    <End Role="MstRole" Type="SpectrumModel.Store.MstRole" Multiplicity="1" />
+    <End Role="AuthRoleTransactionMap" Type="SpectrumModel.Store.AuthRoleTransactionMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstRole">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="AuthRoleTransactionMap">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKFE174BD870BA2E86">
+    <End Role="MstTransaction" Type="SpectrumModel.Store.MstTransaction" Multiplicity="1" />
+    <End Role="AuthUserSiteTransactionMap" Type="SpectrumModel.Store.AuthUserSiteTransactionMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstTransaction">
+        <PropertyRef Name="TransactionCode" />
+      </Principal>
+      <Dependent Role="AuthUserSiteTransactionMap">
+        <PropertyRef Name="AuthTransactionCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKFE174BD8723BF3F0">
+    <End Role="AuthUsers" Type="SpectrumModel.Store.AuthUsers" Multiplicity="1" />
+    <End Role="AuthUserSiteTransactionMap" Type="SpectrumModel.Store.AuthUserSiteTransactionMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AuthUsers">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="AuthUserSiteTransactionMap">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKFE174BD8D969F016">
+    <End Role="MstSite" Type="SpectrumModel.Store.MstSite" Multiplicity="1" />
+    <End Role="AuthUserSiteTransactionMap" Type="SpectrumModel.Store.AuthUserSiteTransactionMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MstSite">
+        <PropertyRef Name="SiteCode" />
+      </Principal>
+      <Dependent Role="AuthUserSiteTransactionMap">
+        <PropertyRef Name="SiteCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
